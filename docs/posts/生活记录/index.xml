@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ltao_Blog</title>
-    <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</link>
-    <description>Recent content on ltao_Blog</description>
+    <title>ltao_Blog2</title>
+    <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</link>
+    <description>Recent content on ltao_Blog2</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us&#39;</language>
-    <lastBuildDate>Mon, 16 Jan 2023 20:37:55 +0000</lastBuildDate><atom:link href="https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 20:37:55 +0000</lastBuildDate><atom:link href="http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>篮球投篮自测</title>
-      <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</link>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</link>
       <pubDate>Mon, 16 Jan 2023 20:37:55 +0000</pubDate>
       
-      <guid>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</guid>
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>22年过年运动记账</title>
-      <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/22%E5%B9%B4%E8%BF%87%E5%B9%B4%E8%BF%90%E5%8A%A8%E8%AE%B0%E8%B4%A6/</link>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/22%E5%B9%B4%E8%BF%87%E5%B9%B4%E8%BF%90%E5%8A%A8%E8%AE%B0%E8%B4%A6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/22%E5%B9%B4%E8%BF%87%E5%B9%B4%E8%BF%90%E5%8A%A8%E8%AE%B0%E8%B4%A6/</guid>
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/22%E5%B9%B4%E8%BF%87%E5%B9%B4%E8%BF%90%E5%8A%A8%E8%AE%B0%E8%B4%A6/</guid>
       <description> 1月4号 25
 1月5号 40
 1月6号 43 已结
@@ -44,10 +44,10 @@
     
     <item>
       <title>Hello World</title>
-      <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</link>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</guid>
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</guid>
       <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick Start # Create a new post # $ hexo new &amp;#34;My New Post&amp;#34; More info: Writing
 Run server # hexo server hexo server More info: Server
@@ -56,10 +56,10 @@ Generate static files # $ hexo generate More info: Generating</description>
     
     <item>
       <title>一些网站密码</title>
-      <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</link>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</guid>
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</guid>
       <description>nameSilo：
 2198764529@qq.com
 2198764529@QQ.com</description>
@@ -67,10 +67,10 @@ Generate static files # $ hexo generate More info: Generating</description>
     
     <item>
       <title>当前问题清单</title>
-      <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</link>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</guid>
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</guid>
       <description> 紧急重要 # 面试技术准备
 去深圳的计划准备,包括租房、要带哪些东西去深圳、坐什么车去深圳、什么时候去深圳
 找个手机版的 typora软件，集成 vdior 到后台
@@ -89,10 +89,10 @@ https://vditor.vercel.app/
     
     <item>
       <title>思想收藏</title>
-      <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</link>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</guid>
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</guid>
       <description>关于说话：
 祸从口出，不要轻易说出口 关于睡觉
 睡不着可以去试试听听新闻或视频 关于饮食
@@ -101,10 +101,10 @@ https://vditor.vercel.app/
     
     <item>
       <title>问题处理完成日志</title>
-      <link>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97/</link>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lucumt.info/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97/</guid>
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97/</guid>
       <description>1月19日
 hexo 博客部署到 github 中 找到 markdown 编辑器 https://www.effie.co/ 清理 小米max3 和 小米9的手机桌面 1月20日
 家里的热水器要能两头出水(喷头和下面的水龙头),热水温度不能太高
