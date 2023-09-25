@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>问题 on ltao_Blog</title>
-    <link>https://lucumt.info/tags/%E9%97%AE%E9%A2%98/</link>
+    <link>http://example.org/tags/%E9%97%AE%E9%A2%98/</link>
     <description>Recent content in 问题 on ltao_Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us&#39;</language><atom:link href="https://lucumt.info/tags/%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us&#39;</language><atom:link href="http://example.org/tags/%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>当前问题清单</title>
-      <link>https://lucumt.info/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</link>
+      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lucumt.info/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</guid>
+      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</guid>
       <description> 紧急重要 # 面试技术准备
 去深圳的计划准备,包括租房、要带哪些东西去深圳、坐什么车去深圳、什么时候去深圳
 找个手机版的 typora软件，集成 vdior 到后台
