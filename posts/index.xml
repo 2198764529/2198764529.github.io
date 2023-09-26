@@ -22,34 +22,6 @@ SD 卡 存储 好处在于速度有保障、不需要依赖网络 坏处在于�
     </item>
     
     <item>
-      <title>关于做事</title>
-      <link>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E5%81%9A%E4%BA%8B/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E5%81%9A%E4%BA%8B/</guid>
-      <description> 发展是解决一切问题的基础和关键 多考虑事情的最坏结果，并依着做事情不会变得最坏，不会让事情变得更坏，但也是保守的体现。 多考虑事情的最好结果，能激发自己的积极性，但往往会经历很多次失败。 做事情就像搭建木，前期可以大胆尝试，坍塌的代价不过几块小积木而已，后期则必须小心翼翼，不然花费很多时间的高楼将重头再来搭建。 在当下，大部分事情是无意义且有害的 当下找不到意义的事情，影响往往是长远的 让自己闲下来充分休息，不要忙得没时间思考 多去说话，弥补自己说话吞吞吐吐的缺点 多做一些事情就越能擅长这些事情 比较大的一点忌讳是懒惰，绝对不要拖延症 慢工出细活 做了总比不做好 </description>
-    </item>
-    
-    <item>
-      <title>关于睡觉</title>
-      <link>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%9D%A1%E8%A7%89/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%9D%A1%E8%A7%89/</guid>
-      <description> 喝牛奶 晒太阳（促进褪黑素分泌） 晚上10点半以后不看手机 不焦虑 多听音乐 </description>
-    </item>
-    
-    <item>
-      <title>关于篮球</title>
-      <link>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</guid>
-      <description>健壮的身体和娴熟的技术
-关于投篮 目标是弧度尽量高，发力尽量轻松 要往上发力投篮，就要往下下面压，下半身和上半身要发力不脱节 投篮手不要抓球，食指和中指张开，压腕时合拢 辅助手确定投篮范围，控制方向 在脚发力完成之前， 投篮夹角＜90度 投篮弧度要是一个抛物线，高度要高于篮板上沿 【22-4-13】 关于上篮 果冻上篮，手心正对着篮板，旋球到篮板的左上角或者右上角 多观察全局位置 攻击前侧脚 关于运球 减少运球时间 只突破不经常终结，多多分球 踮脚尖走路能锻炼小腿肌肉和踝关节稳定性。 一直收肚子能减少身体负担 </description>
-    </item>
-    
-    <item>
       <title>内在</title>
       <link>http://example.org/posts/%E4%BF%AE%E8%BA%AB/%E5%86%85%E5%9C%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,16 +83,6 @@ WWW 、HTTP、HTML 是指什么？两者有什么关系 ？ # WWW（World Wide W
       
       <guid>http://example.org/posts/%E6%9D%82%E6%80%9D/%E6%9C%89%E4%B9%A6%E5%8F%AF%E8%AF%BB%E6%96%B9%E6%A1%88/</guid>
       <description> 电子书 下载到本地 优秀的阅读体验 </description>
-    </item>
-    
-    <item>
-      <title>目标</title>
-      <link>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E7%9B%AE%E6%A0%87/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E7%9B%AE%E6%A0%87/</guid>
-      <description> 利用chatgpt之类的大模型接入一个语音助手 瘦下来到120斤 熟悉一遍计网知识 保持最佳状态 投影仪 chatgpt 音响 已完成
-廖志文初中问题 </description>
     </item>
     
     <item>
