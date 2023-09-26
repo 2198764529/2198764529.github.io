@@ -29,21 +29,23 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://example.org/posts/%E5%85%B4%E8%B5%B7/%E4%B8%80%E8%A8%80/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E5%85%B4%E8%B5%B7/%E4%B8%80%E8%A8%80/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hexo 部署发布</title>
       <link>http://example.org/posts/%E5%85%B4%E8%B5%B7/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/posts/%E5%85%B4%E8%B5%B7/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</guid>
       <description>hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d </description>
+    </item>
+    
+    <item>
+      <title>一言</title>
+      <link>http://example.org/posts/%E5%85%B4%E8%B5%B7/%E4%B8%80%E8%A8%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/%E5%85%B4%E8%B5%B7/%E4%B8%80%E8%A8%80/</guid>
+      <description>One &amp;ldquo;downside&amp;rdquo; of the preview mode is that it puts the rendered note in cache, to speed things up. This means that your dynamic command will be rendered only once, when you open the note, but won&amp;rsquo;t be refreshed after.
+If you want to refresh it, you must close the note to clear the cache and open it again.### 介绍 在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.JSON文件和.CSV文件等.
+待定计划 # 短信应用开发 移动端和PC端应用开发 </description>
     </item>
     
     <item>
