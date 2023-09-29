@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us&#39;</language><atom:link href="http://example.org/posts/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2-1/</link>
+      <title>git操作</title>
+      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2-1/</guid>
-      <description>开发一款移动端和pc端的软件,通过抓包和系统api来获取相关数据.</description>
+      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -41,24 +41,6 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
       <description>正则表达式的所有元字符 正则表达式的所有元字符包括(markdown表格列出来)：
 元字符 描述 . 匹配任意字符（除了换行符） \d 匹配数字字符 \D 匹配非数字字符 \w 匹配单词字符（字母、数字、下划线） \W 匹配非单词字符 \s 匹配空白字符（空格、制表符、换行符等） \S 匹配非空白字符 ^ 匹配字符串的开头 $ 匹配字符串的结尾 * 匹配前面的元素零次或多次 + 匹配前面的元素一次或多次 ? 表示前面的元素是可选的，匹配零次或一次 {n} 表示前面的元素恰好出现 n 次 {n,} 表示前面的元素至少出现 n 次 {n,m} 表示前面的元素出现 n 到 m 次之间 [] 字符集，匹配括号中任意一个字符 [^] 或 [^&amp;hellip;] 否定字符集，匹配除了括号中指定的任意字符之外的其他字符 </description>
-    </item>
-    
-    <item>
-      <title>正则表达式2</title>
-      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2/</guid>
-      <description>开发一款移动端和pc端的软件,通过抓包和系统api来获取相关数据.</description>
-    </item>
-    
-    <item>
-      <title>正则表达式22</title>
-      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2-2/</guid>
-      <description>开发一款移动端和pc端的软件,通过抓包和系统api来获取相关数据.</description>
     </item>
     
   </channel>
