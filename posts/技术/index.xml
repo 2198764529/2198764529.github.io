@@ -7,6 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us&#39;</language><atom:link href="http://example.org/posts/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2-1/</guid>
+      <description>开发一款移动端和pc端的软件,通过抓包和系统api来获取相关数据.</description>
+    </item>
+    
+    <item>
+      <title>markDown 语法</title>
+      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</guid>
+      <description>标题：使用&amp;quot;#&amp;ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如：
+# 一级标题 ## 二级标题 ### 三级标题 ... ###### 六级标题 段落：段落之间以空行分隔。
+强调：使用&amp;rdquo;*&amp;ldquo;或&amp;rdquo;_&amp;ldquo;将需要强调的文本包围起来。例如：
+*斜体* _斜体_ **粗体** __粗体__ ***粗斜体*** ___粗斜体___ 列表：有序列表以数字和句点开始，无序列表以&amp;rdquo;*&amp;quot;、&amp;quot;+&amp;ldquo;或&amp;rdquo;-&amp;ldquo;开始。例如：
+1. 第一项 2. 第二项 3. 第三项 - 无序列表项1 - 无序列表项2 - 嵌套的无序列表项 - 更深层次的无序列表项 * 无序列表项A * 无序列表项B * 嵌套的无序列表项 * 更深层次的无序列表项 + 无序列表项X + 无序列表项Y + 嵌套的无序列表项 + 更深层次的无序列表项 链接：使用&amp;rdquo; 链接文本&amp;ldquo;的格式添加链接。例如：
+[Google](https://www.google.com) 图片：使用&amp;rdquo; &amp;ldquo;的格式插入图片。例如：
+![示例图片](https://example.com/image.jpg) 引用：使用&amp;rdquo;&amp;gt;&amp;ldquo;字符表示引用。例如：
+&amp;gt; 这是一段引用的文本。 代码块：使用三个反引号(`)包围代码块，并在开始位置指定代码语言（可选）。例如：
+def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rdquo;|&amp;ldquo;和&amp;rdquo;-&amp;ldquo;分隔表头和表格内容，并使用&amp;rdquo;:&amp;ldquo;来对齐表格内容。例如：
+| 列1标题 | 列2标题 | |---------|---------| | 内容1 | 内容2 | | 内容3 | 内容4 | 左对齐列1标题 | 右对齐列2标题 :------------|-------------: 左对齐内容1 | 右对齐内容2 左对齐内容3 | 右对齐内容4 水平线：使用三个或更多连续的&amp;rdquo;*&amp;quot;、&amp;quot;-&amp;ldquo;或&amp;rdquo;_&amp;ldquo;表示水平线。例如：</description>
+    </item>
+    
+    <item>
+      <title>正则表达式</title>
+      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>正则表达式的所有元字符 正则表达式的所有元字符包括(markdown表格列出来)：
+元字符 描述 . 匹配任意字符（除了换行符） \d 匹配数字字符 \D 匹配非数字字符 \w 匹配单词字符（字母、数字、下划线） \W 匹配非单词字符 \s 匹配空白字符（空格、制表符、换行符等） \S 匹配非空白字符 ^ 匹配字符串的开头 $ 匹配字符串的结尾 * 匹配前面的元素零次或多次 + 匹配前面的元素一次或多次 ? 表示前面的元素是可选的，匹配零次或一次 {n} 表示前面的元素恰好出现 n 次 {n,} 表示前面的元素至少出现 n 次 {n,m} 表示前面的元素出现 n 到 m 次之间 [] 字符集，匹配括号中任意一个字符 [^] 或 [^&amp;hellip;] 否定字符集，匹配除了括号中指定的任意字符之外的其他字符 </description>
+    </item>
+    
+    <item>
       <title>正则表达式2</title>
       <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
