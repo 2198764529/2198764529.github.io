@@ -16,62 +16,6 @@
     </item>
     
     <item>
-      <title>hexo 网站装修</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E7%BD%91%E7%AB%99%E8%A3%85%E4%BF%AE/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E7%BD%91%E7%AB%99%E8%A3%85%E4%BF%AE/</guid>
-      <description> 目的：为了明确 hexo 网站更常用、更易用、更好用。 # 将主要工作内容，细化分为以下模块。
-主题装修，要适配移动端的阅读，要形成一套整体的主题思想，要更快的服务速度 模板主题确定为onePaper，在此基础上做修改 内容管理 文章快速编写，手机上可快速创建文章，支持上传图片和视频等文件 文章日常备份，每天将内容备份至云端（具体云服务商自己选） 分类模块展示，标签模块展示 主要的几个原则 不要过分注重主题样式，前期要把内容建设作为工作中心。 设计简洁，访问快速 已经完成的东西 # hexo 网站搭建 找到一个极简风的主题 One-paper 找到一个适配手机端的后台插件 hexo 分类导航栏完成 网站域名购买： ltao.cc ，ltao.fun，购买网站： namesilo 部署到github, 参考教程 </description>
-    </item>
-    
-    <item>
-      <title>markdown基础语法</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
-      <description>markdown基本语法 # 字体样式 # markdown 内容 输出效果 # 一级标题 一级标题 ## 二级标题 二级标题 ### 三级标题 三级标题 #### 四级标题 一级标题 ** 粗体 ** 粗体 * 斜体 * 斜体 ~~ 删除线 .~~ 删除线 . 段落样式 # 引用段落 # &amp;gt; 引用段落
-引用段落
-代码段落 # ``` { &amp;ldquo;firstName&amp;rdquo;: &amp;ldquo;John&amp;rdquo;, &amp;ldquo;lastName&amp;rdquo;: &amp;ldquo;Smith&amp;rdquo;, &amp;ldquo;age&amp;rdquo;: 25 } ```
-{ &amp;#34;firstName&amp;#34;: &amp;#34;John&amp;#34;, &amp;#34;lastName&amp;#34;: &amp;#34;Smith&amp;#34;, &amp;#34;age&amp;#34;: 25 } 列表 # 有序列表 # 第一名 第二名 第三名 无序列表 # - 猪 - 狗 - 牛</description>
-    </item>
-    
-    <item>
-      <title>一些网站密码</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</guid>
-      <description>mobi # nameSilo：
-2198764529@qq.com
-2198764529@QQ.com</description>
-    </item>
-    
-    <item>
-      <title>思想收藏</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</guid>
-      <description>关于说话：
-祸从口出，不要轻易说出口 关于睡觉
-睡不着可以去试试听听新闻或视频 关于饮食
-多喝水，多吃水果，少吃外卖 关于心情
-音乐是生活的一块糖，吃多了会腻，时常吃一口会舒畅。 吃东西，运动都会让心情变好 晒太阳 </description>
-    </item>
-    
-    <item>
-      <title>篮球投篮自测</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</link>
-      <pubDate>Mon, 16 Jan 2023 20:37:55 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</guid>
-      <description>投篮的完整步骤
-坐，屁股坐下来，双腿打开 收，身体收紧，进入投篮准备 起，从下往上，一气呵成。 </description>
-    </item>
-    
-    <item>
       <title>22年过年运动记账</title>
       <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/22%E5%B9%B4%E8%BF%87%E5%B9%B4%E8%BF%90%E5%8A%A8%E8%AE%B0%E8%B4%A6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -101,55 +45,6 @@
 320 = 140+65+53+57+5 已结清
 项目规则：
 跑步，一圈5元，每天最多跑4圈 深蹲，50个15元，每天最多做100个 羽毛球，20个4元，40个7元，60个10元，每天最多60个 </description>
-    </item>
-    
-    <item>
-      <title>hello-world</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</guid>
-      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start # Create a new post # $ hexo new &amp;#34;My New Post&amp;#34; More info: Writing
-Run server # hexo server hexo server More info: Server
-Generate static files # $ hexo generate More info: Generating</description>
-    </item>
-    
-    <item>
-      <title>hexo 部署发布</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</guid>
-      <description>hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d </description>
-    </item>
-    
-    <item>
-      <title>当前问题清单</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</guid>
-      <description> 紧急重要 # 面试技术准备
-去深圳的计划准备,包括租房、要带哪些东西去深圳、坐什么车去深圳、什么时候去深圳
-找个手机版的 typora软件，集成 vdior 到后台
-https://b3log.org/vditor/
-https://vditor.vercel.app/
-置顶文章
-解决方案：
-不需要了，直接用updated字段排序就行了 响应速度优化
-解决方案：
-jsdelivr 文件加速 教程地址 vercel 托管加速： 官网地址 紧急不重要 # 重要不紧急 # 配一台新的台式电脑, 并安装上黑苹果系统 不重要不紧急 # AI 自定义计划 </description>
-    </item>
-    
-    <item>
-      <title>网站收藏</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description>设计学习：
-设计不错网站的 # https://www.natfrp.com/ hexo 建站相关： # hexo 官方文档：https://hexo.io/zh-cn/docs/ hexo 插件库：https://hexo.io/plugins/ hexo 主题库：https://hexo.io/themes/ ejs 模板： https://ejs.bootcss.com/ github: https://github.com/ hugo 建站相关 # hugo 文档: https://gohugo.io/variables/page/ hugo 主题：https://themes.gohugo.io/ 软件网站 # 歌词软件 &amp;ldquo;Lyricify &amp;ldquo;: https://github.com/WXRIW/Lyricify-App </description>
     </item>
     
   </channel>

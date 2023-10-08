@@ -21,7 +21,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
-      <description></description>
+      <description>Git 所有操作及命令 # Git 是一个分布式版本控制系统，常用于管理代码的版本和协作开发。以下是 Git 的一些常用操作和命令：
+初始化仓库：
+init` - 在当前目录初始化一个新的 Git 仓库 添加文件：
+git add ` - 将文件添加到暂存区 git add . - 将所有修改过的文件添加到暂存区 提交更改：
+git commit -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot; - 将暂存区的更改提交到本地仓库，并附带一条描述信息 查看状态：
+git status - 显示工作区和暂存区的状态 查看历史记录：
+git log - 显示提交历史记录 git log --oneline - 以简洁方式显示提交历史记录 回退版本：
+git checkout &amp;lt;commit&amp;gt; - 切换到指定的提交版本 git revert &amp;lt;commit&amp;gt;- 撤销指定的提交，并创建一个新的提交 分支操作：
+git branch- 列出所有分支 git branch &amp;lt;branchname&amp;gt;- 创建新分支 git checkout &amp;lt;branchname&amp;gt;- 切换到指定分支 git merge &amp;lt;branchname&amp;gt;- 合并指定分支到当前分支 git branch –d &amp;lt;branchname&amp;gt;- 删除指定分支 远程操作：</description>
     </item>
     
     <item>

@@ -16,88 +16,12 @@
     </item>
     
     <item>
-      <title>hexo 网站装修</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E7%BD%91%E7%AB%99%E8%A3%85%E4%BF%AE/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E7%BD%91%E7%AB%99%E8%A3%85%E4%BF%AE/</guid>
-      <description> 目的：为了明确 hexo 网站更常用、更易用、更好用。 # 将主要工作内容，细化分为以下模块。
-主题装修，要适配移动端的阅读，要形成一套整体的主题思想，要更快的服务速度 模板主题确定为onePaper，在此基础上做修改 内容管理 文章快速编写，手机上可快速创建文章，支持上传图片和视频等文件 文章日常备份，每天将内容备份至云端（具体云服务商自己选） 分类模块展示，标签模块展示 主要的几个原则 不要过分注重主题样式，前期要把内容建设作为工作中心。 设计简洁，访问快速 已经完成的东西 # hexo 网站搭建 找到一个极简风的主题 One-paper 找到一个适配手机端的后台插件 hexo 分类导航栏完成 网站域名购买： ltao.cc ，ltao.fun，购买网站： namesilo 部署到github, 参考教程 </description>
-    </item>
-    
-    <item>
-      <title>markdown基础语法</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
-      <description>markdown基本语法 # 字体样式 # markdown 内容 输出效果 # 一级标题 一级标题 ## 二级标题 二级标题 ### 三级标题 三级标题 #### 四级标题 一级标题 ** 粗体 ** 粗体 * 斜体 * 斜体 ~~ 删除线 .~~ 删除线 . 段落样式 # 引用段落 # &amp;gt; 引用段落
-引用段落
-代码段落 # ``` { &amp;ldquo;firstName&amp;rdquo;: &amp;ldquo;John&amp;rdquo;, &amp;ldquo;lastName&amp;rdquo;: &amp;ldquo;Smith&amp;rdquo;, &amp;ldquo;age&amp;rdquo;: 25 } ```
-{ &amp;#34;firstName&amp;#34;: &amp;#34;John&amp;#34;, &amp;#34;lastName&amp;#34;: &amp;#34;Smith&amp;#34;, &amp;#34;age&amp;#34;: 25 } 列表 # 有序列表 # 第一名 第二名 第三名 无序列表 # - 猪 - 狗 - 牛</description>
-    </item>
-    
-    <item>
-      <title>一些网站密码</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</guid>
-      <description>mobi # nameSilo：
-2198764529@qq.com
-2198764529@QQ.com</description>
-    </item>
-    
-    <item>
-      <title>思想收藏</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</link>
-      <pubDate>Thu, 02 Feb 2023 20:30:04 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</guid>
-      <description>关于说话：
-祸从口出，不要轻易说出口 关于睡觉
-睡不着可以去试试听听新闻或视频 关于饮食
-多喝水，多吃水果，少吃外卖 关于心情
-音乐是生活的一块糖，吃多了会腻，时常吃一口会舒畅。 吃东西，运动都会让心情变好 晒太阳 </description>
-    </item>
-    
-    <item>
-      <title>篮球投篮自测</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</link>
-      <pubDate>Mon, 16 Jan 2023 20:37:55 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</guid>
-      <description>投篮的完整步骤
-坐，屁股坐下来，双腿打开 收，身体收紧，进入投篮准备 起，从下往上，一气呵成。 </description>
-    </item>
-    
-    <item>
       <title></title>
       <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F-1/</guid>
-      <description>学习网站 全历史： https://www.allhistory.com 今日热榜： https://tophub.today 知乎日报： https://tophub.today 网络工具 机场巴巴： http://www.ckcloud.cc https://www.ckcloud.life/api/v1/client/subscribe?token=ee6e28c29404b9ac386be635f764d5e6 机场推荐： 梦猫博客 clash 局域网配置： clash 局域网配置 SMS-activate接码平台: https://sms-activate.org/en/freePrice 壁纸 Mobile Abyss： https://mobile.alphacoders.com 软件工具 画图工具：h ttps://handraw.top Chatgpt: [https://chat.openai.com] hugo 搭建: https://hugo.aiaide.com/post/ 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
-MarkDown 的语法规则</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description>学习网站 全历史： https://www.allhistory.com 今日热榜： https://tophub.today 知乎日报： https://tophub.today 网络工具 机场巴巴： http://www.ckcloud.cc https://www.ckcloud.life/api/v1/client/subscribe?token=ee6e28c29404b9ac386be635f764d5e6 机场推荐： 梦猫博客 clash 局域网配置： clash 局域网配置 SMS-activate接码平台: https://sms-activate.org/en/freePrice 壁纸 Mobile Abyss： https://mobile.alphacoders.com 软件工具 画图工具：h ttps://handraw.top Chatgpt: [https://chat.openai.com] hugo 搭建: https://hugo.aiaide.com/post/ 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
-MarkDown 的语法规则</description>
     </item>
     
     <item>
@@ -147,28 +71,15 @@ MarkDown 的语法规则</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hello-world</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</guid>
-      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start # Create a new post # $ hexo new &amp;#34;My New Post&amp;#34; More info: Writing
-Run server # hexo server hexo server More info: Server
-Generate static files # $ hexo generate More info: Generating</description>
-    </item>
-    
-    <item>
-      <title>hexo 部署发布</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</guid>
-      <description>hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d </description>
+      <description>Git 所有操作及命令 # Git 是一个分布式版本控制系统，常用于管理代码的版本和协作开发。以下是 Git 的一些常用操作和命令：
+初始化仓库：
+init` - 在当前目录初始化一个新的 Git 仓库 添加文件：
+git add ` - 将文件添加到暂存区 git add . - 将所有修改过的文件添加到暂存区 提交更改：
+git commit -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot; - 将暂存区的更改提交到本地仓库，并附带一条描述信息 查看状态：
+git status - 显示工作区和暂存区的状态 查看历史记录：
+git log - 显示提交历史记录 git log --oneline - 以简洁方式显示提交历史记录 回退版本：
+git checkout &amp;lt;commit&amp;gt; - 切换到指定的提交版本 git revert &amp;lt;commit&amp;gt;- 撤销指定的提交，并创建一个新的提交 分支操作：
+git branch- 列出所有分支 git branch &amp;lt;branchname&amp;gt;- 创建新分支 git checkout &amp;lt;branchname&amp;gt;- 切换到指定分支 git merge &amp;lt;branchname&amp;gt;- 合并指定分支到当前分支 git branch –d &amp;lt;branchname&amp;gt;- 删除指定分支 远程操作：</description>
     </item>
     
     <item>
@@ -256,7 +167,7 @@ SD 卡 存储 好处在于速度有保障、不需要依赖网络 坏处在于�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/posts/%E4%BF%AE%E8%BA%AB/%E5%A4%96%E5%9C%A8/</guid>
-      <description> 20 个俯卧撑 100 个单腿,左50,右50 穿好衣服,整理仪容仪表 </description>
+      <description> 20 个俯卧撑 100 个单腿,左50,右50 穿好衣服,整理仪容仪表 每天 6000 步 </description>
     </item>
     
     <item>
@@ -294,24 +205,6 @@ SD 卡 存储 好处在于速度有保障、不需要依赖网络 坏处在于�
 文件传输协议有哪些？ # 文件传输协议包括两种FTP和TFTP协议，FTP基于TCP支持文件传输和交互，而TFTP基于UDP支持文件传输不能交互。
 TELNET 是什么协议？ # TELNET 是一个基于TCP的简单远程终端协议，用于远程登录另一台主机。
 WWW 、HTTP、HTML 是指什么？两者有什么关系 ？ # WWW（World Wide Web）是一个基于HTTP协议的、分布式的、超文本的信息存储系统。</description>
-    </item>
-    
-    <item>
-      <title>当前问题清单</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</guid>
-      <description> 紧急重要 # 面试技术准备
-去深圳的计划准备,包括租房、要带哪些东西去深圳、坐什么车去深圳、什么时候去深圳
-找个手机版的 typora软件，集成 vdior 到后台
-https://b3log.org/vditor/
-https://vditor.vercel.app/
-置顶文章
-解决方案：
-不需要了，直接用updated字段排序就行了 响应速度优化
-解决方案：
-jsdelivr 文件加速 教程地址 vercel 托管加速： 官网地址 紧急不重要 # 重要不紧急 # 配一台新的台式电脑, 并安装上黑苹果系统 不重要不紧急 # AI 自定义计划 </description>
     </item>
     
     <item>
@@ -403,12 +296,11 @@ jsdelivr 文件加速 教程地址 vercel 托管加速： 官网地址 紧急不
     
     <item>
       <title>网站收藏</title>
-      <link>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <link>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description>设计学习：
-设计不错网站的 # https://www.natfrp.com/ hexo 建站相关： # hexo 官方文档：https://hexo.io/zh-cn/docs/ hexo 插件库：https://hexo.io/plugins/ hexo 主题库：https://hexo.io/themes/ ejs 模板： https://ejs.bootcss.com/ github: https://github.com/ hugo 建站相关 # hugo 文档: https://gohugo.io/variables/page/ hugo 主题：https://themes.gohugo.io/ 软件网站 # 歌词软件 &amp;ldquo;Lyricify &amp;ldquo;: https://github.com/WXRIW/Lyricify-App </description>
+      <guid>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <description> 学习网站 # 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 # 机场巴巴 http://www.ckcloud.cc 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 # 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App </description>
     </item>
     
     <item>
