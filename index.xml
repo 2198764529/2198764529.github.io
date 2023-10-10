@@ -57,15 +57,6 @@
     </item>
     
     <item>
-      <title>git 设置和取消代理</title>
-      <link>http://example.org/posts/%E8%BD%AC%E8%BD%BD%E8%AE%B0%E5%BD%95/git-%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E8%BD%AC%E8%BD%BD%E8%AE%B0%E5%BD%95/git-%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86/</guid>
-      <description>git config --global https.proxy http://127.0.0.1:1080 git config --global https.proxy https://127.0.0.1:1080 git config --global --unset http.proxy git config --global --unset https.proxy npm config delete proxy 转载 https://gist.github.com/laispace/666dd7b27e9116faece6</description>
-    </item>
-    
-    <item>
       <title>git操作</title>
       <link>http://example.org/posts/%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -153,30 +144,6 @@ SD 卡 存储 好处在于速度有保障、不需要依赖网络 坏处在于�
     </item>
     
     <item>
-      <title>关于蓝牙音量不正常</title>
-      <link>http://example.org/posts/%E8%BD%AC%E8%BD%BD%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8E%E8%93%9D%E7%89%99%E9%9F%B3%E9%87%8F%E4%B8%8D%E6%AD%A3%E5%B8%B8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/%E8%BD%AC%E8%BD%BD%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8E%E8%93%9D%E7%89%99%E9%9F%B3%E9%87%8F%E4%B8%8D%E6%AD%A3%E5%B8%B8/</guid>
-      <description>经常有小伙伴反馈蓝牙耳机音量小的问题，这里科普一下为什么蓝牙耳机音量小？
-蓝牙耳机音量小，无非两种情况:
-1.手机输出音量小
-2.耳机自生音量调节小了
-好比一根水管，有两个阀门，如果其中一个开关调小，流量就会变小，要想全速流淌，必须要把两个开关全部打开。
-很多小伙伴反馈的是手机音量已经调节到最大还是音量小，其实此时手机的输出已经是最大了，要想调大音量，就必须要调节另一个水龙头，此水龙头自然就是蓝牙耳机自己的音量调节开关了。
-但是，为了把耳机做小，现在很多耳机，特别是TWS耳机，经常没有音量调节按钮，此时想要调节耳机音量，就必须要靠杀器 :蓝牙绝对音量 了。
-那么什么是 蓝牙绝对音量呢？其实，绝对音量就相当于给水管的两个水龙头加了一个联动装置，不管调节哪一个开关，两个水龙头都会同步调节，这样就不存在手机音量调节到最大，耳机或者音箱仍然音量小了。
-但是，需要注意的是，绝对音量功能并不是每个耳机都支持的，有个别耳机，音箱，及车机就是不支持绝对音量的（常见于比较老旧的设备及蓝牙芯片），判断耳机是否支持绝对音量的方法是:
-如果耳机自带音量调节按键，在手机开发者选项中开启绝对音量，然后重新连接蓝牙耳机，重连后从耳机上调节音量，如果手机能显示音量进度条，那么此耳机就是支持绝对音量的。反之则耳机不支持绝对音量。
-当然，如果有的耳机一开始可以调节，可是突然有一天，不能同步调节手机音量了，可能是手机记录了某些不规范操作，把此耳机拉黑了，此时可以尝试从手机端解除配对，重新配对的方式看是否能恢复。
-另外，也有可能是耳机自己记录了手机某些信息，将手机拉黑了，此时可以尝试将耳机恢复出厂设置，通常将耳机恢复出厂设置的方法不会写入说明书，你只能联系销售客服，咨询恢复重置耳机的方法，
-例如大多数TWS耳机重置的方法是:
-1.清除手机配对记录：无蓝牙、无TWS连接状态下，长按触控按键15秒（左右耳分别执行）
-2.断开手机连接：连接手机状态下，无音乐播放、无通话，长按主耳机触控按键5秒
-转载 https://www.realmebbs.com/post-details/1245148418070818816</description>
-    </item>
-    
-    <item>
       <title>内在</title>
       <link>http://example.org/posts/%E4%BF%AE%E8%BA%AB/%E5%86%85%E5%9C%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -229,6 +196,41 @@ SD 卡 存储 好处在于速度有保障、不需要依赖网络 坏处在于�
 文件传输协议有哪些？ # 文件传输协议包括两种FTP和TFTP协议，FTP基于TCP支持文件传输和交互，而TFTP基于UDP支持文件传输不能交互。
 TELNET 是什么协议？ # TELNET 是一个基于TCP的简单远程终端协议，用于远程登录另一台主机。
 WWW 、HTTP、HTML 是指什么？两者有什么关系 ？ # WWW（World Wide Web）是一个基于HTTP协议的、分布式的、超文本的信息存储系统。</description>
+    </item>
+    
+    <item>
+      <title>技术记录</title>
+      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
+      <description>hugo 字段bug # publishDate字段会有时候让文章显示不出来, 或许是 hugo 内部编译执行的过程出错
+frontmatter: # publishDate: # - datetimeCreate lastmod: - datetimeUpdate git 代理设置和解决 # git config --global https.proxy http://127.0.0.1:1080 git config --global https.proxy https://127.0.0.1:1080 git config --global --unset http.proxy git config --global --unset https.proxy npm config delete proxy 转载 https://gist.github.com/laispace/666dd7b27e9116faece6
+蓝牙音量不正常 # 经常有小伙伴反馈蓝牙耳机音量小的问题，这里科普一下为什么蓝牙耳机音量小？
+蓝牙耳机音量小，无非两种情况:
+1.手机输出音量小
+2.耳机自生音量调节小了
+好比一根水管，有两个阀门，如果其中一个开关调小，流量就会变小，要想全速流淌，必须要把两个开关全部打开。
+很多小伙伴反馈的是手机音量已经调节到最大还是音量小，其实此时手机的输出已经是最大了，要想调大音量，就必须要调节另一个水龙头，此水龙头自然就是蓝牙耳机自己的音量调节开关了。
+但是，为了把耳机做小，现在很多耳机，特别是TWS耳机，经常没有音量调节按钮，此时想要调节耳机音量，就必须要靠杀器 :蓝牙绝对音量 了。
+那么什么是 蓝牙绝对音量呢？其实，绝对音量就相当于给水管的两个水龙头加了一个联动装置，不管调节哪一个开关，两个水龙头都会同步调节，这样就不存在手机音量调节到最大，耳机或者音箱仍然音量小了。
+但是，需要注意的是，绝对音量功能并不是每个耳机都支持的，有个别耳机，音箱，及车机就是不支持绝对音量的（常见于比较老旧的设备及蓝牙芯片），判断耳机是否支持绝对音量的方法是:
+如果耳机自带音量调节按键，在手机开发者选项中开启绝对音量，然后重新连接蓝牙耳机，重连后从耳机上调节音量，如果手机能显示音量进度条，那么此耳机就是支持绝对音量的。反之则耳机不支持绝对音量。
+当然，如果有的耳机一开始可以调节，可是突然有一天，不能同步调节手机音量了，可能是手机记录了某些不规范操作，把此耳机拉黑了，此时可以尝试从手机端解除配对，重新配对的方式看是否能恢复。
+另外，也有可能是耳机自己记录了手机某些信息，将手机拉黑了，此时可以尝试将耳机恢复出厂设置，通常将耳机恢复出厂设置的方法不会写入说明书，你只能联系销售客服，咨询恢复重置耳机的方法，
+例如大多数TWS耳机重置的方法是:
+1.清除手机配对记录：无蓝牙、无TWS连接状态下，长按触控按键15秒（左右耳分别执行）
+2.断开手机连接：连接手机状态下，无音乐播放、无通话，长按主耳机触控按键5秒
+转载 https://www.realmebbs.com/post-details/1245148418070818816</description>
+    </item>
+    
+    <item>
+      <title>日志</title>
+      <link>http://example.org/posts/%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/%E6%97%A5%E5%BF%97/</guid>
+      <description> 10.9 # 新增稿 技术记录, 并将每个问题记录文件改为添加到该文件中的 3 级标题下 日志的文件 _index.md(首页) → 日志.md(列表下) _index.md(首页) 补充一些语录 带饭的玻璃碗在微波炉里裂开了,退了 8.5 10.4 # 增加文章数量统计 10.2 # 买了一个99元一年的碎屏险 10.1 # 安装三星运动健康 9.30 # 推掉 neo5，买 neo 5 SE（花了2100） 9.29 # 增加字数统计 countWords(同 word 字数) 安装插件接入chatGPT 创建时间太晚，显示不出来 9.27 # 花 2800 买了一个realme gt neo5 16g 1T 修身 9.26 # 把obsidian 项目搭建到 GitHub，并修改网站颜色和字体，完成更新时间自动修复。 开始记日记 失眠 9.25 # 开始部署搭建 obsidian环境 </description>
     </item>
     
     <item>
