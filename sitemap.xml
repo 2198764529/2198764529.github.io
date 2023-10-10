@@ -65,6 +65,9 @@
     <loc>http://example.org/posts/%E7%9B%AE%E6%A0%87/9.25-~-10.6/</loc>
     <lastmod>2023-09-26T23:20:43+00:00</lastmod>
   </url><url>
+    <loc>http://example.org/posts/%E8%BD%AC%E8%BD%BD%E8%AE%B0%E5%BD%95/git-%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2023-10-09T17:10:21+00:00</lastmod>
+  </url><url>
     <loc>http://example.org/posts/%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2023-09-29T16:59:57+00:00</lastmod>
   </url><url>
@@ -85,6 +88,9 @@
   </url><url>
     <loc>http://example.org/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</loc>
     <lastmod>2023-10-09T11:29:31+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/%E8%BD%AC%E8%BD%BD%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8E%E8%93%9D%E7%89%99%E9%9F%B3%E9%87%8F%E4%B8%8D%E6%AD%A3%E5%B8%B8/</loc>
+    <lastmod>2023-10-09T17:02:15+00:00</lastmod>
   </url><url>
     <loc>http://example.org/posts/%E4%BF%AE%E8%BA%AB/%E5%86%85%E5%9C%A8/</loc>
     <lastmod>2023-09-25T17:02:48+00:00</lastmod>
