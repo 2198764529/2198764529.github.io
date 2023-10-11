@@ -24,7 +24,9 @@
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
--->
+--><script src="http://example.org/js/function.js" defer></script>
+
+
   
 </head>
 <body dir="ltr">
@@ -675,18 +677,20 @@ https://github.com/alex-shpak/hugo-book
       
       
 <main aria-role="main">
-  <h4>
+  <h4 >
       上次在 
-      
-
-
-
-  10-10  
-
-
+      <span id="LastChange" data-unix="1696967530">
+        
+      </span>
       编辑
     </h4>
+    <script>
+      
+      window.onload = function () {
+        updateTimestampEveryMinute("LastChange")
+      }
 
+    </script>
 </main>
  
       
