@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>笔记列表 on 李枫的地</title>
-    <link>http://example.org/posts/</link>
+    <link>http://ltao.cc/posts/</link>
     <description>Recent content in 笔记列表 on 李枫的地</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="http://ltao.cc/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技术记录</title>
-      <link>http://example.org/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+      <link>http://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
+      <guid>http://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
       <description>hugo 日期转时间戳 # 原因是这样的,我在设置文章更新时间的时候,大部分的日期转时间戳貌似都没问题,除了当天的时间转时间戳,当时时间为当天的 14 点,出来的时间戳一转成时间,结果居然是 22 点, 不断测试,发现不是我代码的问题. 多次修改无果,问了chatGPT才知道,转时间戳的过程原来还有其他东西会影响
 在处理时间戳时，有一些需要注意的重要事项, ChatGPT 的回答如下
 1. **时间戳精度：** 时间戳可以是秒级或毫秒级的，具体取决于系统和编程语言。确保您清楚时间戳的精度，以免出现错误。 2. **时区和区域性：** 时间戳通常是与协调世界时 (UTC) 相关的。时区和区域性的问题可能会导致时间戳的解释不正确。在处理时间戳时，考虑时区和区域性，以便正确地显示和解释日期时间。 3. **时间戳格式：** 时间戳可以采用不同的格式，包括整数（秒或毫秒）、ISO 8601（例如：2023-10-11T14:44:16Z）等。确保您了解所使用的时间戳格式，以正确解释和显示日期时间。 4. **溢出和范围：** 时间戳的范围是有限的，因此要小心处理超出范围的情况。对于以秒为单位的时间戳，通常范围在约1970年至2038年之间。对于以毫秒为单位的时间戳，范围更大，但仍然有限。 5. **精确性：** 根据时间戳的精度，可能会存在一些精度问题。毫秒级时间戳可以提供更高的精度，但仍然有限。在某些情况下，您可能需要考虑四舍五入或截断精度以满足需求。 6. **跨时区计算：** 如果涉及到多个时区，确保正确进行时区转换。使用合适的工具和库来处理跨时区问题。 7. **日期时间显示：** 在显示时间戳时，考虑最终用户的需求和偏好。提供适当的日期时间格式，并考虑将时间戳转换为本地时区以获得更好的用户体验。 8. **维护和更新：** 时间戳可能需要在未来进行维护和更新，以适应不同的需求或问题。时刻注意更新可能会影响应用程序的行为。 总之，处理时间戳需要小心，要理解时间戳的精度、格式、时区和区域性，以及如何正确地显示和处理日期时间数据。这可以确保您的应用程序或系统在时间方面表现正确。 hugo 字段bug # publishDate字段会有时候让文章显示不出来, 或许是 hugo 内部编译执行的过程出错
@@ -20,19 +20,19 @@ frontmatter: # publishDate: # - datetimeCreate lastmod: - datetimeUpdate git 代
     
     <item>
       <title>日志</title>
-      <link>http://example.org/posts/%E6%97%A5%E5%BF%97/</link>
+      <link>http://ltao.cc/posts/%E6%97%A5%E5%BF%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%97%A5%E5%BF%97/</guid>
+      <guid>http://ltao.cc/posts/%E6%97%A5%E5%BF%97/</guid>
       <description>10.12 # 写完了第一行内容 时间段确定,判断早中晚 上下班确定,判断离上下班有多久时间 离本周与本月有多久 新增第三行内容(原第三行成第四行), 确定所有文章的字数之和 10.11 # 确定首页展示内容，包括 万物皆有定数 和 首页美景 运动打球一次 10.10 # 时间格式化完成， 模仿 微博 格式 (秒级别的还没改) 找到如何修改首页的方法了，明天再改过去。 10.9 # 新增稿 技术记录, 并将每个问题记录文件改为添加到该文件中的 3 级标题下 日志的文件 _index.md(首页) → 日志.md(列表下) _index.md(首页) 补充一些语录 带饭的玻璃碗在微波炉里裂开了,退了 8.5 10.4 # 增加文章数量统计 10.2 # 买了一个99元一年的碎屏险 10.1 # 安装三星运动健康 9.30 # 推掉 neo5，买 neo 5 SE（花了2100） 9.29 # 增加字数统计 countWords(同 word 字数) 安装插件接入chatGPT 创建时间太晚，显示不出来 9.27 # 花 2800 买了一个realme gt neo5 16g 1T 修身 9.</description>
     </item>
     
     <item>
       <title>网站收藏</title>
-      <link>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <link>http://ltao.cc/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <guid>http://ltao.cc/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
       <description> 学习网站 # 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 # 机场巴巴 http://www.ckcloud.cc 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 # 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App </description>
     </item>
     

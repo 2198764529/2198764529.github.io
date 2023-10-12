@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>自问自答 on 李枫的地</title>
-    <link>http://example.org/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/</link>
+    <link>http://ltao.cc/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/</link>
     <description>Recent content in 自问自答 on 李枫的地</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://example.org/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="http://ltao.cc/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>应用层</title>
-      <link>http://example.org/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E5%BA%94%E7%94%A8%E5%B1%82/</link>
+      <link>http://ltao.cc/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E5%BA%94%E7%94%A8%E5%B1%82/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E5%BA%94%E7%94%A8%E5%B1%82/</guid>
+      <guid>http://ltao.cc/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E5%BA%94%E7%94%A8%E5%B1%82/</guid>
       <description>应用层是指电脑上各种应用软件进程通过何种应用层协议来使用网络提供的通信服务
 域名系统DNS是什么 # 域名系统是指 Internet 中用于把主机名字转换成IP的系统
 为啥 IP 数据包不使用域名而是用 IP 地址呢 # 因为 IP 地址的长度是固定的32位或者固定的128位，而域名的长度是可变的
@@ -31,10 +31,10 @@ WWW 、HTTP、HTML 是指什么？两者有什么关系 ？ # WWW（World Wide W
     
     <item>
       <title>运输层</title>
-      <link>http://example.org/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E8%BF%90%E8%BE%93%E5%B1%82/</link>
+      <link>http://ltao.cc/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E8%BF%90%E8%BE%93%E5%B1%82/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E8%BF%90%E8%BE%93%E5%B1%82/</guid>
+      <guid>http://ltao.cc/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/%E8%BF%90%E8%BE%93%E5%B1%82/</guid>
       <description>运输层是干啥的？为啥会有运输层 # 运输层是为进程与进程之间通信服务用的，规定了进程与进程之间应该以何种协议进行传输数据。
 如果没有运输层，通信数据的传输将不可靠稳定，从而影响整个网络的通信速度质量。
 运输层包括哪些协议内容？这些协议内容有哪些异同点？ # 运输层主要包括TCP【传输控制协议】协议和UDP【用户数据报协议】协议。
