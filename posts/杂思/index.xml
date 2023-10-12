@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>杂思 on 李枫的地</title>
-    <link>http://ltao.cc/posts/%E6%9D%82%E6%80%9D/</link>
+    <link>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/</link>
     <description>Recent content in 杂思 on 李枫的地</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://ltao.cc/posts/%E6%9D%82%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://ltao.cc/posts/%E6%9D%82%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>个人存储方案</title>
-      <link>http://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E4%B8%AA%E4%BA%BA%E5%AD%98%E5%82%A8%E6%96%B9%E6%A1%88/</link>
+      <link>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E4%B8%AA%E4%BA%BA%E5%AD%98%E5%82%A8%E6%96%B9%E6%A1%88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E4%B8%AA%E4%BA%BA%E5%AD%98%E5%82%A8%E6%96%B9%E6%A1%88/</guid>
+      <guid>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E4%B8%AA%E4%BA%BA%E5%AD%98%E5%82%A8%E6%96%B9%E6%A1%88/</guid>
       <description> NAS 好处在于可扩展存储，数据安全，价格也不算特别高 坏处在于速度和可用性需要网络支持，需要内网穿透或者公网IP，且需要24小时开启，费电
 Type-C U盘 好处在于速度有保障、不需要依赖网络 坏处在于用时候没法充电，容易丢失，带来发热量，价格略贵
 SD 卡 存储 好处在于速度有保障、不需要依赖网络 坏处在于容易丢失，带来发热量，价格贵
@@ -22,10 +22,10 @@ SD 卡 存储 好处在于速度有保障、不需要依赖网络 坏处在于�
     
     <item>
       <title>有书可读方案</title>
-      <link>http://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E6%9C%89%E4%B9%A6%E5%8F%AF%E8%AF%BB%E6%96%B9%E6%A1%88/</link>
+      <link>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E6%9C%89%E4%B9%A6%E5%8F%AF%E8%AF%BB%E6%96%B9%E6%A1%88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E6%9C%89%E4%B9%A6%E5%8F%AF%E8%AF%BB%E6%96%B9%E6%A1%88/</guid>
+      <guid>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/%E6%9C%89%E4%B9%A6%E5%8F%AF%E8%AF%BB%E6%96%B9%E6%A1%88/</guid>
       <description> 电子书 下载到本地 优秀的阅读体验 </description>
     </item>
     
