@@ -7,7 +7,7 @@
 
 
 
-<title>技术 | 李枫的地</title>
+<title>运输层-Q&amp;A | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.cf98acd5ac9998532dd3dc694c40090d64fbba7114076fbd9f355c26fb084b42.css" integrity="sha256-z5is1ayZmFMt09xpTEAJDWT7unEUB2&#43;9nzVcJvsIS0I=" crossorigin="anonymous">
@@ -15,7 +15,6 @@
   <script defer src="/en.search.min.e459dbb699a17b3f399a048cc845293e3a021202a27a7ae4e95eb6e77d0fd3e9.js" integrity="sha256-5Fnbtpmhez85mgSMyEUpPjoCEgKienrk6V62530P0&#43;k=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.24433af05695d8b658953eace098ff6db026d8bf984d767ab1521c817560d15e.js" integrity="sha256-JEM68FaV2LZYlT6s4Jj/bbAm2L&#43;YTXZ6sVIcgXVg0V4=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://ltao.cc/posts/%E6%8A%80%E6%9C%AF/index.xml" title="李枫的地" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -293,9 +292,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-fbc2a1602e08db7ad3fed20074a7e4aa" class="toggle" checked />
+    <input type="checkbox" id="section-fbc2a1602e08db7ad3fed20074a7e4aa" class="toggle"  />
     <label for="section-fbc2a1602e08db7ad3fed20074a7e4aa" class="flex justify-between">
-      <a href="/posts/%E6%8A%80%E6%9C%AF/" class="active">技术</a>
+      <a href="/posts/%E6%8A%80%E6%9C%AF/" class="">技术</a>
     </label>
   
 
@@ -482,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-994ed41e447552ccc501e7e4577ab830" class="toggle"  />
+    <input type="checkbox" id="section-994ed41e447552ccc501e7e4577ab830" class="toggle" checked />
     <label for="section-994ed41e447552ccc501e7e4577ab830" class="flex justify-between">
       <a href="/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="">计算机网络</a>
     </label>
@@ -524,7 +523,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%BF%90%E8%BE%93%E5%B1%82-qa/" class="">运输层-Q&amp;A</a>
+    <a href="/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%BF%90%E8%BE%93%E5%B1%82-qa/" class="active">运输层-Q&amp;A</a>
   
 
         </li>
@@ -630,29 +629,20 @@ https://github.com/alex-shpak/hugo-book
  
         
         
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li>
       <ul>
-      
+        <li><a href="#运输层是干啥的为啥会有运输层">运输层是干啥的？为啥会有运输层</a></li>
+        <li><a href="#运输层包括哪些协议内容这些协议内容有哪些异同点">运输层包括哪些协议内容？这些协议内容有哪些异同点？</a></li>
+        <li><a href="#tcp-协议的三次握手四次挥手过程是怎么样的">TCP 协议的三次握手四次挥手过程是怎么样的？</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
+
 
 
         
@@ -668,7 +658,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>技术</strong>
+  <strong>运输层-Q&amp;A</strong>
 
   <label for="toc-control">
     
@@ -681,29 +671,20 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li>
       <ul>
-      
+        <li><a href="#运输层是干啥的为啥会有运输层">运输层是干啥的？为啥会有运输层</a></li>
+        <li><a href="#运输层包括哪些协议内容这些协议内容有哪些异同点">运输层包括哪些协议内容？这些协议内容有哪些异同点？</a></li>
+        <li><a href="#tcp-协议的三次握手四次挥手过程是怎么样的">TCP 协议的三次握手四次挥手过程是怎么样的？</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
+
 
 
   </aside>
@@ -713,14 +694,11 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/">git操作</a>
-    </h2>
-    <div>
+<article class="markdown">
+
+  <div>
   <h6>
-    <span class="Lastmod" data-unix="1697017451">
+    <span class="Lastmod" data-unix="1698217907">
     </span>
     <script>
       
@@ -731,7 +709,7 @@ https://github.com/alex-shpak/hugo-book
     </script>
     /
     <span>
-      595字
+      445字
 
     </span>
   </h6>
@@ -746,84 +724,30 @@ https://github.com/alex-shpak/hugo-book
 
 </div>
 
-
-    
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/">markDown 语法</a>
-    </h2>
-    <div>
-  <h6>
-    <span class="Lastmod" data-unix="1696822171">
-    </span>
-    <script>
-      
-      window.onload = function () {
-        updateDateTimeByElementClass("Lastmod")
-      }
-
-    </script>
-    /
-    <span>
-      766字
-
-    </span>
-  </h6>
-
-  <h6>
-    
-    
-    
-    
-    
-  </h6>
-
-</div>
-
-
-    
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
-    </h2>
-    <div>
-  <h6>
-    <span class="Lastmod" data-unix="1697017267">
-    </span>
-    <script>
-      
-      window.onload = function () {
-        updateDateTimeByElementClass("Lastmod")
-      }
-
-    </script>
-    /
-    <span>
-      282字
-
-    </span>
-  </h6>
-
-  <h6>
-    
-    
-    
-    
-    
-  </h6>
-
-</div>
-
-
-    
-  </article>
-  
-
-  
+<h3 id="运输层是干啥的为啥会有运输层">
+  运输层是干啥的？为啥会有运输层
+  <a class="anchor" href="#%e8%bf%90%e8%be%93%e5%b1%82%e6%98%af%e5%b9%b2%e5%95%a5%e7%9a%84%e4%b8%ba%e5%95%a5%e4%bc%9a%e6%9c%89%e8%bf%90%e8%be%93%e5%b1%82">#</a>
+</h3>
+<p>运输层是为进程与进程之间通信服务用的，规定了进程与进程之间应该以何种协议进行传输数据。</p>
+<p>如果没有运输层，通信数据的传输将不可靠稳定，从而影响整个网络的通信速度质量。</p>
+<h3 id="运输层包括哪些协议内容这些协议内容有哪些异同点">
+  运输层包括哪些协议内容？这些协议内容有哪些异同点？
+  <a class="anchor" href="#%e8%bf%90%e8%be%93%e5%b1%82%e5%8c%85%e6%8b%ac%e5%93%aa%e4%ba%9b%e5%8d%8f%e8%ae%ae%e5%86%85%e5%ae%b9%e8%bf%99%e4%ba%9b%e5%8d%8f%e8%ae%ae%e5%86%85%e5%ae%b9%e6%9c%89%e5%93%aa%e4%ba%9b%e5%bc%82%e5%90%8c%e7%82%b9">#</a>
+</h3>
+<p>运输层主要包括TCP【传输控制协议】协议和UDP【用户数据报协议】协议。</p>
+<p>不同点：</p>
+<ul>
+<li>UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再发送数据</li>
+<li>UDP支持一对一、一对多、多对一、多对多的相互通信，TCP支持一对一的点对点通信</li>
+<li>UDP不保证数据传输能顺利抵达目的，TCP通过一些内部协议来保证数据传输的一定抵达目的</li>
+</ul>
+<h3 id="tcp-协议的三次握手四次挥手过程是怎么样的">
+  TCP 协议的三次握手四次挥手过程是怎么样的？
+  <a class="anchor" href="#tcp-%e5%8d%8f%e8%ae%ae%e7%9a%84%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b%e8%bf%87%e7%a8%8b%e6%98%af%e6%80%8e%e4%b9%88%e6%a0%b7%e7%9a%84">#</a>
+</h3>
+<p>三次握手是指客户端和服务端之间建立连接的过程，而四次挥手则是两者释放连接的过程。</p>
+<p>第一次握手：客户向服务端主动发送信号【SYN】，具体内容为我已经准备好同步了，如果你要开始与同步，发送一个确认码ack给我（Acknowledge number，值我发送的随机码+1），代表你真的收到我发的东西了。</p>
+</article>
  
       
 

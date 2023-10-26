@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>  on 李枫的地</title>
+    <title>   on 李枫的地</title>
     <link>https://ltao.cc/posts/</link>
-    <description>Recent content in   on 李枫的地</description>
+    <description>Recent content in    on 李枫的地</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="https://ltao.cc/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
-      <description>刷机参考 # TWRP刷机 https://zhuanlan.zhihu.com/p/96968140 Magisk 刷入 https://magiskcn.com/ 沸米计划 https://mi.fiime.cn/FiimePlan/24.html#gallery hugo 日期转时间戳 # 原因是这样的,我在设置文章更新时间的时候,大部分的日期转时间戳貌似都没问题,除了当天的时间转时间戳,当时时间为当天的 14 点,出来的时间戳一转成时间,结果居然是 22 点, 不断测试,发现不是我代码的问题.
+      <description>CSS 字体 # 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
+像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
+磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
+毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。
+厘米（cm）：厘米也是长度单位，可以用于指定字体大小。例如，font-size: 0.5cm; 将字体大小设置为0.5厘米。
+百分比（%）：百分比是相对于父元素的大小来定义字体大小。例如，font-size: 150%; 表示字体大小是父元素字体大小的150%。
+em：em单位是相对于当前元素的字体大小来定义的。例如，font-size: 1.5em; 表示字体大小是当前元素字体大小的1.5倍。
+rem：rem单位也是相对于根元素（html元素）的字体大小来定义的。这可以使字体大小在整个文档中保持一致。例如，font-size: 1.2rem; 表示字体大小是根元素字体大小的1.2倍。
+刷机参考 # TWRP刷机 https://zhuanlan.zhihu.com/p/96968140 Magisk 刷入 https://magiskcn.com/ 沸米计划 https://mi.fiime.cn/FiimePlan/24.html#gallery hugo 日期转时间戳 # 原因是这样的,我在设置文章更新时间的时候,大部分的日期转时间戳貌似都没问题,除了当天的时间转时间戳,当时时间为当天的 14 点,出来的时间戳一转成时间,结果居然是 22 点, 不断测试,发现不是我代码的问题.
 多次修改无果,问了chatGPT才知道,转时间戳的过程原来还有其他东西会影响
 在处理时间戳时，有一些需要注意的重要事项, ChatGPT 的回答如下
 时间戳精度： 时间戳可以是秒级或毫秒级的，具体取决于系统和编程语言。确保您清楚时间戳的精度，以免出现错误。
@@ -24,8 +32,7 @@
 日期时间显示： 在显示时间戳时，考虑最终用户的需求和偏好。提供适当的日期时间格式，并考虑将时间戳转换为本地时区以获得更好的用户体验。
 维护和更新： 时间戳可能需要在未来进行维护和更新，以适应不同的需求或问题。时刻注意更新可能会影响应用程序的行为。
 总之，处理时间戳需要小心，要理解时间戳的精度、格式、时区和区域性，以及如何正确地显示和处理日期时间数据。这可以确保您的应用程序或系统在时间方面表现正确。
-hugo 字段bug # publishDate字段会有时候让文章显示不出来, 或许是 hugo 内部编译执行的过程出错
-frontmatter: # publishDate: # - datetimeCreate lastmod: - datetimeUpdate git 代理设置和解决 # git config --global https.proxy http://127.0.0.1:1080 git config --global https.</description>
+hugo 字段bug # publishDate字段会有时候让文章显示不出来, 或许是 hugo 内部编译执行的过程出错</description>
     </item>
     
     <item>
@@ -34,7 +41,10 @@ frontmatter: # publishDate: # - datetimeCreate lastmod: - datetimeUpdate git 代
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E6%97%A5%E5%BF%97/</guid>
-      <description>10.22 # 骑回去 23点前睡 10.21 # 骑回去 23点前睡 10.20 # 骑回去 23点前睡 10.19 # 骑回去 23点前睡 10.18 # 骑回去 23点前睡 10.17 # 骑回去 23点前睡 10.16 # 骑回去 23点前睡 10.15 # 统一颜色 color-light code 代码块更改: 文本折行 \ 高亮 \ 字体和大小 把 neo 5 SE 解开 bl, 获取 root 了, 差点成砖. 10.14 # 把 小米9 刷成 miui13了 10.13 # 买了个 apple music 的家庭会员, 效果还不错, 但是有一些歌没有 10.12 # 写完了第一行内容: 时间段确定,判断早中晚\上下班确定,判断离上下班有多久时间 \ 离本周与本月有多久 新增第三行内容(原第三行成第四行), 确定所有文章的字数之和 10.</description>
+      <description>10.26 # 骑回去 10.25 # 骑回去
+将生活记录合并到 杂思,将 计算机网络里的结构简化
+首页新增日志组件,可视化日志内容
+10.24 # 骑回去 10.23 # 骑回去 10.21 # 骑回去 10.20 # 骑回去 10.19 # 骑回去 10.18 # 骑回去 10.17 # 骑回去 23点前睡 10.16 # 骑回去 23点前睡 10.15 # 统一颜色 color-light code 代码块更改: 文本折行 \ 高亮 \ 字体和大小 把 neo 5 SE 解开 bl, 获取 root 了, 差点成砖. 10.14 # 把 小米9 刷成 miui13了 10.13 # 买了个 apple music 的家庭会员, 效果还不错, 但是有一些歌没有 10.</description>
     </item>
     
     <item>
