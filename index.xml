@@ -224,11 +224,7 @@ WWW 、HTTP、HTML 是指什么？两者有什么关系 ？ # WWW（World Wide W
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
-      <description>auoHotKey 字体更改 # !a::^a !b::^b !c::^c !d::^d !e::^e !f::^f !g::^g !h::^h !i::^i !j::^j !k::^k !l::^l !m::^m !n::^n !o::^o !p::^p !q::^q !r::^r !s::^s !t::^t !u::^u !v::^v !w::^w !x::^x !y::^y !z::^z !0::^0 !1::^1 !2::^2 !3::^3 !4::^4 !5::^5 !6::^6 !7::^7 !8::^8 !9::^9 !`::^` !-::^- !=::^= !;::^; !,::^, !.::^. !/::^/ !&amp;#39;::^&amp;#39; !&amp;#34;::^&amp;#34; ![::^[ !]::^] !\::^\ LWin::LAlt RAlt::RWin CSS 字体 # 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
-像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
-磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
-毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。
-厘米（cm）：厘米也是长度单位，可以用于指定字体大小。例如，font-size: 0.5cm; 将字体大小设置为0.5厘米。</description>
+      <description>auoHotKey 字体更改 # ; 左 Alt + 任意字符 &amp;gt; ctrl + 任意字符 &amp;lt;!a::^a &amp;lt;!b::^b &amp;lt;!c::^c &amp;lt;!d::^d &amp;lt;!e::^e &amp;lt;!f::^f &amp;lt;!g::^g &amp;lt;!h::^h &amp;lt;!i::^i &amp;lt;!j::^j &amp;lt;!k::^k &amp;lt;!l::^l &amp;lt;!m::^m &amp;lt;!n::^n &amp;lt;!o::^o &amp;lt;!p::^p &amp;lt;!q::^q &amp;lt;!r::^r &amp;lt;!s::^s &amp;lt;!t::^t &amp;lt;!u::^u &amp;lt;!v::^v &amp;lt;!w::^w &amp;lt;!x::^x &amp;lt;!y::^y &amp;lt;!z::^z &amp;lt;!0::^0 &amp;lt;!1::^1 &amp;lt;!2::^2 &amp;lt;!3::^3 &amp;lt;!4::^4 &amp;lt;!5::^5 &amp;lt;!6::^6 &amp;lt;!7::^7 &amp;lt;!8::^8 &amp;lt;!9::^9 &amp;lt;!`::^` &amp;lt;!-::^- &amp;lt;!=::^= &amp;lt;!;::^; &amp;lt;!,::^, &amp;lt;!.::^. &amp;lt;!/::^/ &amp;lt;!&amp;#39;::^&amp;#39; &amp;lt;!&amp;#34;::^&amp;#34; &amp;lt;![::^[ &amp;lt;!]::^] &amp;lt;!\::^\ ; 左 win &amp;gt; 右 Alt LWin::RAlt ; 右 alt &amp;gt; R win RAlt::RWin CSS 字体 # 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：</description>
     </item>
     
     <item>
@@ -237,10 +233,10 @@ WWW 、HTTP、HTML 是指什么？两者有什么关系 ？ # WWW（World Wide W
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E6%97%A5%E5%BF%97/</guid>
-      <description>10.26 # 骑回去 10.25 # 骑回去
+      <description>10.27 # 技术日志 重写 autoHotKey 骑回去 修复 首页的日历组件小屏幕的显示 10.26 # 骑回去 10.25 # 骑回去
 将生活记录合并到 杂思,将 计算机网络里的结构简化
 首页新增日志组件,可视化日志内容
-10.24 # 骑回去 10.23 # 骑回去 10.21 # 骑回去 10.20 # 骑回去 10.19 # 骑回去 10.18 # 骑回去 10.17 # 骑回去 23点前睡 10.16 # 骑回去 23点前睡 10.15 # 统一颜色 color-light code 代码块更改: 文本折行 \ 高亮 \ 字体和大小 把 neo 5 SE 解开 bl, 获取 root 了, 差点成砖. 10.14 # 把 小米9 刷成 miui13了 10.13 # 买了个 apple music 的家庭会员, 效果还不错, 但是有一些歌没有 10.</description>
+10.24 # 骑回去 10.23 # 骑回去 10.21 # 骑回去 10.20 # 骑回去 10.19 # 骑回去 10.18 # 骑回去 10.17 # 骑回去 23点前睡 10.16 # 骑回去 23点前睡 10.15 # 统一颜色 color-light code 代码块更改: 文本折行 \ 高亮 \ 字体和大小 把 neo 5 SE 解开 bl, 获取 root 了, 差点成砖. 10.14 # 把 小米9 刷成 miui13了 10.</description>
     </item>
     
     <item>
