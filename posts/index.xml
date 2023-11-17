@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
-      <description>auoHotKey 字体更改 # ; 左 Alt + 任意字符 &amp;gt; ctrl + 任意字符 &amp;lt;!a::^a &amp;lt;!b::^b &amp;lt;!c::^c &amp;lt;!d::^d &amp;lt;!e::^e &amp;lt;!f::^f &amp;lt;!g::^g &amp;lt;!h::^h &amp;lt;!i::^i &amp;lt;!j::^j &amp;lt;!k::^k &amp;lt;!l::^l &amp;lt;!m::^m &amp;lt;!n::^n &amp;lt;!o::^o &amp;lt;!p::^p &amp;lt;!q::^q &amp;lt;!r::^r &amp;lt;!s::^s &amp;lt;!t::^t &amp;lt;!u::^u &amp;lt;!v::^v &amp;lt;!w::^w &amp;lt;!x::^x &amp;lt;!y::^y &amp;lt;!z::^z &amp;lt;!0::^0 &amp;lt;!1::^1 &amp;lt;!2::^2 &amp;lt;!3::^3 &amp;lt;!4::^4 &amp;lt;!5::^5 &amp;lt;!6::^6 &amp;lt;!7::^7 &amp;lt;!8::^8 &amp;lt;!9::^9 &amp;lt;!`::^` &amp;lt;!-::^- &amp;lt;!=::^= &amp;lt;!;::^; &amp;lt;!,::^, &amp;lt;!.::^. &amp;lt;!/::^/ &amp;lt;!&amp;#39;::^&amp;#39; &amp;lt;!&amp;#34;::^&amp;#34; &amp;lt;![::^[ &amp;lt;!]::^] &amp;lt;!\::^\ ; 左 win &amp;gt; 右 Alt , LWin::RAlt ; 右 Alt +v &amp;gt; win + v &amp;gt;!</description>
+      <description>hugo 添加mermaid作图 # https://cloud.tencent.com/developer/article/1944123
+auoHotKey 字体更改 # ; 左 Alt + 任意字符 &amp;gt; ctrl + 任意字符 &amp;lt;!a::^a &amp;lt;!b::^b &amp;lt;!c::^c &amp;lt;!d::^d &amp;lt;!e::^e &amp;lt;!f::^f &amp;lt;!g::^g &amp;lt;!h::^h &amp;lt;!i::^i &amp;lt;!j::^j &amp;lt;!k::^k &amp;lt;!l::^l &amp;lt;!m::^m &amp;lt;!n::^n &amp;lt;!o::^o &amp;lt;!p::^p &amp;lt;!q::^q &amp;lt;!r::^r &amp;lt;!s::^s &amp;lt;!t::^t &amp;lt;!u::^u &amp;lt;!v::^v &amp;lt;!w::^w &amp;lt;!x::^x &amp;lt;!y::^y &amp;lt;!z::^z &amp;lt;!0::^0 &amp;lt;!1::^1 &amp;lt;!2::^2 &amp;lt;!3::^3 &amp;lt;!4::^4 &amp;lt;!5::^5 &amp;lt;!6::^6 &amp;lt;!7::^7 &amp;lt;!8::^8 &amp;lt;!9::^9 &amp;lt;!`::^` &amp;lt;!-::^- &amp;lt;!=::^= &amp;lt;!;::^; &amp;lt;!,::^, &amp;lt;!.::^. &amp;lt;!/::^/ &amp;lt;!&amp;#39;::^&amp;#39; &amp;lt;!&amp;#34;::^&amp;#34; &amp;lt;![::^[ &amp;lt;!]::^] &amp;lt;!\::^\ ; 左 win &amp;gt; 右 Alt , LWin::RAlt ; 右 Alt +v &amp;gt; win + v &amp;gt;!</description>
     </item>
     
     <item>
@@ -21,10 +22,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E6%97%A5%E5%BF%97/</guid>
-      <description>10.27 # 技术日志 重写 autoHotKey 骑回去 修复 首页的日历组件小屏幕的显示 10.26 # 骑回去 10.25 # 骑回去
+      <description>10.30 # 11点早睡,手机离床 退订宽带 吃一顿巴西烤肉 骑回去 10.27 # 技术日志 重写 autoHotKey 骑回去 修复 首页的日历组件小屏幕的显示 10.26 # 骑回去 10.25 # 骑回去
 将生活记录合并到 杂思,将 计算机网络里的结构简化
 首页新增日志组件,可视化日志内容
-10.24 # 骑回去 10.23 # 骑回去 10.21 # 骑回去 10.20 # 骑回去 10.19 # 骑回去 10.18 # 骑回去 10.17 # 骑回去 23点前睡 10.16 # 骑回去 23点前睡 10.15 # 统一颜色 color-light code 代码块更改: 文本折行 \ 高亮 \ 字体和大小 把 neo 5 SE 解开 bl, 获取 root 了, 差点成砖. 10.14 # 把 小米9 刷成 miui13了 10.</description>
+10.24 # 骑回去 10.23 # 骑回去 10.21 # 骑回去 10.20 # 骑回去 10.19 # 骑回去 10.18 # 骑回去 10.17 # 骑回去 23点前睡 10.16 # 骑回去 23点前睡 10.15 # 统一颜色 color-light code 代码块更改: 文本折行 \ 高亮 \ 字体和大小 把 neo 5 SE 解开 bl, 获取 root 了, 差点成砖.</description>
     </item>
     
     <item>

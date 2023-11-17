@@ -64,8 +64,7 @@ UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%BF%90%E8%BE%93%E5%B1%82-%E6%80%BB%E7%BB%93/</guid>
-      <description>运输层就两件东西，一个是 TCP 协议，另一个就是 UDP 协议。
-两者讲的都是进程之间的通信协议，是在网络层的基础上实现的。</description>
+      <description></description>
     </item>
     
   </channel>

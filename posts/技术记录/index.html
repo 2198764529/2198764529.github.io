@@ -12,7 +12,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.4f9c3c07a3efba119afe08e0aca7346b565e61f2801d25f12122bd75f11d0aec.css" integrity="sha256-T5w8B6PvuhGa/gjgrKc0a1ZeYfKAHSXxISK9dfEdCuw=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.30387e8a2ed604c08d561bcce13909ca8d5e02e0f333f6b7696efaa4a15716a7.js" integrity="sha256-MDh&#43;ii7WBMCNVhvM4TkJyo1eAuDzM/a3aW76pKFXFqc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.43320c6fc284c356e032b8ef436c01efc7d551644e32e07a06df54ccd5ff9943.js" integrity="sha256-QzIMb8KEw1bgMrjvQ2wB78fVUWROMuB6Bt9UzNX/mUM=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.24433af05695d8b658953eace098ff6db026d8bf984d767ab1521c817560d15e.js" integrity="sha256-JEM68FaV2LZYlT6s4Jj/bbAm2L&#43;YTXZ6sVIcgXVg0V4=" crossorigin="anonymous"></script>
 <!--
@@ -22,27 +22,27 @@ https://github.com/alex-shpak/hugo-book
 <script src="https://ltao.cc/js/function.js" defer></script>
 
 
-<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
-<script src="plugs/highlight.min.js"></script>
 
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="/plugs/highlight.min.js"></script>
 
 
 
-<script src="plugs/fullcalendar.js" ></script>
 
-<script src="plugs/fullcalendar-zh-cn.js"></script>
 
-<link rel="stylesheet" href="plugs/element-ui.css">
+<script src="/plugs/fullcalendar.js" ></script>
+
+<script src="/plugs/fullcalendar-zh-cn.js"></script>
+
+<link rel="stylesheet" href="/plugs/element-ui.css">
 
 	
-  <script src="plugs/vue.js" ></script>
+  <script src="/plugs/vue.js" ></script>
 
   
-  <script src="plugs/element-ui.js" ></script>
+  <script src="/plugs/element-ui.js" ></script>
 
-
-
+  
+  
   
 </head>
 <body dir="ltr">
@@ -530,17 +530,6 @@ https://github.com/alex-shpak/hugo-book
       
     
       
-        <li>
-          
-  
-  
-
-  
-    <a href="/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%BF%90%E8%BE%93%E5%B1%82-%E6%80%BB%E7%BB%93/" class="">运输层-总结</a>
-  
-
-        </li>
-      
     
    
 
@@ -634,6 +623,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
+        <li><a href="#hugo-添加mermaid作图">hugo 添加mermaid作图</a></li>
         <li><a href="#auohotkey-字体更改">auoHotKey 字体更改</a></li>
         <li><a href="#css-字体">CSS 字体</a></li>
         <li><a href="#刷机参考">刷机参考</a></li>
@@ -680,6 +670,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
+        <li><a href="#hugo-添加mermaid作图">hugo 添加mermaid作图</a></li>
         <li><a href="#auohotkey-字体更改">auoHotKey 字体更改</a></li>
         <li><a href="#css-字体">CSS 字体</a></li>
         <li><a href="#刷机参考">刷机参考</a></li>
@@ -706,7 +697,7 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
   <h6>
-    <span class="Lastmod" data-unix="1698405869">
+    <span class="Lastmod" data-unix="1700203411">
     </span>
     <script>
       
@@ -717,7 +708,7 @@ https://github.com/alex-shpak/hugo-book
     </script>
     /
     <span>
-      2341字
+      2377字
 
     </span>
   </h6>
@@ -732,6 +723,12 @@ https://github.com/alex-shpak/hugo-book
 
 </div>
 
+<h3 id="hugo-添加mermaid作图">
+  hugo 添加mermaid作图
+  <a class="anchor" href="#hugo-%e6%b7%bb%e5%8a%a0mermaid%e4%bd%9c%e5%9b%be">#</a>
+</h3>
+<p>
+  <a href="https://cloud.tencent.com/developer/article/1944123">https://cloud.tencent.com/developer/article/1944123</a></p>
 <h3 id="auohotkey-字体更改">
   auoHotKey 字体更改
   <a class="anchor" href="#auohotkey-%e5%ad%97%e4%bd%93%e6%9b%b4%e6%94%b9">#</a>
@@ -791,6 +788,10 @@ LWin::RAlt
 &gt;!v::#v
 ; 右 alt &gt; R win
 RAlt::RWin
+
+; F1绑定鼠标左键，F2绑定鼠标右键
+F1::MouseClick &#34;Left&#34;
+F2::MouseClick &#34;Right&#34;
 </code></pre><hr>
 <h3 id="css-字体">
   CSS 字体
