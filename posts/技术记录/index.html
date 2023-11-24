@@ -10,9 +10,9 @@
 <title>技术记录 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.4f9c3c07a3efba119afe08e0aca7346b565e61f2801d25f12122bd75f11d0aec.css" integrity="sha256-T5w8B6PvuhGa/gjgrKc0a1ZeYfKAHSXxISK9dfEdCuw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.3508cc403160ffc67fd643e281b23060135254464a1acc1373fe3faf3e2c2233.css" integrity="sha256-NQjMQDFg/8Z/1kPigbIwYBNSVEZKGswTc/4/rz4sIjM=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.43320c6fc284c356e032b8ef436c01efc7d551644e32e07a06df54ccd5ff9943.js" integrity="sha256-QzIMb8KEw1bgMrjvQ2wB78fVUWROMuB6Bt9UzNX/mUM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.e5b0868f69e7673795ab1d8eb83d4547b21c9532bbb3281fe427e1d92f2b60e0.js" integrity="sha256-5bCGj2nnZzeVqx2OuD1FR7IclTK7sygf5Cfh2S8rYOA=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.24433af05695d8b658953eace098ff6db026d8bf984d767ab1521c817560d15e.js" integrity="sha256-JEM68FaV2LZYlT6s4Jj/bbAm2L&#43;YTXZ6sVIcgXVg0V4=" crossorigin="anonymous"></script>
 <!--
@@ -54,7 +54,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span class="gradient-text">李枫的地 </span>
+  <a class="flex align-center" href="/"><span class=" typing">李枫的地 </span>
   </a>
 </h2>
 
@@ -697,7 +697,7 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
   <h6>
-    <span class="Lastmod" data-unix="1700203411">
+    <span class="Lastmod ios_boder" data-unix="1700792252">
     </span>
     <script>
       
@@ -707,8 +707,8 @@ https://github.com/alex-shpak/hugo-book
 
     </script>
     /
-    <span>
-      2377字
+    <span class="ios_boder">
+      2410字
 
     </span>
   </h6>
@@ -733,65 +733,47 @@ https://github.com/alex-shpak/hugo-book
   auoHotKey 字体更改
   <a class="anchor" href="#auohotkey-%e5%ad%97%e4%bd%93%e6%9b%b4%e6%94%b9">#</a>
 </h3>
-<pre tabindex="0"><code>; 左 Alt + 任意字符 &gt; ctrl + 任意字符
-&lt;!a::^a
-&lt;!b::^b
-&lt;!c::^c
-&lt;!d::^d
-&lt;!e::^e
-&lt;!f::^f
-&lt;!g::^g
-&lt;!h::^h
-&lt;!i::^i
-&lt;!j::^j
-&lt;!k::^k
-&lt;!l::^l
-&lt;!m::^m
-&lt;!n::^n
-&lt;!o::^o
-&lt;!p::^p
-&lt;!q::^q
-&lt;!r::^r
-&lt;!s::^s
-&lt;!t::^t
-&lt;!u::^u
-&lt;!v::^v
-&lt;!w::^w
-&lt;!x::^x
-&lt;!y::^y
-&lt;!z::^z
-&lt;!0::^0
-&lt;!1::^1
-&lt;!2::^2
-&lt;!3::^3
-&lt;!4::^4
-&lt;!5::^5
-&lt;!6::^6
-&lt;!7::^7
-&lt;!8::^8
-&lt;!9::^9
-&lt;!`::^`
-&lt;!-::^-
-&lt;!=::^=
-&lt;!;::^;
-&lt;!,::^,
-&lt;!.::^.
-&lt;!/::^/
-&lt;!&#39;::^&#39;
-&lt;!&#34;::^&#34;
-&lt;![::^[
-&lt;!]::^]
-&lt;!\::^\
-; 左 win &gt; 右 Alt , 
-LWin::RAlt
-; 右 Alt +v &gt; win + v
-&gt;!v::#v
-; 右 alt &gt; R win
-RAlt::RWin
+<pre tabindex="0"><code>; 将 Space + 键  &gt;&gt; Ctrl + 键
+Space &amp; a::^a
+Space &amp; b::^b
+Space &amp; c::^c
+Space &amp; d::^d
+Space &amp; e::^e
+Space &amp; f::^f
+Space &amp; g::^g
+Space &amp; h::^h
+Space &amp; i::^i
+Space &amp; j::^j
+Space &amp; k::^k
+Space &amp; l::^l
+Space &amp; m::^m
+Space &amp; n::^n
+Space &amp; o::^o
+Space &amp; p::^p
+Space &amp; q::^q
+Space &amp; r::^r
+Space &amp; s::^s
+Space &amp; t::^t
+Space &amp; u::^u
+Space &amp; v::^v
+Space &amp; w::^w
+Space &amp; x::^x
+Space &amp; y::^y
+Space &amp; z::^z
+; 将 Space + tab  &gt;&gt; alt + tab
+Space &amp; Tab::!Tab
+; 将 Space 单体键映射回来
+Space::Space
+;  大写锁定 &gt;&gt; 回车键 
+CapsLock::Enter
+; `  &gt;&gt; 退格键
+`:: Backspace
++` ::Delete
 
-; F1绑定鼠标左键，F2绑定鼠标右键
-F1::MouseClick &#34;Left&#34;
-F2::MouseClick &#34;Right&#34;
+; F1  &gt;&gt; Home
+F1:: Home
+; F2  &gt;&gt; end
+F2:: end
 </code></pre><hr>
 <h3 id="css-字体">
   CSS 字体

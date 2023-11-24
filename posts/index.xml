@@ -13,7 +13,7 @@
       
       <guid>https://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
       <description>hugo 添加mermaid作图 # https://cloud.tencent.com/developer/article/1944123
-auoHotKey 字体更改 # ; 左 Alt + 任意字符 &amp;gt; ctrl + 任意字符 &amp;lt;!a::^a &amp;lt;!b::^b &amp;lt;!c::^c &amp;lt;!d::^d &amp;lt;!e::^e &amp;lt;!f::^f &amp;lt;!g::^g &amp;lt;!h::^h &amp;lt;!i::^i &amp;lt;!j::^j &amp;lt;!k::^k &amp;lt;!l::^l &amp;lt;!m::^m &amp;lt;!n::^n &amp;lt;!o::^o &amp;lt;!p::^p &amp;lt;!q::^q &amp;lt;!r::^r &amp;lt;!s::^s &amp;lt;!t::^t &amp;lt;!u::^u &amp;lt;!v::^v &amp;lt;!w::^w &amp;lt;!x::^x &amp;lt;!y::^y &amp;lt;!z::^z &amp;lt;!0::^0 &amp;lt;!1::^1 &amp;lt;!2::^2 &amp;lt;!3::^3 &amp;lt;!4::^4 &amp;lt;!5::^5 &amp;lt;!6::^6 &amp;lt;!7::^7 &amp;lt;!8::^8 &amp;lt;!9::^9 &amp;lt;!`::^` &amp;lt;!-::^- &amp;lt;!=::^= &amp;lt;!;::^; &amp;lt;!,::^, &amp;lt;!.::^. &amp;lt;!/::^/ &amp;lt;!&amp;#39;::^&amp;#39; &amp;lt;!&amp;#34;::^&amp;#34; &amp;lt;![::^[ &amp;lt;!]::^] &amp;lt;!\::^\ ; 左 win &amp;gt; 右 Alt , LWin::RAlt ; 右 Alt +v &amp;gt; win + v &amp;gt;!</description>
+auoHotKey 字体更改 # ; 将 Space + 键 &amp;gt;&amp;gt; Ctrl + 键 Space &amp;amp; a::^a Space &amp;amp; b::^b Space &amp;amp; c::^c Space &amp;amp; d::^d Space &amp;amp; e::^e Space &amp;amp; f::^f Space &amp;amp; g::^g Space &amp;amp; h::^h Space &amp;amp; i::^i Space &amp;amp; j::^j Space &amp;amp; k::^k Space &amp;amp; l::^l Space &amp;amp; m::^m Space &amp;amp; n::^n Space &amp;amp; o::^o Space &amp;amp; p::^p Space &amp;amp; q::^q Space &amp;amp; r::^r Space &amp;amp; s::^s Space &amp;amp; t::^t Space &amp;amp; u::^u Space &amp;amp; v::^v Space &amp;amp; w::^w Space &amp;amp; x::^x Space &amp;amp; y::^y Space &amp;amp; z::^z ; 将 Space + tab &amp;gt;&amp;gt; alt + tab Space &amp;amp; Tab::!</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@ auoHotKey 字体更改 # ; 左 Alt + 任意字符 &amp;gt; ctrl + 任意字符 &
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description> 学习网站 # 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 # 机场巴巴 http://www.ckcloud.cc 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 # 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App </description>
+      <description> 学习网站 # 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 # 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 # 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App </description>
     </item>
     
   </channel>

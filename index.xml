@@ -159,7 +159,7 @@ SD 卡 存储
       
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</guid>
       <description>健壮的身体和娴熟的技术
-关于投篮 目标是弧度尽量高，发力尽量轻松 要往上发力投篮，就要往下下面压，下半身和上半身要发力不脱节 投篮手不要抓球，食指和中指张开，压腕时合拢 辅助手确定投篮范围，控制方向 在脚发力完成之前， 投篮夹角＜90度 投篮弧度要是一个抛物线，高度要高于篮板上沿 【22-4-13】 关于上篮 果冻上篮，手心正对着篮板，旋球到篮板的左上角或者右上角 多观察全局位置 攻击前侧脚 关于运球 减少运球时间 只突破不经常终结，多多分球 踮脚尖走路能锻炼小腿肌肉和踝关节稳定性。 一直收肚子能减少身体负担 </description>
+关于投篮 动作要点: 调整脚步,左脚在前,右脚在后 想象下面有个凳子坐下去,接着像弹簧一样起来 辅助手确定最左出手范围，控制方向 直臂出手,打直手腕 手指拨球,压腕让球保持高度和旋速 保持投篮动作 目标是弧度尽量高，发力尽量轻松 要往上发力投篮，就要往下下面压，下半身和上半身要发力不脱节 投篮手不要抓球，食指和中指张开，压腕时合拢 辅助手确定投篮范围，控制方向 在脚发力完成之前， 投篮夹角＜90度 投篮弧度要是一个抛物线，高度要高于篮板上沿 几个重要的指标：球旋速、球高度 关于上篮 果冻上篮，手心正对着篮板，旋球到篮板的左上角或者右上角 多观察全局位置 攻击前侧脚 关于运球 减少运球时间 只突破不经常终结，多多分球 踮脚尖走路能锻炼小腿肌肉和踝关节稳定性。 一直收肚子能减少身体负担 </description>
     </item>
     
     <item>
@@ -225,7 +225,7 @@ WWW 、HTTP、HTML 是指什么？两者有什么关系 ？ # WWW（World Wide W
       
       <guid>https://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
       <description>hugo 添加mermaid作图 # https://cloud.tencent.com/developer/article/1944123
-auoHotKey 字体更改 # ; 左 Alt + 任意字符 &amp;gt; ctrl + 任意字符 &amp;lt;!a::^a &amp;lt;!b::^b &amp;lt;!c::^c &amp;lt;!d::^d &amp;lt;!e::^e &amp;lt;!f::^f &amp;lt;!g::^g &amp;lt;!h::^h &amp;lt;!i::^i &amp;lt;!j::^j &amp;lt;!k::^k &amp;lt;!l::^l &amp;lt;!m::^m &amp;lt;!n::^n &amp;lt;!o::^o &amp;lt;!p::^p &amp;lt;!q::^q &amp;lt;!r::^r &amp;lt;!s::^s &amp;lt;!t::^t &amp;lt;!u::^u &amp;lt;!v::^v &amp;lt;!w::^w &amp;lt;!x::^x &amp;lt;!y::^y &amp;lt;!z::^z &amp;lt;!0::^0 &amp;lt;!1::^1 &amp;lt;!2::^2 &amp;lt;!3::^3 &amp;lt;!4::^4 &amp;lt;!5::^5 &amp;lt;!6::^6 &amp;lt;!7::^7 &amp;lt;!8::^8 &amp;lt;!9::^9 &amp;lt;!`::^` &amp;lt;!-::^- &amp;lt;!=::^= &amp;lt;!;::^; &amp;lt;!,::^, &amp;lt;!.::^. &amp;lt;!/::^/ &amp;lt;!&amp;#39;::^&amp;#39; &amp;lt;!&amp;#34;::^&amp;#34; &amp;lt;![::^[ &amp;lt;!]::^] &amp;lt;!\::^\ ; 左 win &amp;gt; 右 Alt , LWin::RAlt ; 右 Alt +v &amp;gt; win + v &amp;gt;!</description>
+auoHotKey 字体更改 # ; 将 Space + 键 &amp;gt;&amp;gt; Ctrl + 键 Space &amp;amp; a::^a Space &amp;amp; b::^b Space &amp;amp; c::^c Space &amp;amp; d::^d Space &amp;amp; e::^e Space &amp;amp; f::^f Space &amp;amp; g::^g Space &amp;amp; h::^h Space &amp;amp; i::^i Space &amp;amp; j::^j Space &amp;amp; k::^k Space &amp;amp; l::^l Space &amp;amp; m::^m Space &amp;amp; n::^n Space &amp;amp; o::^o Space &amp;amp; p::^p Space &amp;amp; q::^q Space &amp;amp; r::^r Space &amp;amp; s::^s Space &amp;amp; t::^t Space &amp;amp; u::^u Space &amp;amp; v::^v Space &amp;amp; w::^w Space &amp;amp; x::^x Space &amp;amp; y::^y Space &amp;amp; z::^z ; 将 Space + tab &amp;gt;&amp;gt; alt + tab Space &amp;amp; Tab::!</description>
     </item>
     
     <item>
@@ -334,7 +334,7 @@ auoHotKey 字体更改 # ; 左 Alt + 任意字符 &amp;gt; ctrl + 任意字符 &
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description> 学习网站 # 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 # 机场巴巴 http://www.ckcloud.cc 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 # 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App </description>
+      <description> 学习网站 # 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 # 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 # 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App </description>
     </item>
     
     <item>
