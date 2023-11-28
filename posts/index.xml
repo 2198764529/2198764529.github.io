@@ -25,18 +25,6 @@ rem：rem单位也是相对于根元素（html元素）的字体大小来定义�
     </item>
     
     <item>
-      <title>日志</title>
-      <link>https://ltao.cc/posts/%E6%97%A5%E5%BF%97/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ltao.cc/posts/%E6%97%A5%E5%BF%97/</guid>
-      <description>10.30 # 11点早睡,手机离床 退订宽带 吃一顿巴西烤肉 骑回去 10.27 # 技术日志 重写 autoHotKey 骑回去 修复 首页的日历组件小屏幕的显示 10.26 # 骑回去 10.25 # 骑回去
-将生活记录合并到 杂思,将 计算机网络里的结构简化
-首页新增日志组件,可视化日志内容
-10.24 # 骑回去 10.23 # 骑回去 10.21 # 骑回去 10.20 # 骑回去 10.19 # 骑回去 10.18 # 骑回去 10.17 # 骑回去 23点前睡 10.16 # 骑回去 23点前睡 10.15 # 统一颜色 color-light code 代码块更改: 文本折行 \ 高亮 \ 字体和大小 把 neo 5 SE 解开 bl, 获取 root 了, 差点成砖.</description>
-    </item>
-    
-    <item>
       <title>网站收藏</title>
       <link>https://ltao.cc/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

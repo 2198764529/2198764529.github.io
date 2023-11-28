@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>修身</title>
+      <link>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</guid>
+      <description> 内在 # 主要 # 11 点前睡觉 次要 # 不在手机上刷短视频 多看书 408科目复习 刷算法题 外在 # 主要 # 骑车回去 次要 # 20 个俯卧撑 100 个单腿,左50,右50 穿好衣服,整理仪容仪表 每天 6000 步 </description>
+    </item>
+    
+    <item>
       <title>关于做事</title>
       <link>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E5%81%9A%E4%BA%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -32,6 +41,39 @@
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</guid>
       <description>健壮的身体和娴熟的技术
 关于投篮 动作要点: 调整脚步,左脚在前,右脚在后 想象下面有个凳子坐下去,接着像弹簧一样起来 辅助手确定最左出手范围，控制方向 直臂出手,打直手腕 手指拨球,压腕让球保持高度和旋速 保持投篮动作 目标是弧度尽量高，发力尽量轻松 要往上发力投篮，就要往下下面压，下半身和上半身要发力不脱节 投篮手不要抓球，食指和中指张开，压腕时合拢 辅助手确定投篮范围，控制方向 在脚发力完成之前， 投篮夹角＜90度 投篮弧度要是一个抛物线，高度要高于篮板上沿 几个重要的指标：球旋速、球高度 关于上篮 果冻上篮，手心正对着篮板，旋球到篮板的左上角或者右上角 多观察全局位置 攻击前侧脚 关于运球 减少运球时间 只突破不经常终结，多多分球 踮脚尖走路能锻炼小腿肌肉和踝关节稳定性。 一直收肚子能减少身体负担 </description>
+    </item>
+    
+    <item>
+      <title>兴起</title>
+      <link>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</guid>
+      <description>首页美化计划 # 目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
+步骤如下
+初步利用网页组件美化 搞定数据的存储和传输 图表可视化 万物皆有定数 # 方式: 系统api/相关软件/自行记录
+数据格式: JSON
+内容: 与我有关的所有数据,单位为天
+步数 睡眠时长, 睡眠起始点 键盘输入字符数量 \ 鼠标点击次数 饮水量 \ 吃饭内容 洗澡 \ 洗头 购物记录 重要的定数 计算力 记忆力 意志力 一言 # 介绍 # 在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.JSON文件和.CSV文件等.
+待定计划 # 短信应用开发 移动端和PC端应用开发 参考内容 # http://blog.lwons.com/archieve/3_entity_search_databases.html https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/ https://www.wikidata.org/w/api.php?action=wbsearchentities&amp;search=Fudan&amp;language=en&amp;limit=20&amp;format=json Wikipedia json数据 https://dumps.wikimedia.org/wikidatawiki/entities/ 有书可读方案 # 电子书 下载到本地 优秀的阅读体验 个人存储方案 # NAS
+好处在于可扩展存储，数据安全，价格也不算特别高
+坏处在于速度和可用性需要网络支持，需要内网穿透或者公网IP，且需要24小时开启，费电
+Type-C U盘
+好处在于速度有保障、不需要依赖网络
+坏处在于用时候没法充电，容易丢失，带来发热量，价格略贵
+SD 卡 存储
+好处在于速度有保障、不需要依赖网络
+坏处在于容易丢失，带来发热量，价格贵
+网络云盘（阿里云盘等）</description>
+    </item>
+    
+    <item>
+      <title>清单</title>
+      <link>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
+      <description> 安卓手机 # 软件 # 小黑屋 appShare Cemiuiler magisk: 苹方字体模块 神仙救砖 LSPosed-zygisk 爱玩机工具箱 ES 文件浏览器 Via 浏览器 b站(带漫游模块) Clash NoActive 手机性能排行 GKD(跳广告) 讯飞输入法: ios Apple music Telegram X Play 商店 MIUI 主题: 遇见IOS (AP景深宠物岛) 主题破解 win # 软件 # QQ 输入法 vscode 图吧工具箱 vivaldi 浏览器 Obsidian </description>
     </item>
     
     <item>
