@@ -12,7 +12,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.3508cc403160ffc67fd643e281b23060135254464a1acc1373fe3faf3e2c2233.css" integrity="sha256-NQjMQDFg/8Z/1kPigbIwYBNSVEZKGswTc/4/rz4sIjM=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.f59bd5b1b02e15153033962c331078644433ee6be5d3e204c70b6d60cb4298de.js" integrity="sha256-9ZvVsbAuFRUwM5YsMxB4ZEQz7mvl0&#43;IExwttYMtCmN4=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.e9751a953b0f6fbe2b1a34ac070148fe92f68d759b98140bb96c5cfabd64cf53.js" integrity="sha256-6XUalTsPb74rGjSsBwFI/pL2jXWbmBQLuWxc&#43;r1kz1M=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.24433af05695d8b658953eace098ff6db026d8bf984d767ab1521c817560d15e.js" integrity="sha256-JEM68FaV2LZYlT6s4Jj/bbAm2L&#43;YTXZ6sVIcgXVg0V4=" crossorigin="anonymous"></script>
 <!--
@@ -63,7 +63,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="在 25 篇文章中搜索" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="在 26 篇文章中搜索" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -295,6 +295,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/" class="">维基百科</a>
+  
+
+        </li>
+      
+    
    
 
   </ul>
@@ -358,6 +371,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/%E6%9D%82%E6%80%9D/%E4%BF%A1%E6%81%AF%E5%8F%82%E8%80%83/" class="">信息参考</a>
+  
+
+        </li>
       
     
       
@@ -442,19 +468,6 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/" class="">应用层-Q&amp;A</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-%E6%80%BB%E7%BB%93/" class="">应用层-总结</a>
   
 
         </li>
@@ -606,6 +619,10 @@ https://github.com/alex-shpak/hugo-book
                     <li><a href="#tcp首部">TCP首部</a></li>
                     <li><a href="#三次握手连接">三次握手(连接)</a></li>
                     <li><a href="#四次挥手断开">四次挥手(断开)</a></li>
+                    <li><a href="#可靠传输">可靠传输</a></li>
+                    <li><a href="#等待重传">等待重传</a></li>
+                    <li><a href="#流量控制">流量控制</a></li>
+                    <li><a href="#拥塞控制">拥塞控制</a></li>
                   </ul>
                 </li>
               </ul>
@@ -642,10 +659,10 @@ https://github.com/alex-shpak/hugo-book
    
       
       <small>
-        <span class="Lastmod" data-unix="1701161459">
+        <span class="Lastmod" data-unix="1701244217">
         </span>
         <span>
-          1003字
+          1318字
           </span>
           <script>
             
@@ -709,6 +726,10 @@ https://github.com/alex-shpak/hugo-book
                     <li><a href="#tcp首部">TCP首部</a></li>
                     <li><a href="#三次握手连接">三次握手(连接)</a></li>
                     <li><a href="#四次挥手断开">四次挥手(断开)</a></li>
+                    <li><a href="#可靠传输">可靠传输</a></li>
+                    <li><a href="#等待重传">等待重传</a></li>
+                    <li><a href="#流量控制">流量控制</a></li>
+                    <li><a href="#拥塞控制">拥塞控制</a></li>
                   </ul>
                 </li>
               </ul>
@@ -822,7 +843,40 @@ B -------[ACK=1,seq=x+1,ack=y+1]------------&gt;&gt; S   # B分配缓存和变�
 B &lt;&lt;--------------[ACK=1,seq=y,ack=x+1]---- S   # 确认关闭
 B &lt;&lt;----[FIN=1,ACK=1,seq=z,ack=x+1]-------- S   # 断开连接
 B -------[ACK=1,seq=x+1,ack=z+1]---------&gt;&gt; S   # 确认关闭,最长报文段寿命2MSL结束,两者连接彻底关闭
-</code></pre></article>
+</code></pre><h5 id="可靠传输">
+  可靠传输
+  <a class="anchor" href="#%e5%8f%af%e9%9d%a0%e4%bc%a0%e8%be%93">#</a>
+</h5>
+<ul>
+<li>检验</li>
+<li>序号</li>
+<li>确认</li>
+<li>重传:超时,冗余确认</li>
+</ul>
+<h5 id="等待重传">
+  等待重传
+  <a class="anchor" href="#%e7%ad%89%e5%be%85%e9%87%8d%e4%bc%a0">#</a>
+</h5>
+<p>ACK 冗余确认</p>
+<h5 id="流量控制">
+  流量控制
+  <a class="anchor" href="#%e6%b5%81%e9%87%8f%e6%8e%a7%e5%88%b6">#</a>
+</h5>
+<p>特点:局部出发,控制速率<br>
+TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,动态改变发送方的发送窗口<br>
+发送窗口 = Min(接收窗口rwnd,拥塞窗口cwnd)</p>
+<h5 id="拥塞控制">
+  拥塞控制
+  <a class="anchor" href="#%e6%8b%a5%e5%a1%9e%e6%8e%a7%e5%88%b6">#</a>
+</h5>
+<p>特点:点对点,全局出发,控制总量<br>
+条件:对资源需求 &gt; 可用资源<br>
+目的是防止过多的数据注入到网络中<br>
+接收窗口:接收方根据接收缓存设置的值,并告诉发送方,反映接收方容量<br>
+拥塞窗口:发送方根据估算网络拥塞程度设置的值,反映网络容量</p>
+<p>慢开始,拥塞避免:(cwnd)指数增长-&gt;sshrend-&gt;线性增长-&gt;0,接着重复该过程<br>
+快重传,快恢复:慢开始的改进,最后一步-&gt;(sshrend/2)</p>
+</article>
  
       
 
