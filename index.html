@@ -11,9 +11,9 @@
 <title>好记性不如烂笔头 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.c6d6445571506df5f427e8a431896522896c615437a4f2b6b915a39fa418dfdb.css" integrity="sha256-xtZEVXFQbfX0J&#43;ikMYllIolsYVQ3pPK2uRWjn6QY39s=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.eafcc11215db2e272379ac421eb4ea6df1bd5bf3cf92f85056460c93075e2462.css" integrity="sha256-6vzBEhXbLicjeaxCHrTqbfG9W/PPkvhQVkYMkwdeJGI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.f9b3bbc330728311b44006578ef65e3ac0e8f8af7d3e7d908c7f810ab059be42.js" integrity="sha256-&#43;bO7wzBygxG0QAZXjvZeOsDo&#43;K99Pn2QjH&#43;BCrBZvkI=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.bb228971aac154cf5e0447a774d5642ed9eedc7d7f888ccdfdc9b7ae4c887c08.js" integrity="sha256-uyKJcarBVM9eBEendNVkLtnu3H1/iIzN/cm3rkyIfAg=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.24433af05695d8b658953eace098ff6db026d8bf984d767ab1521c817560d15e.js" integrity="sha256-JEM68FaV2LZYlT6s4Jj/bbAm2L&#43;YTXZ6sVIcgXVg0V4=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://ltao.cc/index.xml" title="李枫的地" />
@@ -630,33 +630,10 @@ https://github.com/alex-shpak/hugo-book
       
       
 <main aria-role="main">
-    <div id='calendar'></div>
+    <div id='calendar' class="ios_card"></div>
 
 
-    <div id="app">
-      <el-calendar v-model="today">
-  
-        <template
-        slot="dateCell"
-        slot-scope="{date, data}"
-        
-        >
-        ${data.day.split('-')[2]}} 
-          <div  
-          class="calendarTask"
-          v-if="jsonData[data.day]" 
-          v-for="item in jsonData[data.day]"
-           @click="sendCustomNotification(data.day,jsonData[data.day],'info')">
-           <i class="el-icon-delete"></i>
-  
-             <el-tag type="success">${item.task}} </el-tag>
-  
-          </div>
-       
     
-      </template>
-      </el-calendar>
-    </div>
   
   <script src="js/fullCalendar.js" ></script>
   <script>
@@ -667,7 +644,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <h4>
-     <span class="nowDate" data-unix="1701763504">  </span>
+     <span class="nowDate" data-unix="1701773065">  </span>
   </h4>
 
   <h4>
@@ -796,7 +773,7 @@ https://github.com/alex-shpak/hugo-book
         
       
     
-    博客共 25 个文章, 共计 <span>334311</span> 字
+    博客共 25 个文章, 共计 <span>334405</span> 字
   </h4>
   <h4>
 
@@ -813,8 +790,8 @@ https://github.com/alex-shpak/hugo-book
  
   
  
-  <div class="timeline">
-    <section class="timeline">
+  <div class="timeline ios_card">
+    <section>
       <div class="container" style="text-align: left!important">
         
     
@@ -1620,9 +1597,6 @@ https://github.com/alex-shpak/hugo-book
               <div class="timeline-content js--fadeInLeft ios_card" >
                 <h4>
                   更新了
-                  
-                    网站收藏.MD ||
-
                   
                     关于篮球.MD ||
 
