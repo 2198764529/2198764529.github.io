@@ -31,8 +31,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E5%81%9A%E4%BA%8B/</guid>
-      <description>发展 # 发展才能解决一切问题 悲观和乐观 # 悲观带来怀疑、沮丧、恐惧、绝望、焦虑和抑郁，乐观带来坚定、韧性、勇气、希望、开朗和阳光
-尝试 # 做事情就像搭建木，前期可以大胆尝试，坍塌的代价不过几块小积木而已，后期则必须小心翼翼，不然花费很多时间的高楼将重头再来搭建。 在当下，大部分事情是无意义且有害的 当下找不到意义的事情，影响往往是长远的 多去说话，弥补自己说话吞吞吐吐的缺点 做了总比不做好 休息 # 闲下来充分休息，不要忙得没时间思考 态度 # 因地制宜,因时制宜,什么时候就做应该做的事情
+      <description>发展 发展才能解决一切问题 悲观和乐观 悲观带来怀疑、沮丧、恐惧、绝望、焦虑和抑郁，乐观带来坚定、韧性、勇气、希望、开朗和阳光
+尝试 做事情就像搭建木，前期可以大胆尝试，坍塌的代价不过几块小积木而已，后期则必须小心翼翼，不然花费很多时间的高楼将重头再来搭建。 在当下，大部分事情是无意义且有害的 当下找不到意义的事情，影响往往是长远的 多去说话，弥补自己说话吞吞吐吐的缺点 做了总比不做好 休息 闲下来充分休息，不要忙得没时间思考 态度 因地制宜,因时制宜,什么时候就做应该做的事情
 逆水行舟，不进则退
 忌讳是懒惰，绝对不要拖延症
 慢工出细活
@@ -47,7 +47,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E7%9B%AE%E6%A0%87/</guid>
-      <description> 长期目标 # 利用chatgpt之类的大模型接入一个语音助手 瘦下来到120斤 保持最佳状态(睡足、吃好) 跳槽准备 短期目标 # 投影仪 计算机网络复习 数据结构复习 英语学习 </description>
+      <description> 长期目标 利用chatgpt之类的大模型接入一个语音助手 瘦下来到120斤 保持最佳状态(睡足、吃好) 跳槽准备 短期目标 投影仪 计算机网络复习 数据结构复习 英语学习 </description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
-      <description> 安卓手机 # 软件 # 小黑屋 appShare Cemiuiler magisk: 苹方字体模块 神仙救砖 LSPosed-zygisk 爱玩机工具箱 ES 文件浏览器 Via 浏览器 b站(带漫游模块) Clash NoActive 手机性能排行 GKD(跳广告) 讯飞输入法: ios Apple music Telegram X Play 商店 MIUI 主题: 遇见IOS (AP景深宠物岛) 主题破解 win # 软件 # QQ 输入法 vscode 图吧工具箱 vivaldi 浏览器 Obsidian autoHotKey ; 将 Lalt 单键映射成ctrl LAlt::LCtrl ; 大写锁定 &amp;gt;&amp;gt; 回车键 CapsLock::Enter ; ` &amp;gt;&amp;gt; 退格键 `:: BackSpace +`::Delete ; F1 &amp;gt;&amp;gt; Home F1:: Home ; F2 &amp;gt;&amp;gt; end F2:: end </description>
+      <description> 安卓手机 软件 小黑屋 appShare Cemiuiler magisk: 苹方字体模块 神仙救砖 LSPosed-zygisk 爱玩机工具箱 ES 文件浏览器 Via 浏览器 b站(带漫游模块) Clash NoActive 手机性能排行 GKD(跳广告) 讯飞输入法: ios Apple music Telegram X Play 商店 MIUI 主题: 遇见IOS (AP景深宠物岛) 主题破解 win 软件 QQ 输入法 vscode 图吧工具箱 vivaldi 浏览器 Obsidian autoHotKey ; 将 Lalt 单键映射成ctrl LAlt::LCtrl ; 大写锁定 &amp;gt;&amp;gt; 回车键 CapsLock::Enter ; ` &amp;gt;&amp;gt; 退格键 `:: BackSpace +`::Delete ; F1 &amp;gt;&amp;gt; Home F1:: Home ; F2 &amp;gt;&amp;gt; end F2:: end </description>
     </item>
     
     <item>
@@ -65,13 +65,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</guid>
-      <description>首页美化计划 # 目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
+      <description> 首页美化计划 目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
 步骤如下
-初步利用网页组件美化 搞定数据的存储和传输 图表可视化 万物皆有定数 # 方式: 系统api/相关软件/自行记录
+初步利用网页组件美化 搞定数据的存储和传输 图表可视化 万物皆有定数 方式: 系统api/相关软件/自行记录
 数据格式: JSON
 内容: 与我有关的所有数据,单位为天
-步数 睡眠时长, 睡眠起始点 键盘输入字符数量 \ 鼠标点击次数 饮水量 \ 吃饭内容 洗澡 \ 洗头 购物记录 重要的定数 计算力 记忆力 意志力 一言 # 介绍 # 在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.JSON文件和.CSV文件等.
-待定计划 # 短信应用开发 移动端和PC端应用开发 参考内容 # http://blog.lwons.com/archieve/3_entity_search_databases.html https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/ https://www.wikidata.org/w/api.php?action=wbsearchentities&amp;search=Fudan&amp;language=en&amp;limit=20&amp;format=json Wikipedia json数据 https://dumps.wikimedia.org/wikidatawiki/entities/ 有书可读方案 # 电子书 下载到本地 优秀的阅读体验 个人存储方案 # NAS
+步数 睡眠时长, 睡眠起始点 键盘输入字符数量 \ 鼠标点击次数 饮水量 \ 吃饭内容 洗澡 \ 洗头 购物记录 重要的定数 计算力 记忆力 意志力 一言 介绍 在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.JSON文件和.CSV文件等.
+待定计划 短信应用开发 移动端和PC端应用开发 参考内容 http://blog.lwons.com/archieve/3_entity_search_databases.html https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/ https://www.wikidata.org/w/api.php?action=wbsearchentities&amp;search=Fudan&amp;language=en&amp;limit=20&amp;format=json Wikipedia json数据 https://dumps.wikimedia.org/wikidatawiki/entities/ 有书可读方案 电子书 下载到本地 优秀的阅读体验 个人存储方案 NAS
 好处在于可扩展存储，数据安全，价格也不算特别高
 坏处在于速度和可用性需要网络支持，需要内网穿透或者公网IP，且需要24小时开启，费电
 Type-C U盘
@@ -80,7 +80,11 @@ Type-C U盘
 SD 卡 存储
 好处在于速度有保障、不需要依赖网络
 坏处在于容易丢失，带来发热量，价格贵
-网络云盘（阿里云盘等）</description>
+网络云盘（阿里云盘等）
+好处在于可扩展存储，数据安全，价格也不算特别高
+坏处在于速度和可用性需要运营商支持，一般来说，速度都比较慢
+最后总结一下,四个存储方案,供大家参考
+价格 读写速度 可扩展性 稳定性 其他问题 NAS 硬盘便宜,NAS本身贵,网费和电费月支 网速 多块硬盘 极其稳定 Type-C U盘 价格 SD 卡存储 网络云盘(阿里云盘等) </description>
     </item>
     
     <item>
@@ -89,7 +93,7 @@ SD 卡 存储
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</guid>
-      <description> 内在 # 主要 # 11 点前睡觉 次要 # 不在手机上刷短视频 多看书 408科目复习 刷算法题 做 50道计算题 外在 # 主要 # 骑车回去 次要 # 20 个俯卧撑 100 个单腿,左50,右50 穿好衣服,整理仪容仪表 </description>
+      <description> 内在 主要 11 点前睡觉 次要 不在手机上刷短视频 多看书 408科目复习 刷算法题 做 50道计算题 外在 主要 骑车回去 次要 20 个俯卧撑 100 个单腿,左50,右50 穿好衣服,整理仪容仪表 </description>
     </item>
     
   </channel>

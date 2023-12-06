@@ -10,11 +10,11 @@
 <title>维基百科 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.eafcc11215db2e272379ac421eb4ea6df1bd5bf3cf92f85056460c93075e2462.css" integrity="sha256-6vzBEhXbLicjeaxCHrTqbfG9W/PPkvhQVkYMkwdeJGI=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.127d931782a06a2fa38327be173d3ea8fbf20032c5f948f2b2aab32d71419a55.css" integrity="sha256-En2TF4Kgai&#43;jgye&#43;Fz0&#43;qPvyADLF&#43;UjysqqzLXFBmlU=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.bb228971aac154cf5e0447a774d5642ed9eedc7d7f888ccdfdc9b7ae4c887c08.js" integrity="sha256-uyKJcarBVM9eBEendNVkLtnu3H1/iIzN/cm3rkyIfAg=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.56dc24d07a87225c0ae54b0f807133d0c419145ad6acdcca5d33c60fbcecac94.js" integrity="sha256-Vtwk0HqHIlwK5UsPgHEz0MQZFFrWrNzKXTPGD7zsrJQ=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.24433af05695d8b658953eace098ff6db026d8bf984d767ab1521c817560d15e.js" integrity="sha256-JEM68FaV2LZYlT6s4Jj/bbAm2L&#43;YTXZ6sVIcgXVg0V4=" crossorigin="anonymous"></script>
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -42,6 +42,8 @@ https://github.com/alex-shpak/hugo-book
   <script src="/plugs/element-ui.js" ></script>
 
   
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.7/lunar.min.js"></script>
   
   
 </head>
@@ -569,7 +571,6 @@ https://github.com/alex-shpak/hugo-book
 
  
         
-        
   
 <nav id="TableOfContents">
   <ul>
@@ -590,7 +591,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-        
       </div>
 
     </aside>
@@ -599,9 +599,7 @@ https://github.com/alex-shpak/hugo-book
       <header class="book-header">
         
   <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
+  
 
 
     <p>
@@ -615,7 +613,7 @@ https://github.com/alex-shpak/hugo-book
         <span class="Lastmod" data-unix="1701165327">
         </span>
         <span>
-          651字
+          648字
           </span>
           <script>
             
@@ -634,12 +632,10 @@ https://github.com/alex-shpak/hugo-book
  
   
 
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
+    <label for="menu-control">
+      <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+    </label>
+  
 </div>
 
 
@@ -675,8 +671,8 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown"><p>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：</p>
 <h3 id="维基百科-api-基本信息">
-  维基百科 API 基本信息
-  <a class="anchor" href="#%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e5%9f%ba%e6%9c%ac%e4%bf%a1%e6%81%af">#</a>
+  
+  <a href="#%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e5%9f%ba%e6%9c%ac%e4%bf%a1%e6%81%af">维基百科 API 基本信息</a>
 </h3>
 <ul>
 <li>
@@ -690,8 +686,8 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ul>
 <h3 id="常用维基百科-api-请求参数">
-  常用维基百科 API 请求参数
-  <a class="anchor" href="#%e5%b8%b8%e7%94%a8%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0">#</a>
+  
+  <a href="#%e5%b8%b8%e7%94%a8%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0">常用维基百科 API 请求参数</a>
 </h3>
 <ol>
 <li>
@@ -720,8 +716,8 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ol>
 <h3 id="示例获取页面内容">
-  示例：获取页面内容
-  <a class="anchor" href="#%e7%a4%ba%e4%be%8b%e8%8e%b7%e5%8f%96%e9%a1%b5%e9%9d%a2%e5%86%85%e5%ae%b9">#</a>
+  
+  <a href="#%e7%a4%ba%e4%be%8b%e8%8e%b7%e5%8f%96%e9%a1%b5%e9%9d%a2%e5%86%85%e5%ae%b9">示例：获取页面内容</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>https://en.wikipedia.org/w/api.php?action=query&amp;format=json&amp;titles=Python_(programming_language)&amp;prop=revisions&amp;rvprop=content
 </span></span></code></pre></div><p>这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。</p>

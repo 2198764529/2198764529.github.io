@@ -10,11 +10,11 @@
 <title>数据结构和算法 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.eafcc11215db2e272379ac421eb4ea6df1bd5bf3cf92f85056460c93075e2462.css" integrity="sha256-6vzBEhXbLicjeaxCHrTqbfG9W/PPkvhQVkYMkwdeJGI=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.127d931782a06a2fa38327be173d3ea8fbf20032c5f948f2b2aab32d71419a55.css" integrity="sha256-En2TF4Kgai&#43;jgye&#43;Fz0&#43;qPvyADLF&#43;UjysqqzLXFBmlU=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.bb228971aac154cf5e0447a774d5642ed9eedc7d7f888ccdfdc9b7ae4c887c08.js" integrity="sha256-uyKJcarBVM9eBEendNVkLtnu3H1/iIzN/cm3rkyIfAg=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.56dc24d07a87225c0ae54b0f807133d0c419145ad6acdcca5d33c60fbcecac94.js" integrity="sha256-Vtwk0HqHIlwK5UsPgHEz0MQZFFrWrNzKXTPGD7zsrJQ=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.24433af05695d8b658953eace098ff6db026d8bf984d767ab1521c817560d15e.js" integrity="sha256-JEM68FaV2LZYlT6s4Jj/bbAm2L&#43;YTXZ6sVIcgXVg0V4=" crossorigin="anonymous"></script>
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -42,6 +42,8 @@ https://github.com/alex-shpak/hugo-book
   <script src="/plugs/element-ui.js" ></script>
 
   
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.7/lunar.min.js"></script>
   
   
 </head>
@@ -569,7 +571,6 @@ https://github.com/alex-shpak/hugo-book
 
  
         
-        
   
 <nav id="TableOfContents">
   <ul>
@@ -621,7 +622,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-        
       </div>
 
     </aside>
@@ -630,9 +630,7 @@ https://github.com/alex-shpak/hugo-book
       <header class="book-header">
         
   <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
+  
 
 
     <p>
@@ -646,7 +644,7 @@ https://github.com/alex-shpak/hugo-book
         <span class="Lastmod" data-unix="1701246413">
         </span>
         <span>
-          214字
+          205字
           </span>
           <script>
             
@@ -665,12 +663,10 @@ https://github.com/alex-shpak/hugo-book
  
   
 
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
+    <label for="menu-control">
+      <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+    </label>
+  
 </div>
 
 
@@ -736,26 +732,26 @@ https://github.com/alex-shpak/hugo-book
       
       
 <article class="markdown"><h1 id="参考">
-  参考
-  <a class="anchor" href="#%e5%8f%82%e8%80%83">#</a>
+  
+  <a href="#%e5%8f%82%e8%80%83">参考</a>
 </h1>
 <p>
   <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms">https://www.cs.usfca.edu/~galles/visualization/Algorithms</a></p>
 <h1 id="查找">
-  查找
-  <a class="anchor" href="#%e6%9f%a5%e6%89%be">#</a>
+  
+  <a href="#%e6%9f%a5%e6%89%be">查找</a>
 </h1>
 <h5 id="评价指标">
-  评价指标:
-  <a class="anchor" href="#%e8%af%84%e4%bb%b7%e6%8c%87%e6%a0%87">#</a>
+  
+  <a href="#%e8%af%84%e4%bb%b7%e6%8c%87%e6%a0%87">评价指标:</a>
 </h5>
 <ul>
 <li>查找长度(SL)</li>
 <li>平均查找长度(ASL):考虑查找成功和失败的平均SL</li>
 </ul>
 <h5 id="顺序查找-on">
-  顺序查找 O(n)
-  <a class="anchor" href="#%e9%a1%ba%e5%ba%8f%e6%9f%a5%e6%89%be-on">#</a>
+  
+  <a href="#%e9%a1%ba%e5%ba%8f%e6%9f%a5%e6%89%be-on">顺序查找 O(n)</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search_seq</span>(ls,k):
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(ls)):
@@ -763,8 +759,8 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> i
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
 </span></span></code></pre></div><h5 id="二分查找-olog2n">
-  二分查找 O(Log2n)
-  <a class="anchor" href="#%e4%ba%8c%e5%88%86%e6%9f%a5%e6%89%be-olog2n">#</a>
+  
+  <a href="#%e4%ba%8c%e5%88%86%e6%9f%a5%e6%89%be-olog2n">二分查找 O(Log2n)</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search_bin</span>(ls,k):
 </span></span><span style="display:flex;"><span>	low <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
@@ -779,12 +775,12 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>			low <span style="color:#f92672">=</span> mid<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
 </span></span></code></pre></div><p>如果取整为向上(向下),则左子树比右子数量大(小)1个或相等</p>
 <h1 id="排序">
-  排序
-  <a class="anchor" href="#%e6%8e%92%e5%ba%8f">#</a>
+  
+  <a href="#%e6%8e%92%e5%ba%8f">排序</a>
 </h1>
 <h5 id="评价指标-1">
-  评价指标
-  <a class="anchor" href="#%e8%af%84%e4%bb%b7%e6%8c%87%e6%a0%87-1">#</a>
+  
+  <a href="#%e8%af%84%e4%bb%b7%e6%8c%87%e6%a0%87-1">评价指标</a>
 </h5>
 <ul>
 <li>稳定性</li>
@@ -793,8 +789,8 @@ https://github.com/alex-shpak/hugo-book
 <li>读写次数(外部排序时)</li>
 </ul>
 <h5 id="分类">
-  分类
-  <a class="anchor" href="#%e5%88%86%e7%b1%bb">#</a>
+  
+  <a href="#%e5%88%86%e7%b1%bb">分类</a>
 </h5>
 <ul>
 <li>数据是否全部在内存中
@@ -805,8 +801,8 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ul>
 <h6 id="直接插入排序">
-  直接插入排序
-  <a class="anchor" href="#%e7%9b%b4%e6%8e%a5%e6%8f%92%e5%85%a5%e6%8e%92%e5%ba%8f">#</a>
+  
+  <a href="#%e7%9b%b4%e6%8e%a5%e6%8f%92%e5%85%a5%e6%8e%92%e5%ba%8f">直接插入排序</a>
 </h6>
 </article>
  
