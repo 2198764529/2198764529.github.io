@@ -13,7 +13,7 @@
       
       <guid>https://ltao.cc/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
       <description>hugo 添加mermaid作图 https://cloud.tencent.com/developer/article/1944123
-CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
+😋 CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
 像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
 磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
 毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。
@@ -42,7 +42,7 @@ hugo 字段bug publishDate字段会有时候让文章显示不出来, 或许是 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.cc/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App 颜色墙 http://zhongguose.com/#shangengzi Lunar https://6tail.cn/calendar/api.html </description>
+      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 软件工具 画图工具 https://handraw.top Chatgpt https://chat.openai.com hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App 颜色墙 http://zhongguose.com/#shangengzi Lunar https://6tail.cn/calendar/api.html fullcalendar https://fullcalendar.io/docs </description>
     </item>
     
   </channel>
