@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>好记性不如烂笔头 on 李枫的地</title>
+    <title>好记性不如烂笔头 on 了头</title>
     <link>https://ltao.cc/</link>
-    <description>Recent content in 好记性不如烂笔头 on 李枫的地</description>
+    <description>Recent content in 好记性不如烂笔头 on 了头</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="https://ltao.cc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>22年去深圳计划</title>
-      <link>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/22%E5%B9%B4%E5%8E%BB%E6%B7%B1%E5%9C%B3%E8%AE%A1%E5%88%92/</link>
+      <link>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/23%E5%B9%B4%E5%8E%BB%E6%B7%B1%E5%9C%B3%E8%AE%A1%E5%88%92/</link>
       <pubDate>Thu, 02 Feb 2023 20:30:04 +0800</pubDate>
       
-      <guid>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/22%E5%B9%B4%E5%8E%BB%E6%B7%B1%E5%9C%B3%E8%AE%A1%E5%88%92/</guid>
+      <guid>https://ltao.cc/posts/%E6%9D%82%E6%80%9D/23%E5%B9%B4%E5%8E%BB%E6%B7%B1%E5%9C%B3%E8%AE%A1%E5%88%92/</guid>
       <description>计划明细 项目项 具体值 出发时间 待定 出发工具 待定 目的地 固戌 要带的东西 见【物品清单】 要做的事情 见【事情清单】 物品清单 要带的东西 电脑 鼠标，键盘 手机 (mi9, iphone6坏掉的) 硬盘(一个256固态, 一个1T机械) 电水壶 背包 配件类，电脑充电器，手机充电器（typec，mirc) 几个n95口罩 两瓶水 毛巾、洗漱牙刷杯子牙膏 要买的东西 厨房用具：电饭煲， 锅 插板 显示器 洗澡: 拖鞋, 衣架 篮球鞋 事情清单 走之前要做的事 剪头发 收拾房间 到之后要做的事 打电话 相关信息 衡阳到深圳的交通费用
 火车，坐106，卧180，8小时
 顺风车，350，11个小时
@@ -155,6 +155,23 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       
       <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%9D%A1%E8%A7%89/</guid>
       <description> 喝牛奶 晒太阳（促进褪黑素分泌） 晚上10点半以后不看手机 不焦虑 多听音乐 </description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.cc/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+      <description>个人介绍 23 岁, 1年工作经验,软工专业, 一名软件开发者。
+热爱互联网行业, 擅长做后端开发, 略懂一点对话AI。
+爱做项目, 编程 5 年间, 有 15+ 独立项目开发经验 。
+喜欢记录总结, www.ltao.cc 博客目前已运行近 1 年
+个人经历 大学期间, 我自学了多种编程语言和技术栈, 包括Python 后端、前端、大数据等，大三曾取得金砖大赛国二奖,
+大四毕业取得湖南省程序设计二等奖和省优秀毕业生,并以基于用户行为的新能源充电桩项目入选校企合作名单。
+毕业后, 实习顺利入职湖南超能机器人做 AI 对话, 作为项目核心开发者,将该 AI 对话项目由零迭代到上线。
+目前就职深圳亿达信息， 担任 Python 工程师, 负责公司后端接口开发与测试。
+工作经历 2021年11月-2023年3月 湖南超能机器人 AI助理 智能问诊项目 负责人 清洗训练数据近 2w 条, 处理NLU 和 NLG 部分工作, 并对接后端开始内部测试 从零推动 AI 对话项目版本迭代到上线开售 2023年4月-至今 深圳亿达信息 Python开发 支付分账项目 参与者 迭代项目版本 测试 技术栈 熟悉Python的Django,Flask等后端框架，掌握基本的数据结构和常见算法 熟悉Pandas、Numpy、Sklearn等自然语言处理工具 熟悉Linux系统应用部署以及管理，能独立部署项目到服务器 熟练掌握文本处理相关任务,如意图识别、词槽解析、语义匹配、信息抽取（实体、关系、事件抽取）、词向 量、文本纠错等 联系我 邮箱: liao4256@qq.</description>
     </item>
     
     <item>
