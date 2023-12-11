@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-cn" dir=" ltr">
+
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.91197e49b7078becc81caca79dcbab6e04f043f7bf26b1c96baee063d9c183eb.css" integrity="sha256-kRl&#43;SbcHi&#43;zIHKynncurbgTwQ/e/JrHJa67gY9nBg&#43;s=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.65507d40b857dc1675c094f8712103b4e51ee64f858e9ab6b5a1537a60d14a1a.js" integrity="sha256-ZVB9QLhX3BZ1wJT4cSEDtOUe5k&#43;Fjpq2taFTemDRSho=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.fcefb12d05bac31eaf53938b45a9d19a5021917bb6fcdc455f0f1a3d12d6e740.js" integrity="sha256-/O&#43;xLQW6wx6vU5OLRanRmlAhkXu2/NxFXw8aPRLW50A=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -29,6 +30,10 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+<script src="/plugs/lunar.min.js"></script>
+
+
 <script src="/plugs/fullcalendar.js" ></script>
 
 <script src="/plugs/fullcalendar-zh-cn.js"></script>
@@ -39,22 +44,22 @@ https://github.com/alex-shpak/hugo-book
   <script src="/plugs/vue.js" ></script>
 
   
-  <script src="/plugs/element-ui.js" ></script>
+  
+
+  
 
   
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.7/lunar.min.js"></script>
-  
-  
 </head>
-<body dir="ltr">
+
+<body dir=" ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       <div class="book-menu-content">
         
-  <nav>
+<nav>
 <h2 class="book-brand">
   <a class="flex align-center" href="/"><span class=" typing">了头 </span>
   </a>
@@ -909,39 +914,38 @@ https://github.com/alex-shpak/hugo-book
     <div class="book-page">
       <header class="book-header">
         
-  <div class="flex align-center justify-between">
+<div class="flex align-center justify-between">
   
 
 
-    <p>
 
-      <a href="/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/">python 方法参考</a>
-
-  
-   
-      
-      <small>
-        <span class="Lastmod" data-unix="1701079159">
-        </span>
-        <span>
-          6472字
-          </span>
-          <script>
-            
-            window.onload = function () {
-              updateDateTimeByElementClass("Lastmod")
-            }
-      
-          </script>
-  
-      </small>
-    
-       
-      
-    </p>
   
  
-  
+ <div>
+
+  <h3>
+    python 方法参考 
+
+    <small class="Lastmod ios_boder" data-unix="1701079159">
+    </small>
+
+    <small class="ios_boder">
+      6472字
+
+    </small>
+  </h3>
+
+  <h6>
+    
+    
+    
+    
+    
+  </h6>
+
+</div>
+
+ 
 
     <label for="menu-control">
       <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
@@ -950,9 +954,9 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
 
+
+<aside class="hidden clearfix">
   
-  <aside class="hidden clearfix">
-    
   
 <nav id="TableOfContents">
   <ul>
@@ -1245,8 +1249,8 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  </aside>
-  
+</aside>
+
  
       </header>
 
@@ -2488,7 +2492,7 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex flex-wrap justify-between">
+<div class="flex flex-wrap justify-between">
 
 
 
@@ -2502,15 +2506,29 @@ https://github.com/alex-shpak/hugo-book
 
 
  
+        <script>
+    
+    window.onload = function () {
+      
+      updateDateTimeByElementClass("LastChange");
+      
+      updateDateTimeByElementClass("AuthorDate");
+      
+      updateDateTimeByElementClass("nowDate");
+      
+      updateDateTimeByElementClass("date");
         
+        updateDateTimeByElementClass("Lastmod");
+    }; 
+  </script>
       </footer>
 
       
-  
-  <div class="book-comments">
+
+<div class="book-comments">
 
 </div>
-  
+
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -2518,12 +2536,13 @@ https://github.com/alex-shpak/hugo-book
 
     
     
-      
+    
     
   </main>
 
   
 </body>
+
 </html>
 
 
