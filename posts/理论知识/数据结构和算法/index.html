@@ -13,14 +13,14 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.28fa2582d2253d245f1455da2f8c7afec9c20f338b575c0a2b7404c9d6dea287.css" integrity="sha256-KPolgtIlPSRfFFXaL4x6/snCDzOLV1wKK3QEydbeooc=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.78b7fa2be7ce331863925d843b51c1d10f5596fd4d35bcc8efd9e8f3b2cf615c.js" integrity="sha256-eLf6K&#43;fOMxhjkl2EO1HB0Q9Vlv1NNbzI79no87LPYVw=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.ec5ac5849e59ff115463b6b6e38160ae3c30c556fa7a9ce4d51b4127a941b8ad.js" integrity="sha256-7FrFhJ5Z/xFUY7a244FgrjwwxVb6epzk1RtBJ6lBuK0=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
-<script src="https://ltao.cc/js/function.js" defer></script>
+<script src="https://ltao.fun/js/function.js" defer></script>
 
 
 
@@ -46,7 +46,7 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
+
 
   
 </head>
@@ -714,7 +714,7 @@ https://github.com/alex-shpak/hugo-book
   </small>
 
   <small class="ios_boder">
-    205字
+    464字
 
   </small>
 </div>
@@ -866,7 +866,25 @@ https://github.com/alex-shpak/hugo-book
   
   <a href="#%e7%9b%b4%e6%8e%a5%e6%8f%92%e5%85%a5%e6%8e%92%e5%ba%8f">直接插入排序</a>
 </h6>
-</article>
+<p>在数组 arr 中,假设要对 e 元素进行直接插入排序,流程如下</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TB;
+ n_start([开始])--&gt;n1
+ n1[遍历 e 之前的所有元素] --&gt; n2[&#34;遍历指针指向 e 元素的前者&#34;]
+ n2--&gt;n3{&#34;指针是否大于等于 0 \n 指针值是否大于 e 值&#34;}
+ n3--T--&gt;n4[&#34;把指针值插入到 e 所在的位置,再将指针往前移动 1 位&#34;]
+ n4--&gt;n3
+ n3--F--&gt;n5[&#34;将 e 插入到指针后 1 位&#34;]
+ n5--&gt;n_end([结束])
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">insertionSort</span>(arr):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(arr)):
+</span></span><span style="display:flex;"><span>		preIndex <span style="color:#f92672">=</span> i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(preIndex, <span style="color:#ae81ff">0</span>):
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> arr[j] <span style="color:#f92672">&lt;</span> arr[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>				arr[j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> arr[i]
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>				
+</span></span><span style="display:flex;"><span>	
+</span></span></code></pre></div></article>
  
       
 
@@ -886,22 +904,36 @@ https://github.com/alex-shpak/hugo-book
 
 
  
-        
-<script>
+        <script>
+  
+  window.onload = function () {
     
-    window.onload = function () {
-      
-      updateDateTimeByElementClass("LastChange");
-      
-      updateDateTimeByElementClass("AuthorDate");
-      
-      updateDateTimeByElementClass("nowDate");
-      
-      updateDateTimeByElementClass("date");
-        
-        updateDateTimeByElementClass("Lastmod");
-    }; 
-  </script>
+    updateDateTimeByElementClass("LastChange");
+    
+    updateDateTimeByElementClass("AuthorDate");
+    
+    updateDateTimeByElementClass("nowDate");
+    
+    updateDateTimeByElementClass("date");
+    
+    updateDateTimeByElementClass("Lastmod");
+  }; 
+</script>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    securityLevel: 'loose',
+    theme: 'dark',
+  });
+  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
+    (el) => {
+      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
+    }
+  );
+</script>
+
+
 
       </footer>
 
@@ -926,6 +958,9 @@ https://github.com/alex-shpak/hugo-book
 </body>
 
 </html>
+
+
+
 
 
 
