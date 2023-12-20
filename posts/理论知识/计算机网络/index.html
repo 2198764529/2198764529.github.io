@@ -11,9 +11,9 @@
 <title>计算机网络 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.f8483d923029ec054633f76fb47b9ea991ccbc13cf3de99165ee2c38f67bda27.css" integrity="sha256-&#43;Eg9kjAp7AVGM/dvtHueqZHMvBPPPemRZe4sOPZ72ic=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.33bd8f85fabd702468a8d44ff99442705c9fde3c0b985f0328b76ad89b6dfb26.css" integrity="sha256-M72Phfq9cCRoqNRP&#43;ZRCcFyf3jwLmF8DKLdq2Jtt&#43;yY=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.0e6f6c511c33630436e4fc063127df0cca2b44b52a2f038809739dcc00a425e0.js" integrity="sha256-Dm9sURwzYwQ25PwGMSffDMorRLUqLwOICXOdzACkJeA=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.1254f96bb9629dc370d68575f36646457488c3a3e25481c106d72a57a3abad11.js" integrity="sha256-ElT5a7lincNw1oV182ZGRXSIw6PiVIHBBtcqV6OrrRE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -674,6 +674,7 @@ https://github.com/alex-shpak/hugo-book
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#概述">概述</a></li>
     <li><a href="#应用层">应用层</a>
       <ul>
         <li>
@@ -741,7 +742,7 @@ https://github.com/alex-shpak/hugo-book
     </small>
 
     <small>
-      1305字
+      1717字
 
     </small>
     
@@ -763,6 +764,7 @@ https://github.com/alex-shpak/hugo-book
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#概述">概述</a></li>
     <li><a href="#应用层">应用层</a>
       <ul>
         <li>
@@ -817,7 +819,63 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown ios_card"><h1 id="应用层">
+<article class="markdown ios_card"><h1 id="概述">
+  
+  <a href="#%e6%a6%82%e8%bf%b0">概述</a>
+</h1>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TB;
+
+	subgraph OSI的体系结构 
+	direction TB
+	a1[应用层]--&gt;a2[表示层]--&gt;a3[会话层]--&gt;a4[运输层]--&gt;a5[网络层]--&gt;a6[数据链路层]--&gt;a7[物理层]  
+	end 
+	subgraph TCP/ID的体系结构
+	direction TB	 
+	b1[应用层]--&gt;|Link text|b2[运输层]--&gt;b3[网际层]--&gt;b4[网络接口层]
+	end 
+	subgraph 五层协议
+	direction TB	 
+	c5--&gt;|比特流|c4--&gt;|帧|c3--&gt;|数据帧|c2--&gt;|报文|c1
+	c1[应用层]--&gt;|应用数据|c2[运输层]--&gt;|报文|c3[网络层]--&gt;|数据帧|c4[数据链路层]--&gt;|帧|c5[物理层]
+	end 
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">mindmap
+	体系结构
+		五层协议
+			应用
+			运输
+			网络
+			数据链路
+			物理
+		OSI七层协议
+			应用
+			表示
+			会话
+			运输
+			网络
+			数据链路
+			物理
+		TCP/IP五层协议
+			应用
+			运输
+			网际
+			网络接口
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">mindmap
+	物理层
+		特性
+			机械
+			电气
+			功能
+			过程
+		设备
+			中继器
+			集线器
+		信道
+			类型
+				单工
+				半双工
+				全双工
+		
+</code></pre><h1 id="应用层">
   
   <a href="#%e5%ba%94%e7%94%a8%e5%b1%82">应用层</a>
 </h1>

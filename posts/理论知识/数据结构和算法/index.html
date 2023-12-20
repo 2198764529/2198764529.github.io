@@ -11,9 +11,9 @@
 <title>数据结构和算法 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.f8483d923029ec054633f76fb47b9ea991ccbc13cf3de99165ee2c38f67bda27.css" integrity="sha256-&#43;Eg9kjAp7AVGM/dvtHueqZHMvBPPPemRZe4sOPZ72ic=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.33bd8f85fabd702468a8d44ff99442705c9fde3c0b985f0328b76ad89b6dfb26.css" integrity="sha256-M72Phfq9cCRoqNRP&#43;ZRCcFyf3jwLmF8DKLdq2Jtt&#43;yY=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.0e6f6c511c33630436e4fc063127df0cca2b44b52a2f038809739dcc00a425e0.js" integrity="sha256-Dm9sURwzYwQ25PwGMSffDMorRLUqLwOICXOdzACkJeA=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.1254f96bb9629dc370d68575f36646457488c3a3e25481c106d72a57a3abad11.js" integrity="sha256-ElT5a7lincNw1oV182ZGRXSIw6PiVIHBBtcqV6OrrRE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -708,6 +708,7 @@ https://github.com/alex-shpak/hugo-book
                         <li><a href="#直接插入排序">直接插入排序</a></li>
                       </ul>
                     </li>
+                    <li><a href="#冒泡排序">冒泡排序</a></li>
                   </ul>
                 </li>
               </ul>
@@ -741,7 +742,7 @@ https://github.com/alex-shpak/hugo-book
     </small>
 
     <small>
-      464字
+      565字
 
     </small>
     
@@ -797,6 +798,7 @@ https://github.com/alex-shpak/hugo-book
                         <li><a href="#直接插入排序">直接插入排序</a></li>
                       </ul>
                     </li>
+                    <li><a href="#冒泡排序">冒泡排序</a></li>
                   </ul>
                 </li>
               </ul>
@@ -893,11 +895,10 @@ https://github.com/alex-shpak/hugo-book
 <p>在数组 arr 中,假设要对 e 元素进行直接插入排序,流程如下</p>
 <pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TB;
  n_start([开始])--&gt;n1
- n1[遍历 e 之前的所有元素] --&gt; n2[&#34;遍历指针指向 e 元素的前者&#34;]
+ n1[指针指向 e] --&gt; n2[&#34;指针前移 1 位&#34;]
  n2--&gt;n3{&#34;指针是否大于等于 0 \n 指针值是否大于 e 值&#34;}
- n3--T--&gt;n4[&#34;把指针值插入到 e 所在的位置,再将指针往前移动 1 位&#34;]
- n4--&gt;n3
- n3--F--&gt;n5[&#34;将 e 插入到指针后 1 位&#34;]
+ n3--T--&gt;n4[&#34;指针元素后移 1 位&#34;]--&gt;n2
+ n3--F--&gt;n5[&#34;e 放入指针后面 1 位&#34;]
  n5--&gt;n_end([结束])
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">insertionSort</span>(arr):
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(arr)):
@@ -908,7 +909,16 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">break</span>
 </span></span><span style="display:flex;"><span>				
 </span></span><span style="display:flex;"><span>	
-</span></span></code></pre></div></article>
+</span></span></code></pre></div><h5 id="冒泡排序">
+  
+  <a href="#%e5%86%92%e6%b3%a1%e6%8e%92%e5%ba%8f">冒泡排序</a>
+</h5>
+<p>在数组 arr 中,假设要对 e 元素进行直接插入排序,流程如下</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TB;
+ n_start([开始])--&gt;n1{&#34;判断 e 是否大于后面的元素&#34;}
+ n1-- T --&gt;n2[&#34;两者交换位置&#34;]--&gt;n1
+ n1-- F --&gt;n_end([&#34;结束&#34;])
+</code></pre></article>
  
       
 
