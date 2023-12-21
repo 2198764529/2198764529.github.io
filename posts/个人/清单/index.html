@@ -13,7 +13,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33bd8f85fabd702468a8d44ff99442705c9fde3c0b985f0328b76ad89b6dfb26.css" integrity="sha256-M72Phfq9cCRoqNRP&#43;ZRCcFyf3jwLmF8DKLdq2Jtt&#43;yY=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.1254f96bb9629dc370d68575f36646457488c3a3e25481c106d72a57a3abad11.js" integrity="sha256-ElT5a7lincNw1oV182ZGRXSIw6PiVIHBBtcqV6OrrRE=" crossorigin="anonymous"></script>
+  <script defer src="/zh-cn.search.min.84a717edfea3f8b90a3d0a4c63ef29858f8414477293410c9e3402286ef72a81.js" integrity="sha256-hKcX7f6j&#43;LkKPQpMY&#43;8phY&#43;EFEdyk0EMnjQCKG73KoE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -717,7 +717,7 @@ https://github.com/alex-shpak/hugo-book
     </small>
 
     <small>
-      260字
+      312字
 
     </small>
     
@@ -857,44 +857,39 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span><span style="color:#f92672">*</span>::<span style="color:#a6e22e">-webkit-scrollbar-thumb</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>:<span style="color:#ae81ff">#293c4a</span>; <span style="color:#75715e">/* 滚动条颜色 */</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div></li>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">chat-container</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">0</span> <span style="color:#75715e">!important</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">capabilities-disclaimer</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">icon-container</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">,</span><span style="color:#f92672">header</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">gb_nd</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">none</span><span style="color:#75715e">!important</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><pre tabindex="0"><code></code></pre></li>
+<li>Tampermonkey 
+  <a href="https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo</a></li>
 </ul>
 </li>
-</ul>
-<p>.chat-container{<br>
-margin:0 !important;<br>
-}<br>
-.capabilities-disclaimer<br>
-,.icon-container<br>
-,header,.gb_nd<br>
-{<br>
-display:none!important;<br>
-}<br>
-```<br>
-- Tampermonkey 
-  <a href="https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo</a></p>
-<ul>
-<li>
-<p>Obsidian</p>
-</li>
-<li>
-<p>autoHotKey<br>
-```</p>
-<pre><code>  ; 将 Lalt 单键映射成ctrl
-  LAlt::LCtrl
-  ;  大写锁定 &gt;&gt; 回车键 
-  CapsLock::Enter
-  ; `  &gt;&gt; 退格键
-  `:: BackSpace
-  +`::Delete
-
-  ; F1  &gt;&gt; Home
-  F1:: Home
-  ; F2  &gt;&gt; end
-  F2:: end
-
-  ```</code></pre>
-</li>
+<li>Obsidian</li>
+<li>autoHotKey
+<pre tabindex="0"><code>	; Esc 映射成 AltTab
+	*Esc::send &#34;{Blind}!{Tab}&#34;
+	; 左Alt 映射成 Ctrl
+	*LAlt::Ctrl
+	;大写键映射成删除键
+	*CapsLock::Backspace
+	+CapsLock::Del
+	;win+鼠标滚轮上(下滚)滚增加(减少)音量
+	;win+点击鼠标滚轮暂停或者播放
+	A_HotkeyInterval := 0
+	#WheelUp::Volume_Up
+	#WheelDown::Volume_Down
+	#MButton::Media_Play_Pause
+	;禁用按win键开始菜单弹出,快捷键不受影响
+	~LWin::Send &#34;{Blind}{vkE8}&#34;
+</code></pre><pre tabindex="0"><code></code></pre></li>
 </ul>
 </article>
  
