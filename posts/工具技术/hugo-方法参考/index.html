@@ -10,12 +10,12 @@
 
 <title>Hugo 方法参考 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.6793d5148010ba620890f4d3c176cc80d01dc467360ec50acac0068f267c41cf.css" integrity="sha256-Z5PVFIAQumIIkPTTwXbMgNAdxGc2DsUKysAGjyZ8Qc8=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh-cn.search.min.936cda7a01def86087e4ef170125ce0f479eb157a362103e079ecebb74b299fe.js" integrity="sha256-k2zaegHe&#43;GCH5O8XASXOD0eesVejYhA&#43;B57Ou3Symf4=" crossorigin="anonymous"></script>
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/book.min.332752175b26916faa71ad1e17370e9c6a7a0ad58379899b308016ae46289c1d.css" integrity="sha256-MydSF1smkW&#43;qca0eFzcOnGp6CtWDeYmbMIAWrkYonB0=" crossorigin="anonymous">
+<script defer src="/%20flexsearch.min.js"></script>
+<script defer src="/zh-cn.search.min.ddbe02e873f7694ea28b65bb833fce78cedbd063b57d93df053677da9ee9d8ab.js" integrity="sha256-3b4C6HP3aU6ii2W7gz/OeM7b0GO1fZPfBTZ32p7p2Ks=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -34,17 +34,14 @@ https://github.com/alex-shpak/hugo-book
 <script src="/plugs/lunar.min.js"></script>
 
 
-<script src="/plugs/fullcalendar.js" ></script>
+<script src="/plugs/fullcalendar.js"></script>
 
 <script src="/plugs/fullcalendar-zh-cn.js"></script>
 
 <link rel="stylesheet" href="/plugs/element-ui.css">
 
-	
-  <script src="/plugs/vue.js" ></script>
 
-  
-  
+<script src="/plugs/vue.js"></script>
 
 
 
@@ -66,7 +63,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="在 30 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="在 31 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -610,6 +607,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/" class="">测试专用</a>
+  
+ 
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/" class="">技术记录</a>
   
  
@@ -668,9 +679,9 @@ https://github.com/alex-shpak/hugo-book
 
 
  
+
         
-        
-<hr>
+
 
 <nav id="TableOfContents">
   <ul>
@@ -682,16 +693,16 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#trim-从字符串中删除前导和尾随空格"><strong>trim</strong> ：从字符串中删除前导和尾随空格。</a></li>
-                    <li><a href="#upper-将字符串转换为小写或大写"><strong>upper</strong> ：将字符串转换为小写或大写。</a></li>
-                    <li><a href="#title-将字符串中每个单词的首字母转换为大写"><strong>title</strong> ：将字符串中每个单词的首字母转换为大写。</a></li>
-                    <li><a href="#replace-用另一个子字符串替换子字符串的出现"><strong>replace</strong> ：用另一个子字符串替换子字符串的出现。</a></li>
-                    <li><a href="#substr-返回给定字符串的子字符串从指定位置开始可选长度"><strong>substr</strong> ：返回给定字符串的子字符串，从指定位置开始，可选长度。</a></li>
-                    <li><a href="#len-返回字符串的长度"><strong>len</strong> ：返回字符串的长度。</a></li>
-                    <li><a href="#printf-使用fmtprintf语法格式化字符串"><strong>printf</strong> ：使用<code>fmt.Printf</code>语法格式化字符串。</a></li>
-                    <li><a href="#urlize-将字符串转换为适合url的格式"><strong>urlize</strong> ：将字符串转换为适合URL的格式。</a></li>
-                    <li><a href="#humanize-将字符串转换为人类可读的格式"><strong>humanize</strong> ：将字符串转换为人类可读的格式。</a></li>
-                    <li><a href="#pluralize-基于计数返回词的复数形式"><strong>pluralize</strong> ：基于计数返回词的复数形式。</a></li>
+                    <li><a href="#trim从字符串中删除前导和尾随空格"><code>trim</code>从字符串中删除前导和尾随空格。</a></li>
+                    <li><a href="#upper将字符串转换为小写或大写"><code>upper</code>将字符串转换为小写或大写。</a></li>
+                    <li><a href="#title将字符串中每个单词的首字母转换为大写"><code>title</code>将字符串中每个单词的首字母转换为大写。</a></li>
+                    <li><a href="#replace用另一个子字符串替换子字符串的出现"><code>replace</code>用另一个子字符串替换子字符串的出现。</a></li>
+                    <li><a href="#substr返回给定字符串的子字符串从指定位置开始可选长度"><code>substr</code>返回给定字符串的子字符串，从指定位置开始，可选长度。</a></li>
+                    <li><a href="#len返回字符串的长度"><code>len</code>返回字符串的长度。</a></li>
+                    <li><a href="#printf使用fmtprintf语法格式化字符串"><code>printf</code>使用<code>fmt.Printf</code>语法格式化字符串。</a></li>
+                    <li><a href="#urlize将字符串转换为适合url的格式"><code>urlize</code>将字符串转换为适合URL的格式。</a></li>
+                    <li><a href="#humanize将字符串转换为人类可读的格式"><code>humanize</code>将字符串转换为人类可读的格式。</a></li>
+                    <li><a href="#pluralize基于计数返回词的复数形式"><code>pluralize</code>基于计数返回词的复数形式。</a></li>
                   </ul>
                 </li>
               </ul>
@@ -750,16 +761,16 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#eq-相等"><strong><code>eq</code>：</strong> 相等</a></li>
-                    <li><a href="#ne-不等"><strong><code>ne</code>：</strong> 不等</a></li>
-                    <li><a href="#gt-大于"><strong><code>gt</code>：</strong> 大于</a></li>
-                    <li><a href="#ge-大于等于"><strong><code>ge</code>：</strong> 大于等于</a></li>
-                    <li><a href="#lt-小于"><strong><code>lt</code>：</strong> 小于</a></li>
-                    <li><a href="#le-小于等于"><strong><code>le</code>：</strong> 小于等于</a></li>
-                    <li><a href="#and-逻辑与"><strong><code>and</code>：</strong> 逻辑与</a></li>
-                    <li><a href="#or-逻辑或"><strong><code>or</code>：</strong> 逻辑或</a></li>
-                    <li><a href="#cond-条件"><strong><code>cond</code>：</strong> 条件</a></li>
-                    <li><a href="#default-默认"><strong><code>default</code>：</strong> 默认</a></li>
+                    <li><a href="#eq-相等">``eq`：** 相等</a></li>
+                    <li><a href="#ne-不等">``ne`：** 不等</a></li>
+                    <li><a href="#gt-大于">``gt`：** 大于</a></li>
+                    <li><a href="#ge-大于等于">``ge`：** 大于等于</a></li>
+                    <li><a href="#lt-小于">``lt`：** 小于</a></li>
+                    <li><a href="#le-小于等于">``le`：** 小于等于</a></li>
+                    <li><a href="#and-逻辑与">``and`：** 逻辑与</a></li>
+                    <li><a href="#or-逻辑或">``or`：** 逻辑或</a></li>
+                    <li><a href="#cond-条件">``cond`：** 条件</a></li>
+                    <li><a href="#default-默认">``default`：** 默认</a></li>
                   </ul>
                 </li>
               </ul>
@@ -776,18 +787,18 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#readfile-读取本地文件"><strong><code>readFile</code>：</strong> 读取本地文件</a></li>
-                    <li><a href="#getjson-读取远程-json-文件"><strong><code>getJSON</code>：</strong> 读取远程 JSON 文件</a></li>
-                    <li><a href="#getcsv-读取远程-csv-文件"><strong><code>getCSV</code>：</strong> 读取远程 CSV 文件</a></li>
-                    <li><a href="#dump-打印变量详细信息"><strong><code>dump</code>：</strong> 打印变量详细信息</a></li>
-                    <li><a href="#timer-计算模板执行时间"><strong><code>timer</code>：</strong> 计算模板执行时间</a></li>
+                    <li><a href="#readfile-读取本地文件">``readFile`：** 读取本地文件</a></li>
+                    <li><a href="#getjson-读取远程-json-文件">``getJSON`：** 读取远程 JSON 文件</a></li>
+                    <li><a href="#getcsv-读取远程-csv-文件">``getCSV`：** 读取远程 CSV 文件</a></li>
+                    <li><a href="#dump-打印变量详细信息">``dump`：** 打印变量详细信息</a></li>
+                    <li><a href="#timer-计算模板执行时间">``timer`：** 计算模板执行时间</a></li>
                   </ul>
                 </li>
                 <li><a href="#encoding-数据的编码和解码">encoding 数据的编码和解码</a>
                   <ul>
-                    <li><a href="#base64encode-和-base64decode-base64-编码和解码"><strong><code>base64Encode</code> 和 <code>base64Decode</code>：</strong> Base64 编码和解码</a></li>
-                    <li><a href="#urlize-和-unurlize-url-编码和解码"><strong><code>urlize</code> 和 <code>unurlize</code>：</strong> URL 编码和解码</a></li>
-                    <li><a href="#jsonify-将数据转换为-json-格式"><strong><code>jsonify</code>：</strong> 将数据转换为 JSON 格式</a></li>
+                    <li><a href="#base64encode-和-base64decode-base64-编码和解码">``base64Encode<code>和</code>base64Decode`：** Base64 编码和解码</a></li>
+                    <li><a href="#urlize-和-unurlize-url-编码和解码">``urlize<code>和</code>unurlize`：** URL 编码和解码</a></li>
+                    <li><a href="#jsonify-将数据转换为-json-格式">``jsonify`：** 将数据转换为 JSON 格式</a></li>
                   </ul>
                 </li>
               </ul>
@@ -804,18 +815,18 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#hugobuilddate-提供-hugo-构建的日期和时间"><strong><code>hugo.BuildDate</code>：</strong> 提供 Hugo 构建的日期和时间。</a></li>
-                    <li><a href="#hugocommithash-提供-hugo-代码库的-git-提交哈希"><strong><code>hugo.CommitHash</code>：</strong> 提供 Hugo 代码库的 Git 提交哈希。</a></li>
-                    <li><a href="#hugodeps-提供-hugo-使用的-go-语言依赖项的信息"><strong><code>hugo.Deps</code>：</strong> 提供 Hugo 使用的 Go 语言依赖项的信息。</a></li>
-                    <li><a href="#hugoenvironment-提供-hugo-当前运行的环境例如-production-或-development"><strong><code>hugo.Environment</code>：</strong> 提供 Hugo 当前运行的环境，例如 &ldquo;production&rdquo; 或 &ldquo;development&rdquo;。</a></li>
-                    <li><a href="#hugogenerator-提供-hugo-站点生成器的信息"><strong><code>hugo.Generator</code>：</strong> 提供 Hugo 站点生成器的信息。</a></li>
-                    <li><a href="#hugogoversion-提供-hugo-使用的-go-语言版本"><strong><code>hugo.GoVersion</code>：</strong> 提供 Hugo 使用的 Go 语言版本。</a></li>
-                    <li><a href="#hugoisdevelopment-如果-hugo-当前在开发环境中运行则为-true"><strong><code>hugo.IsDevelopment</code>：</strong> 如果 Hugo 当前在开发环境中运行，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoisextended-如果-hugo-当前是扩展版本则为-true"><strong><code>hugo.IsExtended</code>：</strong> 如果 Hugo 当前是扩展版本，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoisproduction-如果-hugo-当前在生产环境中运行则为-true"><strong><code>hugo.IsProduction</code>：</strong> 如果 Hugo 当前在生产环境中运行，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoisserver-如果-hugo-当前作为服务器运行则为-true"><strong><code>hugo.IsServer</code>：</strong> 如果 Hugo 当前作为服务器运行，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoversion-提供-hugo-的版本号"><strong><code>hugo.Version</code>：</strong> 提供 Hugo 的版本号。</a></li>
-                    <li><a href="#hugoworkingdir-提供-hugo-当前的工作目录"><strong><code>hugo.WorkingDir</code>：</strong> 提供 Hugo 当前的工作目录。</a></li>
+                    <li><a href="#hugobuilddate-提供-hugo-构建的日期和时间">``hugo.BuildDate`：** 提供 Hugo 构建的日期和时间。</a></li>
+                    <li><a href="#hugocommithash-提供-hugo-代码库的-git-提交哈希">``hugo.CommitHash`：** 提供 Hugo 代码库的 Git 提交哈希。</a></li>
+                    <li><a href="#hugodeps-提供-hugo-使用的-go-语言依赖项的信息">``hugo.Deps`：** 提供 Hugo 使用的 Go 语言依赖项的信息。</a></li>
+                    <li><a href="#hugoenvironment-提供-hugo-当前运行的环境例如-production-或-development">``hugo.Environment`：** 提供 Hugo 当前运行的环境，例如 &ldquo;production&rdquo; 或 &ldquo;development&rdquo;。</a></li>
+                    <li><a href="#hugogenerator-提供-hugo-站点生成器的信息">``hugo.Generator`：** 提供 Hugo 站点生成器的信息。</a></li>
+                    <li><a href="#hugogoversion-提供-hugo-使用的-go-语言版本">``hugo.GoVersion`：** 提供 Hugo 使用的 Go 语言版本。</a></li>
+                    <li><a href="#hugoisdevelopment-如果-hugo-当前在开发环境中运行则为-true">``hugo.IsDevelopment<code>：** 如果 Hugo 当前在开发环境中运行，则为 </code>true`。</a></li>
+                    <li><a href="#hugoisextended-如果-hugo-当前是扩展版本则为-true">``hugo.IsExtended<code>：** 如果 Hugo 当前是扩展版本，则为 </code>true`。</a></li>
+                    <li><a href="#hugoisproduction-如果-hugo-当前在生产环境中运行则为-true">``hugo.IsProduction<code>：** 如果 Hugo 当前在生产环境中运行，则为 </code>true`。</a></li>
+                    <li><a href="#hugoisserver-如果-hugo-当前作为服务器运行则为-true">``hugo.IsServer<code>：** 如果 Hugo 当前作为服务器运行，则为 </code>true`。</a></li>
+                    <li><a href="#hugoversion-提供-hugo-的版本号">``hugo.Version`：** 提供 Hugo 的版本号。</a></li>
+                    <li><a href="#hugoworkingdir-提供-hugo-当前的工作目录">``hugo.WorkingDir`：** 提供 Hugo 当前的工作目录。</a></li>
                   </ul>
                 </li>
               </ul>
@@ -832,23 +843,23 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#brightness-调整图像的亮度"><strong><code>Brightness</code>：</strong> 调整图像的亮度。</a></li>
-                    <li><a href="#colorbalance-调整图像的色彩平衡"><strong><code>ColorBalance</code>：</strong> 调整图像的色彩平衡。</a></li>
-                    <li><a href="#colorize-对图像进行着色"><strong><code>Colorize</code>：</strong> 对图像进行着色。</a></li>
-                    <li><a href="#config-获取图像的配置信息"><strong><code>Config</code>：</strong> 获取图像的配置信息。</a></li>
-                    <li><a href="#contrast-调整图像的对比度"><strong><code>Contrast</code>：</strong> 调整图像的对比度。</a></li>
-                    <li><a href="#filter-应用滤镜效果"><strong><code>Filter</code>：</strong> 应用滤镜效果。</a></li>
-                    <li><a href="#gamma-调整图像的伽马值"><strong><code>Gamma</code>：</strong> 调整图像的伽马值。</a></li>
-                    <li><a href="#gaussianblur-对图像应用高斯模糊"><strong><code>GaussianBlur</code>：</strong> 对图像应用高斯模糊。</a></li>
-                    <li><a href="#grayscale-将图像转换为灰度"><strong><code>Grayscale</code>：</strong> 将图像转换为灰度。</a></li>
-                    <li><a href="#hue-调整图像的色调"><strong><code>Hue</code>：</strong> 调整图像的色调。</a></li>
+                    <li><a href="#brightness-调整图像的亮度">``Brightness`：** 调整图像的亮度。</a></li>
+                    <li><a href="#colorbalance-调整图像的色彩平衡">``ColorBalance`：** 调整图像的色彩平衡。</a></li>
+                    <li><a href="#colorize-对图像进行着色">``Colorize`：** 对图像进行着色。</a></li>
+                    <li><a href="#config-获取图像的配置信息">``Config`：** 获取图像的配置信息。</a></li>
+                    <li><a href="#contrast-调整图像的对比度">``Contrast`：** 调整图像的对比度。</a></li>
+                    <li><a href="#filter-应用滤镜效果">``Filter`：** 应用滤镜效果。</a></li>
+                    <li><a href="#gamma-调整图像的伽马值">``Gamma`：** 调整图像的伽马值。</a></li>
+                    <li><a href="#gaussianblur-对图像应用高斯模糊">``GaussianBlur`：** 对图像应用高斯模糊。</a></li>
+                    <li><a href="#grayscale-将图像转换为灰度">``Grayscale`：** 将图像转换为灰度。</a></li>
+                    <li><a href="#hue-调整图像的色调">``Hue`：** 调整图像的色调。</a></li>
                   </ul>
                 </li>
                 <li><a href="#inflect单词处理">inflect:单词处理</a>
                   <ul>
-                    <li><a href="#humanize-使单词更具人性化"><strong><code>Humanize</code>：</strong> 使单词更具人性化</a></li>
-                    <li><a href="#pluralize-将单词转为复数形式"><strong><code>Pluralize</code>：</strong> 将单词转为复数形式</a></li>
-                    <li><a href="#singularize-将单词转为单数形式"><strong><code>Singularize</code>：</strong> 将单词转为单数形式</a></li>
+                    <li><a href="#humanize-使单词更具人性化">``Humanize`：** 使单词更具人性化</a></li>
+                    <li><a href="#pluralize-将单词转为复数形式">``Pluralize`：** 将单词转为复数形式</a></li>
+                    <li><a href="#singularize-将单词转为单数形式">``Singularize`：** 将单词转为单数形式</a></li>
                   </ul>
                 </li>
               </ul>
@@ -894,13 +905,13 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#osfileexists-检查文件是否存在"><strong><code>os.FileExists</code>：</strong> 检查文件是否存在</a></li>
-                    <li><a href="#osgetenv-获取环境变量"><strong><code>os.Getenv</code>：</strong> 获取环境变量</a></li>
-                    <li><a href="#osreaddir-读取目录内容"><strong><code>os.ReadDir</code>：</strong> 读取目录内容</a></li>
-                    <li><a href="#osreadfile-读取文件内容"><strong><code>os.ReadFile</code>：</strong> 读取文件内容</a></li>
-                    <li><a href="#osstat-获取文件状态"><strong><code>os.Stat</code>：</strong> 获取文件状态</a></li>
-                    <li><a href="#partial-调用局部模板"><strong><code>partial</code>：</strong> 调用局部模板</a></li>
-                    <li><a href="#partialcached-调用缓存的局部模板"><strong><code>partialCached</code>：</strong> 调用缓存的局部模板</a></li>
+                    <li><a href="#osfileexists-检查文件是否存在">``os.FileExists`：** 检查文件是否存在</a></li>
+                    <li><a href="#osgetenv-获取环境变量">``os.Getenv`：** 获取环境变量</a></li>
+                    <li><a href="#osreaddir-读取目录内容">``os.ReadDir`：** 读取目录内容</a></li>
+                    <li><a href="#osreadfile-读取文件内容">``os.ReadFile`：** 读取文件内容</a></li>
+                    <li><a href="#osstat-获取文件状态">``os.Stat`：** 获取文件状态</a></li>
+                    <li><a href="#partial-调用局部模板">``partial`：** 调用局部模板</a></li>
+                    <li><a href="#partialcached-调用缓存的局部模板">``partialCached`：** 调用缓存的局部模板</a></li>
                   </ul>
                 </li>
               </ul>
@@ -939,49 +950,49 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#aliases"><strong>Aliases:</strong></a></li>
-                    <li><a href="#alltranslations"><strong>AllTranslations:</strong></a></li>
-                    <li><a href="#alternativeoutputformats"><strong>AlternativeOutputFormats:</strong></a></li>
-                    <li><a href="#ancestors"><strong>Ancestors:</strong></a></li>
-                    <li><a href="#bundletype"><strong>BundleType:</strong></a></li>
-                    <li><a href="#codeowners"><strong>CodeOwners:</strong></a></li>
-                    <li><a href="#content"><strong>Content:</strong></a></li>
-                    <li><a href="#currentsection"><strong>CurrentSection:</strong></a></li>
-                    <li><a href="#data"><strong>Data:</strong></a></li>
-                    <li><a href="#date"><strong>Date:</strong></a></li>
-                    <li><a href="#description"><strong>Description:</strong></a></li>
-                    <li><a href="#draft"><strong>Draft:</strong></a></li>
-                    <li><a href="#eq"><strong>Eq:</strong></a></li>
-                    <li><a href="#expirydate当前页面的过期日期">**ExpiryDate:**当前页面的过期日期。</a></li>
-                    <li><a href="#file当前内容文件的信息">**File:**当前内容文件的信息。</a></li>
-                    <li><a href="#firstsection当前页面所属的第一个部分">**FirstSection:**当前页面所属的第一个部分。</a></li>
-                    <li><a href="#fragments当前内容的片段">**Fragments:**当前内容的片段。</a></li>
-                    <li><a href="#fuzzywordcount当前页面的模糊字数统计">**FuzzyWordCount:**当前页面的模糊字数统计。</a></li>
-                    <li><a href="#getpage获取指定页面">**GetPage:**获取指定页面。</a></li>
-                    <li><a href="#getterms获取给定分类法的术语">**GetTerms:**获取给定分类法的术语。</a></li>
-                    <li><a href="#gitinfo获取有关-git-仓库的信息">**GitInfo:**获取有关 Git 仓库的信息。</a></li>
-                    <li><a href="#hasmenucurrent检查菜单项是否当前选定">**HasMenuCurrent:**检查菜单项是否当前选定。</a></li>
-                    <li><a href="#hasshortcode检查当前内容是否包含指定的-shortcode">**HasShortcode:**检查当前内容是否包含指定的 shortcode。</a></li>
-                    <li><a href="#headingsfiltered返回过滤后的当前内容标题">**HeadingsFiltered:**返回过滤后的当前内容标题。</a></li>
-                    <li><a href="#insection检查当前内容是否在指定部分中">**InSection:**检查当前内容是否在指定部分中。</a></li>
-                    <li><a href="#isancestor检查页面是否为指定页面的祖先">**IsAncestor:**检查页面是否为指定页面的祖先。</a></li>
-                    <li><a href="#isdescendant检查页面是否为指定页面的后代">**IsDescendant:**检查页面是否为指定页面的后代。</a></li>
-                    <li><a href="#ishome检查当前内容是否为首页">**IsHome:**检查当前内容是否为首页。</a></li>
-                    <li><a href="#ismenucurrent检查菜单项是否是当前页面">**IsMenuCurrent:**检查菜单项是否是当前页面。</a></li>
-                    <li><a href="#isnode检查变量是否为节点">**IsNode:**检查变量是否为节点。</a></li>
-                    <li><a href="#ispage检查变量是否为页面">**IsPage:**检查变量是否为页面。</a></li>
-                    <li><a href="#issection检查变量是否为部分">**IsSection:**检查变量是否为部分。</a></li>
-                    <li><a href="#istranslated检查当前页面是否有翻译">**IsTranslated:**检查当前页面是否有翻译。</a></li>
-                    <li><a href="#keywords当前页面的关键字">**Keywords:**当前页面的关键字。</a></li>
-                    <li><a href="#kind当前内容的种类例如page-或-section">**Kind:**当前内容的种类（例如，&ldquo;page&rdquo; 或 &ldquo;section&rdquo;）。</a></li>
-                    <li><a href="#language当前页面的语言">**Language:**当前页面的语言。</a></li>
-                    <li><a href="#lastmod当前页面的最后修改时间">**Lastmod:**当前页面的最后修改时间。</a></li>
-                    <li><a href="#layout当前内容的布局">**Layout:**当前内容的布局。</a></li>
-                    <li><a href="#len返回切片映射或字符串的长度">**Len:**返回切片、映射或字符串的长度。</a></li>
-                    <li><a href="#linktitle当前页面的链接标题">**LinkTitle:**当前页面的链接标题。</a></li>
-                    <li><a href="#next返回下一个同级页面">**Next:**返回下一个同级页面。</a></li>
-                    <li><a href="#nextinsection返回同一部分中的下一个页面">**NextInSection:**返回同一部分中的下一个页面。</a></li>
-                    <li><a href="#outputformats当前页面的输出">**OutputFormats:**当前页面的输出</a></li>
+                    <li><a href="#aliases">`Aliases:**</a></li>
+                    <li><a href="#alltranslations">`AllTranslations:**</a></li>
+                    <li><a href="#alternativeoutputformats">`AlternativeOutputFormats:**</a></li>
+                    <li><a href="#ancestors">`Ancestors:**</a></li>
+                    <li><a href="#bundletype">`BundleType:**</a></li>
+                    <li><a href="#codeowners">`CodeOwners:**</a></li>
+                    <li><a href="#content">`Content:**</a></li>
+                    <li><a href="#currentsection">`CurrentSection:**</a></li>
+                    <li><a href="#data">`Data:**</a></li>
+                    <li><a href="#date">`Date:**</a></li>
+                    <li><a href="#description">`Description:**</a></li>
+                    <li><a href="#draft">`Draft:**</a></li>
+                    <li><a href="#eq">`Eq:**</a></li>
+                    <li><a href="#expirydate当前页面的过期日期">`ExpiryDate:**当前页面的过期日期。</a></li>
+                    <li><a href="#file当前内容文件的信息">`File:**当前内容文件的信息。</a></li>
+                    <li><a href="#firstsection当前页面所属的第一个部分">`FirstSection:**当前页面所属的第一个部分。</a></li>
+                    <li><a href="#fragments当前内容的片段">`Fragments:**当前内容的片段。</a></li>
+                    <li><a href="#fuzzywordcount当前页面的模糊字数统计">`FuzzyWordCount:**当前页面的模糊字数统计。</a></li>
+                    <li><a href="#getpage获取指定页面">`GetPage:**获取指定页面。</a></li>
+                    <li><a href="#getterms获取给定分类法的术语">`GetTerms:**获取给定分类法的术语。</a></li>
+                    <li><a href="#gitinfo获取有关-git-仓库的信息">`GitInfo:**获取有关 Git 仓库的信息。</a></li>
+                    <li><a href="#hasmenucurrent检查菜单项是否当前选定">`HasMenuCurrent:**检查菜单项是否当前选定。</a></li>
+                    <li><a href="#hasshortcode检查当前内容是否包含指定的-shortcode">`HasShortcode:**检查当前内容是否包含指定的 shortcode。</a></li>
+                    <li><a href="#headingsfiltered返回过滤后的当前内容标题">`HeadingsFiltered:**返回过滤后的当前内容标题。</a></li>
+                    <li><a href="#insection检查当前内容是否在指定部分中">`InSection:**检查当前内容是否在指定部分中。</a></li>
+                    <li><a href="#isancestor检查页面是否为指定页面的祖先">`IsAncestor:**检查页面是否为指定页面的祖先。</a></li>
+                    <li><a href="#isdescendant检查页面是否为指定页面的后代">`IsDescendant:**检查页面是否为指定页面的后代。</a></li>
+                    <li><a href="#ishome检查当前内容是否为首页">`IsHome:**检查当前内容是否为首页。</a></li>
+                    <li><a href="#ismenucurrent检查菜单项是否是当前页面">`IsMenuCurrent:**检查菜单项是否是当前页面。</a></li>
+                    <li><a href="#isnode检查变量是否为节点">`IsNode:**检查变量是否为节点。</a></li>
+                    <li><a href="#ispage检查变量是否为页面">`IsPage:**检查变量是否为页面。</a></li>
+                    <li><a href="#issection检查变量是否为部分">`IsSection:**检查变量是否为部分。</a></li>
+                    <li><a href="#istranslated检查当前页面是否有翻译">`IsTranslated:**检查当前页面是否有翻译。</a></li>
+                    <li><a href="#keywords当前页面的关键字">`Keywords:**当前页面的关键字。</a></li>
+                    <li><a href="#kind当前内容的种类例如page-或-section">`Kind:**当前内容的种类（例如，&ldquo;page&rdquo; 或 &ldquo;section&rdquo;）。</a></li>
+                    <li><a href="#language当前页面的语言">`Language:**当前页面的语言。</a></li>
+                    <li><a href="#lastmod当前页面的最后修改时间">`Lastmod:**当前页面的最后修改时间。</a></li>
+                    <li><a href="#layout当前内容的布局">`Layout:**当前内容的布局。</a></li>
+                    <li><a href="#len返回切片映射或字符串的长度">`Len:**返回切片、映射或字符串的长度。</a></li>
+                    <li><a href="#linktitle当前页面的链接标题">`LinkTitle:**当前页面的链接标题。</a></li>
+                    <li><a href="#next返回下一个同级页面">`Next:**返回下一个同级页面。</a></li>
+                    <li><a href="#nextinsection返回同一部分中的下一个页面">`NextInSection:**返回同一部分中的下一个页面。</a></li>
+                    <li><a href="#outputformats当前页面的输出">`OutputFormats:**当前页面的输出</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1011,11 +1022,11 @@ https://github.com/alex-shpak/hugo-book
       Hugo 方法参考
     </a>
     
-    <small class="Lastmod" data-unix="1702463278">
+    <small class="Lastmod" data-unix="1703581128">
     </small>
 
     <small>
-      6809字
+      7084字
 
     </small>
     
@@ -1033,7 +1044,7 @@ https://github.com/alex-shpak/hugo-book
 
 <aside class="hidden clearfix">
   
-<hr>
+
 
 <nav id="TableOfContents">
   <ul>
@@ -1045,16 +1056,16 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#trim-从字符串中删除前导和尾随空格"><strong>trim</strong> ：从字符串中删除前导和尾随空格。</a></li>
-                    <li><a href="#upper-将字符串转换为小写或大写"><strong>upper</strong> ：将字符串转换为小写或大写。</a></li>
-                    <li><a href="#title-将字符串中每个单词的首字母转换为大写"><strong>title</strong> ：将字符串中每个单词的首字母转换为大写。</a></li>
-                    <li><a href="#replace-用另一个子字符串替换子字符串的出现"><strong>replace</strong> ：用另一个子字符串替换子字符串的出现。</a></li>
-                    <li><a href="#substr-返回给定字符串的子字符串从指定位置开始可选长度"><strong>substr</strong> ：返回给定字符串的子字符串，从指定位置开始，可选长度。</a></li>
-                    <li><a href="#len-返回字符串的长度"><strong>len</strong> ：返回字符串的长度。</a></li>
-                    <li><a href="#printf-使用fmtprintf语法格式化字符串"><strong>printf</strong> ：使用<code>fmt.Printf</code>语法格式化字符串。</a></li>
-                    <li><a href="#urlize-将字符串转换为适合url的格式"><strong>urlize</strong> ：将字符串转换为适合URL的格式。</a></li>
-                    <li><a href="#humanize-将字符串转换为人类可读的格式"><strong>humanize</strong> ：将字符串转换为人类可读的格式。</a></li>
-                    <li><a href="#pluralize-基于计数返回词的复数形式"><strong>pluralize</strong> ：基于计数返回词的复数形式。</a></li>
+                    <li><a href="#trim从字符串中删除前导和尾随空格"><code>trim</code>从字符串中删除前导和尾随空格。</a></li>
+                    <li><a href="#upper将字符串转换为小写或大写"><code>upper</code>将字符串转换为小写或大写。</a></li>
+                    <li><a href="#title将字符串中每个单词的首字母转换为大写"><code>title</code>将字符串中每个单词的首字母转换为大写。</a></li>
+                    <li><a href="#replace用另一个子字符串替换子字符串的出现"><code>replace</code>用另一个子字符串替换子字符串的出现。</a></li>
+                    <li><a href="#substr返回给定字符串的子字符串从指定位置开始可选长度"><code>substr</code>返回给定字符串的子字符串，从指定位置开始，可选长度。</a></li>
+                    <li><a href="#len返回字符串的长度"><code>len</code>返回字符串的长度。</a></li>
+                    <li><a href="#printf使用fmtprintf语法格式化字符串"><code>printf</code>使用<code>fmt.Printf</code>语法格式化字符串。</a></li>
+                    <li><a href="#urlize将字符串转换为适合url的格式"><code>urlize</code>将字符串转换为适合URL的格式。</a></li>
+                    <li><a href="#humanize将字符串转换为人类可读的格式"><code>humanize</code>将字符串转换为人类可读的格式。</a></li>
+                    <li><a href="#pluralize基于计数返回词的复数形式"><code>pluralize</code>基于计数返回词的复数形式。</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1113,16 +1124,16 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#eq-相等"><strong><code>eq</code>：</strong> 相等</a></li>
-                    <li><a href="#ne-不等"><strong><code>ne</code>：</strong> 不等</a></li>
-                    <li><a href="#gt-大于"><strong><code>gt</code>：</strong> 大于</a></li>
-                    <li><a href="#ge-大于等于"><strong><code>ge</code>：</strong> 大于等于</a></li>
-                    <li><a href="#lt-小于"><strong><code>lt</code>：</strong> 小于</a></li>
-                    <li><a href="#le-小于等于"><strong><code>le</code>：</strong> 小于等于</a></li>
-                    <li><a href="#and-逻辑与"><strong><code>and</code>：</strong> 逻辑与</a></li>
-                    <li><a href="#or-逻辑或"><strong><code>or</code>：</strong> 逻辑或</a></li>
-                    <li><a href="#cond-条件"><strong><code>cond</code>：</strong> 条件</a></li>
-                    <li><a href="#default-默认"><strong><code>default</code>：</strong> 默认</a></li>
+                    <li><a href="#eq-相等">``eq`：** 相等</a></li>
+                    <li><a href="#ne-不等">``ne`：** 不等</a></li>
+                    <li><a href="#gt-大于">``gt`：** 大于</a></li>
+                    <li><a href="#ge-大于等于">``ge`：** 大于等于</a></li>
+                    <li><a href="#lt-小于">``lt`：** 小于</a></li>
+                    <li><a href="#le-小于等于">``le`：** 小于等于</a></li>
+                    <li><a href="#and-逻辑与">``and`：** 逻辑与</a></li>
+                    <li><a href="#or-逻辑或">``or`：** 逻辑或</a></li>
+                    <li><a href="#cond-条件">``cond`：** 条件</a></li>
+                    <li><a href="#default-默认">``default`：** 默认</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1139,18 +1150,18 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#readfile-读取本地文件"><strong><code>readFile</code>：</strong> 读取本地文件</a></li>
-                    <li><a href="#getjson-读取远程-json-文件"><strong><code>getJSON</code>：</strong> 读取远程 JSON 文件</a></li>
-                    <li><a href="#getcsv-读取远程-csv-文件"><strong><code>getCSV</code>：</strong> 读取远程 CSV 文件</a></li>
-                    <li><a href="#dump-打印变量详细信息"><strong><code>dump</code>：</strong> 打印变量详细信息</a></li>
-                    <li><a href="#timer-计算模板执行时间"><strong><code>timer</code>：</strong> 计算模板执行时间</a></li>
+                    <li><a href="#readfile-读取本地文件">``readFile`：** 读取本地文件</a></li>
+                    <li><a href="#getjson-读取远程-json-文件">``getJSON`：** 读取远程 JSON 文件</a></li>
+                    <li><a href="#getcsv-读取远程-csv-文件">``getCSV`：** 读取远程 CSV 文件</a></li>
+                    <li><a href="#dump-打印变量详细信息">``dump`：** 打印变量详细信息</a></li>
+                    <li><a href="#timer-计算模板执行时间">``timer`：** 计算模板执行时间</a></li>
                   </ul>
                 </li>
                 <li><a href="#encoding-数据的编码和解码">encoding 数据的编码和解码</a>
                   <ul>
-                    <li><a href="#base64encode-和-base64decode-base64-编码和解码"><strong><code>base64Encode</code> 和 <code>base64Decode</code>：</strong> Base64 编码和解码</a></li>
-                    <li><a href="#urlize-和-unurlize-url-编码和解码"><strong><code>urlize</code> 和 <code>unurlize</code>：</strong> URL 编码和解码</a></li>
-                    <li><a href="#jsonify-将数据转换为-json-格式"><strong><code>jsonify</code>：</strong> 将数据转换为 JSON 格式</a></li>
+                    <li><a href="#base64encode-和-base64decode-base64-编码和解码">``base64Encode<code>和</code>base64Decode`：** Base64 编码和解码</a></li>
+                    <li><a href="#urlize-和-unurlize-url-编码和解码">``urlize<code>和</code>unurlize`：** URL 编码和解码</a></li>
+                    <li><a href="#jsonify-将数据转换为-json-格式">``jsonify`：** 将数据转换为 JSON 格式</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1167,18 +1178,18 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#hugobuilddate-提供-hugo-构建的日期和时间"><strong><code>hugo.BuildDate</code>：</strong> 提供 Hugo 构建的日期和时间。</a></li>
-                    <li><a href="#hugocommithash-提供-hugo-代码库的-git-提交哈希"><strong><code>hugo.CommitHash</code>：</strong> 提供 Hugo 代码库的 Git 提交哈希。</a></li>
-                    <li><a href="#hugodeps-提供-hugo-使用的-go-语言依赖项的信息"><strong><code>hugo.Deps</code>：</strong> 提供 Hugo 使用的 Go 语言依赖项的信息。</a></li>
-                    <li><a href="#hugoenvironment-提供-hugo-当前运行的环境例如-production-或-development"><strong><code>hugo.Environment</code>：</strong> 提供 Hugo 当前运行的环境，例如 &ldquo;production&rdquo; 或 &ldquo;development&rdquo;。</a></li>
-                    <li><a href="#hugogenerator-提供-hugo-站点生成器的信息"><strong><code>hugo.Generator</code>：</strong> 提供 Hugo 站点生成器的信息。</a></li>
-                    <li><a href="#hugogoversion-提供-hugo-使用的-go-语言版本"><strong><code>hugo.GoVersion</code>：</strong> 提供 Hugo 使用的 Go 语言版本。</a></li>
-                    <li><a href="#hugoisdevelopment-如果-hugo-当前在开发环境中运行则为-true"><strong><code>hugo.IsDevelopment</code>：</strong> 如果 Hugo 当前在开发环境中运行，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoisextended-如果-hugo-当前是扩展版本则为-true"><strong><code>hugo.IsExtended</code>：</strong> 如果 Hugo 当前是扩展版本，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoisproduction-如果-hugo-当前在生产环境中运行则为-true"><strong><code>hugo.IsProduction</code>：</strong> 如果 Hugo 当前在生产环境中运行，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoisserver-如果-hugo-当前作为服务器运行则为-true"><strong><code>hugo.IsServer</code>：</strong> 如果 Hugo 当前作为服务器运行，则为 <code>true</code>。</a></li>
-                    <li><a href="#hugoversion-提供-hugo-的版本号"><strong><code>hugo.Version</code>：</strong> 提供 Hugo 的版本号。</a></li>
-                    <li><a href="#hugoworkingdir-提供-hugo-当前的工作目录"><strong><code>hugo.WorkingDir</code>：</strong> 提供 Hugo 当前的工作目录。</a></li>
+                    <li><a href="#hugobuilddate-提供-hugo-构建的日期和时间">``hugo.BuildDate`：** 提供 Hugo 构建的日期和时间。</a></li>
+                    <li><a href="#hugocommithash-提供-hugo-代码库的-git-提交哈希">``hugo.CommitHash`：** 提供 Hugo 代码库的 Git 提交哈希。</a></li>
+                    <li><a href="#hugodeps-提供-hugo-使用的-go-语言依赖项的信息">``hugo.Deps`：** 提供 Hugo 使用的 Go 语言依赖项的信息。</a></li>
+                    <li><a href="#hugoenvironment-提供-hugo-当前运行的环境例如-production-或-development">``hugo.Environment`：** 提供 Hugo 当前运行的环境，例如 &ldquo;production&rdquo; 或 &ldquo;development&rdquo;。</a></li>
+                    <li><a href="#hugogenerator-提供-hugo-站点生成器的信息">``hugo.Generator`：** 提供 Hugo 站点生成器的信息。</a></li>
+                    <li><a href="#hugogoversion-提供-hugo-使用的-go-语言版本">``hugo.GoVersion`：** 提供 Hugo 使用的 Go 语言版本。</a></li>
+                    <li><a href="#hugoisdevelopment-如果-hugo-当前在开发环境中运行则为-true">``hugo.IsDevelopment<code>：** 如果 Hugo 当前在开发环境中运行，则为 </code>true`。</a></li>
+                    <li><a href="#hugoisextended-如果-hugo-当前是扩展版本则为-true">``hugo.IsExtended<code>：** 如果 Hugo 当前是扩展版本，则为 </code>true`。</a></li>
+                    <li><a href="#hugoisproduction-如果-hugo-当前在生产环境中运行则为-true">``hugo.IsProduction<code>：** 如果 Hugo 当前在生产环境中运行，则为 </code>true`。</a></li>
+                    <li><a href="#hugoisserver-如果-hugo-当前作为服务器运行则为-true">``hugo.IsServer<code>：** 如果 Hugo 当前作为服务器运行，则为 </code>true`。</a></li>
+                    <li><a href="#hugoversion-提供-hugo-的版本号">``hugo.Version`：** 提供 Hugo 的版本号。</a></li>
+                    <li><a href="#hugoworkingdir-提供-hugo-当前的工作目录">``hugo.WorkingDir`：** 提供 Hugo 当前的工作目录。</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1195,23 +1206,23 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#brightness-调整图像的亮度"><strong><code>Brightness</code>：</strong> 调整图像的亮度。</a></li>
-                    <li><a href="#colorbalance-调整图像的色彩平衡"><strong><code>ColorBalance</code>：</strong> 调整图像的色彩平衡。</a></li>
-                    <li><a href="#colorize-对图像进行着色"><strong><code>Colorize</code>：</strong> 对图像进行着色。</a></li>
-                    <li><a href="#config-获取图像的配置信息"><strong><code>Config</code>：</strong> 获取图像的配置信息。</a></li>
-                    <li><a href="#contrast-调整图像的对比度"><strong><code>Contrast</code>：</strong> 调整图像的对比度。</a></li>
-                    <li><a href="#filter-应用滤镜效果"><strong><code>Filter</code>：</strong> 应用滤镜效果。</a></li>
-                    <li><a href="#gamma-调整图像的伽马值"><strong><code>Gamma</code>：</strong> 调整图像的伽马值。</a></li>
-                    <li><a href="#gaussianblur-对图像应用高斯模糊"><strong><code>GaussianBlur</code>：</strong> 对图像应用高斯模糊。</a></li>
-                    <li><a href="#grayscale-将图像转换为灰度"><strong><code>Grayscale</code>：</strong> 将图像转换为灰度。</a></li>
-                    <li><a href="#hue-调整图像的色调"><strong><code>Hue</code>：</strong> 调整图像的色调。</a></li>
+                    <li><a href="#brightness-调整图像的亮度">``Brightness`：** 调整图像的亮度。</a></li>
+                    <li><a href="#colorbalance-调整图像的色彩平衡">``ColorBalance`：** 调整图像的色彩平衡。</a></li>
+                    <li><a href="#colorize-对图像进行着色">``Colorize`：** 对图像进行着色。</a></li>
+                    <li><a href="#config-获取图像的配置信息">``Config`：** 获取图像的配置信息。</a></li>
+                    <li><a href="#contrast-调整图像的对比度">``Contrast`：** 调整图像的对比度。</a></li>
+                    <li><a href="#filter-应用滤镜效果">``Filter`：** 应用滤镜效果。</a></li>
+                    <li><a href="#gamma-调整图像的伽马值">``Gamma`：** 调整图像的伽马值。</a></li>
+                    <li><a href="#gaussianblur-对图像应用高斯模糊">``GaussianBlur`：** 对图像应用高斯模糊。</a></li>
+                    <li><a href="#grayscale-将图像转换为灰度">``Grayscale`：** 将图像转换为灰度。</a></li>
+                    <li><a href="#hue-调整图像的色调">``Hue`：** 调整图像的色调。</a></li>
                   </ul>
                 </li>
                 <li><a href="#inflect单词处理">inflect:单词处理</a>
                   <ul>
-                    <li><a href="#humanize-使单词更具人性化"><strong><code>Humanize</code>：</strong> 使单词更具人性化</a></li>
-                    <li><a href="#pluralize-将单词转为复数形式"><strong><code>Pluralize</code>：</strong> 将单词转为复数形式</a></li>
-                    <li><a href="#singularize-将单词转为单数形式"><strong><code>Singularize</code>：</strong> 将单词转为单数形式</a></li>
+                    <li><a href="#humanize-使单词更具人性化">``Humanize`：** 使单词更具人性化</a></li>
+                    <li><a href="#pluralize-将单词转为复数形式">``Pluralize`：** 将单词转为复数形式</a></li>
+                    <li><a href="#singularize-将单词转为单数形式">``Singularize`：** 将单词转为单数形式</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1257,13 +1268,13 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#osfileexists-检查文件是否存在"><strong><code>os.FileExists</code>：</strong> 检查文件是否存在</a></li>
-                    <li><a href="#osgetenv-获取环境变量"><strong><code>os.Getenv</code>：</strong> 获取环境变量</a></li>
-                    <li><a href="#osreaddir-读取目录内容"><strong><code>os.ReadDir</code>：</strong> 读取目录内容</a></li>
-                    <li><a href="#osreadfile-读取文件内容"><strong><code>os.ReadFile</code>：</strong> 读取文件内容</a></li>
-                    <li><a href="#osstat-获取文件状态"><strong><code>os.Stat</code>：</strong> 获取文件状态</a></li>
-                    <li><a href="#partial-调用局部模板"><strong><code>partial</code>：</strong> 调用局部模板</a></li>
-                    <li><a href="#partialcached-调用缓存的局部模板"><strong><code>partialCached</code>：</strong> 调用缓存的局部模板</a></li>
+                    <li><a href="#osfileexists-检查文件是否存在">``os.FileExists`：** 检查文件是否存在</a></li>
+                    <li><a href="#osgetenv-获取环境变量">``os.Getenv`：** 获取环境变量</a></li>
+                    <li><a href="#osreaddir-读取目录内容">``os.ReadDir`：** 读取目录内容</a></li>
+                    <li><a href="#osreadfile-读取文件内容">``os.ReadFile`：** 读取文件内容</a></li>
+                    <li><a href="#osstat-获取文件状态">``os.Stat`：** 获取文件状态</a></li>
+                    <li><a href="#partial-调用局部模板">``partial`：** 调用局部模板</a></li>
+                    <li><a href="#partialcached-调用缓存的局部模板">``partialCached`：** 调用缓存的局部模板</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1302,49 +1313,49 @@ https://github.com/alex-shpak/hugo-book
               <ul>
                 <li>
                   <ul>
-                    <li><a href="#aliases"><strong>Aliases:</strong></a></li>
-                    <li><a href="#alltranslations"><strong>AllTranslations:</strong></a></li>
-                    <li><a href="#alternativeoutputformats"><strong>AlternativeOutputFormats:</strong></a></li>
-                    <li><a href="#ancestors"><strong>Ancestors:</strong></a></li>
-                    <li><a href="#bundletype"><strong>BundleType:</strong></a></li>
-                    <li><a href="#codeowners"><strong>CodeOwners:</strong></a></li>
-                    <li><a href="#content"><strong>Content:</strong></a></li>
-                    <li><a href="#currentsection"><strong>CurrentSection:</strong></a></li>
-                    <li><a href="#data"><strong>Data:</strong></a></li>
-                    <li><a href="#date"><strong>Date:</strong></a></li>
-                    <li><a href="#description"><strong>Description:</strong></a></li>
-                    <li><a href="#draft"><strong>Draft:</strong></a></li>
-                    <li><a href="#eq"><strong>Eq:</strong></a></li>
-                    <li><a href="#expirydate当前页面的过期日期">**ExpiryDate:**当前页面的过期日期。</a></li>
-                    <li><a href="#file当前内容文件的信息">**File:**当前内容文件的信息。</a></li>
-                    <li><a href="#firstsection当前页面所属的第一个部分">**FirstSection:**当前页面所属的第一个部分。</a></li>
-                    <li><a href="#fragments当前内容的片段">**Fragments:**当前内容的片段。</a></li>
-                    <li><a href="#fuzzywordcount当前页面的模糊字数统计">**FuzzyWordCount:**当前页面的模糊字数统计。</a></li>
-                    <li><a href="#getpage获取指定页面">**GetPage:**获取指定页面。</a></li>
-                    <li><a href="#getterms获取给定分类法的术语">**GetTerms:**获取给定分类法的术语。</a></li>
-                    <li><a href="#gitinfo获取有关-git-仓库的信息">**GitInfo:**获取有关 Git 仓库的信息。</a></li>
-                    <li><a href="#hasmenucurrent检查菜单项是否当前选定">**HasMenuCurrent:**检查菜单项是否当前选定。</a></li>
-                    <li><a href="#hasshortcode检查当前内容是否包含指定的-shortcode">**HasShortcode:**检查当前内容是否包含指定的 shortcode。</a></li>
-                    <li><a href="#headingsfiltered返回过滤后的当前内容标题">**HeadingsFiltered:**返回过滤后的当前内容标题。</a></li>
-                    <li><a href="#insection检查当前内容是否在指定部分中">**InSection:**检查当前内容是否在指定部分中。</a></li>
-                    <li><a href="#isancestor检查页面是否为指定页面的祖先">**IsAncestor:**检查页面是否为指定页面的祖先。</a></li>
-                    <li><a href="#isdescendant检查页面是否为指定页面的后代">**IsDescendant:**检查页面是否为指定页面的后代。</a></li>
-                    <li><a href="#ishome检查当前内容是否为首页">**IsHome:**检查当前内容是否为首页。</a></li>
-                    <li><a href="#ismenucurrent检查菜单项是否是当前页面">**IsMenuCurrent:**检查菜单项是否是当前页面。</a></li>
-                    <li><a href="#isnode检查变量是否为节点">**IsNode:**检查变量是否为节点。</a></li>
-                    <li><a href="#ispage检查变量是否为页面">**IsPage:**检查变量是否为页面。</a></li>
-                    <li><a href="#issection检查变量是否为部分">**IsSection:**检查变量是否为部分。</a></li>
-                    <li><a href="#istranslated检查当前页面是否有翻译">**IsTranslated:**检查当前页面是否有翻译。</a></li>
-                    <li><a href="#keywords当前页面的关键字">**Keywords:**当前页面的关键字。</a></li>
-                    <li><a href="#kind当前内容的种类例如page-或-section">**Kind:**当前内容的种类（例如，&ldquo;page&rdquo; 或 &ldquo;section&rdquo;）。</a></li>
-                    <li><a href="#language当前页面的语言">**Language:**当前页面的语言。</a></li>
-                    <li><a href="#lastmod当前页面的最后修改时间">**Lastmod:**当前页面的最后修改时间。</a></li>
-                    <li><a href="#layout当前内容的布局">**Layout:**当前内容的布局。</a></li>
-                    <li><a href="#len返回切片映射或字符串的长度">**Len:**返回切片、映射或字符串的长度。</a></li>
-                    <li><a href="#linktitle当前页面的链接标题">**LinkTitle:**当前页面的链接标题。</a></li>
-                    <li><a href="#next返回下一个同级页面">**Next:**返回下一个同级页面。</a></li>
-                    <li><a href="#nextinsection返回同一部分中的下一个页面">**NextInSection:**返回同一部分中的下一个页面。</a></li>
-                    <li><a href="#outputformats当前页面的输出">**OutputFormats:**当前页面的输出</a></li>
+                    <li><a href="#aliases">`Aliases:**</a></li>
+                    <li><a href="#alltranslations">`AllTranslations:**</a></li>
+                    <li><a href="#alternativeoutputformats">`AlternativeOutputFormats:**</a></li>
+                    <li><a href="#ancestors">`Ancestors:**</a></li>
+                    <li><a href="#bundletype">`BundleType:**</a></li>
+                    <li><a href="#codeowners">`CodeOwners:**</a></li>
+                    <li><a href="#content">`Content:**</a></li>
+                    <li><a href="#currentsection">`CurrentSection:**</a></li>
+                    <li><a href="#data">`Data:**</a></li>
+                    <li><a href="#date">`Date:**</a></li>
+                    <li><a href="#description">`Description:**</a></li>
+                    <li><a href="#draft">`Draft:**</a></li>
+                    <li><a href="#eq">`Eq:**</a></li>
+                    <li><a href="#expirydate当前页面的过期日期">`ExpiryDate:**当前页面的过期日期。</a></li>
+                    <li><a href="#file当前内容文件的信息">`File:**当前内容文件的信息。</a></li>
+                    <li><a href="#firstsection当前页面所属的第一个部分">`FirstSection:**当前页面所属的第一个部分。</a></li>
+                    <li><a href="#fragments当前内容的片段">`Fragments:**当前内容的片段。</a></li>
+                    <li><a href="#fuzzywordcount当前页面的模糊字数统计">`FuzzyWordCount:**当前页面的模糊字数统计。</a></li>
+                    <li><a href="#getpage获取指定页面">`GetPage:**获取指定页面。</a></li>
+                    <li><a href="#getterms获取给定分类法的术语">`GetTerms:**获取给定分类法的术语。</a></li>
+                    <li><a href="#gitinfo获取有关-git-仓库的信息">`GitInfo:**获取有关 Git 仓库的信息。</a></li>
+                    <li><a href="#hasmenucurrent检查菜单项是否当前选定">`HasMenuCurrent:**检查菜单项是否当前选定。</a></li>
+                    <li><a href="#hasshortcode检查当前内容是否包含指定的-shortcode">`HasShortcode:**检查当前内容是否包含指定的 shortcode。</a></li>
+                    <li><a href="#headingsfiltered返回过滤后的当前内容标题">`HeadingsFiltered:**返回过滤后的当前内容标题。</a></li>
+                    <li><a href="#insection检查当前内容是否在指定部分中">`InSection:**检查当前内容是否在指定部分中。</a></li>
+                    <li><a href="#isancestor检查页面是否为指定页面的祖先">`IsAncestor:**检查页面是否为指定页面的祖先。</a></li>
+                    <li><a href="#isdescendant检查页面是否为指定页面的后代">`IsDescendant:**检查页面是否为指定页面的后代。</a></li>
+                    <li><a href="#ishome检查当前内容是否为首页">`IsHome:**检查当前内容是否为首页。</a></li>
+                    <li><a href="#ismenucurrent检查菜单项是否是当前页面">`IsMenuCurrent:**检查菜单项是否是当前页面。</a></li>
+                    <li><a href="#isnode检查变量是否为节点">`IsNode:**检查变量是否为节点。</a></li>
+                    <li><a href="#ispage检查变量是否为页面">`IsPage:**检查变量是否为页面。</a></li>
+                    <li><a href="#issection检查变量是否为部分">`IsSection:**检查变量是否为部分。</a></li>
+                    <li><a href="#istranslated检查当前页面是否有翻译">`IsTranslated:**检查当前页面是否有翻译。</a></li>
+                    <li><a href="#keywords当前页面的关键字">`Keywords:**当前页面的关键字。</a></li>
+                    <li><a href="#kind当前内容的种类例如page-或-section">`Kind:**当前内容的种类（例如，&ldquo;page&rdquo; 或 &ldquo;section&rdquo;）。</a></li>
+                    <li><a href="#language当前页面的语言">`Language:**当前页面的语言。</a></li>
+                    <li><a href="#lastmod当前页面的最后修改时间">`Lastmod:**当前页面的最后修改时间。</a></li>
+                    <li><a href="#layout当前内容的布局">`Layout:**当前内容的布局。</a></li>
+                    <li><a href="#len返回切片映射或字符串的长度">`Len:**返回切片、映射或字符串的长度。</a></li>
+                    <li><a href="#linktitle当前页面的链接标题">`LinkTitle:**当前页面的链接标题。</a></li>
+                    <li><a href="#next返回下一个同级页面">`Next:**返回下一个同级页面。</a></li>
+                    <li><a href="#nextinsection返回同一部分中的下一个页面">`NextInSection:**返回同一部分中的下一个页面。</a></li>
+                    <li><a href="#outputformats当前页面的输出">`OutputFormats:**当前页面的输出</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1369,55 +1380,55 @@ https://github.com/alex-shpak/hugo-book
   
   <a href="#string%e7%94%a8%e4%ba%8e%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%a4%84%e7%90%86">String:用于字符串处理</a>
 </h1>
-<h5 id="trim-从字符串中删除前导和尾随空格">
+<h5 id="trim从字符串中删除前导和尾随空格">
   
-  <a href="#trim-%e4%bb%8e%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%ad%e5%88%a0%e9%99%a4%e5%89%8d%e5%af%bc%e5%92%8c%e5%b0%be%e9%9a%8f%e7%a9%ba%e6%a0%bc"><strong>trim</strong> ：从字符串中删除前导和尾随空格。</a>
+  <a href="#trim%e4%bb%8e%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%ad%e5%88%a0%e9%99%a4%e5%89%8d%e5%af%bc%e5%92%8c%e5%b0%be%e9%9a%8f%e7%a9%ba%e6%a0%bc"><code>trim</code>从字符串中删除前导和尾随空格。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">trim</span> <span style="color:#e6db74">&#34;   你好，世界！   &#34;</span> }}
-</span></span></code></pre></div><h5 id="upper-将字符串转换为小写或大写">
+</span></span></code></pre></div><h5 id="upper将字符串转换为小写或大写">
   
-  <a href="#upper-%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e4%b8%ba%e5%b0%8f%e5%86%99%e6%88%96%e5%a4%a7%e5%86%99"><strong>upper</strong> ：将字符串转换为小写或大写。</a>
+  <a href="#upper%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e4%b8%ba%e5%b0%8f%e5%86%99%e6%88%96%e5%a4%a7%e5%86%99"><code>upper</code>将字符串转换为小写或大写。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">lower</span> <span style="color:#e6db74">&#34;你好&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">upper</span> <span style="color:#e6db74">&#34;world&#34;</span> }}
-</span></span></code></pre></div><h5 id="title-将字符串中每个单词的首字母转换为大写">
+</span></span></code></pre></div><h5 id="title将字符串中每个单词的首字母转换为大写">
   
-  <a href="#title-%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%ad%e6%af%8f%e4%b8%aa%e5%8d%95%e8%af%8d%e7%9a%84%e9%a6%96%e5%ad%97%e6%af%8d%e8%bd%ac%e6%8d%a2%e4%b8%ba%e5%a4%a7%e5%86%99"><strong>title</strong> ：将字符串中每个单词的首字母转换为大写。</a>
+  <a href="#title%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%ad%e6%af%8f%e4%b8%aa%e5%8d%95%e8%af%8d%e7%9a%84%e9%a6%96%e5%ad%97%e6%af%8d%e8%bd%ac%e6%8d%a2%e4%b8%ba%e5%a4%a7%e5%86%99"><code>title</code>将字符串中每个单词的首字母转换为大写。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">title</span> <span style="color:#e6db74">&#34;hello world&#34;</span> }}
-</span></span></code></pre></div><h5 id="replace-用另一个子字符串替换子字符串的出现">
+</span></span></code></pre></div><h5 id="replace用另一个子字符串替换子字符串的出现">
   
-  <a href="#replace-%e7%94%a8%e5%8f%a6%e4%b8%80%e4%b8%aa%e5%ad%90%e5%ad%97%e7%ac%a6%e4%b8%b2%e6%9b%bf%e6%8d%a2%e5%ad%90%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e5%87%ba%e7%8e%b0"><strong>replace</strong> ：用另一个子字符串替换子字符串的出现。</a>
+  <a href="#replace%e7%94%a8%e5%8f%a6%e4%b8%80%e4%b8%aa%e5%ad%90%e5%ad%97%e7%ac%a6%e4%b8%b2%e6%9b%bf%e6%8d%a2%e5%ad%90%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e5%87%ba%e7%8e%b0"><code>replace</code>用另一个子字符串替换子字符串的出现。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">replace</span> <span style="color:#e6db74">&#34;你好，世界！&#34;</span> <span style="color:#e6db74">&#34;你好&#34;</span> <span style="color:#e6db74">&#34;嗨&#34;</span> }}
-</span></span></code></pre></div><h5 id="substr-返回给定字符串的子字符串从指定位置开始可选长度">
+</span></span></code></pre></div><h5 id="substr返回给定字符串的子字符串从指定位置开始可选长度">
   
-  <a href="#substr-%e8%bf%94%e5%9b%9e%e7%bb%99%e5%ae%9a%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e5%ad%90%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%bb%8e%e6%8c%87%e5%ae%9a%e4%bd%8d%e7%bd%ae%e5%bc%80%e5%a7%8b%e5%8f%af%e9%80%89%e9%95%bf%e5%ba%a6"><strong>substr</strong> ：返回给定字符串的子字符串，从指定位置开始，可选长度。</a>
+  <a href="#substr%e8%bf%94%e5%9b%9e%e7%bb%99%e5%ae%9a%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e5%ad%90%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%bb%8e%e6%8c%87%e5%ae%9a%e4%bd%8d%e7%bd%ae%e5%bc%80%e5%a7%8b%e5%8f%af%e9%80%89%e9%95%bf%e5%ba%a6"><code>substr</code>返回给定字符串的子字符串，从指定位置开始，可选长度。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">substr</span> <span style="color:#e6db74">&#34;你好，世界！&#34;</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">5</span> }}
-</span></span></code></pre></div><h5 id="len-返回字符串的长度">
+</span></span></code></pre></div><h5 id="len返回字符串的长度">
   
-  <a href="#len-%e8%bf%94%e5%9b%9e%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e9%95%bf%e5%ba%a6"><strong>len</strong> ：返回字符串的长度。</a>
+  <a href="#len%e8%bf%94%e5%9b%9e%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e9%95%bf%e5%ba%a6"><code>len</code>返回字符串的长度。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">len</span> <span style="color:#e6db74">&#34;你好，世界！&#34;</span> }}
-</span></span></code></pre></div><h5 id="printf-使用fmtprintf语法格式化字符串">
+</span></span></code></pre></div><h5 id="printf使用fmtprintf语法格式化字符串">
   
-  <a href="#printf-%e4%bd%bf%e7%94%a8fmtprintf%e8%af%ad%e6%b3%95%e6%a0%bc%e5%bc%8f%e5%8c%96%e5%ad%97%e7%ac%a6%e4%b8%b2"><strong>printf</strong> ：使用<code>fmt.Printf</code>语法格式化字符串。</a>
+  <a href="#printf%e4%bd%bf%e7%94%a8fmtprintf%e8%af%ad%e6%b3%95%e6%a0%bc%e5%bc%8f%e5%8c%96%e5%ad%97%e7%ac%a6%e4%b8%b2"><code>printf</code>使用<code>fmt.Printf</code>语法格式化字符串。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">printf</span> <span style="color:#e6db74">&#34;你好，%s！&#34;</span> <span style="color:#e6db74">&#34;世界&#34;</span> }}
-</span></span></code></pre></div><h5 id="urlize-将字符串转换为适合url的格式">
+</span></span></code></pre></div><h5 id="urlize将字符串转换为适合url的格式">
   
-  <a href="#urlize-%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%80%82%e5%90%88url%e7%9a%84%e6%a0%bc%e5%bc%8f"><strong>urlize</strong> ：将字符串转换为适合URL的格式。</a>
+  <a href="#urlize%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%80%82%e5%90%88url%e7%9a%84%e6%a0%bc%e5%bc%8f"><code>urlize</code>将字符串转换为适合URL的格式。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">urlize</span> <span style="color:#e6db74">&#34;这是一个示例字符串&#34;</span> }}
-</span></span></code></pre></div><h5 id="humanize-将字符串转换为人类可读的格式">
+</span></span></code></pre></div><h5 id="humanize将字符串转换为人类可读的格式">
   
-  <a href="#humanize-%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e4%b8%ba%e4%ba%ba%e7%b1%bb%e5%8f%af%e8%af%bb%e7%9a%84%e6%a0%bc%e5%bc%8f"><strong>humanize</strong> ：将字符串转换为人类可读的格式。</a>
+  <a href="#humanize%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e4%b8%ba%e4%ba%ba%e7%b1%bb%e5%8f%af%e8%af%bb%e7%9a%84%e6%a0%bc%e5%bc%8f"><code>humanize</code>将字符串转换为人类可读的格式。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">humanize</span> <span style="color:#e6db74">&#34;some_string&#34;</span> }}
-</span></span></code></pre></div><h5 id="pluralize-基于计数返回词的复数形式">
+</span></span></code></pre></div><h5 id="pluralize基于计数返回词的复数形式">
   
-  <a href="#pluralize-%e5%9f%ba%e4%ba%8e%e8%ae%a1%e6%95%b0%e8%bf%94%e5%9b%9e%e8%af%8d%e7%9a%84%e5%a4%8d%e6%95%b0%e5%bd%a2%e5%bc%8f"><strong>pluralize</strong> ：基于计数返回词的复数形式。</a>
+  <a href="#pluralize%e5%9f%ba%e4%ba%8e%e8%ae%a1%e6%95%b0%e8%bf%94%e5%9b%9e%e8%af%8d%e7%9a%84%e5%a4%8d%e6%95%b0%e5%bd%a2%e5%bc%8f"><code>pluralize</code>基于计数返回词的复数形式。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">with</span> <span style="color:#a6e22e">index</span> .<span style="color:#a6e22e">Site</span>.<span style="color:#a6e22e">Data</span>.<span style="color:#a6e22e">translations</span> (<span style="color:#a6e22e">printf</span> <span style="color:#e6db74">&#34;%s.toml&#34;</span> .<span style="color:#a6e22e">Site</span>.<span style="color:#a6e22e">Language</span>.<span style="color:#a6e22e">Lang</span>) }}
 </span></span><span style="display:flex;"><span>    {{ .<span style="color:#a6e22e">home</span> | <span style="color:#66d9ef">default</span> <span style="color:#e6db74">&#34;Home&#34;</span> | <span style="color:#a6e22e">pluralize</span> .<span style="color:#a6e22e">Site</span>.<span style="color:#a6e22e">RegularPages</span> | <span style="color:#a6e22e">title</span> }}
@@ -1615,7 +1626,7 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <h5 id="eq-相等">
   
-  <a href="#eq-%e7%9b%b8%e7%ad%89"><strong><code>eq</code>：</strong> 相等</a>
+  <a href="#eq-%e7%9b%b8%e7%ad%89">``eq`：** 相等</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">eq</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">2</span> }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为</span> <span style="color:#ae81ff">2</span> <span style="color:#a6e22e">等于</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">--</span>&gt;
@@ -1624,7 +1635,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="ne-不等">
   
-  <a href="#ne-%e4%b8%8d%e7%ad%89"><strong><code>ne</code>：</strong> 不等</a>
+  <a href="#ne-%e4%b8%8d%e7%ad%89">``ne`：** 不等</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">ne</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">5</span> }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为</span> <span style="color:#ae81ff">3</span> <span style="color:#a6e22e">不等于</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">--</span>&gt;
@@ -1633,7 +1644,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="gt-大于">
   
-  <a href="#gt-%e5%a4%a7%e4%ba%8e"><strong><code>gt</code>：</strong> 大于</a>
+  <a href="#gt-%e5%a4%a7%e4%ba%8e">``gt`：** 大于</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">gt</span> <span style="color:#ae81ff">10</span> <span style="color:#ae81ff">5</span> }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为</span> <span style="color:#ae81ff">10</span> <span style="color:#a6e22e">大于</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">--</span>&gt;
@@ -1642,7 +1653,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="ge-大于等于">
   
-  <a href="#ge-%e5%a4%a7%e4%ba%8e%e7%ad%89%e4%ba%8e"><strong><code>ge</code>：</strong> 大于等于</a>
+  <a href="#ge-%e5%a4%a7%e4%ba%8e%e7%ad%89%e4%ba%8e">``ge`：** 大于等于</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">ge</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">7</span> }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为</span> <span style="color:#ae81ff">7</span> <span style="color:#a6e22e">大于等于</span> <span style="color:#ae81ff">7</span> <span style="color:#f92672">--</span>&gt;
@@ -1651,7 +1662,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="lt-小于">
   
-  <a href="#lt-%e5%b0%8f%e4%ba%8e"><strong><code>lt</code>：</strong> 小于</a>
+  <a href="#lt-%e5%b0%8f%e4%ba%8e">``lt`：** 小于</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">lt</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">8</span> }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为</span> <span style="color:#ae81ff">4</span> <span style="color:#a6e22e">小于</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">--</span>&gt;
@@ -1660,7 +1671,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="le-小于等于">
   
-  <a href="#le-%e5%b0%8f%e4%ba%8e%e7%ad%89%e4%ba%8e"><strong><code>le</code>：</strong> 小于等于</a>
+  <a href="#le-%e5%b0%8f%e4%ba%8e%e7%ad%89%e4%ba%8e">``le`：** 小于等于</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">le</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">6</span> }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为</span> <span style="color:#ae81ff">6</span> <span style="color:#a6e22e">小于等于</span> <span style="color:#ae81ff">6</span> <span style="color:#f92672">--</span>&gt;
@@ -1669,7 +1680,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="and-逻辑与">
   
-  <a href="#and-%e9%80%bb%e8%be%91%e4%b8%8e"><strong><code>and</code>：</strong> 逻辑与</a>
+  <a href="#and-%e9%80%bb%e8%be%91%e4%b8%8e">``and`：** 逻辑与</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">and</span> (<span style="color:#a6e22e">eq</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">2</span>) (<span style="color:#a6e22e">gt</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">3</span>) }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为两个条件都为真</span> <span style="color:#f92672">--</span>&gt;
@@ -1678,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="or-逻辑或">
   
-  <a href="#or-%e9%80%bb%e8%be%91%e6%88%96"><strong><code>or</code>：</strong> 逻辑或</a>
+  <a href="#or-%e9%80%bb%e8%be%91%e6%88%96">``or`：** 逻辑或</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">or</span> (<span style="color:#a6e22e">eq</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>) (<span style="color:#a6e22e">lt</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">3</span>) }}
 </span></span><span style="display:flex;"><span>    &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">这个块将会执行</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">因为至少一个条件为真</span> <span style="color:#f92672">--</span>&gt;
@@ -1687,7 +1698,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="cond-条件">
   
-  <a href="#cond-%e6%9d%a1%e4%bb%b6"><strong><code>cond</code>：</strong> 条件</a>
+  <a href="#cond-%e6%9d%a1%e4%bb%b6">``cond`：** 条件</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">cond</span> 
 </span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">eq</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">2</span>) <span style="color:#e6db74">&#34;条件1为真&#34;</span>
@@ -1697,7 +1708,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>}}
 </span></span></code></pre></div><h5 id="default-默认">
   
-  <a href="#default-%e9%bb%98%e8%ae%a4"><strong><code>default</code>：</strong> 默认</a>
+  <a href="#default-%e9%bb%98%e8%ae%a4">``default`：** 默认</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">default</span> <span style="color:#e6db74">&#34;default_value&#34;</span> .<span style="color:#a6e22e">someVariable</span> }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">如果</span> .<span style="color:#a6e22e">someVariable</span> <span style="color:#a6e22e">为空</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">则</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">value</span> <span style="color:#a6e22e">将设置为</span> <span style="color:#e6db74">&#34;default_value&#34;</span> <span style="color:#f92672">--</span>&gt;
@@ -1707,32 +1718,32 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <h5 id="readfile-读取本地文件">
   
-  <a href="#readfile-%e8%af%bb%e5%8f%96%e6%9c%ac%e5%9c%b0%e6%96%87%e4%bb%b6"><strong><code>readFile</code>：</strong> 读取本地文件</a>
+  <a href="#readfile-%e8%af%bb%e5%8f%96%e6%9c%ac%e5%9c%b0%e6%96%87%e4%bb%b6">``readFile`：** 读取本地文件</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">localFileContent</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">readFile</span> <span style="color:#e6db74">&#34;path/to/local/file.txt&#34;</span> }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">localFileContent</span> <span style="color:#a6e22e">将包含文件的内容</span> <span style="color:#f92672">--</span>&gt;
 </span></span></code></pre></div><h5 id="getjson-读取远程-json-文件">
   
-  <a href="#getjson-%e8%af%bb%e5%8f%96%e8%bf%9c%e7%a8%8b-json-%e6%96%87%e4%bb%b6"><strong><code>getJSON</code>：</strong> 读取远程 JSON 文件</a>
+  <a href="#getjson-%e8%af%bb%e5%8f%96%e8%bf%9c%e7%a8%8b-json-%e6%96%87%e4%bb%b6">``getJSON`：** 读取远程 JSON 文件</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">remoteJsonData</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">getJSON</span> <span style="color:#e6db74">&#34;https://example.com/data.json&#34;</span> }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">remoteJsonData</span> <span style="color:#a6e22e">将包含</span> <span style="color:#a6e22e">JSON</span> <span style="color:#a6e22e">文件的数据</span> <span style="color:#f92672">--</span>&gt;
 </span></span></code></pre></div><h5 id="getcsv-读取远程-csv-文件">
   
-  <a href="#getcsv-%e8%af%bb%e5%8f%96%e8%bf%9c%e7%a8%8b-csv-%e6%96%87%e4%bb%b6"><strong><code>getCSV</code>：</strong> 读取远程 CSV 文件</a>
+  <a href="#getcsv-%e8%af%bb%e5%8f%96%e8%bf%9c%e7%a8%8b-csv-%e6%96%87%e4%bb%b6">``getCSV`：** 读取远程 CSV 文件</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">remoteCsvData</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">getCSV</span> <span style="color:#e6db74">&#34;https://example.com/data.csv&#34;</span> }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">remoteCsvData</span> <span style="color:#a6e22e">将包含</span> <span style="color:#a6e22e">CSV</span> <span style="color:#a6e22e">文件的数据</span> <span style="color:#f92672">--</span>&gt;
 </span></span></code></pre></div><h5 id="dump-打印变量详细信息">
   
-  <a href="#dump-%e6%89%93%e5%8d%b0%e5%8f%98%e9%87%8f%e8%af%a6%e7%bb%86%e4%bf%a1%e6%81%af"><strong><code>dump</code>：</strong> 打印变量详细信息</a>
+  <a href="#dump-%e6%89%93%e5%8d%b0%e5%8f%98%e9%87%8f%e8%af%a6%e7%bb%86%e4%bf%a1%e6%81%af">``dump`：** 打印变量详细信息</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">dump</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">remoteJsonData</span> }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">使用</span> <span style="color:#a6e22e">dump</span> <span style="color:#a6e22e">打印</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">remoteJsonData</span> <span style="color:#a6e22e">变量的详细信息</span> <span style="color:#f92672">--</span>&gt;
 </span></span></code></pre></div><h5 id="timer-计算模板执行时间">
   
-  <a href="#timer-%e8%ae%a1%e7%ae%97%e6%a8%a1%e6%9d%bf%e6%89%a7%e8%a1%8c%e6%97%b6%e9%97%b4"><strong><code>timer</code>：</strong> 计算模板执行时间</a>
+  <a href="#timer-%e8%ae%a1%e7%ae%97%e6%a8%a1%e6%9d%bf%e6%89%a7%e8%a1%8c%e6%97%b6%e9%97%b4">``timer`：** 计算模板执行时间</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">timer</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">timer</span> }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">执行一些模板操作</span> <span style="color:#f92672">--</span>&gt;
@@ -1744,7 +1755,7 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <h5 id="base64encode-和-base64decode-base64-编码和解码">
   
-  <a href="#base64encode-%e5%92%8c-base64decode-base64-%e7%bc%96%e7%a0%81%e5%92%8c%e8%a7%a3%e7%a0%81"><strong><code>base64Encode</code> 和 <code>base64Decode</code>：</strong> Base64 编码和解码</a>
+  <a href="#base64encode-%e5%92%8c-base64decode-base64-%e7%bc%96%e7%a0%81%e5%92%8c%e8%a7%a3%e7%a0%81">``base64Encode<code>和</code>base64Decode`：** Base64 编码和解码</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">originalData</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;Hello, World!&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">encodedData</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">originalData</span> | <span style="color:#a6e22e">base64Encode</span> }}
@@ -1754,7 +1765,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">decodedData</span> <span style="color:#a6e22e">包含</span> <span style="color:#e6db74">&#34;Hello, World!&#34;</span> <span style="color:#f92672">--</span>&gt;
 </span></span></code></pre></div><h5 id="urlize-和-unurlize-url-编码和解码">
   
-  <a href="#urlize-%e5%92%8c-unurlize-url-%e7%bc%96%e7%a0%81%e5%92%8c%e8%a7%a3%e7%a0%81"><strong><code>urlize</code> 和 <code>unurlize</code>：</strong> URL 编码和解码</a>
+  <a href="#urlize-%e5%92%8c-unurlize-url-%e7%bc%96%e7%a0%81%e5%92%8c%e8%a7%a3%e7%a0%81">``urlize<code>和</code>unurlize`：** URL 编码和解码</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">originalData</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;Hello, World!&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">urlEncodedData</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">originalData</span> | <span style="color:#a6e22e">urlize</span> }}
@@ -1764,7 +1775,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">urlDecodedData</span> <span style="color:#a6e22e">包含</span> <span style="color:#e6db74">&#34;Hello, World!&#34;</span> <span style="color:#f92672">--</span>&gt;
 </span></span></code></pre></div><h5 id="jsonify-将数据转换为-json-格式">
   
-  <a href="#jsonify-%e5%b0%86%e6%95%b0%e6%8d%ae%e8%bd%ac%e6%8d%a2%e4%b8%ba-json-%e6%a0%bc%e5%bc%8f"><strong><code>jsonify</code>：</strong> 将数据转换为 JSON 格式</a>
+  <a href="#jsonify-%e5%b0%86%e6%95%b0%e6%8d%ae%e8%bd%ac%e6%8d%a2%e4%b8%ba-json-%e6%a0%bc%e5%bc%8f">``jsonify`：** 将数据转换为 JSON 格式</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">data</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">map</span> <span style="color:#e6db74">&#34;key&#34;</span> <span style="color:#e6db74">&#34;value&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">jsonData</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">data</span> | <span style="color:#a6e22e">jsonify</span> }}
@@ -1776,51 +1787,51 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <h5 id="hugobuilddate-提供-hugo-构建的日期和时间">
   
-  <a href="#hugobuilddate-%e6%8f%90%e4%be%9b-hugo-%e6%9e%84%e5%bb%ba%e7%9a%84%e6%97%a5%e6%9c%9f%e5%92%8c%e6%97%b6%e9%97%b4"><strong><code>hugo.BuildDate</code>：</strong> 提供 Hugo 构建的日期和时间。</a>
+  <a href="#hugobuilddate-%e6%8f%90%e4%be%9b-hugo-%e6%9e%84%e5%bb%ba%e7%9a%84%e6%97%a5%e6%9c%9f%e5%92%8c%e6%97%b6%e9%97%b4">``hugo.BuildDate`：** 提供 Hugo 构建的日期和时间。</a>
 </h5>
 <h5 id="hugocommithash-提供-hugo-代码库的-git-提交哈希">
   
-  <a href="#hugocommithash-%e6%8f%90%e4%be%9b-hugo-%e4%bb%a3%e7%a0%81%e5%ba%93%e7%9a%84-git-%e6%8f%90%e4%ba%a4%e5%93%88%e5%b8%8c"><strong><code>hugo.CommitHash</code>：</strong> 提供 Hugo 代码库的 Git 提交哈希。</a>
+  <a href="#hugocommithash-%e6%8f%90%e4%be%9b-hugo-%e4%bb%a3%e7%a0%81%e5%ba%93%e7%9a%84-git-%e6%8f%90%e4%ba%a4%e5%93%88%e5%b8%8c">``hugo.CommitHash`：** 提供 Hugo 代码库的 Git 提交哈希。</a>
 </h5>
 <h5 id="hugodeps-提供-hugo-使用的-go-语言依赖项的信息">
   
-  <a href="#hugodeps-%e6%8f%90%e4%be%9b-hugo-%e4%bd%bf%e7%94%a8%e7%9a%84-go-%e8%af%ad%e8%a8%80%e4%be%9d%e8%b5%96%e9%a1%b9%e7%9a%84%e4%bf%a1%e6%81%af"><strong><code>hugo.Deps</code>：</strong> 提供 Hugo 使用的 Go 语言依赖项的信息。</a>
+  <a href="#hugodeps-%e6%8f%90%e4%be%9b-hugo-%e4%bd%bf%e7%94%a8%e7%9a%84-go-%e8%af%ad%e8%a8%80%e4%be%9d%e8%b5%96%e9%a1%b9%e7%9a%84%e4%bf%a1%e6%81%af">``hugo.Deps`：** 提供 Hugo 使用的 Go 语言依赖项的信息。</a>
 </h5>
 <h5 id="hugoenvironment-提供-hugo-当前运行的环境例如-production-或-development">
   
-  <a href="#hugoenvironment-%e6%8f%90%e4%be%9b-hugo-%e5%bd%93%e5%89%8d%e8%bf%90%e8%a1%8c%e7%9a%84%e7%8e%af%e5%a2%83%e4%be%8b%e5%a6%82-production-%e6%88%96-development"><strong><code>hugo.Environment</code>：</strong> 提供 Hugo 当前运行的环境，例如 &ldquo;production&rdquo; 或 &ldquo;development&rdquo;。</a>
+  <a href="#hugoenvironment-%e6%8f%90%e4%be%9b-hugo-%e5%bd%93%e5%89%8d%e8%bf%90%e8%a1%8c%e7%9a%84%e7%8e%af%e5%a2%83%e4%be%8b%e5%a6%82-production-%e6%88%96-development">``hugo.Environment`：** 提供 Hugo 当前运行的环境，例如 &ldquo;production&rdquo; 或 &ldquo;development&rdquo;。</a>
 </h5>
 <h5 id="hugogenerator-提供-hugo-站点生成器的信息">
   
-  <a href="#hugogenerator-%e6%8f%90%e4%be%9b-hugo-%e7%ab%99%e7%82%b9%e7%94%9f%e6%88%90%e5%99%a8%e7%9a%84%e4%bf%a1%e6%81%af"><strong><code>hugo.Generator</code>：</strong> 提供 Hugo 站点生成器的信息。</a>
+  <a href="#hugogenerator-%e6%8f%90%e4%be%9b-hugo-%e7%ab%99%e7%82%b9%e7%94%9f%e6%88%90%e5%99%a8%e7%9a%84%e4%bf%a1%e6%81%af">``hugo.Generator`：** 提供 Hugo 站点生成器的信息。</a>
 </h5>
 <h5 id="hugogoversion-提供-hugo-使用的-go-语言版本">
   
-  <a href="#hugogoversion-%e6%8f%90%e4%be%9b-hugo-%e4%bd%bf%e7%94%a8%e7%9a%84-go-%e8%af%ad%e8%a8%80%e7%89%88%e6%9c%ac"><strong><code>hugo.GoVersion</code>：</strong> 提供 Hugo 使用的 Go 语言版本。</a>
+  <a href="#hugogoversion-%e6%8f%90%e4%be%9b-hugo-%e4%bd%bf%e7%94%a8%e7%9a%84-go-%e8%af%ad%e8%a8%80%e7%89%88%e6%9c%ac">``hugo.GoVersion`：** 提供 Hugo 使用的 Go 语言版本。</a>
 </h5>
 <h5 id="hugoisdevelopment-如果-hugo-当前在开发环境中运行则为-true">
   
-  <a href="#hugoisdevelopment-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e5%9c%a8%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e4%b8%ad%e8%bf%90%e8%a1%8c%e5%88%99%e4%b8%ba-true"><strong><code>hugo.IsDevelopment</code>：</strong> 如果 Hugo 当前在开发环境中运行，则为 <code>true</code>。</a>
+  <a href="#hugoisdevelopment-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e5%9c%a8%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e4%b8%ad%e8%bf%90%e8%a1%8c%e5%88%99%e4%b8%ba-true">``hugo.IsDevelopment<code>：** 如果 Hugo 当前在开发环境中运行，则为 </code>true`。</a>
 </h5>
 <h5 id="hugoisextended-如果-hugo-当前是扩展版本则为-true">
   
-  <a href="#hugoisextended-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e6%98%af%e6%89%a9%e5%b1%95%e7%89%88%e6%9c%ac%e5%88%99%e4%b8%ba-true"><strong><code>hugo.IsExtended</code>：</strong> 如果 Hugo 当前是扩展版本，则为 <code>true</code>。</a>
+  <a href="#hugoisextended-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e6%98%af%e6%89%a9%e5%b1%95%e7%89%88%e6%9c%ac%e5%88%99%e4%b8%ba-true">``hugo.IsExtended<code>：** 如果 Hugo 当前是扩展版本，则为 </code>true`。</a>
 </h5>
 <h5 id="hugoisproduction-如果-hugo-当前在生产环境中运行则为-true">
   
-  <a href="#hugoisproduction-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e5%9c%a8%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83%e4%b8%ad%e8%bf%90%e8%a1%8c%e5%88%99%e4%b8%ba-true"><strong><code>hugo.IsProduction</code>：</strong> 如果 Hugo 当前在生产环境中运行，则为 <code>true</code>。</a>
+  <a href="#hugoisproduction-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e5%9c%a8%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83%e4%b8%ad%e8%bf%90%e8%a1%8c%e5%88%99%e4%b8%ba-true">``hugo.IsProduction<code>：** 如果 Hugo 当前在生产环境中运行，则为 </code>true`。</a>
 </h5>
 <h5 id="hugoisserver-如果-hugo-当前作为服务器运行则为-true">
   
-  <a href="#hugoisserver-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e4%bd%9c%e4%b8%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%90%e8%a1%8c%e5%88%99%e4%b8%ba-true"><strong><code>hugo.IsServer</code>：</strong> 如果 Hugo 当前作为服务器运行，则为 <code>true</code>。</a>
+  <a href="#hugoisserver-%e5%a6%82%e6%9e%9c-hugo-%e5%bd%93%e5%89%8d%e4%bd%9c%e4%b8%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%90%e8%a1%8c%e5%88%99%e4%b8%ba-true">``hugo.IsServer<code>：** 如果 Hugo 当前作为服务器运行，则为 </code>true`。</a>
 </h5>
 <h5 id="hugoversion-提供-hugo-的版本号">
   
-  <a href="#hugoversion-%e6%8f%90%e4%be%9b-hugo-%e7%9a%84%e7%89%88%e6%9c%ac%e5%8f%b7"><strong><code>hugo.Version</code>：</strong> 提供 Hugo 的版本号。</a>
+  <a href="#hugoversion-%e6%8f%90%e4%be%9b-hugo-%e7%9a%84%e7%89%88%e6%9c%ac%e5%8f%b7">``hugo.Version`：** 提供 Hugo 的版本号。</a>
 </h5>
 <h5 id="hugoworkingdir-提供-hugo-当前的工作目录">
   
-  <a href="#hugoworkingdir-%e6%8f%90%e4%be%9b-hugo-%e5%bd%93%e5%89%8d%e7%9a%84%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95"><strong><code>hugo.WorkingDir</code>：</strong> 提供 Hugo 当前的工作目录。</a>
+  <a href="#hugoworkingdir-%e6%8f%90%e4%be%9b-hugo-%e5%bd%93%e5%89%8d%e7%9a%84%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95">``hugo.WorkingDir`：** 提供 Hugo 当前的工作目录。</a>
 </h5>
 <h1 id="image图像处理库">
   
@@ -1829,52 +1840,52 @@ https://github.com/alex-shpak/hugo-book
 <p>以下是一些使用 <code>images</code> 包中的函数的代码示例：</p>
 <h5 id="brightness-调整图像的亮度">
   
-  <a href="#brightness-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e4%ba%ae%e5%ba%a6"><strong><code>Brightness</code>：</strong> 调整图像的亮度。</a>
+  <a href="#brightness-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e4%ba%ae%e5%ba%a6">``Brightness`：** 调整图像的亮度。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">brightImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">Brightness</span> <span style="color:#ae81ff">20</span> }}
 </span></span></code></pre></div><h5 id="colorbalance-调整图像的色彩平衡">
   
-  <a href="#colorbalance-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e8%89%b2%e5%bd%a9%e5%b9%b3%e8%a1%a1"><strong><code>ColorBalance</code>：</strong> 调整图像的色彩平衡。</a>
+  <a href="#colorbalance-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e8%89%b2%e5%bd%a9%e5%b9%b3%e8%a1%a1">``ColorBalance`：** 调整图像的色彩平衡。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">balancedImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">ColorBalance</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span> <span style="color:#ae81ff">15</span> }}
 </span></span></code></pre></div><h5 id="colorize-对图像进行着色">
   
-  <a href="#colorize-%e5%af%b9%e5%9b%be%e5%83%8f%e8%bf%9b%e8%a1%8c%e7%9d%80%e8%89%b2"><strong><code>Colorize</code>：</strong> 对图像进行着色。</a>
+  <a href="#colorize-%e5%af%b9%e5%9b%be%e5%83%8f%e8%bf%9b%e8%a1%8c%e7%9d%80%e8%89%b2">``Colorize`：** 对图像进行着色。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">colorizedImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">Colorize</span> <span style="color:#e6db74">&#34;#FF0000&#34;</span> }}
 </span></span></code></pre></div><h5 id="config-获取图像的配置信息">
   
-  <a href="#config-%e8%8e%b7%e5%8f%96%e5%9b%be%e5%83%8f%e7%9a%84%e9%85%8d%e7%bd%ae%e4%bf%a1%e6%81%af"><strong><code>Config</code>：</strong> 获取图像的配置信息。</a>
+  <a href="#config-%e8%8e%b7%e5%8f%96%e5%9b%be%e5%83%8f%e7%9a%84%e9%85%8d%e7%bd%ae%e4%bf%a1%e6%81%af">``Config`：** 获取图像的配置信息。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">imageConfig</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">Config</span> }}
 </span></span></code></pre></div><h5 id="contrast-调整图像的对比度">
   
-  <a href="#contrast-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e5%af%b9%e6%af%94%e5%ba%a6"><strong><code>Contrast</code>：</strong> 调整图像的对比度。</a>
+  <a href="#contrast-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e5%af%b9%e6%af%94%e5%ba%a6">``Contrast`：** 调整图像的对比度。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">contrastedImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">Contrast</span> <span style="color:#ae81ff">10</span> }}
 </span></span></code></pre></div><h5 id="filter-应用滤镜效果">
   
-  <a href="#filter-%e5%ba%94%e7%94%a8%e6%bb%a4%e9%95%9c%e6%95%88%e6%9e%9c"><strong><code>Filter</code>：</strong> 应用滤镜效果。</a>
+  <a href="#filter-%e5%ba%94%e7%94%a8%e6%bb%a4%e9%95%9c%e6%95%88%e6%9e%9c">``Filter`：** 应用滤镜效果。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">filteredImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">Filter</span> <span style="color:#e6db74">&#34;blur&#34;</span> }}
 </span></span></code></pre></div><h5 id="gamma-调整图像的伽马值">
   
-  <a href="#gamma-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e4%bc%bd%e9%a9%ac%e5%80%bc"><strong><code>Gamma</code>：</strong> 调整图像的伽马值。</a>
+  <a href="#gamma-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e4%bc%bd%e9%a9%ac%e5%80%bc">``Gamma`：** 调整图像的伽马值。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">gammaImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">Gamma</span> <span style="color:#ae81ff">1.5</span> }}
 </span></span></code></pre></div><h5 id="gaussianblur-对图像应用高斯模糊">
   
-  <a href="#gaussianblur-%e5%af%b9%e5%9b%be%e5%83%8f%e5%ba%94%e7%94%a8%e9%ab%98%e6%96%af%e6%a8%a1%e7%b3%8a"><strong><code>GaussianBlur</code>：</strong> 对图像应用高斯模糊。</a>
+  <a href="#gaussianblur-%e5%af%b9%e5%9b%be%e5%83%8f%e5%ba%94%e7%94%a8%e9%ab%98%e6%96%af%e6%a8%a1%e7%b3%8a">``GaussianBlur`：** 对图像应用高斯模糊。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">blurredImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">GaussianBlur</span> <span style="color:#ae81ff">5</span> }}
 </span></span></code></pre></div><h5 id="grayscale-将图像转换为灰度">
   
-  <a href="#grayscale-%e5%b0%86%e5%9b%be%e5%83%8f%e8%bd%ac%e6%8d%a2%e4%b8%ba%e7%81%b0%e5%ba%a6"><strong><code>Grayscale</code>：</strong> 将图像转换为灰度。</a>
+  <a href="#grayscale-%e5%b0%86%e5%9b%be%e5%83%8f%e8%bd%ac%e6%8d%a2%e4%b8%ba%e7%81%b0%e5%ba%a6">``Grayscale`：** 将图像转换为灰度。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">grayImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">Grayscale</span> }}
 </span></span></code></pre></div><h5 id="hue-调整图像的色调">
   
-  <a href="#hue-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e8%89%b2%e8%b0%83"><strong><code>Hue</code>：</strong> 调整图像的色调。</a>
+  <a href="#hue-%e8%b0%83%e6%95%b4%e5%9b%be%e5%83%8f%e7%9a%84%e8%89%b2%e8%b0%83">``Hue`：** 调整图像的色调。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">huedImage</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> | <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">Hue</span> <span style="color:#ae81ff">30</span> }}
 </span></span></code></pre></div><h4 id="inflect单词处理">
@@ -1883,17 +1894,17 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <h5 id="humanize-使单词更具人性化">
   
-  <a href="#humanize-%e4%bd%bf%e5%8d%95%e8%af%8d%e6%9b%b4%e5%85%b7%e4%ba%ba%e6%80%a7%e5%8c%96"><strong><code>Humanize</code>：</strong> 使单词更具人性化</a>
+  <a href="#humanize-%e4%bd%bf%e5%8d%95%e8%af%8d%e6%9b%b4%e5%85%b7%e4%ba%ba%e6%80%a7%e5%8c%96">``Humanize`：** 使单词更具人性化</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">humanizedWord</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">i18n</span> <span style="color:#e6db74">&#34;word&#34;</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">slice</span> <span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#e6db74">&#34;humanize&#34;</span>) }}
 </span></span></code></pre></div><h5 id="pluralize-将单词转为复数形式">
   
-  <a href="#pluralize-%e5%b0%86%e5%8d%95%e8%af%8d%e8%bd%ac%e4%b8%ba%e5%a4%8d%e6%95%b0%e5%bd%a2%e5%bc%8f"><strong><code>Pluralize</code>：</strong> 将单词转为复数形式</a>
+  <a href="#pluralize-%e5%b0%86%e5%8d%95%e8%af%8d%e8%bd%ac%e4%b8%ba%e5%a4%8d%e6%95%b0%e5%bd%a2%e5%bc%8f">``Pluralize`：** 将单词转为复数形式</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">pluralWord</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">i18n</span> <span style="color:#e6db74">&#34;word&#34;</span> <span style="color:#ae81ff">2</span> (<span style="color:#a6e22e">slice</span> <span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#e6db74">&#34;pluralize&#34;</span>) }}
 </span></span></code></pre></div><h5 id="singularize-将单词转为单数形式">
   
-  <a href="#singularize-%e5%b0%86%e5%8d%95%e8%af%8d%e8%bd%ac%e4%b8%ba%e5%8d%95%e6%95%b0%e5%bd%a2%e5%bc%8f"><strong><code>Singularize</code>：</strong> 将单词转为单数形式</a>
+  <a href="#singularize-%e5%b0%86%e5%8d%95%e8%af%8d%e8%bd%ac%e4%b8%ba%e5%8d%95%e6%95%b0%e5%bd%a2%e5%bc%8f">``Singularize`：** 将单词转为单数形式</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">singularWord</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">i18n</span> <span style="color:#e6db74">&#34;words&#34;</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">slice</span> <span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#e6db74">&#34;singularize&#34;</span>) }}
 </span></span></code></pre></div><h1 id="math数字运算">
@@ -2014,7 +2025,7 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <h5 id="osfileexists-检查文件是否存在">
   
-  <a href="#osfileexists-%e6%a3%80%e6%9f%a5%e6%96%87%e4%bb%b6%e6%98%af%e5%90%a6%e5%ad%98%e5%9c%a8"><strong><code>os.FileExists</code>：</strong> 检查文件是否存在</a>
+  <a href="#osfileexists-%e6%a3%80%e6%9f%a5%e6%96%87%e4%bb%b6%e6%98%af%e5%90%a6%e5%ad%98%e5%9c%a8">``os.FileExists`：** 检查文件是否存在</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">filePath</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;path/to/file.txt&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">with</span> <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">filePath</span> }}
@@ -2027,12 +2038,12 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="osgetenv-获取环境变量">
   
-  <a href="#osgetenv-%e8%8e%b7%e5%8f%96%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f"><strong><code>os.Getenv</code>：</strong> 获取环境变量</a>
+  <a href="#osgetenv-%e8%8e%b7%e5%8f%96%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f">``os.Getenv`：** 获取环境变量</a>
 </h5>
 <p>在 Hugo 模板中无法直接获取环境变量。建议在生成网站前使用其他工具或脚本设置环境变量。</p>
 <h5 id="osreaddir-读取目录内容">
   
-  <a href="#osreaddir-%e8%af%bb%e5%8f%96%e7%9b%ae%e5%bd%95%e5%86%85%e5%ae%b9"><strong><code>os.ReadDir</code>：</strong> 读取目录内容</a>
+  <a href="#osreaddir-%e8%af%bb%e5%8f%96%e7%9b%ae%e5%bd%95%e5%86%85%e5%ae%b9">``os.ReadDir`：** 读取目录内容</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">dirPath</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;path/to/directory&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">files</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Match</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">dirPath</span> <span style="color:#e6db74">&#34;**/*&#34;</span> }}
@@ -2041,7 +2052,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="osreadfile-读取文件内容">
   
-  <a href="#osreadfile-%e8%af%bb%e5%8f%96%e6%96%87%e4%bb%b6%e5%86%85%e5%ae%b9"><strong><code>os.ReadFile</code>：</strong> 读取文件内容</a>
+  <a href="#osreadfile-%e8%af%bb%e5%8f%96%e6%96%87%e4%bb%b6%e5%86%85%e5%ae%b9">``os.ReadFile`：** 读取文件内容</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">filePath</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;path/to/file.txt&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">with</span> <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">filePath</span> }}
@@ -2050,7 +2061,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="osstat-获取文件状态">
   
-  <a href="#osstat-%e8%8e%b7%e5%8f%96%e6%96%87%e4%bb%b6%e7%8a%b6%e6%80%81"><strong><code>os.Stat</code>：</strong> 获取文件状态</a>
+  <a href="#osstat-%e8%8e%b7%e5%8f%96%e6%96%87%e4%bb%b6%e7%8a%b6%e6%80%81">``os.Stat`：** 获取文件状态</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">filePath</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;path/to/file.txt&#34;</span> }}
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">with</span> <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">filePath</span> }}
@@ -2059,13 +2070,13 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="partial-调用局部模板">
   
-  <a href="#partial-%e8%b0%83%e7%94%a8%e5%b1%80%e9%83%a8%e6%a8%a1%e6%9d%bf"><strong><code>partial</code>：</strong> 调用局部模板</a>
+  <a href="#partial-%e8%b0%83%e7%94%a8%e5%b1%80%e9%83%a8%e6%a8%a1%e6%9d%bf">``partial`：** 调用局部模板</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">partial</span> <span style="color:#e6db74">&#34;myPartial.html&#34;</span> . }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">调用名为</span> <span style="color:#e6db74">&#34;myPartial.html&#34;</span> <span style="color:#a6e22e">的局部模板</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">并传递当前上下文数据</span><span style="color:#960050;background-color:#1e0010">（</span>.<span style="color:#960050;background-color:#1e0010">）</span> <span style="color:#f92672">--</span>&gt;
 </span></span></code></pre></div><h5 id="partialcached-调用缓存的局部模板">
   
-  <a href="#partialcached-%e8%b0%83%e7%94%a8%e7%bc%93%e5%ad%98%e7%9a%84%e5%b1%80%e9%83%a8%e6%a8%a1%e6%9d%bf"><strong><code>partialCached</code>：</strong> 调用缓存的局部模板</a>
+  <a href="#partialcached-%e8%b0%83%e7%94%a8%e7%bc%93%e5%ad%98%e7%9a%84%e5%b1%80%e9%83%a8%e6%a8%a1%e6%9d%bf">``partialCached`：** 调用缓存的局部模板</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">partialCached</span> <span style="color:#e6db74">&#34;myCachedPartial.html&#34;</span> . <span style="color:#e6db74">&#34;myCacheKey&#34;</span> }}
 </span></span><span style="display:flex;"><span>&lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">使用缓存键</span> <span style="color:#e6db74">&#34;myCacheKey&#34;</span> <span style="color:#a6e22e">调用名为</span> <span style="color:#e6db74">&#34;myCachedPartial.html&#34;</span> <span style="color:#a6e22e">的缓存局部模板</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">并传递当前上下文数据</span><span style="color:#960050;background-color:#1e0010">（</span>.<span style="color:#960050;background-color:#1e0010">）</span> <span style="color:#f92672">--</span>&gt;
@@ -2166,79 +2177,79 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <h5 id="aliases">
   
-  <a href="#aliases"><strong>Aliases:</strong></a>
+  <a href="#aliases">`Aliases:**</a>
 </h5>
 <p>当前页面的别名。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Aliases</span> }}
 </span></span></code></pre></div><h5 id="alltranslations">
   
-  <a href="#alltranslations"><strong>AllTranslations:</strong></a>
+  <a href="#alltranslations">`AllTranslations:**</a>
 </h5>
 <p>当前页面的所有翻译版本。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">AllTranslations</span> }}
 </span></span></code></pre></div><h5 id="alternativeoutputformats">
   
-  <a href="#alternativeoutputformats"><strong>AlternativeOutputFormats:</strong></a>
+  <a href="#alternativeoutputformats">`AlternativeOutputFormats:**</a>
 </h5>
 <p>当前页面的替代输出格式。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">AlternativeOutputFormats</span> }}
 </span></span></code></pre></div><h5 id="ancestors">
   
-  <a href="#ancestors"><strong>Ancestors:</strong></a>
+  <a href="#ancestors">`Ancestors:**</a>
 </h5>
 <p>当前页面的祖先页面。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Ancestors</span> }}
 </span></span></code></pre></div><h5 id="bundletype">
   
-  <a href="#bundletype"><strong>BundleType:</strong></a>
+  <a href="#bundletype">`BundleType:**</a>
 </h5>
 <p>内容包的类型。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">BundleType</span> }}
 </span></span></code></pre></div><h5 id="codeowners">
   
-  <a href="#codeowners"><strong>CodeOwners:</strong></a>
+  <a href="#codeowners">`CodeOwners:**</a>
 </h5>
 <p>从仓库根目录获取 CODEOWNERS 文件。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">CodeOwners</span> }}
 </span></span></code></pre></div><h5 id="content">
   
-  <a href="#content"><strong>Content:</strong></a>
+  <a href="#content">`Content:**</a>
 </h5>
 <p>当前页面的原始内容。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Content</span> }}
 </span></span></code></pre></div><h5 id="currentsection">
   
-  <a href="#currentsection"><strong>CurrentSection:</strong></a>
+  <a href="#currentsection">`CurrentSection:**</a>
 </h5>
 <p>当前页面所属的部分。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">CurrentSection</span> }}
 </span></span></code></pre></div><h5 id="data">
   
-  <a href="#data"><strong>Data:</strong></a>
+  <a href="#data">`Data:**</a>
 </h5>
 <p>从 <code>data</code> 目录获取数据文件。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Data</span> }}
 </span></span></code></pre></div><h5 id="date">
   
-  <a href="#date"><strong>Date:</strong></a>
+  <a href="#date">`Date:**</a>
 </h5>
 <p>当前页面的日期。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Date</span> }}
 </span></span></code></pre></div><h5 id="description">
   
-  <a href="#description"><strong>Description:</strong></a>
+  <a href="#description">`Description:**</a>
 </h5>
 <p>当前页面的描述。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Description</span> }}
 </span></span></code></pre></div><h5 id="draft">
   
-  <a href="#draft"><strong>Draft:</strong></a>
+  <a href="#draft">`Draft:**</a>
 </h5>
 <p>检查当前页面是否是草稿。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Draft</span> }}
 </span></span></code></pre></div><h5 id="eq">
   
-  <a href="#eq"><strong>Eq:</strong></a>
+  <a href="#eq">`Eq:**</a>
 </h5>
 <p>检查两个值是否相等。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">eq</span> .<span style="color:#a6e22e">Variable1</span> .<span style="color:#a6e22e">Variable2</span> }}
@@ -2246,156 +2257,156 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="expirydate当前页面的过期日期">
   
-  <a href="#expirydate%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%bf%87%e6%9c%9f%e6%97%a5%e6%9c%9f">**ExpiryDate:**当前页面的过期日期。</a>
+  <a href="#expirydate%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%bf%87%e6%9c%9f%e6%97%a5%e6%9c%9f">`ExpiryDate:**当前页面的过期日期。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">ExpiryDate</span> }}
 </span></span></code></pre></div><h5 id="file当前内容文件的信息">
   
-  <a href="#file%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%96%87%e4%bb%b6%e7%9a%84%e4%bf%a1%e6%81%af">**File:**当前内容文件的信息。</a>
+  <a href="#file%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%96%87%e4%bb%b6%e7%9a%84%e4%bf%a1%e6%81%af">`File:**当前内容文件的信息。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">File</span> }}
 </span></span></code></pre></div><h5 id="firstsection当前页面所属的第一个部分">
   
-  <a href="#firstsection%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e6%89%80%e5%b1%9e%e7%9a%84%e7%ac%ac%e4%b8%80%e4%b8%aa%e9%83%a8%e5%88%86">**FirstSection:**当前页面所属的第一个部分。</a>
+  <a href="#firstsection%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e6%89%80%e5%b1%9e%e7%9a%84%e7%ac%ac%e4%b8%80%e4%b8%aa%e9%83%a8%e5%88%86">`FirstSection:**当前页面所属的第一个部分。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">FirstSection</span> }}
 </span></span></code></pre></div><h5 id="fragments当前内容的片段">
   
-  <a href="#fragments%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e7%9a%84%e7%89%87%e6%ae%b5">**Fragments:**当前内容的片段。</a>
+  <a href="#fragments%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e7%9a%84%e7%89%87%e6%ae%b5">`Fragments:**当前内容的片段。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Fragments</span> }}
 </span></span></code></pre></div><h5 id="fuzzywordcount当前页面的模糊字数统计">
   
-  <a href="#fuzzywordcount%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e6%a8%a1%e7%b3%8a%e5%ad%97%e6%95%b0%e7%bb%9f%e8%ae%a1">**FuzzyWordCount:**当前页面的模糊字数统计。</a>
+  <a href="#fuzzywordcount%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e6%a8%a1%e7%b3%8a%e5%ad%97%e6%95%b0%e7%bb%9f%e8%ae%a1">`FuzzyWordCount:**当前页面的模糊字数统计。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">FuzzyWordCount</span> }}
 </span></span></code></pre></div><h5 id="getpage获取指定页面">
   
-  <a href="#getpage%e8%8e%b7%e5%8f%96%e6%8c%87%e5%ae%9a%e9%a1%b5%e9%9d%a2">**GetPage:**获取指定页面。</a>
+  <a href="#getpage%e8%8e%b7%e5%8f%96%e6%8c%87%e5%ae%9a%e9%a1%b5%e9%9d%a2">`GetPage:**获取指定页面。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">getPage</span> <span style="color:#e6db74">&#34;path/to/page&#34;</span> }}
 </span></span></code></pre></div><h5 id="getterms获取给定分类法的术语">
   
-  <a href="#getterms%e8%8e%b7%e5%8f%96%e7%bb%99%e5%ae%9a%e5%88%86%e7%b1%bb%e6%b3%95%e7%9a%84%e6%9c%af%e8%af%ad">**GetTerms:**获取给定分类法的术语。</a>
+  <a href="#getterms%e8%8e%b7%e5%8f%96%e7%bb%99%e5%ae%9a%e5%88%86%e7%b1%bb%e6%b3%95%e7%9a%84%e6%9c%af%e8%af%ad">`GetTerms:**获取给定分类法的术语。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">getTerms</span> <span style="color:#e6db74">&#34;categories&#34;</span> }}
 </span></span></code></pre></div><h5 id="gitinfo获取有关-git-仓库的信息">
   
-  <a href="#gitinfo%e8%8e%b7%e5%8f%96%e6%9c%89%e5%85%b3-git-%e4%bb%93%e5%ba%93%e7%9a%84%e4%bf%a1%e6%81%af">**GitInfo:**获取有关 Git 仓库的信息。</a>
+  <a href="#gitinfo%e8%8e%b7%e5%8f%96%e6%9c%89%e5%85%b3-git-%e4%bb%93%e5%ba%93%e7%9a%84%e4%bf%a1%e6%81%af">`GitInfo:**获取有关 Git 仓库的信息。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">GitInfo</span> }}
 </span></span></code></pre></div><h5 id="hasmenucurrent检查菜单项是否当前选定">
   
-  <a href="#hasmenucurrent%e6%a3%80%e6%9f%a5%e8%8f%9c%e5%8d%95%e9%a1%b9%e6%98%af%e5%90%a6%e5%bd%93%e5%89%8d%e9%80%89%e5%ae%9a">**HasMenuCurrent:**检查菜单项是否当前选定。</a>
+  <a href="#hasmenucurrent%e6%a3%80%e6%9f%a5%e8%8f%9c%e5%8d%95%e9%a1%b9%e6%98%af%e5%90%a6%e5%bd%93%e5%89%8d%e9%80%89%e5%ae%9a">`HasMenuCurrent:**检查菜单项是否当前选定。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> .<span style="color:#a6e22e">HasMenuCurrent</span> }}
 </span></span><span style="display:flex;"><span>  &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">do</span> <span style="color:#a6e22e">something</span> <span style="color:#f92672">--</span>&gt;
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="hasshortcode检查当前内容是否包含指定的-shortcode">
   
-  <a href="#hasshortcode%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%98%af%e5%90%a6%e5%8c%85%e5%90%ab%e6%8c%87%e5%ae%9a%e7%9a%84-shortcode">**HasShortcode:**检查当前内容是否包含指定的 shortcode。</a>
+  <a href="#hasshortcode%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%98%af%e5%90%a6%e5%8c%85%e5%90%ab%e6%8c%87%e5%ae%9a%e7%9a%84-shortcode">`HasShortcode:**检查当前内容是否包含指定的 shortcode。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> .<span style="color:#a6e22e">HasShortcode</span> <span style="color:#e6db74">&#34;shortcodeName&#34;</span> }}
 </span></span><span style="display:flex;"><span>  &lt;!<span style="color:#f92672">--</span> <span style="color:#a6e22e">do</span> <span style="color:#a6e22e">something</span> <span style="color:#f92672">--</span>&gt;
 </span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><h5 id="headingsfiltered返回过滤后的当前内容标题">
   
-  <a href="#headingsfiltered%e8%bf%94%e5%9b%9e%e8%bf%87%e6%bb%a4%e5%90%8e%e7%9a%84%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%a0%87%e9%a2%98">**HeadingsFiltered:**返回过滤后的当前内容标题。</a>
+  <a href="#headingsfiltered%e8%bf%94%e5%9b%9e%e8%bf%87%e6%bb%a4%e5%90%8e%e7%9a%84%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%a0%87%e9%a2%98">`HeadingsFiltered:**返回过滤后的当前内容标题。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">HeadingsFiltered</span> <span style="color:#e6db74">&#34;h2|h3&#34;</span> }}
 </span></span></code></pre></div><h5 id="insection检查当前内容是否在指定部分中">
   
-  <a href="#insection%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%98%af%e5%90%a6%e5%9c%a8%e6%8c%87%e5%ae%9a%e9%83%a8%e5%88%86%e4%b8%ad">**InSection:**检查当前内容是否在指定部分中。</a>
+  <a href="#insection%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%98%af%e5%90%a6%e5%9c%a8%e6%8c%87%e5%ae%9a%e9%83%a8%e5%88%86%e4%b8%ad">`InSection:**检查当前内容是否在指定部分中。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">inSection</span> <span style="color:#e6db74">&#34;sectionName&#34;</span> }}
 </span></span></code></pre></div><h5 id="isancestor检查页面是否为指定页面的祖先">
   
-  <a href="#isancestor%e6%a3%80%e6%9f%a5%e9%a1%b5%e9%9d%a2%e6%98%af%e5%90%a6%e4%b8%ba%e6%8c%87%e5%ae%9a%e9%a1%b5%e9%9d%a2%e7%9a%84%e7%a5%96%e5%85%88">**IsAncestor:**检查页面是否为指定页面的祖先。</a>
+  <a href="#isancestor%e6%a3%80%e6%9f%a5%e9%a1%b5%e9%9d%a2%e6%98%af%e5%90%a6%e4%b8%ba%e6%8c%87%e5%ae%9a%e9%a1%b5%e9%9d%a2%e7%9a%84%e7%a5%96%e5%85%88">`IsAncestor:**检查页面是否为指定页面的祖先。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsAncestor</span> <span style="color:#e6db74">&#34;path/to/ancestor&#34;</span> }}
 </span></span></code></pre></div><h5 id="isdescendant检查页面是否为指定页面的后代">
   
-  <a href="#isdescendant%e6%a3%80%e6%9f%a5%e9%a1%b5%e9%9d%a2%e6%98%af%e5%90%a6%e4%b8%ba%e6%8c%87%e5%ae%9a%e9%a1%b5%e9%9d%a2%e7%9a%84%e5%90%8e%e4%bb%a3">**IsDescendant:**检查页面是否为指定页面的后代。</a>
+  <a href="#isdescendant%e6%a3%80%e6%9f%a5%e9%a1%b5%e9%9d%a2%e6%98%af%e5%90%a6%e4%b8%ba%e6%8c%87%e5%ae%9a%e9%a1%b5%e9%9d%a2%e7%9a%84%e5%90%8e%e4%bb%a3">`IsDescendant:**检查页面是否为指定页面的后代。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsDescendant</span> <span style="color:#e6db74">&#34;path/to/descendant&#34;</span> }}
 </span></span></code></pre></div><h5 id="ishome检查当前内容是否为首页">
   
-  <a href="#ishome%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%98%af%e5%90%a6%e4%b8%ba%e9%a6%96%e9%a1%b5">**IsHome:**检查当前内容是否为首页。</a>
+  <a href="#ishome%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e6%98%af%e5%90%a6%e4%b8%ba%e9%a6%96%e9%a1%b5">`IsHome:**检查当前内容是否为首页。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsHome</span> }}
 </span></span></code></pre></div><h5 id="ismenucurrent检查菜单项是否是当前页面">
   
-  <a href="#ismenucurrent%e6%a3%80%e6%9f%a5%e8%8f%9c%e5%8d%95%e9%a1%b9%e6%98%af%e5%90%a6%e6%98%af%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2">**IsMenuCurrent:**检查菜单项是否是当前页面。</a>
+  <a href="#ismenucurrent%e6%a3%80%e6%9f%a5%e8%8f%9c%e5%8d%95%e9%a1%b9%e6%98%af%e5%90%a6%e6%98%af%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2">`IsMenuCurrent:**检查菜单项是否是当前页面。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsMenuCurrent</span> }}
 </span></span></code></pre></div><h5 id="isnode检查变量是否为节点">
   
-  <a href="#isnode%e6%a3%80%e6%9f%a5%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e4%b8%ba%e8%8a%82%e7%82%b9">**IsNode:**检查变量是否为节点。</a>
+  <a href="#isnode%e6%a3%80%e6%9f%a5%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e4%b8%ba%e8%8a%82%e7%82%b9">`IsNode:**检查变量是否为节点。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsNode</span> .<span style="color:#a6e22e">Variable</span> }}
 </span></span></code></pre></div><h5 id="ispage检查变量是否为页面">
   
-  <a href="#ispage%e6%a3%80%e6%9f%a5%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e4%b8%ba%e9%a1%b5%e9%9d%a2">**IsPage:**检查变量是否为页面。</a>
+  <a href="#ispage%e6%a3%80%e6%9f%a5%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e4%b8%ba%e9%a1%b5%e9%9d%a2">`IsPage:**检查变量是否为页面。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsPage</span> .<span style="color:#a6e22e">Variable</span> }}
 </span></span></code></pre></div><h5 id="issection检查变量是否为部分">
   
-  <a href="#issection%e6%a3%80%e6%9f%a5%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e4%b8%ba%e9%83%a8%e5%88%86">**IsSection:**检查变量是否为部分。</a>
+  <a href="#issection%e6%a3%80%e6%9f%a5%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e4%b8%ba%e9%83%a8%e5%88%86">`IsSection:**检查变量是否为部分。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsSection</span> .<span style="color:#a6e22e">Variable</span> }}
 </span></span></code></pre></div><h5 id="istranslated检查当前页面是否有翻译">
   
-  <a href="#istranslated%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e6%98%af%e5%90%a6%e6%9c%89%e7%bf%bb%e8%af%91">**IsTranslated:**检查当前页面是否有翻译。</a>
+  <a href="#istranslated%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e6%98%af%e5%90%a6%e6%9c%89%e7%bf%bb%e8%af%91">`IsTranslated:**检查当前页面是否有翻译。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">IsTranslated</span> }}
 </span></span></code></pre></div><h5 id="keywords当前页面的关键字">
   
-  <a href="#keywords%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e5%85%b3%e9%94%ae%e5%ad%97">**Keywords:**当前页面的关键字。</a>
+  <a href="#keywords%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e5%85%b3%e9%94%ae%e5%ad%97">`Keywords:**当前页面的关键字。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Keywords</span> }}
 </span></span></code></pre></div><h5 id="kind当前内容的种类例如page-或-section">
   
-  <a href="#kind%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e7%9a%84%e7%a7%8d%e7%b1%bb%e4%be%8b%e5%a6%82page-%e6%88%96-section">**Kind:**当前内容的种类（例如，&ldquo;page&rdquo; 或 &ldquo;section&rdquo;）。</a>
+  <a href="#kind%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e7%9a%84%e7%a7%8d%e7%b1%bb%e4%be%8b%e5%a6%82page-%e6%88%96-section">`Kind:**当前内容的种类（例如，&ldquo;page&rdquo; 或 &ldquo;section&rdquo;）。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Kind</span> }}
 </span></span></code></pre></div><h5 id="language当前页面的语言">
   
-  <a href="#language%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%af%ad%e8%a8%80">**Language:**当前页面的语言。</a>
+  <a href="#language%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%af%ad%e8%a8%80">`Language:**当前页面的语言。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Language</span> }}
 </span></span></code></pre></div><h5 id="lastmod当前页面的最后修改时间">
   
-  <a href="#lastmod%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e6%9c%80%e5%90%8e%e4%bf%ae%e6%94%b9%e6%97%b6%e9%97%b4">**Lastmod:**当前页面的最后修改时间。</a>
+  <a href="#lastmod%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e6%9c%80%e5%90%8e%e4%bf%ae%e6%94%b9%e6%97%b6%e9%97%b4">`Lastmod:**当前页面的最后修改时间。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Lastmod</span> }}
 </span></span></code></pre></div><h5 id="layout当前内容的布局">
   
-  <a href="#layout%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e7%9a%84%e5%b8%83%e5%b1%80">**Layout:**当前内容的布局。</a>
+  <a href="#layout%e5%bd%93%e5%89%8d%e5%86%85%e5%ae%b9%e7%9a%84%e5%b8%83%e5%b1%80">`Layout:**当前内容的布局。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Layout</span> }}
 </span></span></code></pre></div><h5 id="len返回切片映射或字符串的长度">
   
-  <a href="#len%e8%bf%94%e5%9b%9e%e5%88%87%e7%89%87%e6%98%a0%e5%b0%84%e6%88%96%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e9%95%bf%e5%ba%a6">**Len:**返回切片、映射或字符串的长度。</a>
+  <a href="#len%e8%bf%94%e5%9b%9e%e5%88%87%e7%89%87%e6%98%a0%e5%b0%84%e6%88%96%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e9%95%bf%e5%ba%a6">`Len:**返回切片、映射或字符串的长度。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">len</span> .<span style="color:#a6e22e">Variable</span> }}
 </span></span></code></pre></div><h5 id="linktitle当前页面的链接标题">
   
-  <a href="#linktitle%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e9%93%be%e6%8e%a5%e6%a0%87%e9%a2%98">**LinkTitle:**当前页面的链接标题。</a>
+  <a href="#linktitle%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e9%93%be%e6%8e%a5%e6%a0%87%e9%a2%98">`LinkTitle:**当前页面的链接标题。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">LinkTitle</span> }}
 </span></span></code></pre></div><h5 id="next返回下一个同级页面">
   
-  <a href="#next%e8%bf%94%e5%9b%9e%e4%b8%8b%e4%b8%80%e4%b8%aa%e5%90%8c%e7%ba%a7%e9%a1%b5%e9%9d%a2">**Next:**返回下一个同级页面。</a>
+  <a href="#next%e8%bf%94%e5%9b%9e%e4%b8%8b%e4%b8%80%e4%b8%aa%e5%90%8c%e7%ba%a7%e9%a1%b5%e9%9d%a2">`Next:**返回下一个同级页面。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Next</span> }}
 </span></span></code></pre></div><h5 id="nextinsection返回同一部分中的下一个页面">
   
-  <a href="#nextinsection%e8%bf%94%e5%9b%9e%e5%90%8c%e4%b8%80%e9%83%a8%e5%88%86%e4%b8%ad%e7%9a%84%e4%b8%8b%e4%b8%80%e4%b8%aa%e9%a1%b5%e9%9d%a2">**NextInSection:**返回同一部分中的下一个页面。</a>
+  <a href="#nextinsection%e8%bf%94%e5%9b%9e%e5%90%8c%e4%b8%80%e9%83%a8%e5%88%86%e4%b8%ad%e7%9a%84%e4%b8%8b%e4%b8%80%e4%b8%aa%e9%a1%b5%e9%9d%a2">`NextInSection:**返回同一部分中的下一个页面。</a>
 </h5>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">NextInSection</span> }}
 </span></span></code></pre></div><h5 id="outputformats当前页面的输出">
   
-  <a href="#outputformats%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%be%93%e5%87%ba">**OutputFormats:**当前页面的输出</a>
+  <a href="#outputformats%e5%bd%93%e5%89%8d%e9%a1%b5%e9%9d%a2%e7%9a%84%e8%be%93%e5%87%ba">`OutputFormats:**当前页面的输出</a>
 </h5>
 </article>
  
@@ -2403,19 +2414,15 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-<div class="flex flex-wrap justify-between">
-
-
-
-
+<div class="ios_card">
+  <p>
+    Power by <a href="https://gohugo.io">Hugo</a>
+    
+    
+    已运行 304天
+  </p>
 
 </div>
-
-
-
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
  
         <script>
   
