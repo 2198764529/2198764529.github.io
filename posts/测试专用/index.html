@@ -11,9 +11,9 @@
 <title>测试专用 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
-<link rel="stylesheet" href="/book.min.332752175b26916faa71ad1e17370e9c6a7a0ad58379899b308016ae46289c1d.css" integrity="sha256-MydSF1smkW&#43;qca0eFzcOnGp6CtWDeYmbMIAWrkYonB0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.89c343bdb98c67312ba53d00c362e3b03a8b0e88783cf6481141b57ff41c204a.css" integrity="sha256-icNDvbmMZzErpT0Aw2LjsDqLDoh4PPZIEUG1f/QcIEo=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.45e682b2da85aa7ded522b0e4e61c1bcb549a4a05b3b50cc70960c582acab6ab.js" integrity="sha256-ReaCstqFqn3tUisOTmHBvLVJpKBbO1DMcJYMWCrKtqs=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.8a8b27141a72dbc9bc338d6cfb2d4742dc81632865c47e91b76233e709e9eb56.js" integrity="sha256-iosnFBpy28m8M41s&#43;y1HQtyBYyhlxH6Rt2Iz5wnp61Y=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -703,11 +703,11 @@ https://github.com/alex-shpak/hugo-book
       测试专用
     </a>
     
-    <small class="Lastmod" data-unix="1703584916">
+    <small class="Lastmod" data-unix="1703674422">
     </small>
 
     <small>
-      5字
+      43字
 
     </small>
     
@@ -745,7 +745,18 @@ https://github.com/alex-shpak/hugo-book
   <img src="/assert/img/testImg.jpg" alt="RUNOOB 图标" /><br>
 
   <img src="/assert/img/testImg.jpg" alt="RUNOOB 图标" /></p>
-</article>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">* 欧洲
+	* 德国
+	* 法国
+	* 英国
+	* 俄国
+	* 意大利
+</code></pre><pre tabindex="0"><code class="language-uml" data-lang="uml">node node [
+这是个 &lt;b&gt;结点
+----
+
+]
+</code></pre></article>
  
       
 
@@ -776,6 +787,120 @@ https://github.com/alex-shpak/hugo-book
     updateDateTimeByElementClass("Lastmod");
   }; 
 </script>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    securityLevel: 'loose',
+    theme: 'dark',
+  });
+  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
+    (el) => {
+      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
+    }
+  );
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js"></script>
+<style id="css_plantuml">
+
+  mindmapDiagram{
+    BackGroundColor none
+    node {
+      FontColor _FontColor
+      LineColor _LineColor
+    }
+    arrow {
+      LineColor _LineColor
+    }
+  }
+  componentDiagram{
+    node {
+      FontColor _FontColor
+      LineColor _LineColor
+    }
+    arrow {
+      LineColor _LineColor
+    }
+  }
+  document {
+    width 100%
+    BackGroundColor none
+    node {
+      FontColor _FontColor
+      LineColor _LineColor
+    }
+    arrow {
+      LineColor _LineColor
+    }
+  }
+  node {
+      BackGroundColor none
+      FontColor _FontColor
+    LineColor _LineColor
+  }
+  
+</style>
+<script>
+  console.log('ok');
+  let plantumlPrefix = "language-mindmap";
+  let elements = document.querySelectorAll(".language-mindmap,.language-uml");
+  const bodyStyles = getComputedStyle(document.body);
+  const bodyFontColor = bodyStyles.getPropertyValue('--body-font-color').trim();
+  const bodyBGColor = bodyStyles.getPropertyValue('--body-background').trim();
+  const cardBG = bodyStyles.getPropertyValue('--card-bg').trim();
+  let css_plantuml = document.getElementById("css_plantuml").innerHTML;
+  css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
+  Array.from(elements).forEach(
+    (el) => {
+      el.parentElement.style.background = cardBG;
+      let el_innerText = el.innerText;
+      if (el.dataset.lang=="mindmap")
+      {
+        el_innerText=el_innerText.trim().replace(/^\t*/gm, function(match) {
+          
+          return '\t'.repeat(match.length)+"* ";
+        });
+      }
+      
+      console.log(el_innerText);
+      let iframe = document.createElement("embed");
+      el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
+      console.log(el_innerText)
+      let url = 'http://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
+      console.log(url);
+      iframe.src = url;
+      iframe.style.display = "inline";
+      el.innerHTML = iframe.outerHTML;
+
+    }
+  );
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script>
+
+  Array.from(document.getElementsByClassName("language-markmap")).forEach(
+    (el) => {
+      console.log(el);
+      
+      el.innerHTML = `<div class="markmap">${el.innerText}</div>`;
+    }
+  );
+</script>
+<style>
+  svg.markmap {
+    width: 100%;
+    height: 100%;
+  }
+</style>
 
       </footer>
 

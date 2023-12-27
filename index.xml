@@ -126,7 +126,8 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.fun/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</guid>
-      <description>这是一只猫</description>
+      <description> 这是一只猫
+* 欧洲 * 德国 * 法国 * 英国 * 俄国 * 意大利 node node [ 这是个 &amp;lt;b&amp;gt;结点 ---- ] </description>
     </item>
     
     <item>
@@ -215,9 +216,8 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.fun/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
-      <description>概述 flowchart TB; subgraph OSI的体系结构 direction TB a1[应用层]--&amp;gt;a2[表示层]--&amp;gt;a3[会话层]--&amp;gt;a4[运输层]--&amp;gt;a5[网络层]--&amp;gt;a6[数据链路层]--&amp;gt;a7[物理层] end subgraph TCP/ID的体系结构 direction TB	b1[应用层]--&amp;gt;|Link text|b2[运输层]--&amp;gt;b3[网际层]--&amp;gt;b4[网络接口层] end subgraph 五层协议 direction TB	c5--&amp;gt;|比特流|c4--&amp;gt;|帧|c3--&amp;gt;|数据帧|c2--&amp;gt;|报文|c1 c1[应用层]--&amp;gt;|应用数据|c2[运输层]--&amp;gt;|报文|c3[网络层]--&amp;gt;|数据帧|c4[数据链路层]--&amp;gt;|帧|c5[物理层] end mindmap 体系结构 五层协议 应用 运输 网络 数据链路 物理 OSI七层协议 应用 表示 会话 运输 网络 数据链路 物理 TCP/IP五层协议 应用 运输 网际 网络接口 mindmap 物理层 特性 机械 电气 功能 过程 设备 中继器 集线器 信道 类型 单工 半双工 全双工 应用层 应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。
-概念 应用层主要包括以下内容
-域名系统 DNS WWW 和 HTTP 协议 电子邮件的相关协议，SMTP 协议和 POP3 协议、IMAP 协议 域名系统 DNS DNS 的作用是将域名转为IP地址，具体的过程是应用进程调用 resolver（解析程序），发送包含待解析的域名的 DNS 请求报文，通过 UDP 进行再包装发送到本地域名服务器，本地域名服务器搜索以后，把对应的 IP 地址放在回答报文返回。</description>
+      <description>概述 ​
+flowchart TB; subgraph OSI的体系结构 direction TB a1[应用层]--&amp;gt;a2[表示层]--&amp;gt;a3[会话层]--&amp;gt;a4[运输层]--&amp;gt;a5[网络层]--&amp;gt;a6[数据链路层]--&amp;gt;a7[物理层] end subgraph TCP/ID的体系结构 direction TB	b1[应用层]--&amp;gt;|Link text|b2[运输层]--&amp;gt;b3[网际层]--&amp;gt;b4[网络接口层] end subgraph 五层协议 direction TB	c5--&amp;gt;|比特流|c4--&amp;gt;|帧|c3--&amp;gt;|数据帧|c2--&amp;gt;|报文|c1 c1[应用层]--&amp;gt;|应用数据|c2[运输层]--&amp;gt;|报文|c3[网络层]--&amp;gt;|数据帧|c4[数据链路层]--&amp;gt;|帧|c5[物理层] end node node [ 应用层 ---- 运输层 ---- 网络层 ---- 数据链路层 --- 物理层 ] node node2 [ 应用层 ---- 运输层 ---- 网际层 ---- 网络接口层 ] node node3 [ 应用层 ---- 表示层 ---- 会话层 ---- 运输层 --- 网络层 --- 数据链路层 --- 物理层 ] 体系结构 五层协议 应用 运输 网络 数据链路 物理 OSI七层协议 应用 表示 会话 运输 网络 数据链路 物理 TCP/IP五层协议 应用 运输 网际 网络接口 物理层 特性 机械 电气 功能 过程 设备 中继器 集线器 信道 单工 半双工 全双工 数据链路层 应用层 应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。</description>
     </item>
     
     <item>
@@ -340,7 +340,13 @@ graph TB; n_start([开始])--&amp;gt;n1[&amp;#34;从头到尾遍历自己前面�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.fun/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ 画图工具 https://handraw.top Chatgpt https://chat.openai.com 建站参考 hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App 颜色墙 http://zhongguose.com/#shangengzi Lunar https://6tail.cn/calendar/api.html fullcalendar https://fullcalendar.io/docs jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 参考博客 干志雄 https://ganzhixiong.com 雷雷屋头 https://ll.sc.cn </description>
+      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ 画图工具 https://handraw.top Chatgpt https://chat.openai.com 建站参考 hugo https://hugo.aiaide.com/post
+Lyricify https://github.com/WXRIW/Lyricify-App
+颜色墙 http://zhongguose.com/#shangengzi
+博客部署
+nameSilo https://www.namesilo.com 阿里云 https://cn.aliyun.com Vercel https://vercel.com jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 元素生成
+digraph https://zhuanlan.zhihu.com/p/21993254 fullcalendar https://fullcalendar.io/docs Lunar https://6tail.cn/calendar/api.html graphviz https://graphviz.org plantuml https://plantuml.com/zh/ 参考博客
+干志雄 https://ganzhixiong.com 雷雷屋头 https://ll.sc.cn </description>
     </item>
     
     <item>

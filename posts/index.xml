@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.fun/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</guid>
-      <description>这是一只猫</description>
+      <description> 这是一只猫
+* 欧洲 * 德国 * 法国 * 英国 * 俄国 * 意大利 node node [ 这是个 &amp;lt;b&amp;gt;结点 ---- ] </description>
     </item>
     
     <item>
@@ -38,7 +39,13 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.fun/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ 画图工具 https://handraw.top Chatgpt https://chat.openai.com 建站参考 hugo https://hugo.aiaide.com/post Lyricify https://github.com/WXRIW/Lyricify-App 颜色墙 http://zhongguose.com/#shangengzi Lunar https://6tail.cn/calendar/api.html fullcalendar https://fullcalendar.io/docs jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 nameSilo https://www.namesilo.com 参考博客 干志雄 https://ganzhixiong.com 雷雷屋头 https://ll.sc.cn </description>
+      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ 画图工具 https://handraw.top Chatgpt https://chat.openai.com 建站参考 hugo https://hugo.aiaide.com/post
+Lyricify https://github.com/WXRIW/Lyricify-App
+颜色墙 http://zhongguose.com/#shangengzi
+博客部署
+nameSilo https://www.namesilo.com 阿里云 https://cn.aliyun.com Vercel https://vercel.com jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 元素生成
+digraph https://zhuanlan.zhihu.com/p/21993254 fullcalendar https://fullcalendar.io/docs Lunar https://6tail.cn/calendar/api.html graphviz https://graphviz.org plantuml https://plantuml.com/zh/ 参考博客
+干志雄 https://ganzhixiong.com 雷雷屋头 https://ll.sc.cn </description>
     </item>
     
   </channel>

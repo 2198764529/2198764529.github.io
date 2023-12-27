@@ -11,9 +11,9 @@
 <title>计算机网络 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
-<link rel="stylesheet" href="/book.min.332752175b26916faa71ad1e17370e9c6a7a0ad58379899b308016ae46289c1d.css" integrity="sha256-MydSF1smkW&#43;qca0eFzcOnGp6CtWDeYmbMIAWrkYonB0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.89c343bdb98c67312ba53d00c362e3b03a8b0e88783cf6481141b57ff41c204a.css" integrity="sha256-icNDvbmMZzErpT0Aw2LjsDqLDoh4PPZIEUG1f/QcIEo=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.45e682b2da85aa7ded522b0e4e61c1bcb549a4a05b3b50cc70960c582acab6ab.js" integrity="sha256-ReaCstqFqn3tUisOTmHBvLVJpKBbO1DMcJYMWCrKtqs=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.8a8b27141a72dbc9bc338d6cfb2d4742dc81632865c47e91b76233e709e9eb56.js" integrity="sha256-iosnFBpy28m8M41s&#43;y1HQtyBYyhlxH6Rt2Iz5wnp61Y=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -749,11 +749,11 @@ https://github.com/alex-shpak/hugo-book
       计算机网络
     </a>
     
-    <small class="Lastmod" data-unix="1701244217">
+    <small class="Lastmod" data-unix="1703675870">
     </small>
 
     <small>
-      1717字
+      1798字
 
     </small>
     
@@ -834,6 +834,7 @@ https://github.com/alex-shpak/hugo-book
   
   <a href="#%e6%a6%82%e8%bf%b0">概述</a>
 </h1>
+<p>​</p>
 <pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TB;
 
 	subgraph OSI的体系结构 
@@ -849,43 +850,76 @@ https://github.com/alex-shpak/hugo-book
 	c5--&gt;|比特流|c4--&gt;|帧|c3--&gt;|数据帧|c2--&gt;|报文|c1
 	c1[应用层]--&gt;|应用数据|c2[运输层]--&gt;|报文|c3[网络层]--&gt;|数据帧|c4[数据链路层]--&gt;|帧|c5[物理层]
 	end 
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">mindmap
-	体系结构
-		五层协议
-			应用
-			运输
-			网络
-			数据链路
-			物理
-		OSI七层协议
-			应用
-			表示
-			会话
-			运输
-			网络
-			数据链路
-			物理
-		TCP/IP五层协议
-			应用
-			运输
-			网际
-			网络接口
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">mindmap
-	物理层
-		特性
-			机械
-			电气
-			功能
-			过程
-		设备
-			中继器
-			集线器
-		信道
-			类型
-				单工
-				半双工
-				全双工
-		
+</code></pre><pre tabindex="0"><code class="language-uml" data-lang="uml">node node [
+应用层 
+----
+运输层 
+----
+网络层 
+----
+数据链路层 
+---
+物理层 
+]
+
+node node2 [
+应用层
+----
+运输层
+----
+网际层
+----
+网络接口层
+]
+node node3 [
+应用层
+----
+表示层
+----
+会话层
+----
+运输层
+---
+网络层
+---
+数据链路层
+---
+物理层
+]
+</code></pre><pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">体系结构
+	五层协议
+		应用
+		运输
+		网络
+		数据链路
+		物理
+	OSI七层协议
+		应用
+		表示
+		会话
+		运输
+		网络
+		数据链路
+		物理
+	TCP/IP五层协议
+		应用
+		运输
+		网际
+		网络接口
+</code></pre><pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">物理层
+	特性
+		机械
+		电气
+		功能
+		过程
+	设备
+		中继器
+		集线器
+	信道
+		单工
+	半双工
+	全双工
+数据链路层
 </code></pre><h1 id="应用层">
   
   <a href="#%e5%ba%94%e7%94%a8%e5%b1%82">应用层</a>
@@ -1055,6 +1089,87 @@ TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,�
     }
   );
 </script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js"></script>
+<style id="css_plantuml">
+
+  mindmapDiagram{
+    BackGroundColor none
+    node {
+      FontColor _FontColor
+      LineColor _LineColor
+    }
+    arrow {
+      LineColor _LineColor
+    }
+  }
+  componentDiagram{
+    node {
+      FontColor _FontColor
+      LineColor _LineColor
+    }
+    arrow {
+      LineColor _LineColor
+    }
+  }
+  document {
+    width 100%
+    BackGroundColor none
+    node {
+      FontColor _FontColor
+      LineColor _LineColor
+    }
+    arrow {
+      LineColor _LineColor
+    }
+  }
+  node {
+      BackGroundColor none
+      FontColor _FontColor
+    LineColor _LineColor
+  }
+  
+</style>
+<script>
+  console.log('ok');
+  let plantumlPrefix = "language-mindmap";
+  let elements = document.querySelectorAll(".language-mindmap,.language-uml");
+  const bodyStyles = getComputedStyle(document.body);
+  const bodyFontColor = bodyStyles.getPropertyValue('--body-font-color').trim();
+  const bodyBGColor = bodyStyles.getPropertyValue('--body-background').trim();
+  const cardBG = bodyStyles.getPropertyValue('--card-bg').trim();
+  let css_plantuml = document.getElementById("css_plantuml").innerHTML;
+  css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
+  Array.from(elements).forEach(
+    (el) => {
+      el.parentElement.style.background = cardBG;
+      let el_innerText = el.innerText;
+      if (el.dataset.lang=="mindmap")
+      {
+        el_innerText=el_innerText.trim().replace(/^\t*/gm, function(match) {
+          
+          return '\t'.repeat(match.length)+"* ";
+        });
+      }
+      
+      console.log(el_innerText);
+      let iframe = document.createElement("embed");
+      el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
+      console.log(el_innerText)
+      let url = 'http://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
+      console.log(url);
+      iframe.src = url;
+      iframe.style.display = "inline";
+      el.innerHTML = iframe.outerHTML;
+
+    }
+  );
+</script>
+
 
 
 
