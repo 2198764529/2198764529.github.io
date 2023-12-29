@@ -127,7 +127,7 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       
       <guid>https://ltao.fun/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</guid>
       <description> 这是一只猫
-* 欧洲 * 德国 * 法国 * 英国 * 俄国 * 意大利 node node [ 这是个 &amp;lt;b&amp;gt;结点 ---- ] </description>
+https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp /assert/img/testImg.jpg * 欧洲 * 德国 * 法国 * 英国 * 俄国 * 意大利 node node [ 这是个 &amp;lt;b&amp;gt;结点 ---- ] </description>
     </item>
     
     <item>
@@ -217,7 +217,7 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       
       <guid>https://ltao.fun/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
       <description>概述 ​
-flowchart TB; subgraph OSI的体系结构 direction TB a1[应用层]--&amp;gt;a2[表示层]--&amp;gt;a3[会话层]--&amp;gt;a4[运输层]--&amp;gt;a5[网络层]--&amp;gt;a6[数据链路层]--&amp;gt;a7[物理层] end subgraph TCP/ID的体系结构 direction TB	b1[应用层]--&amp;gt;|Link text|b2[运输层]--&amp;gt;b3[网际层]--&amp;gt;b4[网络接口层] end subgraph 五层协议 direction TB	c5--&amp;gt;|比特流|c4--&amp;gt;|帧|c3--&amp;gt;|数据帧|c2--&amp;gt;|报文|c1 c1[应用层]--&amp;gt;|应用数据|c2[运输层]--&amp;gt;|报文|c3[网络层]--&amp;gt;|数据帧|c4[数据链路层]--&amp;gt;|帧|c5[物理层] end node node [ 应用层 ---- 运输层 ---- 网络层 ---- 数据链路层 --- 物理层 ] node node2 [ 应用层 ---- 运输层 ---- 网际层 ---- 网络接口层 ] node node3 [ 应用层 ---- 表示层 ---- 会话层 ---- 运输层 --- 网络层 --- 数据链路层 --- 物理层 ] 体系结构 五层协议 应用 运输 网络 数据链路 物理 OSI七层协议 应用 表示 会话 运输 网络 数据链路 物理 TCP/IP五层协议 应用 运输 网际 网络接口 物理层 特性 机械 电气 功能 过程 设备 中继器 集线器 信道 单工 半双工 全双工 数据链路层 应用层 应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。</description>
+flowchart TB; subgraph OSI的体系结构 direction TB a1[应用层]--&amp;gt;a2[表示层]--&amp;gt;a3[会话层]--&amp;gt;a4[运输层]--&amp;gt;a5[网络层]--&amp;gt;a6[数据链路层]--&amp;gt;a7[物理层] end subgraph TCP/ID的体系结构 direction TB	b1[应用层]--&amp;gt;|Link text|b2[运输层]--&amp;gt;b3[网际层]--&amp;gt;b4[网络接口层] end subgraph 五层协议 direction TB	c5--&amp;gt;|比特流|c4--&amp;gt;|帧|c3--&amp;gt;|数据帧|c2--&amp;gt;|报文|c1 c1[应用层]--&amp;gt;|应用数据|c2[运输层]--&amp;gt;|报文|c3[网络层]--&amp;gt;|数据帧|c4[数据链路层]--&amp;gt;|帧|c5[物理层] end node node [ 应用层 ---- 运输层 ---- 网络层 ---- 数据链路层 --- 物理层 ] node node2 [ 应用层 ---- 运输层 ---- 网际层 ---- 网络接口层 ] node node3 [ 应用层 ---- 表示层 ---- 会话层 ---- 运输层 --- 网络层 --- 数据链路层 --- 物理层 ] 体系结构 五层协议 应用 运输 网络 数据链路 物理 OSI七层协议 应用 表示 会话 运输 网络 数据链路 物理 TCP/IP五层协议 应用 运输 网际 网络接口 物理层 特性 机械 电气 功能 过程 设备 中继器 集线器 信号 模拟信号(连续信号) 数字信号(离散信号) 调制 基带调制(编码) 常用编码方式 不归零 归零 曼彻斯特 差分曼彻斯特 载波调制(带通调制) 常用编码方式 调幅 调相 调位 信道 类型 单工 半双工 全双工 极限容量因素 信道频率范围 信噪比 传输媒体 有线 双绞线(无屏蔽,屏蔽) 同轴电缆 光缆(光纤) 无线 地面微波通信 卫星通信 复用技术 频分复用 时分复用 统计时分复用 波分复用(光的频分复用) 码分复用 宽带接入技术 ADSL(拨号上网) FTTx(FTTH,光纤到户)	数据链路层 两个基本概念 数据链路 帧 三个基本问题 封装成帧 透明传输 差错检测,CRC(循环冗余校验码) 两种信道	点对点信道 点对点协议(PPP,Point-to-Point Protocol) 广播信道 局域网 协议 LLC(Logical Link Control,逻辑链路控制) MAC(Medium Access Control,媒体接入子层) CSMA/CD(Carrier Sense Multiple Access With Collision Detection,载波监听多点接入/碰撞检测) 多点接入 载波监听 碰撞检测 网络层 设计思路 简单灵活的,无连接的,尽最大努力交付的数据报服务 IP(Internet Protocol,网际协议) 配套协议 ARP(Address Resolution Protocol,地址解析协议) ICMP(Internet Control Message Protocol,控制报文协议) IGMP(Internet Group Management Protocol,网际租管理协议) IP 地址编址 历史发展阶段, 分类的IP地址&amp;gt;&amp;gt;子网的划分&amp;gt;&amp;gt;构成超网 构成 {&amp;lt;网络号&amp;gt;,&amp;lt;主机号&amp;gt;} 分类 A 类,{ &amp;lt;网络号(开头为0),8位&amp;gt;,&amp;lt;主机号,24位&amp;gt;} B 类,{ &amp;lt;网络号(开头为10),16位&amp;gt;,&amp;lt;主机号,16位&amp;gt;} C 类,{ &amp;lt;网络号(开头为110),24位&amp;gt;,&amp;lt;主机号,8位&amp;gt;} D 类,开头为1110,多播地址 E 类,保留为今后使用 应用层 应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。</description>
     </item>
     
     <item>
@@ -370,6 +370,17 @@ redirects（重定向）： 控制是否将重定向页面包含在结果中。
 limit（限制）： 用于限制查询结果的数量。
 示例：获取页面内容 https://en.wikipedia.org/w/api.php?action=query&amp;amp;format=json&amp;amp;titles=Python_(programming_language)&amp;amp;prop=revisions&amp;amp;rvprop=content 这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。
 请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在 维基百科开发者页面找到。</description>
+    </item>
+    
+    <item>
+      <title>五笔输入法</title>
+      <link>https://ltao.fun/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.fun/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</guid>
+      <description> 笔画
+笔画是指汉字书写时不间断的一次连续写成的一个线条 字根
+笔画交叉复合而成的固定结构,是构成汉字的最基本单位 不符规律的键位 横 G[五] F[二] D[古] S[木丁西] A[工] 竖 </description>
     </item>
     
     <item>

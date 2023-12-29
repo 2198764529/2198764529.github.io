@@ -11,9 +11,9 @@
 <title>计算机网络 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
-<link rel="stylesheet" href="/book.min.89c343bdb98c67312ba53d00c362e3b03a8b0e88783cf6481141b57ff41c204a.css" integrity="sha256-icNDvbmMZzErpT0Aw2LjsDqLDoh4PPZIEUG1f/QcIEo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.086ccb998c1241b2c024b9af7903ce1a950748cc20f393a0c37879fa02b3fee5.css" integrity="sha256-CGzLmYwSQbLAJLmveQPOGpUHSMwg85Ogw3h5&#43;gKz/uU=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.5d3ef85521610ca72a558a08d731d3c37dc3a8ea6711e63e064ee94f00cf8777.js" integrity="sha256-XT74VSFhDKcqVYoI1zHTw33DqOpnEeY&#43;Bk7pTwDPh3c=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.c8a1bb9cb38e5897cd9256b6b6a014d42c14892d0f7352b85565581054532c04.js" integrity="sha256-yKG7nLOOWJfNkla2tqAU1CwUiS0Pc1K4VWVYEFRTLAQ=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -57,7 +57,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="在 31 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="在 32 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -428,6 +428,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/" class="">五笔输入法</a>
+  
+ 
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/" class="">应用层-Q&amp;A</a>
   
  
@@ -743,11 +757,11 @@ https://github.com/alex-shpak/hugo-book
       计算机网络
     </a>
     
-    <small class="Lastmod" data-unix="1703675870">
+    <small class="Lastmod" data-unix="1703838048">
     </small>
 
     <small>
-      1798字
+      2487字
 
     </small>
     
@@ -909,11 +923,83 @@ node node3 [
 	设备
 		中继器
 		集线器
+	信号
+		模拟信号(连续信号)
+		数字信号(离散信号)
+	调制
+		基带调制(编码)
+			常用编码方式
+				不归零
+				归零
+				曼彻斯特
+				差分曼彻斯特
+		载波调制(带通调制)
+			常用编码方式
+				调幅
+				调相
+				调位
 	信道
-		单工
-	半双工
-	全双工
+		类型
+			单工
+			半双工
+			全双工
+		极限容量因素
+			信道频率范围
+			信噪比
+		传输媒体
+			有线
+				双绞线(无屏蔽,屏蔽)
+				同轴电缆
+				光缆(光纤)
+			无线
+				地面微波通信
+				卫星通信
+		复用技术
+			频分复用
+			时分复用
+			统计时分复用
+			波分复用(光的频分复用)
+			码分复用
+		宽带接入技术
+			ADSL(拨号上网)
+			FTTx(FTTH,光纤到户)	
 数据链路层
+	两个基本概念
+		数据链路
+		帧
+	三个基本问题
+		封装成帧
+		透明传输
+		差错检测,CRC(循环冗余校验码)
+	两种信道	
+		点对点信道
+			点对点协议(PPP,Point-to-Point Protocol)
+		广播信道
+			局域网 协议
+				LLC(Logical Link Control,逻辑链路控制)
+				MAC(Medium Access Control,媒体接入子层)
+			CSMA/CD(Carrier Sense Multiple Access With Collision Detection,载波监听多点接入/碰撞检测)
+				多点接入
+				载波监听
+				碰撞检测
+网络层
+	设计思路
+		简单灵活的,无连接的,尽最大努力交付的数据报服务
+	IP(Internet Protocol,网际协议)
+		配套协议
+			ARP(Address Resolution Protocol,地址解析协议)
+			ICMP(Internet Control Message Protocol,控制报文协议)
+			IGMP(Internet Group Management Protocol,网际租管理协议)
+		IP 地址编址
+			历史发展阶段, 分类的IP地址&gt;&gt;子网的划分&gt;&gt;构成超网
+			构成
+				{&lt;网络号&gt;,&lt;主机号&gt;}
+			分类
+				A 类,{ &lt;网络号(开头为0),8位&gt;,&lt;主机号,24位&gt;}
+				B 类,{ &lt;网络号(开头为10),16位&gt;,&lt;主机号,16位&gt;}
+				C 类,{ &lt;网络号(开头为110),24位&gt;,&lt;主机号,8位&gt;}
+				D 类,开头为1110,多播地址
+				E 类,保留为今后使用
 </code></pre><h1 id="应用层">
   
   <a href="#%e5%ba%94%e7%94%a8%e5%b1%82">应用层</a>
@@ -1138,7 +1224,7 @@ TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,�
   css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
   Array.from(elements).forEach(
     (el) => {
-      el.parentElement.style.background = cardBG;
+   
       let el_innerText = el.innerText;
       if (el.dataset.lang=="mindmap")
       {
@@ -1148,12 +1234,9 @@ TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,�
         });
       }
       
-      console.log(el_innerText);
       let iframe = document.createElement("embed");
       el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
-      console.log(el_innerText)
       let url = 'https://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
-      console.log(url);
       iframe.src = url;
       iframe.style.display = "inline";
       el.innerHTML = iframe.outerHTML;
@@ -1161,6 +1244,9 @@ TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,�
     }
   );
 </script>
+
+
+
 
 
 
