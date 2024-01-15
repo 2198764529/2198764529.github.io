@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.45ea1340c7a3944f8e9396eb4bd660045ad9027cc629c14cee6495165eec8ac5.css" integrity="sha256-ReoTQMejlE&#43;Ok5brS9ZgBFrZAnzGKcFM7mSVFl7sisU=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.b9519043e6a1b68156cf26ea63d8a2e9bc30646033c242064d68ce1ee15bcf2c.js" integrity="sha256-uVGQQ&#43;ahtoFWzybqY9ii6bwwZGAzwkIGTWjOHuFbzyw=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.0035c1b6d8a6714d202335d3089d424fc60b71f749556269c281bca1cefb83ae.js" integrity="sha256-ADXBttimcU0gIzXTCJ1CT8YLcfdJVWJpwoG8oc77g64=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -59,7 +59,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="在 32 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="在 33 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -596,6 +596,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/posts/%E6%9D%82%E6%80%9D/%E5%85%BB%E7%8C%AB/" class="">养猫</a>
+  
+ 
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/posts/%E6%9D%82%E6%80%9D/%E6%9C%89%E4%B9%A6%E5%8F%AF%E8%AF%BB%E6%96%B9%E6%A1%88/" class="">有书可读方案</a>
   
  
@@ -759,11 +773,11 @@ https://github.com/alex-shpak/hugo-book
       计算机网络
     </a>
     
-    <small class="Lastmod" data-unix="1704337610">
+    <small class="Lastmod" data-unix="1704938980">
     </small>
 
     <small>
-      2487字
+      2565字
 
     </small>
     
@@ -975,23 +989,23 @@ node node3 [
 		差错检测,CRC(循环冗余校验码)
 	两种信道	
 		点对点信道
-			点对点协议(PPP,Point-to-Point Protocol)
+			PPP\nPoint-to-Point Protocol\n点对点协议
 		广播信道
 			局域网 协议
-				LLC(Logical Link Control,逻辑链路控制)
-				MAC(Medium Access Control,媒体接入子层)
-			CSMA/CD(Carrier Sense Multiple Access With Collision Detection,载波监听多点接入/碰撞检测)
+				LLC\nLogical Link Control\n逻辑链路控制
+				MAC\nMedium Access Control\n媒体接入子层
+			CSMA/CD\nCarrier Sense Multiple Access With Collision Detection\n载波监听多点接入/碰撞检测)
 				多点接入
 				载波监听
 				碰撞检测
 网络层
 	设计思路
 		简单灵活的,无连接的,尽最大努力交付的数据报服务
-	IP(Internet Protocol,网际协议)
+	IP\nInternet Protocol\n网际协议
 		配套协议
-			ARP(Address Resolution Protocol,地址解析协议)
-			ICMP(Internet Control Message Protocol,控制报文协议)
-			IGMP(Internet Group Management Protocol,网际租管理协议)
+			ARP\nAddress Resolution Protocol\n地址解析协议
+			ICMP\nInternet Control Message Protocol\n控制报文协议
+			IGMP\nInternet Group Management Protocol\n网际租管理协议
 		IP 地址编址
 			历史发展阶段, 分类的IP地址&gt;&gt;子网的划分&gt;&gt;构成超网
 			构成
@@ -1002,6 +1016,10 @@ node node3 [
 				C 类,{ &lt;网络号(开头为110),24位&gt;,&lt;主机号,8位&gt;}
 				D 类,开头为1110,多播地址
 				E 类,保留为今后使用
+		ARP\nAddress Resolution Protocol\n地址解析协议
+			功能:用IP地址找到局域网内的对应硬件地址
+			关键词:ARP cache, 广播, 局域网
+			过程:广播问局域网内主机对应IP的MAC地址,\n匹配主机单播回应
 </code></pre><h1 id="应用层">
   
   <a href="#%e5%ba%94%e7%94%a8%e5%b1%82">应用层</a>
