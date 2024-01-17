@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>   on 李枫的地</title>
-    <link>https://ltao.fun/posts/</link>
+    <link>https://ltao.top/posts/</link>
     <description>Recent content in    on 李枫的地</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://ltao.fun/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://ltao.top/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试专用</title>
-      <link>https://ltao.fun/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</link>
+      <link>https://ltao.top/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.fun/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</guid>
+      <guid>https://ltao.top/posts/%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</guid>
       <description> 这是一只猫
 https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp /assert/img/testImg.jpg https://wx4.sinaimg.cn/mw690/006YrfC3ly1hlm6754os0j30u01c07db.jpg https://wx3.sinaimg.cn/mw690/005FUnREgy1hlmbfamzpdj30r70sxn1r.jpg https://wx1.sinaimg.cn/mw690/bfcada65ly1hlm4n0ennoj22qf5xckjo.jpg * 欧洲 * 德国 * 法国 * 英国 * 俄国 * 意大利 node node [ 这是个 &amp;lt;b&amp;gt;结点 ---- ] 周杰伦 https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp 周杰伦 https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp 这个杀手不太冷 https://img2.doubanio.com/view/photo/s_ratio_poster/public/p511118051.jpg </description>
     </item>
     
     <item>
       <title>技术记录</title>
-      <link>https://ltao.fun/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+      <link>https://ltao.top/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.fun/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://ltao.top/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
       <description>hugo 添加mermaid作图 在 footer.html(页面尾部) 添加以下代码,即可启用mermaid作图
 {{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考
 https://cloud.tencent.com/developer/article/1944123
@@ -35,11 +35,11 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
     
     <item>
       <title>网站收藏</title>
-      <link>https://ltao.fun/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <link>https://ltao.top/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.fun/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
-      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://tophub.today 知乎日报 https://tophub.today 计网 http://home.ustc.edu.cn/~chaf/course/network.html 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf kaggle https://www.kaggle.com SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ 画图工具 https://handraw.top Chatgpt https://chat.openai.com 建站参考 hugo https://hugo.aiaide.com/post
+      <guid>https://ltao.top/posts/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://rebang.today 计网 http://home.ustc.edu.cn/~chaf/course/network.html https://www.runoob.com/w3cnote/summary-of-network.html 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf kaggle https://www.kaggle.com SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ 画图工具 https://handraw.top Chatgpt https://chat.openai.com 建站参考 hugo https://hugo.aiaide.com/post
 另一个hugo文档 https://gohugobrasil.netlify.app
 Lyricify https://github.com/WXRIW/Lyricify-App
 颜色墙 http://zhongguose.com/#shangengzi
