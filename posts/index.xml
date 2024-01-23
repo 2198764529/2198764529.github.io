@@ -22,16 +22,15 @@ https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/posts/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
-      <description>进制转换 十进制转二进制 十进制数转换为二进制数时，由于整数和小数的转换方法不同，所以先将十进制数的整数部分和小数部分分别转换后，再加以合并。
-十进制整数转换为二进制整数采用&amp;quot;除2取余，逆序排列&amp;quot;法。具体做法是：用2整除十进制整数，可以得到一个商和余数；再用2去除商，又会得到一个商和余数，如此进行，直到商为0时为止，然后把先得到的余数作为二进制数的低位有效位，后得到的余数作为二进制数的高位有效位，依次排列起来。
-二进制转十进制 要从右到左用二进制的每个数去乘以2的相应次方，或者把二进制数首先写成加权系数展开式，然后按十进制加法规则求和。这种做法称为&amp;quot;按权相加&amp;quot;法。
-二进制数1000110转成十进制数可以看作这样：
-数字中共有三个1 即第一位一个，第二位一个，第六位一个，然后对应十进制数即2的1次方+2的2次方+2的6次方， 即1000110=64+0+0+0+4+2+0=70
-hugo 添加mermaid作图 在 footer.html(页面尾部) 添加以下代码,即可启用mermaid作图
+      <description>进制转换 hugo 添加mermaid作图 在 footer.html(页面尾部) 添加以下代码,即可启用mermaid作图
 {{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考
 https://cloud.tencent.com/developer/article/1944123
 https://note.qidong.name/2020/07/mermaid/
-CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：</description>
+CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
+😋
+像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
+磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
+毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。</description>
     </item>
     
     <item>

@@ -10,7 +10,7 @@
 
 
 
-<title>markDown 语法 | 李枫的地</title>
+<title>数学知识 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.a45de1d590d53cca29cc2e9e906ea06b3f3bea6ac990437e2f635daa52a9382e.css" integrity="sha256-pF3h1ZDVPMopzC6ekG6gaz876mrJkEN&#43;L2NdqlKpOC4=" crossorigin="anonymous">
@@ -280,7 +280,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/" class="active">markDown 语法</a>
+    <a href="/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/" class="">markDown 语法</a>
   
  
 
@@ -388,7 +388,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" class="">数学知识</a>
+    <a href="/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" class="active">数学知识</a>
   
  
 
@@ -665,7 +665,29 @@ https://github.com/alex-shpak/hugo-book
         
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#等比数列公式">等比数列公式</a></li>
+            <li><a href="#进制转换">进制转换</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#十进制转二进制">十进制转二进制</a></li>
+                    <li><a href="#二进制转十进制">二进制转十进制</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -681,15 +703,15 @@ https://github.com/alex-shpak/hugo-book
 
 
   <h3>
-    <a href="/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/">
-      markDown 语法
+    <a href="/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+      数学知识
     </a>
     
-    <small class="Lastmod" data-unix="1702459317">
+    <small class="Lastmod" data-unix="1705978565">
     </small>
 
     <small>
-      766字
+      410字
 
     </small>
     
@@ -709,7 +731,29 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#等比数列公式">等比数列公式</a></li>
+            <li><a href="#进制转换">进制转换</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#十进制转二进制">十进制转二进制</a></li>
+                    <li><a href="#二进制转十进制">二进制转十进制</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -720,88 +764,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown ios_card"><ol>
-<li>
-<p>标题：使用&quot;#&ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如：</p>
-<pre tabindex="0"><code># 一级标题
-## 二级标题
-### 三级标题
-...
-###### 六级标题
-</code></pre></li>
-<li>
-<p>段落：段落之间以空行分隔。</p>
-</li>
-<li>
-<p>强调：使用&rdquo;*&ldquo;或&rdquo;_&ldquo;将需要强调的文本包围起来。例如：</p>
-<pre tabindex="0"><code>*斜体*
-_斜体_
-
-**粗体**
-__粗体__
-
-***粗斜体***
-___粗斜体___
-</code></pre></li>
-<li>
-<p>列表：有序列表以数字和句点开始，无序列表以&rdquo;*&quot;、&quot;+&ldquo;或&rdquo;-&ldquo;开始。例如：</p>
-<pre tabindex="0"><code>1. 第一项
-2. 第二项
-3. 第三项
-
-- 无序列表项1
-- 无序列表项2
-  - 嵌套的无序列表项
-    - 更深层次的无序列表项
-
-* 无序列表项A
-* 无序列表项B
-  * 嵌套的无序列表项
-    * 更深层次的无序列表项
-
-+ 无序列表项X
-+ 无序列表项Y
-  + 嵌套的无序列表项
-    + 更深层次的无序列表项  
-</code></pre></li>
-<li>
-<p>链接：使用&rdquo;
-  <a href="%e9%93%be%e6%8e%a5%e5%9c%b0%e5%9d%80">链接文本</a>&ldquo;的格式添加链接。例如：</p>
-<pre tabindex="0"><code>[Google](https://www.google.com)
-</code></pre></li>
-<li>
-<p>图片：使用&rdquo;
-  <img src="%e5%9b%be%e7%89%87%e9%93%be%e6%8e%a5%e5%9c%b0%e5%9d%80" alt="替代文本" />&ldquo;的格式插入图片。例如：</p>
-<pre tabindex="0"><code>![示例图片](https://example.com/image.jpg)
-</code></pre></li>
-<li>
-<p>引用：使用&rdquo;&gt;&ldquo;字符表示引用。例如：</p>
-<pre tabindex="0"><code>&gt; 这是一段引用的文本。
-</code></pre></li>
-<li>
-<p>代码块：使用三个反引号(`)包围代码块，并在开始位置指定代码语言（可选）。例如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello_world</span>():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>)
-</span></span></code></pre></div></li>
-<li>
-<p>表格：使用&rdquo;|&ldquo;和&rdquo;-&ldquo;分隔表头和表格内容，并使用&rdquo;:&ldquo;来对齐表格内容。例如：</p>
-<pre tabindex="0"><code>| 列1标题 | 列2标题 |
-|---------|---------|
-| 内容1   | 内容2   |
-| 内容3   | 内容4   |
-
-左对齐列1标题 | 右对齐列2标题
-:------------|-------------:
-左对齐内容1  | 右对齐内容2
-左对齐内容3  | 右对齐内容4
-</code></pre></li>
-<li>
-<p>水平线：使用三个或更多连续的&rdquo;*&quot;、&quot;-&ldquo;或&rdquo;_&ldquo;表示水平线。例如：</p>
-<pre tabindex="0"><code>***
----
-___
-</code></pre></li>
-</ol>
+<article class="markdown ios_card"><h3 id="等比数列公式">
+  
+  <a href="#%e7%ad%89%e6%af%94%e6%95%b0%e5%88%97%e5%85%ac%e5%bc%8f">等比数列公式</a>
+</h3>
+<p>
+  <img src="https://p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde/f85508813b5a4fad9a0d313d67f3fd0d~tplv-xv4ileqgde-image.image" alt="" /></p>
+<h3 id="进制转换">
+  
+  <a href="#%e8%bf%9b%e5%88%b6%e8%bd%ac%e6%8d%a2">进制转换</a>
+</h3>
+<h5 id="十进制转二进制">
+  
+  <a href="#%e5%8d%81%e8%bf%9b%e5%88%b6%e8%bd%ac%e4%ba%8c%e8%bf%9b%e5%88%b6">十进制转二进制</a>
+</h5>
+<p>十进制数转换为二进制数时，由于整数和小数的转换方法不同，所以先将十进制数的整数部分和小数部分分别转换后，再加以合并。</p>
+<p>十进制整数转换为二进制整数采用&quot;除2取余，逆序排列&quot;法。具体做法是：用2整除十进制整数，可以得到一个商和余数；再用2去除商，又会得到一个商和余数，如此进行，直到商为0时为止，然后把先得到的余数作为二进制数的低位有效位，后得到的余数作为二进制数的高位有效位，依次排列起来。</p>
+<h5 id="二进制转十进制">
+  
+  <a href="#%e4%ba%8c%e8%bf%9b%e5%88%b6%e8%bd%ac%e5%8d%81%e8%bf%9b%e5%88%b6">二进制转十进制</a>
+</h5>
+<p>要从右到左用二进制的每个数去乘以2的相应次方，或者把二进制数首先写成加权系数展开式，然后按十进制加法规则求和。这种做法称为&quot;按权相加&quot;法。</p>
+<p>二进制数1000110转成十进制数可以看作这样：</p>
+<p>数字中共有三个1 即第一位一个，第二位一个，第六位一个，然后对应十进制数即2的1次方+2的2次方+2的6次方， 即1000110=64+0+0+0+4+2+0=70</p>
 </article>
  
       
