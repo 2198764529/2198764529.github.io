@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.a45de1d590d53cca29cc2e9e906ea06b3f3bea6ac990437e2f635daa52a9382e.css" integrity="sha256-pF3h1ZDVPMopzC6ekG6gaz876mrJkEN&#43;L2NdqlKpOC4=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.0de80ac76028ecc2fa66ebec5610aa7aec2f53a9f801e99595efa5f475787be6.js" integrity="sha256-DegKx2Ao7ML6ZuvsVhCqeuwvU6n4AemVle&#43;l9HV4e&#43;Y=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.54566dfefadbd231a6403d1d39ff3a0c389b9bbb0e58cc714dbb7b462dcd538c.js" integrity="sha256-VFZt/vrb0jGmQD0dOf86DDibm7sOWMxxTbt7Ri3NU4w=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -741,11 +741,11 @@ https://github.com/alex-shpak/hugo-book
       计算机网络
     </a>
     
-    <small class="Lastmod" data-unix="1706175338">
+    <small class="Lastmod" data-unix="1709112542">
     </small>
 
     <small>
-      3640字
+      3865字
 
     </small>
     
@@ -837,7 +837,7 @@ https://github.com/alex-shpak/hugo-book
   <a href="#%e6%a6%82%e8%bf%b0">概述</a>
 </h1>
 <pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">体系结构
-	TCP/IP 四层协议
+	TCP/IP 四层协议  
 		应用【应用表示会话】
 			报文
 			SMTP、FTP、TELNET、\nDNS、TFTP、RPC、HTTP
@@ -851,7 +851,25 @@ https://github.com/alex-shpak/hugo-book
 			子层
 				数据链路【帧】【以太网交换机、网卡】
 				物理层【比特流】\n【中继器、集线器、双绞线】
-</code></pre><pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">物理层
+</code></pre><p>常用端口号</p>
+<ul>
+<li>FTP控制-20</li>
+<li>FTP数据-21</li>
+<li>SSH-22</li>
+<li>TELNET-23</li>
+<li>SMTP-25</li>
+<li>DNS-53</li>
+<li>TFTP-69</li>
+<li>HTTP-80</li>
+<li>SNMP-161</li>
+<li>SNMP-162</li>
+<li>HTTPS-443<br>
+常用设备</li>
+<li>物理层【中继器、集线器】</li>
+<li>数据链路层【网卡、网桥、二层交换机】</li>
+<li>网络层【路由器、网关】</li>
+</ul>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">物理层
 	特性
 		机械
 		电气
@@ -892,11 +910,11 @@ https://github.com/alex-shpak/hugo-book
 				地面微波通信
 				卫星通信
 		复用技术
-			频分复用
-			时分复用
+			频分复用（FDM）
+			时分复用（TDM）
 			统计时分复用
-			波分复用(光的频分复用)
-			码分复用
+			波分复用(WDM，光的频分复用)
+			码分复用（CDM）
 		宽带接入技术
 			ADSL(拨号上网)
 			FTTx(FTTH,光纤到户)	
@@ -916,15 +934,13 @@ https://github.com/alex-shpak/hugo-book
 				LLC\nLogical Link Control\n逻辑链路控制
 				MAC\nMedium Access Control\n媒体接入子层
 			CSMA/CD\nCarrier Sense Multiple Access With Collision Detection\n载波监听多点接入/碰撞检测)
-				多点接入
-				载波监听
-				碰撞检测
+				先听后发,边听边发,冲突急停,延迟重发
 网络层
 	设计思路
 		简单灵活的,无连接的,尽最大努力交付的数据报服务
 	IP\nInternet Protocol\n网际协议
 		配套协议
-			ARP\nAddress Resolution Protocol\n地址解析协议
+			ARP\nAddress Resolution Protocol\n地址解析协议(IP-&gt;MAC)
 			ICMP\nInternet Control Message Protocol\n控制报文协议
 			IGMP\nInternet Group Management Protocol\n网际租管理协议
 		IP 地址编址
@@ -1075,11 +1091,11 @@ TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,�
   <a href="#ip-%e5%9c%b0%e5%9d%80%e7%9a%84%e5%88%86%e7%b1%bb">IP 地址的分类</a>
 </h5>
 <p>五类IP地址<br>
-0，0.0.0.0 ~ 127.255.255.255<br>
-10，128.0.0.0 ~ 191.255.255.255<br>
-110，192.0.0.0 ~ 223.255.255.255<br>
-1110，224.0.0.0 ~ 239.255.255.255<br>
-1111，240.0.0.0 ~ 255.255.255.255</p>
+A类,开头为0，0.0.0.0 ~ 127.255.255.255, 私有地址为10.0.0.0/8<br>
+B类,开头为10，128.0.0.0 ~ 191.255.255.255,私有地址为172.16.0.0/12<br>
+C类,开头为110，192.0.0.0 ~ 223.255.255.255,私有地址为192.168.0.0/16<br>
+D类,开头为1110，224.0.0.0 ~ 239.255.255.255<br>
+E类,开头为1111，240.0.0.0 ~ 255.255.255.255</p>
 <h5 id="子网掩码">
   
   <a href="#%e5%ad%90%e7%bd%91%e6%8e%a9%e7%a0%81">子网掩码</a>
