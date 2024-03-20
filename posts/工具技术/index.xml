@@ -53,6 +53,39 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
     </item>
     
     <item>
+      <title>技术记录</title>
+      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
+      <description>进制转换 hugo 添加mermaid作图 在 footer.html(页面尾部) 添加以下代码,即可启用mermaid作图
+{{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考
+https://cloud.tencent.com/developer/article/1944123
+https://note.qidong.name/2020/07/mermaid/
+CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
+😋
+像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
+磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
+毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。</description>
+    </item>
+    
+    <item>
+      <title>网站收藏</title>
+      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://rebang.today 计网 http://home.ustc.edu.cn/~chaf/course/network.html https://www.runoob.com/w3cnote/summary-of-network.html 网络工具 科学上网 机场巴巴 http://www.ckcloud.cc 白嫖机场 https://yyds.白嫖.net 机场推荐 http://www.maomeng.cf kaggle https://www.kaggle.com SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ 画图工具 https://handraw.top Chatgpt https://chat.openai.com 建站参考 hugo https://hugo.aiaide.com/post
+另一个hugo文档 https://gohugobrasil.netlify.app
+Lyricify https://github.com/WXRIW/Lyricify-App
+颜色墙 http://zhongguose.com/#shangengzi
+博客部署
+nameSilo https://www.namesilo.com 阿里云 https://cn.aliyun.com Vercel https://vercel.com jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 元素生成
+digraph https://zhuanlan.zhihu.com/p/21993254 fullcalendar https://fullcalendar.io/docs Lunar https://6tail.cn/calendar/api.html graphviz https://graphviz.org plantuml https://plantuml.com/zh/ 参考博客
+干志雄 https://ganzhixiong.com 雷雷屋头 https://ll.sc.cn </description>
+    </item>
+    
+    <item>
       <title>维基百科</title>
       <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
