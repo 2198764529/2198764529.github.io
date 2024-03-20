@@ -13,9 +13,9 @@
 <title>数据结构和算法 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
-<link rel="stylesheet" href="/book.min.24f6e62ad36e07a841363b1bd16e9df67c5aa375ad6ca52011d103eb244ec960.css" integrity="sha256-JPbmKtNuB6hBNjsb0W6d9nxao3WtbKUgEdED6yROyWA=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.c803fb17eec27eacfc0db576e1366f493fc7927ecadce14564cd6d2ffcf0b8de.css" integrity="sha256-yAP7F&#43;7Cfqz8DbV24TZvST/Hkn7K3OFFZM1tL/zwuN4=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.bc4113b8c8a00a019af01582759d7886524fe4bfdefe25cf6ee8ed9ca8155db2.js" integrity="sha256-vEETuMigCgGa8BWCdZ14hlJP5L/e/iXPbujtnKgVXbI=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.6934910922871c9396875e25a3840c5a58c2557ce54744f67f873f280c10d379.js" integrity="sha256-aTSRCSKHHJOWh14lo4QMWljCVXzlR0T2f4c/KAwQ03k=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -719,6 +719,7 @@ https://github.com/alex-shpak/hugo-book
                 </li>
               </ul>
             </li>
+            <li><a href="#队列">队列</a></li>
           </ul>
         </li>
       </ul>
@@ -744,11 +745,11 @@ https://github.com/alex-shpak/hugo-book
       数据结构和算法
     </a>
     
-    <small class="Lastmod" data-unix="1709282879">
+    <small class="Lastmod" data-unix="1710920335">
     </small>
 
     <small>
-      787字
+      1249字
 
     </small>
     
@@ -810,6 +811,7 @@ https://github.com/alex-shpak/hugo-book
                 </li>
               </ul>
             </li>
+            <li><a href="#队列">队列</a></li>
           </ul>
         </li>
       </ul>
@@ -948,7 +950,21 @@ https://github.com/alex-shpak/hugo-book
  n_start([开始])--&gt;n0[&#34;找到一个&#34;]--&gt;n1{&#34;遍历指针指向 e &#34;}
  n1-- T --&gt;n2[&#34;两者交换位置&#34;]--&gt;n1
  n1-- F --&gt;n_end([&#34;结束&#34;])
-</code></pre></article>
+</code></pre><h3 id="队列">
+  
+  <a href="#%e9%98%9f%e5%88%97">队列</a>
+</h3>
+<p>在循环队列中，为了解决假溢出的问题，使用 <code>rear = (rear + 1) mod size</code> 的原因是，循环队列的队尾指针 <code>rear</code> 实际上是一个指向队列中下一个可用存储位置的指针。当队列满时，<code>rear</code> 指向队尾，此时再对 <code>rear</code> 进行加 1 操作，就会越界。</p>
+<p>为了解决这个问题，可以使用模运算 <code>mod</code> 来将 <code>rear</code> 的值限制在队列的有效范围内。<code>rear = (rear + 1) mod size</code> 的意思是，将 <code>rear + 1</code> 的结果与队列的大小 <code>size</code> 进行模运算，得到的结果就是新的队尾指针值。</p>
+<p>模运算的性质保证了新的队尾指针值始终在 0 到 <code>size - 1</code> 之间，即使 <code>rear</code> 原来的值已经越界。具体来说：</p>
+<ul>
+<li>当 <code>rear</code> 等于 <code>size - 1</code> 时，<code>rear + 1</code> 等于 <code>size</code>，而 <code>size mod size</code> 等于 0，所以新的队尾指针值为 0。</li>
+<li>当 <code>rear</code> 小于 <code>size - 1</code> 时，<code>rear + 1</code> 小于 <code>size</code>，所以 <code>rear + 1 mod size</code> 等于 <code>rear + 1</code>。</li>
+</ul>
+<p>因此，使用 <code>rear = (rear + 1) mod size</code> 可以有效解决循环队列的假溢出问题。</p>
+<p>此外，使用模运算还可以简化循环队列的判空和判满操作。例如，判断队列是否为空时，只需要检查 <code>front == rear</code> 即可；判断队列是否满时，只需要检查 <code>(rear + 1) % size == front</code> 即可。</p>
+<p>总而言之，使用 <code>rear = (rear + 1) mod size</code> 是解决循环队列假溢出问题的一种有效方法，同时还可以简化循环队列的判空和判满操作。</p>
+</article>
  
       
 
