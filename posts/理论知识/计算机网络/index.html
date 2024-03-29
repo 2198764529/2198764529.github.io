@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.e2b124dc2f0941ad84051cc02e1fe765812343319f42e2600e5242126814c4b3.css" integrity="sha256-4rEk3C8JQa2EBRzALh/nZYEjQzGfQuJgDlJCEmgUxLM=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.b65831fdcd7ab00e9fb3740c69e2a3261b5ef2abcafc425356341e7dfff24020.js" integrity="sha256-tlgx/c16sA6fs3QMaeKjJhte8qvK/EJTVjQeff/yQCA=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.daac2337c7fce0c8f7099b40b61cd7ce6ad52ed4f07f9e86f7a6d3d335675339.js" integrity="sha256-2qwjN8f84Mj3CZtAthzXzmrVLtTwf56G96bT0zVnUzk=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -585,7 +585,21 @@ https://github.com/alex-shpak/hugo-book
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#概述">概述</a></li>
+    <li><a href="#概述">概述</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#物理层">物理层</a></li>
+                <li><a href="#数据链路层">数据链路层</a></li>
+                <li><a href="#网络层">网络层</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#应用层">应用层</a>
       <ul>
         <li>
@@ -624,7 +638,7 @@ https://github.com/alex-shpak/hugo-book
                 </li>
               </ul>
             </li>
-            <li><a href="#网络层">网络层</a>
+            <li><a href="#网络层-1">网络层</a>
               <ul>
                 <li>
                   <ul>
@@ -659,11 +673,11 @@ https://github.com/alex-shpak/hugo-book
       计算机网络
     </a>
     
-    <small class="Lastmod" data-unix="1709112542">
+    <small class="Lastmod" data-unix="1711699853">
     </small>
 
     <small>
-      3865字
+      4084字
 
     </small>
     
@@ -685,7 +699,21 @@ https://github.com/alex-shpak/hugo-book
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#概述">概述</a></li>
+    <li><a href="#概述">概述</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#物理层">物理层</a></li>
+                <li><a href="#数据链路层">数据链路层</a></li>
+                <li><a href="#网络层">网络层</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#应用层">应用层</a>
       <ul>
         <li>
@@ -724,7 +752,7 @@ https://github.com/alex-shpak/hugo-book
                 </li>
               </ul>
             </li>
-            <li><a href="#网络层">网络层</a>
+            <li><a href="#网络层-1">网络层</a>
               <ul>
                 <li>
                   <ul>
@@ -754,127 +782,190 @@ https://github.com/alex-shpak/hugo-book
   
   <a href="#%e6%a6%82%e8%bf%b0">概述</a>
 </h1>
-<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">体系结构
-	TCP/IP 四层协议  
-		应用【应用表示会话】
-			报文
-			SMTP、FTP、TELNET、\nDNS、TFTP、RPC、HTTP
-		运输
-			【分组】,【网关】
-			TCP、UDP
-		网际
-			IP【数据报】【路由器】
-			【逻辑寻址】IP、ARP、ICMP、IGMP\n 【路由选择】RIP、OSPF、BGP
-		网络接口【数据链路物理】
-			子层
-				数据链路【帧】【以太网交换机、网卡】
-				物理层【比特流】\n【中继器、集线器、双绞线】
-</code></pre><p>常用端口号</p>
-<ul>
-<li>FTP控制-20</li>
-<li>FTP数据-21</li>
-<li>SSH-22</li>
-<li>TELNET-23</li>
-<li>SMTP-25</li>
-<li>DNS-53</li>
-<li>TFTP-69</li>
-<li>HTTP-80</li>
-<li>SNMP-161</li>
-<li>SNMP-162</li>
-<li>HTTPS-443<br>
-常用设备</li>
-<li>物理层【中继器、集线器】</li>
-<li>数据链路层【网卡、网桥、二层交换机】</li>
-<li>网络层【路由器、网关】</li>
-</ul>
-<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">物理层
-	特性
-		机械
-		电气
-		功能
-		过程
-	设备
-		中继器
-		集线器
-	信号
-		模拟信号(连续信号)
-		数字信号(离散信号)
-	调制
-		基带调制(编码)
-			常用编码方式
-				不归零
-				归零
-				曼彻斯特
-				差分曼彻斯特
-		载波调制(带通调制)
-			常用编码方式
-				调幅
-				调相
-				调位
-	信道
-		类型
-			单工
-			半双工
-			全双工
-		极限容量因素
-			信道频率范围
-			信噪比
-		传输媒体
-			有线
-				双绞线(无屏蔽,屏蔽)
-				同轴电缆
-				光缆(光纤)
-			无线
-				地面微波通信
-				卫星通信
-		复用技术
-			频分复用（FDM）
-			时分复用（TDM）
-			统计时分复用
-			波分复用(WDM，光的频分复用)
-			码分复用（CDM）
-		宽带接入技术
-			ADSL(拨号上网)
-			FTTx(FTTH,光纤到户)	
-数据链路层
-	两个基本概念
-		数据链路
-		帧
-	三个基本问题
-		封装成帧
-		透明传输
-		差错检测,CRC(循环冗余校验码)
-	两种信道	
-		点对点信道
-			PPP\nPoint-to-Point Protocol\n点对点协议
-		广播信道
-			局域网 协议
-				LLC\nLogical Link Control\n逻辑链路控制
-				MAC\nMedium Access Control\n媒体接入子层
-			CSMA/CD\nCarrier Sense Multiple Access With Collision Detection\n载波监听多点接入/碰撞检测)
-				先听后发,边听边发,冲突急停,延迟重发
-网络层
-	设计思路
-		简单灵活的,无连接的,尽最大努力交付的数据报服务
-	IP\nInternet Protocol\n网际协议
-		配套协议
-			ARP\nAddress Resolution Protocol\n地址解析协议(IP-&gt;MAC)
-			ICMP\nInternet Control Message Protocol\n控制报文协议
-			IGMP\nInternet Group Management Protocol\n网际租管理协议
-		IP 地址编址
-			历史发展阶段, 分类的IP地址&gt;&gt;子网的划分&gt;&gt;构成超网
-			构成
-				{&lt;网络号&gt;,&lt;主机号&gt;}
-			分类
-				A 类,{ &lt;网络号(开头为0),8位&gt;,&lt;主机号,24位&gt;}
-				B 类,{ &lt;网络号(开头为10),16位&gt;,&lt;主机号,16位&gt;}
-				C 类,{ &lt;网络号(开头为110),24位&gt;,&lt;主机号,8位&gt;}
-				D 类,开头为1110,多播地址
-				E 类,保留为今后使用
-		ARP\nAddress Resolution Protocol\n地址解析协议
-			功能:用IP地址找到局域网内的对应硬件地址
-			关键词:ARP cache, 广播, 局域网
-			过程:广播问局域网内主机对应IP的MAC地址,\n匹配主机单播回应
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">TCP/IP 四层协议  
+	应用层
+		应用层(OSI)
+		会话层(OSI)
+		表示层(OSI)
+	运输层
+	网际层
+	网络接口层
+		数据链路层(OSI)
+		物理层(OSI)
+OSI 七层协议
+	应用层
+	会话层
+	表示层【】
+	运输层
+		数据段Segment
+	网络层
+		路由器
+		分组 Packet
+	数据链路层
+		网桥、交换机
+		帧 Frame
+	物理层
+		网卡、中继器、集线器
+		比特流 Bit
+</code></pre><pre tabindex="0"><code class="language-uml" data-lang="uml">node 应用层{
+	node &#34;报文&#34;
+	node 应用层协议[
+		---
+		HTTPS(443)
+		---
+		HTTP(80)
+		---
+		DNS（53)
+		---
+		SMTP（25）
+		---
+		Telnet（23）
+		---
+		SSH（22）
+		---
+		FTP（20-21）
+	]
+
+}
+node 会话层{
+	node &#34; &#34;
+	node &#34;报文&#34;
+
+}
+node 表示层{
+	node &#34;报文&#34;
+	node &#34; &#34;
+
+}
+node 运输层{
+	node &#34;网关&#34;
+	node &#34;数据段 Segment&#34;
+	node &#34;TCP、UDP&#34;
+	node &#34; &#34;
+
+}
+node 网络层{
+	node &#34;路由器&#34;
+	node &#34;分组 Packet&#34;
+	node &#34;ARP、RARP、ICMP、IP&#34;
+	node &#34; &#34;
+
+}
+node 数据链路层{
+	node &#34;网桥、交换机&#34;
+	node &#34;帧 Frame&#34;
+}
+node 物理层{
+	node &#34;网卡、网线、中继器、集线器&#34;
+	node &#34;比特流 Bit&#34;
+}
+
+应用层 ... 会话层
+会话层 ... 表示层
+表示层 ... 运输层
+运输层 ... 网络层
+网络层 ... 数据链路层
+数据链路层 .. 物理层
+</code></pre><h4 id="物理层">
+  
+  <a href="#%e7%89%a9%e7%90%86%e5%b1%82">物理层</a>
+</h4>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">特性
+	机械
+	电气
+	功能
+	过程
+设备
+	中继器
+	集线器
+信号
+	模拟信号(连续信号)
+	数字信号(离散信号)
+调制
+	基带调制(编码)
+		常用编码方式
+			不归零
+			归零
+			曼彻斯特
+			差分曼彻斯特
+	载波调制(带通调制)
+		常用编码方式
+			调幅
+			调相
+			调位
+信道
+	类型
+		单工
+		半双工
+		全双工
+	极限容量因素
+		信道频率范围
+		信噪比
+	传输媒体
+		有线
+			双绞线(无屏蔽,屏蔽)
+			同轴电缆
+			光缆(光纤)
+		无线
+			地面微波通信
+			卫星通信
+	复用技术
+		频分复用（FDM）
+		时分复用（TDM）
+		统计时分复用
+		波分复用(WDM，光的频分复用)
+		码分复用（CDM）
+	宽带接入技术
+		ADSL(拨号上网)
+		FTTx(FTTH,光纤到户)	
+	
+</code></pre><h4 id="数据链路层">
+  
+  <a href="#%e6%95%b0%e6%8d%ae%e9%93%be%e8%b7%af%e5%b1%82">数据链路层</a>
+</h4>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">
+两个基本概念
+	数据链路
+	帧
+三个基本问题
+	封装成帧
+	透明传输
+	差错检测,CRC(循环冗余校验码)
+两种信道	
+	点对点信道
+		PPP\nPoint-to-Point Protocol\n点对点协议
+	广播信道
+		局域网 协议
+			LLC\nLogical Link Control\n逻辑链路控制
+			MAC\nMedium Access Control\n媒体接入子层
+		CSMA/CD\nCarrier Sense Multiple Access With Collision Detection\n载波监听多点接入/碰撞检测)
+			先听后发,边听边发,冲突急停,延迟重发
+</code></pre><h4 id="网络层">
+  
+  <a href="#%e7%bd%91%e7%bb%9c%e5%b1%82">网络层</a>
+</h4>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">
+设计思路
+	简单灵活的,无连接的,尽最大努力交付的数据报服务
+IP\nInternet Protocol\n网际协议
+	配套协议
+		ARP\nAddress Resolution Protocol\n地址解析协议(IP-&gt;MAC)
+		ICMP\nInternet Control Message Protocol\n控制报文协议
+		IGMP\nInternet Group Management Protocol\n网际租管理协议
+	IP 地址编址
+		历史发展阶段, 分类的IP地址&gt;&gt;子网的划分&gt;&gt;构成超网
+		构成
+			{&lt;网络号&gt;,&lt;主机号&gt;}
+		分类
+			A 类,{ &lt;网络号(开头为0),8位&gt;,&lt;主机号,24位&gt;}
+			B 类,{ &lt;网络号(开头为10),16位&gt;,&lt;主机号,16位&gt;}
+			C 类,{ &lt;网络号(开头为110),24位&gt;,&lt;主机号,8位&gt;}
+			D 类,开头为1110,多播地址
+			E 类,保留为今后使用
+	ARP\nAddress Resolution Protocol\n地址解析协议
+		功能:用IP地址找到局域网内的对应硬件地址
+		关键词:ARP cache, 广播, 局域网
+		过程:广播问局域网内主机对应IP的MAC地址,\n匹配主机单播回应
 </code></pre><h1 id="应用层">
   
   <a href="#%e5%ba%94%e7%94%a8%e5%b1%82">应用层</a>
@@ -1000,9 +1091,9 @@ TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,�
 拥塞窗口:发送方根据估算网络拥塞程度设置的值,反映网络容量</p>
 <p>慢开始,拥塞避免:(cwnd)指数增长-&gt;sshrend-&gt;线性增长-&gt;0,接着重复该过程<br>
 快重传,快恢复:慢开始的改进,最后一步-&gt;(sshrend/2)</p>
-<h3 id="网络层">
+<h3 id="网络层-1">
   
-  <a href="#%e7%bd%91%e7%bb%9c%e5%b1%82">网络层</a>
+  <a href="#%e7%bd%91%e7%bb%9c%e5%b1%82-1">网络层</a>
 </h3>
 <h5 id="ip-地址的分类">
   
@@ -1085,6 +1176,8 @@ IP 地址：192.168.1.199 ‐＞11000000.10101000.00000001.11000111<br>
     }
     arrow {
       LineColor _LineColor
+      LineStyle 4
+      LineThickness 0.5
     }
   }
   componentDiagram{
