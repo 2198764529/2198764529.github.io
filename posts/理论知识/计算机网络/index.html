@@ -13,9 +13,9 @@
 <title>计算机网络 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
-<link rel="stylesheet" href="/book.min.e2d0c5e72f32cb4d33d23a46afe83086ce9a926f55a036b8beef074217bd9cd3.css" integrity="sha256-4tDF5y8yy00z0jpGr&#43;gwhs6akm9VoDa4vu8HQhe9nNM=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.4a34912a70c49038edfa943c703a338e9e68cbbb1765816d68b616139cdbb5dc.css" integrity="sha256-SjSRKnDEkDjt&#43;pQ8cDozjp5oy7sXZYFtaLYWE5zbtdw=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.cbba4b0980a4ee0c6775b778d7fe8094f905626c246b32d752ab11abd69b5df8.js" integrity="sha256-y7pLCYCk7gxndbd41/6AlPkFYmwkazLXUqsRq9abXfg=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.cd2dc78f0c1256e68f08e6873f8979ad4fcc7fc02a2baa9d808121dad8b310a9.js" integrity="sha256-zS3HjwwSVuaPCOaHP4l5rU/Mf8AqK6qdgIEh2tizEKk=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -549,6 +549,55 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Moments</span>
+  
+ 
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/moments/lfeng/" class="">lfeng</a>
+  
+ 
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/moments/%E4%B8%AD%E5%9B%BD/" class="">中国</a>
+  
+ 
+
+        </li>
+      
+    
+
+  </ul>
+
+
+        </li>
+      
+    
 
   </ul>
 
@@ -585,14 +634,12 @@ https://github.com/alex-shpak/hugo-book
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#概述">概述</a>
+    <li><a href="#概览图">概览图</a>
       <ul>
         <li>
           <ul>
             <li>
               <ul>
-                <li><a href="#物理层">物理层</a></li>
-                <li><a href="#数据链路层">数据链路层</a></li>
                 <li><a href="#网络层">网络层</a></li>
               </ul>
             </li>
@@ -673,11 +720,11 @@ https://github.com/alex-shpak/hugo-book
       计算机网络
     </a>
     
-    <small class="Lastmod" data-unix="1711955560">
+    <small class="Lastmod" data-unix="1711955909">
     </small>
 
     <small>
-      4084字
+      3195字
 
     </small>
     
@@ -699,14 +746,12 @@ https://github.com/alex-shpak/hugo-book
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#概述">概述</a>
+    <li><a href="#概览图">概览图</a>
       <ul>
         <li>
           <ul>
             <li>
               <ul>
-                <li><a href="#物理层">物理层</a></li>
-                <li><a href="#数据链路层">数据链路层</a></li>
                 <li><a href="#网络层">网络层</a></li>
               </ul>
             </li>
@@ -778,171 +823,13 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown ios_card"><p>
-  <img src="/images/personal/study/d862cee765be33d0327662b8f8169dd.png" alt="" /></p>
-<h1 id="概述">
+<article class="markdown ios_card"><h1 id="概览图">
   
-  <a href="#%e6%a6%82%e8%bf%b0">概述</a>
+  <a href="#%e6%a6%82%e8%a7%88%e5%9b%be">概览图</a>
 </h1>
-<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">TCP/IP 四层协议  
-	应用层
-		应用层(OSI)
-		会话层(OSI)
-		表示层(OSI)
-	运输层
-	网际层
-	网络接口层
-		数据链路层(OSI)
-		物理层(OSI)
-OSI 七层协议
-	应用层
-	会话层
-	表示层【】
-	运输层
-		数据段Segment
-	网络层
-		路由器
-		分组 Packet
-	数据链路层
-		网桥、交换机
-		帧 Frame
-	物理层
-		网卡、中继器、集线器
-		比特流 Bit
-</code></pre><pre tabindex="0"><code class="language-uml" data-lang="uml">node 应用层{
-	node &#34;报文&#34;
-	node 应用层协议[
-		---
-		HTTPS(443)
-		---
-		HTTP(80)
-		---
-		DNS（53)
-		---
-		SMTP（25）
-		---
-		Telnet（23）
-		---
-		SSH（22）
-		---
-		FTP（20-21）
-	]
-
-}
-node 会话层{
-	node &#34; &#34;
-	node &#34;报文&#34;
-
-}
-node 表示层{
-	node &#34;报文&#34;
-	node &#34; &#34;
-
-}
-node 运输层{
-	node &#34;网关&#34;
-	node &#34;数据段 Segment&#34;
-	node &#34;TCP、UDP&#34;
-	node &#34; &#34;
-
-}
-node 网络层{
-	node &#34;路由器&#34;
-	node &#34;分组 Packet&#34;
-	node &#34;ARP、RARP、ICMP、IP&#34;
-	node &#34; &#34;
-
-}
-node 数据链路层{
-	node &#34;网桥、交换机&#34;
-	node &#34;帧 Frame&#34;
-}
-node 物理层{
-	node &#34;网卡、网线、中继器、集线器&#34;
-	node &#34;比特流 Bit&#34;
-}
-
-应用层 ... 会话层
-会话层 ... 表示层
-表示层 ... 运输层
-运输层 ... 网络层
-网络层 ... 数据链路层
-数据链路层 .. 物理层
-</code></pre><h4 id="物理层">
-  
-  <a href="#%e7%89%a9%e7%90%86%e5%b1%82">物理层</a>
-</h4>
-<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">特性
-	机械
-	电气
-	功能
-	过程
-设备
-	中继器
-	集线器
-信号
-	模拟信号(连续信号)
-	数字信号(离散信号)
-调制
-	基带调制(编码)
-		常用编码方式
-			不归零
-			归零
-			曼彻斯特
-			差分曼彻斯特
-	载波调制(带通调制)
-		常用编码方式
-			调幅
-			调相
-			调位
-信道
-	类型
-		单工
-		半双工
-		全双工
-	极限容量因素
-		信道频率范围
-		信噪比
-	传输媒体
-		有线
-			双绞线(无屏蔽,屏蔽)
-			同轴电缆
-			光缆(光纤)
-		无线
-			地面微波通信
-			卫星通信
-	复用技术
-		频分复用（FDM）
-		时分复用（TDM）
-		统计时分复用
-		波分复用(WDM，光的频分复用)
-		码分复用（CDM）
-	宽带接入技术
-		ADSL(拨号上网)
-		FTTx(FTTH,光纤到户)	
-	
-</code></pre><h4 id="数据链路层">
-  
-  <a href="#%e6%95%b0%e6%8d%ae%e9%93%be%e8%b7%af%e5%b1%82">数据链路层</a>
-</h4>
-<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">
-两个基本概念
-	数据链路
-	帧
-三个基本问题
-	封装成帧
-	透明传输
-	差错检测,CRC(循环冗余校验码)
-两种信道	
-	点对点信道
-		PPP\nPoint-to-Point Protocol\n点对点协议
-	广播信道
-		局域网 协议
-			LLC\nLogical Link Control\n逻辑链路控制
-			MAC\nMedium Access Control\n媒体接入子层
-		CSMA/CD\nCarrier Sense Multiple Access With Collision Detection\n载波监听多点接入/碰撞检测)
-			先听后发,边听边发,冲突急停,延迟重发
-</code></pre><h4 id="网络层">
+<p>
+  <img src="/images/personal/study/d862cee765be33d0327662b8f8169dd.png" alt="" /></p>
+<h4 id="网络层">
   
   <a href="#%e7%bd%91%e7%bb%9c%e5%b1%82">网络层</a>
 </h4>
