@@ -177,12 +177,13 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
-      <description>参考 https://www.cs.usfca.edu/~galles/visualization/Algorithms
+      <description> 参考 https://www.cs.usfca.edu/~galles/visualization/Algorithms
 https://algo.itcharge.cn
 https://www.hello-algo.com
 https://pdai.tech/md/algorithm/alg-basic-overview.html
 https://www.runoob.com/w3cnote/ten-sorting-algorithm.html
-排序算法 https://www.runoob.com/w3cnote/selection-sort.html</description>
+排序算法 https://www.runoob.com/w3cnote/selection-sort.html
+选择排序 冒泡排序 插入排序 快速排序 归并排序 堆排序 桶排序 计数排序 基数排序 树 完美二叉树(满二叉树):所有节点都是满的 完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。 完满二叉树: </description>
     </item>
     
     <item>

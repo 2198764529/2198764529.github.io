@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.4a34912a70c49038edfa943c703a338e9e68cbbb1765816d68b616139cdbb5dc.css" integrity="sha256-SjSRKnDEkDjt&#43;pQ8cDozjp5oy7sXZYFtaLYWE5zbtdw=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.420977a744c8bb65dbfac963282154733329b76684f2b3fb4b34761ff9564652.js" integrity="sha256-Qgl3p0TIu2Xb&#43;sljKCFUczMpt2aE8rP7SzR2H/lWRlI=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.4698a04b8574fe26cb30704ac968d9339ced36fde46479426fdda7ae7d7bc6e4.js" integrity="sha256-RpigS4V0/ibLMHBKyWjZM5ztNv3kZHlCb92nrn17xuQ=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -636,6 +636,13 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#参考">参考</a></li>
     <li><a href="#排序算法">排序算法</a></li>
+    <li><a href="#树">树</a>
+      <ul>
+        <li><a href="#完美二叉树满二叉树所有节点都是满的">完美二叉树(满二叉树):所有节点都是满的</a></li>
+        <li><a href="#完满二叉树只有叶子节点未满且叶子节点尽量靠左填充">完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。</a></li>
+        <li><a href="#完满二叉树">完满二叉树:</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -657,11 +664,11 @@ https://github.com/alex-shpak/hugo-book
       数据结构和算法
     </a>
     
-    <small class="Lastmod" data-unix="1712130578">
+    <small class="Lastmod" data-unix="1712646817">
     </small>
 
     <small>
-      12字
+      100字
 
     </small>
     
@@ -685,6 +692,13 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#参考">参考</a></li>
     <li><a href="#排序算法">排序算法</a></li>
+    <li><a href="#树">树</a>
+      <ul>
+        <li><a href="#完美二叉树满二叉树所有节点都是满的">完美二叉树(满二叉树):所有节点都是满的</a></li>
+        <li><a href="#完满二叉树只有叶子节点未满且叶子节点尽量靠左填充">完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。</a></li>
+        <li><a href="#完满二叉树">完满二叉树:</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -718,7 +732,40 @@ https://github.com/alex-shpak/hugo-book
 <p>
   <a href="https://www.runoob.com/w3cnote/selection-sort.html">https://www.runoob.com/w3cnote/selection-sort.html</a><br>
 
-  <img src="Pasted%20image%2020240403154937.png" alt="" /></p>
+  <img src="https://www.runoob.com/wp-content/uploads/2019/03/0B319B38-B70E-4118-B897-74EFA7E368F9.png" alt="" /></p>
+<ul>
+<li>选择排序</li>
+<li>冒泡排序</li>
+<li>插入排序</li>
+<li>快速排序</li>
+<li>归并排序</li>
+<li>堆排序</li>
+<li>桶排序</li>
+<li>计数排序</li>
+<li>基数排序</li>
+</ul>
+<h1 id="树">
+  
+  <a href="#%e6%a0%91">树</a>
+</h1>
+<h2 id="完美二叉树满二叉树所有节点都是满的">
+  
+  <a href="#%e5%ae%8c%e7%be%8e%e4%ba%8c%e5%8f%89%e6%a0%91%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91%e6%89%80%e6%9c%89%e8%8a%82%e7%82%b9%e9%83%bd%e6%98%af%e6%bb%a1%e7%9a%84">完美二叉树(满二叉树):所有节点都是满的</a>
+</h2>
+<p>
+  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/perfect_binary_tree.png" alt="" /></p>
+<h2 id="完满二叉树只有叶子节点未满且叶子节点尽量靠左填充">
+  
+  <a href="#%e5%ae%8c%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91%e5%8f%aa%e6%9c%89%e5%8f%b6%e5%ad%90%e8%8a%82%e7%82%b9%e6%9c%aa%e6%bb%a1%e4%b8%94%e5%8f%b6%e5%ad%90%e8%8a%82%e7%82%b9%e5%b0%bd%e9%87%8f%e9%9d%a0%e5%b7%a6%e5%a1%ab%e5%85%85">完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。</a>
+</h2>
+<p>
+  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/complete_binary_tree.png" alt="" /></p>
+<h2 id="完满二叉树">
+  
+  <a href="#%e5%ae%8c%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91">完满二叉树:</a>
+</h2>
+<p>
+  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/balanced_binary_tree.png" alt="" /></p>
 </article>
  
       
