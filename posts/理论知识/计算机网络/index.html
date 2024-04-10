@@ -13,9 +13,9 @@
 <title>计算机网络 | 李枫的地</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
-<link rel="stylesheet" href="/book.min.4a34912a70c49038edfa943c703a338e9e68cbbb1765816d68b616139cdbb5dc.css" integrity="sha256-SjSRKnDEkDjt&#43;pQ8cDozjp5oy7sXZYFtaLYWE5zbtdw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.0bb531941a2f90b298b304ec695022ec4ae394dbf192a4dcbaa7d18eb9795d87.css" integrity="sha256-C7UxlBovkLKYswTsaVAi7ErjlNvxkqTcuqfRjrl5XYc=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.4698a04b8574fe26cb30704ac968d9339ced36fde46479426fdda7ae7d7bc6e4.js" integrity="sha256-RpigS4V0/ibLMHBKyWjZM5ztNv3kZHlCb92nrn17xuQ=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.3c6eaa2b84800a43edb528e3896b0ff447618712a121f2d127f0f64be8777334.js" integrity="sha256-PG6qK4SACkPttSjjiWsP9EdhhxKhIfLRJ/D2S&#43;h3czQ=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -675,12 +675,8 @@ https://github.com/alex-shpak/hugo-book
                 <li>
                   <ul>
                     <li><a href="#tcp首部">TCP首部</a></li>
-                    <li><a href="#三次握手连接">三次握手(连接)</a></li>
-                    <li><a href="#四次挥手断开">四次挥手(断开)</a></li>
-                    <li><a href="#可靠传输">可靠传输</a></li>
-                    <li><a href="#等待重传">等待重传</a></li>
-                    <li><a href="#流量控制">流量控制</a></li>
-                    <li><a href="#拥塞控制">拥塞控制</a></li>
+                    <li><a href="#三次握手">三次握手</a></li>
+                    <li><a href="#四次挥手">四次挥手</a></li>
                   </ul>
                 </li>
               </ul>
@@ -720,11 +716,11 @@ https://github.com/alex-shpak/hugo-book
       计算机网络
     </a>
     
-    <small class="Lastmod" data-unix="1711955909">
+    <small class="Lastmod" data-unix="1712731108">
     </small>
 
     <small>
-      3195字
+      3202字
 
     </small>
     
@@ -787,12 +783,8 @@ https://github.com/alex-shpak/hugo-book
                 <li>
                   <ul>
                     <li><a href="#tcp首部">TCP首部</a></li>
-                    <li><a href="#三次握手连接">三次握手(连接)</a></li>
-                    <li><a href="#四次挥手断开">四次挥手(断开)</a></li>
-                    <li><a href="#可靠传输">可靠传输</a></li>
-                    <li><a href="#等待重传">等待重传</a></li>
-                    <li><a href="#流量控制">流量控制</a></li>
-                    <li><a href="#拥塞控制">拥塞控制</a></li>
+                    <li><a href="#三次握手">三次握手</a></li>
+                    <li><a href="#四次挥手">四次挥手</a></li>
                   </ul>
                 </li>
               </ul>
@@ -932,54 +924,25 @@ FIN: 标识为终止报文<br>
 紧急指针: URG=1才有意义,紧急数据的字节数<br>
 选项: 最大报文长度MSS, 窗口扩大,时间戳</li>
 </ol>
-<h5 id="三次握手连接">
+<h5 id="三次握手">
   
-  <a href="#%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b%e8%bf%9e%e6%8e%a5">三次握手(连接)</a>
+  <a href="#%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b">三次握手</a>
 </h5>
-<pre tabindex="0"><code>B -------[SYN=1,seq=x]----------------------&gt;&gt; S
-B &lt;&lt;-------[SYN=1, ACK=1,seq=y,ack=x+1]------- S   # S分配缓存和变量
-B -------[ACK=1,seq=x+1,ack=y+1]------------&gt;&gt; S   # B分配缓存和变量,可携带数据
-</code></pre><h5 id="四次挥手断开">
+<ol>
+<li>SYN, 客户端发送SYN到服务器请求, 目的建立到【客户端-&gt;服务器】的连接</li>
+<li>SYN+ACK, 服务器收到客户端的SYN后, 回送SYN和ACK, 其中的SYN表示想要再建立一条【服务器-&gt;客户端】的连接, ACK则表示允许建立【客户端-&gt;服务器】, 也就是说,【客户端-&gt;服务器】连接已通,只剩下【服务器-&gt;客户端】的连接没建立了</li>
+<li>ACK,客户端收到服务器的SYN+ACK, 回复ACK,表示允许建立【服务器-&gt;客户端的连接】,此时TCP连接完全建立</li>
+</ol>
+<h5 id="四次挥手">
   
-  <a href="#%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b%e6%96%ad%e5%bc%80">四次挥手(断开)</a>
+  <a href="#%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b">四次挥手</a>
 </h5>
-<pre tabindex="0"><code>B -------[FIN=1,seq=x]-------------------&gt;&gt; S   # 停止发送,断开连接
-B &lt;&lt;--------------[ACK=1,seq=y,ack=x+1]---- S   # 确认关闭
-B &lt;&lt;----[FIN=1,ACK=1,seq=z,ack=x+1]-------- S   # 断开连接
-B -------[ACK=1,seq=x+1,ack=z+1]---------&gt;&gt; S   # 确认关闭,最长报文段寿命2MSL结束,两者连接彻底关闭
-</code></pre><h5 id="可靠传输">
-  
-  <a href="#%e5%8f%af%e9%9d%a0%e4%bc%a0%e8%be%93">可靠传输</a>
-</h5>
-<ul>
-<li>检验</li>
-<li>序号</li>
-<li>确认</li>
-<li>重传:超时,冗余确认</li>
-</ul>
-<h5 id="等待重传">
-  
-  <a href="#%e7%ad%89%e5%be%85%e9%87%8d%e4%bc%a0">等待重传</a>
-</h5>
-<p>ACK 冗余确认</p>
-<h5 id="流量控制">
-  
-  <a href="#%e6%b5%81%e9%87%8f%e6%8e%a7%e5%88%b6">流量控制</a>
-</h5>
-<p>特点:局部出发,控制速率<br>
-TCP 会利用滑动窗口机制实现流量控制,根据接收缓存的大小,动态改变发送方的发送窗口<br>
-发送窗口 = Min(接收窗口rwnd,拥塞窗口cwnd)</p>
-<h5 id="拥塞控制">
-  
-  <a href="#%e6%8b%a5%e5%a1%9e%e6%8e%a7%e5%88%b6">拥塞控制</a>
-</h5>
-<p>特点:点对点,全局出发,控制总量<br>
-条件:对资源需求 &gt; 可用资源<br>
-目的是防止过多的数据注入到网络中<br>
-接收窗口:接收方根据接收缓存设置的值,并告诉发送方,反映接收方容量<br>
-拥塞窗口:发送方根据估算网络拥塞程度设置的值,反映网络容量</p>
-<p>慢开始,拥塞避免:(cwnd)指数增长-&gt;sshrend-&gt;线性增长-&gt;0,接着重复该过程<br>
-快重传,快恢复:慢开始的改进,最后一步-&gt;(sshrend/2)</p>
+<ol>
+<li>FIN, 当数据传完了, 客户端主动发送FIN报文给服务器来关闭【客户端-&gt;服务器】的连接</li>
+<li>ACK, 当服务器收到客户端的FIN, 服务器回复ACK, 表示关闭【客户端-&gt;服务器】的连接</li>
+<li>FIN, 当服务器确认没有数据传输了, 发送一个FIN，表示要关闭【服务器-&gt;客户端】的连接</li>
+<li>ACK, 当客户端收到服务器发的FIN, 回复ACK, 并进入TIME_WAIT(2MSL)状态 ,如果服务器没有反应,说明TCP连接正常断开</li>
+</ol>
 <h3 id="网络层-1">
   
   <a href="#%e7%bd%91%e7%bb%9c%e5%b1%82-1">网络层</a>

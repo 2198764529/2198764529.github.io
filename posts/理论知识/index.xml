@@ -29,7 +29,7 @@ https://www.hello-algo.com
 https://pdai.tech/md/algorithm/alg-basic-overview.html
 https://www.runoob.com/w3cnote/ten-sorting-algorithm.html
 排序算法 https://www.runoob.com/w3cnote/selection-sort.html
-选择排序 冒泡排序 插入排序 快速排序 归并排序 堆排序 桶排序 计数排序 基数排序 树 完美二叉树(满二叉树):所有节点都是满的 完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。 完满二叉树: </description>
+选择排序 冒泡排序 插入排序 快速排序 归并排序 堆排序 桶排序 计数排序 基数排序 树 完美二叉树(满二叉树):所有节点都是满的 完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。 平衡二叉树:任何两个子树高度差小于2 </description>
     </item>
     
     <item>
