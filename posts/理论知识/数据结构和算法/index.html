@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.0bb531941a2f90b298b304ec695022ec4ae394dbf192a4dcbaa7d18eb9795d87.css" integrity="sha256-C7UxlBovkLKYswTsaVAi7ErjlNvxkqTcuqfRjrl5XYc=" crossorigin="anonymous">
 <script defer src="/%20flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.3c6eaa2b84800a43edb528e3896b0ff447618712a121f2d127f0f64be8777334.js" integrity="sha256-PG6qK4SACkPttSjjiWsP9EdhhxKhIfLRJ/D2S&#43;h3czQ=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.468a9e4f3459a86d414f611e6074ce62daa2830a467834d5a9822169e677ff77.js" integrity="sha256-RoqeTzRZqG1BT2EeYHTOYtqigwpGeDTVqYIhaeZ3/3c=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -638,9 +638,9 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#排序算法">排序算法</a></li>
     <li><a href="#树">树</a>
       <ul>
-        <li><a href="#完美二叉树满二叉树所有节点都是满的">完美二叉树(满二叉树):所有节点都是满的</a></li>
-        <li><a href="#完满二叉树只有叶子节点未满且叶子节点尽量靠左填充">完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。</a></li>
-        <li><a href="#平衡二叉树任何两个子树高度差小于2">平衡二叉树:任何两个子树高度差小于2</a></li>
+        <li><a href="#完美二叉树满二叉树">完美二叉树(满二叉树)</a></li>
+        <li><a href="#完满二叉树">完满二叉树</a></li>
+        <li><a href="#平衡二叉树">平衡二叉树</a></li>
       </ul>
     </li>
   </ul>
@@ -664,11 +664,11 @@ https://github.com/alex-shpak/hugo-book
       数据结构和算法
     </a>
     
-    <small class="Lastmod" data-unix="1712728963">
+    <small class="Lastmod" data-unix="1712817655">
     </small>
 
     <small>
-      112字
+      315字
 
     </small>
     
@@ -694,9 +694,9 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#排序算法">排序算法</a></li>
     <li><a href="#树">树</a>
       <ul>
-        <li><a href="#完美二叉树满二叉树所有节点都是满的">完美二叉树(满二叉树):所有节点都是满的</a></li>
-        <li><a href="#完满二叉树只有叶子节点未满且叶子节点尽量靠左填充">完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。</a></li>
-        <li><a href="#平衡二叉树任何两个子树高度差小于2">平衡二叉树:任何两个子树高度差小于2</a></li>
+        <li><a href="#完美二叉树满二叉树">完美二叉树(满二叉树)</a></li>
+        <li><a href="#完满二叉树">完满二叉树</a></li>
+        <li><a href="#平衡二叉树">平衡二叉树</a></li>
       </ul>
     </li>
   </ul>
@@ -724,47 +724,78 @@ https://github.com/alex-shpak/hugo-book
 
   <a href="https://pdai.tech/md/algorithm/alg-basic-overview.html">https://pdai.tech/md/algorithm/alg-basic-overview.html</a><br>
 
-  <a href="https://www.runoob.com/w3cnote/ten-sorting-algorithm.html">https://www.runoob.com/w3cnote/ten-sorting-algorithm.html</a></p>
+  <a href="https://www.runoob.com/w3cnote/ten-sorting-algorithm.html">https://www.runoob.com/w3cnote/ten-sorting-algorithm.html</a><br>
+
+  <a href="https://www.runoob.com/w3cnote/selection-sort.html">https://www.runoob.com/w3cnote/selection-sort.html</a></p>
 <h1 id="排序算法">
   
   <a href="#%e6%8e%92%e5%ba%8f%e7%ae%97%e6%b3%95">排序算法</a>
 </h1>
-<p>
-  <a href="https://www.runoob.com/w3cnote/selection-sort.html">https://www.runoob.com/w3cnote/selection-sort.html</a><br>
-
-  <img src="https://www.runoob.com/wp-content/uploads/2019/03/0B319B38-B70E-4118-B897-74EFA7E368F9.png" alt="" /></p>
 <ul>
-<li>选择排序</li>
-<li>冒泡排序</li>
-<li>插入排序</li>
-<li>快速排序</li>
-<li>归并排序</li>
-<li>堆排序</li>
-<li>桶排序</li>
-<li>计数排序</li>
-<li>基数排序</li>
+<li>
+<p>冒泡排序<br>
+两两比较, 符合规则就换, 接着滑动窗口往后移动<br>
+
+  <img src="/images/personal/study/bubbleSort.png" alt="" /></p>
+</li>
+<li>
+<p>选择排序<br>
+每次选最大的(无序区)放到最后(有序区)<br>
+
+  <img src="/images/personal/study/selectionSort.png" alt="" /></p>
+</li>
+<li>
+<p>插入排序<br>
+每次选的元素插入到有序区,类似打牌时的排序<br>
+
+  <img src="/images/personal/study/insertSort.png" alt="" /><br>
+在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表<br>
+
+  <img src="/images/personal/study/insertSort2.png" alt="" /></p>
+</li>
+<li>
+<p>快速排序</p>
+</li>
+<li>
+<p>归并排序</p>
+</li>
+<li>
+<p>堆排序</p>
+</li>
+<li>
+<p>桶排序</p>
+</li>
+<li>
+<p>计数排序</p>
+</li>
+<li>
+<p>基数排序</p>
+</li>
 </ul>
 <h1 id="树">
   
   <a href="#%e6%a0%91">树</a>
 </h1>
-<h2 id="完美二叉树满二叉树所有节点都是满的">
+<h2 id="完美二叉树满二叉树">
   
-  <a href="#%e5%ae%8c%e7%be%8e%e4%ba%8c%e5%8f%89%e6%a0%91%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91%e6%89%80%e6%9c%89%e8%8a%82%e7%82%b9%e9%83%bd%e6%98%af%e6%bb%a1%e7%9a%84">完美二叉树(满二叉树):所有节点都是满的</a>
+  <a href="#%e5%ae%8c%e7%be%8e%e4%ba%8c%e5%8f%89%e6%a0%91%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91">完美二叉树(满二叉树)</a>
 </h2>
-<p>
+<p>所有节点都是满的<br>
+
   <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/perfect_binary_tree.png" alt="" /></p>
-<h2 id="完满二叉树只有叶子节点未满且叶子节点尽量靠左填充">
+<h2 id="完满二叉树">
   
-  <a href="#%e5%ae%8c%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91%e5%8f%aa%e6%9c%89%e5%8f%b6%e5%ad%90%e8%8a%82%e7%82%b9%e6%9c%aa%e6%bb%a1%e4%b8%94%e5%8f%b6%e5%ad%90%e8%8a%82%e7%82%b9%e5%b0%bd%e9%87%8f%e9%9d%a0%e5%b7%a6%e5%a1%ab%e5%85%85">完满二叉树:只有叶子节点未满，且叶子节点尽量靠左填充。</a>
+  <a href="#%e5%ae%8c%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91">完满二叉树</a>
 </h2>
-<p>
+<p>只有叶子节点未满，且叶子节点尽量靠左填充。<br>
+
   <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/complete_binary_tree.png" alt="" /></p>
-<h2 id="平衡二叉树任何两个子树高度差小于2">
+<h2 id="平衡二叉树">
   
-  <a href="#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91%e4%bb%bb%e4%bd%95%e4%b8%a4%e4%b8%aa%e5%ad%90%e6%a0%91%e9%ab%98%e5%ba%a6%e5%b7%ae%e5%b0%8f%e4%ba%8e2">平衡二叉树:任何两个子树高度差小于2</a>
+  <a href="#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91">平衡二叉树</a>
 </h2>
-<p>
+<p>任何两个子树高度差小于2<br>
+
   <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/balanced_binary_tree.png" alt="" /></p>
 </article>
  
