@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
-      <description>String:用于字符串处理 trim从字符串中删除前导和尾随空格。 {{ trim &amp;#34; 你好，世界！ &amp;#34; }} upper将字符串转换为小写或大写。 {{ lower &amp;#34;你好&amp;#34; }} {{ upper &amp;#34;world&amp;#34; }} title将字符串中每个单词的首字母转换为大写。 {{ title &amp;#34;hello world&amp;#34; }} replace用另一个子字符串替换子字符串的出现。 {{ replace &amp;#34;你好，世界！&amp;#34; &amp;#34;你好&amp;#34; &amp;#34;嗨&amp;#34; }} substr返回给定字符串的子字符串，从指定位置开始，可选长度。 {{ substr &amp;#34;你好，世界！&amp;#34; 7 5 }} len返回字符串的长度。 {{ len &amp;#34;你好，世界！&amp;#34; }} printf使用fmt.Printf语法格式化字符串。 {{ printf &amp;#34;你好，%s！&amp;#34; &amp;#34;世界&amp;#34; }} urlize将字符串转换为适合URL的格式。 {{ urlize &amp;#34;这是一个示例字符串&amp;#34; }} humanize将字符串转换为人类可读的格式。 {{ humanize &amp;#34;some_string&amp;#34; }} pluralize基于计数返回词的复数形式。 {{ with index .Site.Data.translations (printf &amp;#34;%s.toml&amp;#34; .Site.Language.Lang) }} {{ .home | default &amp;#34;Home&amp;#34; | pluralize .</description>
+      <description>String:用于字符串处理 trim从字符串中删除前导和尾随空格。 {{ trim &amp;#34; 你好，世界！ &amp;#34; }} upper将字符串转换为小写或大写。 {{ lower &amp;#34;你好&amp;#34; }} {{ upper &amp;#34;world&amp;#34; }} title将字符串中每个单词的首字母转换为大写。 {{ title &amp;#34;hello world&amp;#34; }} replace用另一个子字符串替换子字符串的出现。 {{ replace &amp;#34;你好，世界！&amp;#34; &amp;#34;你好&amp;#34; &amp;#34;嗨&amp;#34; }} substr返回给定字符串的子字符串，从指定位置开始，可选长度。 {{ substr &amp;#34;你好，世界！&amp;#34; 7 5 }} len返回字符串的长度。 {{ len &amp;#34;你好，世界！&amp;#34; }} printf使用fmt.Printf语法格式化字符串。 {{ printf &amp;#34;%s.%sk&amp;#34; (cast.ToString $num ) (cast.ToString $num2 ) }} urlize将字符串转换为适合URL的格式。 {{ urlize &amp;#34;这是一个示例字符串&amp;#34; }} humanize将字符串转换为人类可读的格式。 {{ humanize &amp;#34;some_string&amp;#34; }} pluralize基于计数返回词的复数形式。 {{ with index .Site.Data.translations (printf &amp;#34;%s.</description>
     </item>
     
     <item>
@@ -100,10 +100,10 @@ https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/posts/%E6%9D%82%E6%80%9D/%E7%AC%AC%E4%BA%8C%E5%8F%B0%E7%AC%94%E8%AE%B0%E6%9C%AC%E9%80%89%E8%B4%AD/</guid>
-      <description> 笔记本电脑 硬性条件
+      <description>笔记本电脑 硬性条件
 16GB 运存 接口丰富: typc接口充电 必须线下看过 触控屏幕 1.5kg 以下 16寸以上
 待选项 机械革命 CODE 01 ￥4.7k 华为 华为笔记本 MateBook B3-520 ￥5.2k 华硕 灵耀 15 ￥7k 惠普 星Book 15 ￥4.6k 宏基非凡go 14寸 1.3kg ￥4k 宏基非凡go 14寸 1.4kg ￥3.9k 宏基传奇 16寸 1.2kg 16g ￥4.8k
-暂定 宏基 ￥3.9k 非凡go pro 14寸 1.4kg ￥4.5k 传奇 16寸 1.2kg 16g 最终选择:宏基 传奇 16寸 1.2kg 16g ￥4.5k 理由 是最轻的16寸笔记本 1.2kg， 这已经比很多14寸笔记还要轻薄了，而我最看重笔记本的轻薄 4k的高画质，4k比2k还是要高出一个档次，码字写代码都挺合适的 两个 M.2 硬盘位, 可随时扩容 没有数字小键盘, 打字更方便 指纹解锁, 还是很方便的 缺点 电池50w时, 断电只能坚持 7小时 屏幕是oled, 据说还是没有LCD屏幕好用 运存是板载的16G, 没法扩容16G </description>
+暂定 宏基 ￥3.9k 非凡go pro 14寸 1.4kg ￥4.5k 传奇 16寸 1.2kg 16g 最终选择:宏基 传奇 16寸 1.2kg 16g ￥4.5k 理由 是最轻的16寸笔记本 1.2kg， 这已经比很多14寸笔记还要轻薄了，而我最看重笔记本的轻薄 4k的高画质，4k比2k还是要高出一个档次，码字写代码都挺合适的 两个 M.2 硬盘位, 可随时扩容 没有数字小键盘, 打字更方便 指纹解锁, 还是很方便的 缺点 电池50w时, 断电只能坚持 7小时 屏幕是oled, 据说还是没有LCD屏幕好用 运存是板载的16G, 没法扩容16G 电脑 价格 机械革命 CODE 01 ￥4.</description>
     </item>
     
     <item>
@@ -167,7 +167,10 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
-      <description> 安卓手机 软件 小黑屋 appShare Cemiuiler magisk: 苹方字体模块 神仙救砖 LSPosed-zygisk 爱玩机工具箱 ES 文件浏览器 Via 浏览器 b站(带漫游模块) Clash NoActive 手机性能排行 GKD(跳广告) 讯飞输入法: ios Apple music Telegram X Play 商店 MIUI 主题: 遇见IOS (AP景深宠物岛) 主题破解 测试 win 软件 vscode 图吧工具箱 vivaldi 浏览器 Dark Reader https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh AdGuard https://chromewebstore.google.com/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg Stylus https://chromewebstore.google.com/detail/clngdbkpkpeebahjckkjfobafhncgmne Tampermonkey https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo Obsidian autoHotKey 离线语音输入 https://github.com/HaujetZhao/CapsWriter-Offline/releases </description>
+      <description> 软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法
+【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱
+硬件 宏基传奇Edge：
+机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器， </description>
     </item>
     
     <item>

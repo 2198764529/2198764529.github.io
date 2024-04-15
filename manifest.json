@@ -1,15 +1,10 @@
 {
   "name": "李枫的地",
   "short_name": "李枫的地",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/47",
+  "scope": "/47",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#000000",
-  "icons": [
-    {
-      "src": "/favicon.svg",
-      "sizes": "512x512"
-    }
-  ]
+  "theme_color": "#000000"
+
 }
