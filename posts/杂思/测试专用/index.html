@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.3f46aa6383291e7e63308823687defcbd99bfabd26ae8335d1516163a9d3b273.css" integrity="sha256-P0aqY4MpHn5jMIgjaH3vy9mb&#43;r0mroM10VFhY6nTsnM=" crossorigin="anonymous">
 <script defer src="/flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.1deff41eea4b5a24bb086b3f1d3f0fd90811c4a8cd83581c19b4a047091c2440.js" integrity="sha256-He/0HupLWiS7CGs/HT8P2QgRxKjNg1gcGbSgRwkcJEA=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.faa21dce5a809e1a95c24cde6bb7a4cebcea86ae811f65e59975b98782bebf03.js" integrity="sha256-&#43;qIdzlqAnhqVwkzea7ekzrzqhq6BH2XlmXW5h4K&#43;vwM=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -782,17 +782,20 @@ https://wx1.sinaimg.cn/mw690/bfcada65ly1hlm4n0ennoj22qf5xckjo.jpg
 
 
 <script src="/plugs/plantuml-encoder.min.js"></script>
-<div id="css_plantuml"  style="display: none;">
+<style id="css_plantuml"  style="display: none;">
   mindmapDiagram{
-    BackGroundColor none
+    BackGroundColor _mindmapBackgroundColor
     node {
+      BackGroundColor none
       FontColor _FontColor
       LineColor _LineColor
+      LineStyle 4
+      LineThickness 0.5
     }
     arrow {
       LineColor _LineColor
       LineStyle 4
-      LineThickness 0.5
+      LineThickness 0.3
     }
   }
   componentDiagram{
@@ -815,13 +818,9 @@ https://wx1.sinaimg.cn/mw690/bfcada65ly1hlm4n0ennoj22qf5xckjo.jpg
       LineColor _LineColor
     }
   }
-  node {
-      BackGroundColor none
-      FontColor _FontColor
-      LineColor _LineColor
-  }
   
-</div>
+  
+</style>
 <script>
   let elements = document.querySelectorAll(".language-mindmap,.language-uml");
   const bodyStyles = getComputedStyle(document.body);
@@ -829,6 +828,7 @@ https://wx1.sinaimg.cn/mw690/bfcada65ly1hlm4n0ennoj22qf5xckjo.jpg
   const bodyBGColor = bodyStyles.getPropertyValue('--body-background').trim();
   const cardBG = bodyStyles.getPropertyValue('--card-bg').trim();
   let css_plantuml = document.getElementById("css_plantuml").innerHTML;
+  console.log(css_plantuml)
   css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
   Array.from(elements).forEach(
     (el) => {
@@ -836,12 +836,16 @@ https://wx1.sinaimg.cn/mw690/bfcada65ly1hlm4n0ennoj22qf5xckjo.jpg
       let el_innerText = el.innerText;
       if (el.dataset.lang=="mindmap")
       {
-        el_innerText=el_innerText.trim().replace(/^\t*/gm, function(match) {
+        el_innerText = el_innerText.trim().replace(/^\t*/gm, function(match) {
           
-          return '\t'.repeat(match.length)+"* ";
+          return '*'.repeat(match.length + 1)+" ";
+        }).replace(/\* (\[|_)/gm, function(x){
+          console.log(x);
+          return x.replace(" ", "")
+        
         });
       }
-      
+      console.log(el_innerText)
       let iframe = document.createElement("embed");
       el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
       let url = 'https://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
@@ -855,35 +859,6 @@ https://wx1.sinaimg.cn/mw690/bfcada65ly1hlm4n0ennoj22qf5xckjo.jpg
 
 
 
-
-
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({
-    securityLevel: 'loose',
-    theme: 'dark',
-  });
-  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
-    (el) => {
-      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
-    }
-  );
-</script>
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
-<script>
-
-  Array.from(document.getElementsByClassName("language-markmap")).forEach(
-    (el) => {
-      console.log(el);
-      
-      el.innerHTML = `<div class="markmap">${el.innerText}</div>`;
-    }
-  );
-</script>
 
 
 

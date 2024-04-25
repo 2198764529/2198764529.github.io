@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.3f46aa6383291e7e63308823687defcbd99bfabd26ae8335d1516163a9d3b273.css" integrity="sha256-P0aqY4MpHn5jMIgjaH3vy9mb&#43;r0mroM10VFhY6nTsnM=" crossorigin="anonymous">
 <script defer src="/flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.1deff41eea4b5a24bb086b3f1d3f0fd90811c4a8cd83581c19b4a047091c2440.js" integrity="sha256-He/0HupLWiS7CGs/HT8P2QgRxKjNg1gcGbSgRwkcJEA=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.faa21dce5a809e1a95c24cde6bb7a4cebcea86ae811f65e59975b98782bebf03.js" integrity="sha256-&#43;qIdzlqAnhqVwkzea7ekzrzqhq6BH2XlmXW5h4K&#43;vwM=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -713,7 +713,7 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1713169803"></span>
+      <span class="Lastmod ios_boder" data-unix="1714017855"></span>
   
       </span>
    <span>
@@ -721,7 +721,7 @@ https://github.com/alex-shpak/hugo-book
     <small class="ios_boder">
       文章字数:
     </small>
-    3202
+    3205
 
     </span>
 
@@ -834,14 +834,14 @@ https://github.com/alex-shpak/hugo-book
   <a href="#%e7%bd%91%e7%bb%9c%e5%b1%82">网络层</a>
 </h4>
 <pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">
-设计思路
+_ 设计思路
 	简单灵活的,无连接的,尽最大努力交付的数据报服务
 IP\nInternet Protocol\n网际协议
-	配套协议
+	[#FFBBCC] 配套协议
 		ARP\nAddress Resolution Protocol\n地址解析协议(IP-&gt;MAC)
 		ICMP\nInternet Control Message Protocol\n控制报文协议
 		IGMP\nInternet Group Management Protocol\n网际租管理协议
-	IP 地址编址
+	[#FFBBCC] IP 地址编址
 		历史发展阶段, 分类的IP地址&gt;&gt;子网的划分&gt;&gt;构成超网
 		构成
 			{&lt;网络号&gt;,&lt;主机号&gt;}
@@ -1047,17 +1047,20 @@ IP 地址：192.168.1.199 ‐＞11000000.10101000.00000001.11000111<br>
 
 
 <script src="/plugs/plantuml-encoder.min.js"></script>
-<div id="css_plantuml"  style="display: none;">
+<style id="css_plantuml"  style="display: none;">
   mindmapDiagram{
-    BackGroundColor none
+    BackGroundColor _mindmapBackgroundColor
     node {
+      BackGroundColor none
       FontColor _FontColor
       LineColor _LineColor
+      LineStyle 4
+      LineThickness 0.5
     }
     arrow {
       LineColor _LineColor
       LineStyle 4
-      LineThickness 0.5
+      LineThickness 0.3
     }
   }
   componentDiagram{
@@ -1080,13 +1083,9 @@ IP 地址：192.168.1.199 ‐＞11000000.10101000.00000001.11000111<br>
       LineColor _LineColor
     }
   }
-  node {
-      BackGroundColor none
-      FontColor _FontColor
-      LineColor _LineColor
-  }
   
-</div>
+  
+</style>
 <script>
   let elements = document.querySelectorAll(".language-mindmap,.language-uml");
   const bodyStyles = getComputedStyle(document.body);
@@ -1094,6 +1093,7 @@ IP 地址：192.168.1.199 ‐＞11000000.10101000.00000001.11000111<br>
   const bodyBGColor = bodyStyles.getPropertyValue('--body-background').trim();
   const cardBG = bodyStyles.getPropertyValue('--card-bg').trim();
   let css_plantuml = document.getElementById("css_plantuml").innerHTML;
+  console.log(css_plantuml)
   css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
   Array.from(elements).forEach(
     (el) => {
@@ -1101,12 +1101,16 @@ IP 地址：192.168.1.199 ‐＞11000000.10101000.00000001.11000111<br>
       let el_innerText = el.innerText;
       if (el.dataset.lang=="mindmap")
       {
-        el_innerText=el_innerText.trim().replace(/^\t*/gm, function(match) {
+        el_innerText = el_innerText.trim().replace(/^\t*/gm, function(match) {
           
-          return '\t'.repeat(match.length)+"* ";
+          return '*'.repeat(match.length + 1)+" ";
+        }).replace(/\* (\[|_)/gm, function(x){
+          console.log(x);
+          return x.replace(" ", "")
+        
         });
       }
-      
+      console.log(el_innerText)
       let iframe = document.createElement("embed");
       el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
       let url = 'https://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
@@ -1118,22 +1122,6 @@ IP 地址：192.168.1.199 ‐＞11000000.10101000.00000001.11000111<br>
   );
 </script>
 
-
-
-
-
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({
-    securityLevel: 'loose',
-    theme: 'dark',
-  });
-  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
-    (el) => {
-      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
-    }
-  );
-</script>
 
 
 
