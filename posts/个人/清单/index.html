@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.3f46aa6383291e7e63308823687defcbd99bfabd26ae8335d1516163a9d3b273.css" integrity="sha256-P0aqY4MpHn5jMIgjaH3vy9mb&#43;r0mroM10VFhY6nTsnM=" crossorigin="anonymous">
 <script defer src="/flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.faa21dce5a809e1a95c24cde6bb7a4cebcea86ae811f65e59975b98782bebf03.js" integrity="sha256-&#43;qIdzlqAnhqVwkzea7ekzrzqhq6BH2XlmXW5h4K&#43;vwM=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.658cb98b8773b61289e74c8f5b374afc54e9990cd75c0f785aee67c958f60dd6.js" integrity="sha256-ZYy5i4dzthKJ50yPWzdK/FTpmQzXXA94Wu5nyVj2DdY=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -69,20 +69,6 @@ https://github.com/alex-shpak/hugo-book
 
 
   
-  <ul>
-    
-      
-        <li class="book-section-flat" >
-          
-  
-  
-
-  
-    <a href="/posts/" class="">  </a>
-  
- 
-
-          
   <ul>
     
       
@@ -535,62 +521,6 @@ https://github.com/alex-shpak/hugo-book
   </ul>
 
 
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>Moments</span>
-  
- 
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/moments/lfeng/" class="">lfeng</a>
-  
- 
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/moments/%E4%B8%AD%E5%9B%BD/" class="">中国</a>
-  
- 
-
-        </li>
-      
-    
-
-  </ul>
-
-
-        </li>
-      
-    
-
-  </ul>
-
-
 
 
 
@@ -629,6 +559,7 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#软件">软件</a></li>
             <li><a href="#硬件">硬件</a></li>
+            <li><a href="#附录">附录</a></li>
           </ul>
         </li>
       </ul>
@@ -662,7 +593,7 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1713172792"></span>
+      <span class="Lastmod ios_boder" data-unix="1714122475"></span>
   
       </span>
    <span>
@@ -670,7 +601,7 @@ https://github.com/alex-shpak/hugo-book
     <small class="ios_boder">
       文章字数:
     </small>
-    401
+    543
 
     </span>
 
@@ -705,6 +636,7 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#软件">软件</a></li>
             <li><a href="#硬件">硬件</a></li>
+            <li><a href="#附录">附录</a></li>
           </ul>
         </li>
       </ul>
@@ -726,7 +658,7 @@ https://github.com/alex-shpak/hugo-book
   <a href="#%e8%bd%af%e4%bb%b6">软件</a>
 </h3>
 <p>【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法<br>
-【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱</p>
+【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）</p>
 <h3 id="硬件">
   
   <a href="#%e7%a1%ac%e4%bb%b6">硬件</a>
@@ -739,7 +671,27 @@ https://github.com/alex-shpak/hugo-book
 <li>外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口</li>
 <li>其他：标配65W Type-C 适配器，</li>
 </ul>
-</article>
+<h3 id="附录">
+  
+  <a href="#%e9%99%84%e5%bd%95">附录</a>
+</h3>
+<p>【autoHotkey-changeKeys】：</p>
+<pre tabindex="0"><code>; Esc 映射成 AltTab
+*Esc::send &#34;{Blind}!{Tab}&#34;
+; 左Alt 映射成 Ctrl
+*LAlt::Ctrl
+;大写键映射成删除键
+*CapsLock::Backspace
++CapsLock::Del
+;win+鼠标滚轮上(下滚)滚增加(减少)音量
+;win+点击鼠标滚轮暂停或者播放
+A_HotkeyInterval := 0
+#WheelUp::Volume_Up
+#WheelDown::Volume_Down
+#MButton::Media_Play_Pause
+;禁用按win键开始菜单弹出,快捷键不受影响
+~LWin::Send &#34;{Blind}{vkE8}&#34;
+</code></pre></article>
  
       
 
