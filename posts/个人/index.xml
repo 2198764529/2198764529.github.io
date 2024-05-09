@@ -40,7 +40,7 @@
       
       <guid>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
       <description> 软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法
-【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）
+【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、 winget
 硬件 宏基传奇Edge：
 机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器， 附录 【autoHotkey-changeKeys】：
 ; Esc 映射成 AltTab *Esc::send &amp;#34;{Blind}!{Tab}&amp;#34; ; 左Alt 映射成 Ctrl *LAlt::Ctrl ;大写键映射成删除键 *CapsLock::Backspace +CapsLock::Del ;win+鼠标滚轮上(下滚)滚增加(减少)音量 ;win+点击鼠标滚轮暂停或者播放 A_HotkeyInterval := 0 #WheelUp::Volume_Up #WheelDown::Volume_Down #MButton::Media_Play_Pause ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; </description>
