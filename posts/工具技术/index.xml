@@ -16,12 +16,12 @@
     </item>
     
     <item>
-      <title>Hugo 方法参考</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
+      <title>Hugo 参考</title>
+      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
-      <description>String:用于字符串处理 trim从字符串中删除前导和尾随空格。 {{ trim &amp;#34; 你好，世界！ &amp;#34; }} upper将字符串转换为小写或大写。 {{ lower &amp;#34;你好&amp;#34; }} {{ upper &amp;#34;world&amp;#34; }} title将字符串中每个单词的首字母转换为大写。 {{ title &amp;#34;hello world&amp;#34; }} replace用另一个子字符串替换子字符串的出现。 {{ replace &amp;#34;你好，世界！&amp;#34; &amp;#34;你好&amp;#34; &amp;#34;嗨&amp;#34; }} substr返回给定字符串的子字符串，从指定位置开始，可选长度。 {{ substr &amp;#34;你好，世界！&amp;#34; 7 5 }} len返回字符串的长度。 {{ len &amp;#34;你好，世界！&amp;#34; }} printf使用fmt.Printf语法格式化字符串。 {{ printf &amp;#34;%s.%sk&amp;#34; (cast.ToString $num ) (cast.ToString $num2 ) }} urlize将字符串转换为适合URL的格式。 {{ urlize &amp;#34;这是一个示例字符串&amp;#34; }} humanize将字符串转换为人类可读的格式。 {{ humanize &amp;#34;some_string&amp;#34; }} pluralize基于计数返回词的复数形式。 {{ with index .Site.Data.translations (printf &amp;#34;%s.</description>
+      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</guid>
+      <description>变量 .Site #️⃣ .AllPages: 所有页面的数组。 #️⃣ .BaseURL: 站点的基本 URL。 #️⃣ .BuildDrafts: 一个布尔值（默认为 false），指示是否构建草稿。 #️⃣ .Config: 站点的配置。 #️⃣ .Copyright: 网站的版权信息。 #️⃣ .Data: 网站的自定义数据。 #️⃣ .DisqusShortname: Disqus 短代码的 shortname。 #️⃣ .GetPage: 获取指定路径的页面。 #️⃣ .GoogleAnalytics: Google Analytics 的跟踪代码。 #️⃣ .Home: 网站的首页信息。 #️⃣ .IsDevelopment: 当前是否处于开发模式。 #️⃣ .IsMultiLingual: 网站是否支持多语言。 #️⃣ .IsServer: 当前是否处于服务器模式。 #️⃣ .Language: 当前网站的语言。 #️⃣ .LanguagePrefix: 语言前缀。 #️⃣ .Languages: 网站支持的语言列表。 #️⃣ .LastChange: 最近一次修改的日期。 #️⃣ .Lastmod: 最后修改的日期。 #️⃣ .MainSections: 主要部分列表。 #️⃣ .Menus: 网站的菜单列表。 #️⃣ .</description>
     </item>
     
     <item>
@@ -48,7 +48,8 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
-      <description>Number(数字) ceil(x)： 返回不小于 x 的最小整数 import math result = math.ceil(4.2) # 返回 5 floor(x)： 返回不大于 x 的最大整数 import math result = math.floor(4.8) # 返回 4 sqrt(x)： 返回 x 的平方根 import math result = math.sqrt(25) # 返回 5.0 pow(x, y)： 返回 x 的 y 次方 import math result = math.pow(2, 3) # 返回 8.0 exp(x)： 返回 e 的 x 次方 import math result = math.exp(2) # 返回 7.389... log(x)： 返回 x 的自然对数 import math result = math.</description>
+      <description>以下内容由 ChatGPT 生成, 仅供学习参考
+目录 文件处理（os、io） 网络编程（socket、urllib） 日期和时间处理（datetime、time） 数学运算（math、random） 字符串处理（re、string） 数据结构（list、tuple、dict、set） 对象编程（class、object） 错误处理（try、except） 文件处理（os、io） import os import io #️⃣ os 模块 # 获取和更改当前工作目录 current_directory = os.getcwd() # 返回当前工作目录 os.chdir(&amp;#39;/path/to/directory&amp;#39;) # 改变当前工作目录 # 列出目录内容 contents = os.listdir(&amp;#39;.&amp;#39;) # 列出当前目录中的所有文件和目录 # 创建和删除目录 os.mkdir(&amp;#39;new_directory&amp;#39;) # 创建新目录 os.makedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归创建目录 os.rmdir(&amp;#39;new_directory&amp;#39;) # 删除目录（仅当目录为空时） os.removedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归删除目录 # 删除文件 os.remove(&amp;#39;file.txt&amp;#39;) # 删除文件 os.unlink(&amp;#39;file.txt&amp;#39;) # 删除文件，与 os.remove 功能相同 # 重命名文件或目录 os.rename(&amp;#39;old_name.txt&amp;#39;, &amp;#39;new_name.txt&amp;#39;) # 重命名文件或目录 os.renames(&amp;#39;old_directory&amp;#39;, &amp;#39;new_directory&amp;#39;) # 递归重命名文件或目录 # 文件和目录属性 exists = os.</description>
     </item>
     
     <item>
