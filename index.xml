@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>好记性不如烂笔头 on 李枫的地</title>
+    <title>好记性不如烂笔头 on 流笔</title>
     <link>https://ltao.top/</link>
-    <description>Recent content in 好记性不如烂笔头 on 李枫的地</description>
+    <description>Recent content in 好记性不如烂笔头 on 流笔</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="https://ltao.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%80%83%E5%85%AC/</link>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%80%83%E5%85%AC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%80%83%E5%85%AC/</guid>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%80%83%E5%85%AC/</guid>
       <description> 总题量与分值 行测-90分-90题-100分 言表-15道-13分 数关-15道-18分 判推-40道-42分 常识-15道-9分 资分-15道-18分 申论-3小时-5题-100分 行测 言表 主题词 中心题 标题题 细节题 方法 关联词(找重点)-转折重点折后,因果在果后,条件是重点,并列是概括 主题词-排除无主题词选项 文构-总分在前,分总在后,总分总在中 避陷阱-无中生有,偷换概念,偷换逻辑,不符文意 非主题词 排序题 首-下定义,背景引入 中-代词,关联词,逻辑 尾,结论 句空题 首-概括,引入 中,承上启下 尾,结论 词空题 词义-侧重,搭配,程度,褒贬 语境-转折,因果,并列 </description>
     </item>
     
     <item>
       <title>git操作</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
       <description> 覆盖本地 git fetch origin git reset --hard origin/&amp;lt;branch_name&amp;gt; </description>
     </item>
     
     <item>
       <title>Hugo 参考</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</guid>
       <description>变量 .Site #️⃣ .AllPages: 所有页面的数组。 #️⃣ .BaseURL: 站点的基本 URL。 #️⃣ .BuildDrafts: 一个布尔值（默认为 false），指示是否构建草稿。 #️⃣ .Config: 站点的配置。 #️⃣ .Copyright: 网站的版权信息。 #️⃣ .Data: 网站的自定义数据。 #️⃣ .DisqusShortname: Disqus 短代码的 shortname。 #️⃣ .GetPage: 获取指定路径的页面。 #️⃣ .GoogleAnalytics: Google Analytics 的跟踪代码。 #️⃣ .Home: 网站的首页信息。 #️⃣ .IsDevelopment: 当前是否处于开发模式。 #️⃣ .IsMultiLingual: 网站是否支持多语言。 #️⃣ .IsServer: 当前是否处于服务器模式。 #️⃣ .Language: 当前网站的语言。 #️⃣ .LanguagePrefix: 语言前缀。 #️⃣ .Languages: 网站支持的语言列表。 #️⃣ .LastChange: 最近一次修改的日期。 #️⃣ .Lastmod: 最后修改的日期。 #️⃣ .MainSections: 主要部分列表。 #️⃣ .Menus: 网站的菜单列表。 #️⃣ .</description>
     </item>
     
@@ -44,10 +44,10 @@
     
     <item>
       <title>markDown 语法</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</guid>
       <description>标题：使用&amp;quot;#&amp;ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如：
 # 一级标题 ## 二级标题 ### 三级标题 ... ###### 六级标题 段落：段落之间以空行分隔。
 强调：使用&amp;rdquo;*&amp;ldquo;或&amp;rdquo;_&amp;ldquo;将需要强调的文本包围起来。例如：
@@ -62,30 +62,30 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
     
     <item>
       <title>python 方法参考</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
       <description>以下内容由 ChatGPT 生成, 仅供学习参考
 目录 文件处理（os、io） 网络编程（socket、urllib） 日期和时间处理（datetime、time） 数学运算（math、random） 字符串处理（re、string） 数据结构（list、tuple、dict、set） 对象编程（class、object） 错误处理（try、except） 文件处理（os、io） import os import io #️⃣ os 模块 # 获取和更改当前工作目录 current_directory = os.getcwd() # 返回当前工作目录 os.chdir(&amp;#39;/path/to/directory&amp;#39;) # 改变当前工作目录 # 列出目录内容 contents = os.listdir(&amp;#39;.&amp;#39;) # 列出当前目录中的所有文件和目录 # 创建和删除目录 os.mkdir(&amp;#39;new_directory&amp;#39;) # 创建新目录 os.makedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归创建目录 os.rmdir(&amp;#39;new_directory&amp;#39;) # 删除目录（仅当目录为空时） os.removedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归删除目录 # 删除文件 os.remove(&amp;#39;file.txt&amp;#39;) # 删除文件 os.unlink(&amp;#39;file.txt&amp;#39;) # 删除文件，与 os.remove 功能相同 # 重命名文件或目录 os.rename(&amp;#39;old_name.txt&amp;#39;, &amp;#39;new_name.txt&amp;#39;) # 重命名文件或目录 os.renames(&amp;#39;old_directory&amp;#39;, &amp;#39;new_directory&amp;#39;) # 递归重命名文件或目录 # 文件和目录属性 exists = os.</description>
     </item>
     
     <item>
       <title>关于篮球</title>
-      <link>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</link>
+      <link>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</guid>
+      <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</guid>
       <description>健壮的身体和娴熟的技术
 关于投篮 动作要点: 调整脚步,左脚在前,右脚在后 想象下面有个凳子坐下去,接着像弹簧一样起来 辅助手确定最左出手范围，控制方向 直臂出手,打直手腕 手指拨球,压腕让球保持高度和旋速 保持投篮动作 目标是弧度尽量高，发力尽量轻松 要往上发力投篮，就要往下下面压，下半身和上半身要发力不脱节 投篮手不要抓球，食指和中指张开，压腕时合拢 辅助手确定投篮范围，控制方向 在脚发力完成之前， 投篮夹角＜90度 投篮弧度要是一个抛物线，高度要高于篮板上沿 几个重要的指标：球旋速、球高度 关于上篮 果冻上篮，手心正对着篮板，旋球到篮板的左上角或者右上角 多观察全局位置 攻击前侧脚 关于运球 减少运球时间 只突破不经常终结，多多分球 踮脚尖走路能锻炼小腿肌肉和踝关节稳定性。 一直收肚子能减少身体负担 </description>
     </item>
     
     <item>
       <title>关于我</title>
-      <link>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
+      <link>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+      <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
       <description>个人介绍 23 岁, 1年工作经验,软工专业, 一名软件开发者。
 热爱互联网行业, 擅长做后端开发, 略懂一点对话AI。
 爱做项目, 编程 5 年间, 有 15+ 独立项目开发经验 。
@@ -99,10 +99,10 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
     
     <item>
       <title>计算机网络</title>
-      <link>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
       <description>概览图 网络层 _ 设计思路 简单灵活的,无连接的,尽最大努力交付的数据报服务 IP\nInternet Protocol\n网际协议 [#FFBBCC] 配套协议 ARP\nAddress Resolution Protocol\n地址解析协议(IP-&amp;gt;MAC) ICMP\nInternet Control Message Protocol\n控制报文协议 IGMP\nInternet Group Management Protocol\n网际租管理协议 [#FFBBCC] IP 地址编址 历史发展阶段, 分类的IP地址&amp;gt;&amp;gt;子网的划分&amp;gt;&amp;gt;构成超网 构成 {&amp;lt;网络号&amp;gt;,&amp;lt;主机号&amp;gt;} 分类 A 类,{ &amp;lt;网络号(开头为0),8位&amp;gt;,&amp;lt;主机号,24位&amp;gt;} B 类,{ &amp;lt;网络号(开头为10),16位&amp;gt;,&amp;lt;主机号,16位&amp;gt;} C 类,{ &amp;lt;网络号(开头为110),24位&amp;gt;,&amp;lt;主机号,8位&amp;gt;} D 类,开头为1110,多播地址 E 类,保留为今后使用 ARP\nAddress Resolution Protocol\n地址解析协议 功能:用IP地址找到局域网内的对应硬件地址 关键词:ARP cache, 广播, 局域网 过程:广播问局域网内主机对应IP的MAC地址,\n匹配主机单播回应 应用层 应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。
 概念 应用层主要包括以下内容
 域名系统 DNS WWW 和 HTTP 协议 电子邮件的相关协议，SMTP 协议和 POP3 协议、IMAP 协议 域名系统 DNS DNS 的作用是将域名转为IP地址，具体的过程是应用进程调用 resolver（解析程序），发送包含待解析的域名的 DNS 请求报文，通过 UDP 进行再包装发送到本地域名服务器，本地域名服务器搜索以后，把对应的 IP 地址放在回答报文返回。</description>
@@ -110,10 +110,10 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
     
     <item>
       <title>技术记录</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
       <description>进制转换 hugo 添加mermaid作图 在 footer.html(页面尾部) 添加以下代码,即可启用mermaid作图
 {{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考
 https://cloud.tencent.com/developer/article/1944123
@@ -127,10 +127,10 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
     
     <item>
       <title>清单</title>
-      <link>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</link>
+      <link>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
+      <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
       <description> 软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法
 【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、 winget
 硬件 宏基传奇Edge：
@@ -140,10 +140,10 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
     
     <item>
       <title>设计语言</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</guid>
       <description>颜色 颜色要醒目, 令人舒适
 不同颜色, 代表不同意义
 重的亮深, 轻的暗浅
@@ -154,10 +154,10 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
     
     <item>
       <title>数据结构和算法</title>
-      <link>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</link>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
       <description>参考 https://www.cs.usfca.edu/~galles/visualization/Algorithms
 https://algo.itcharge.cn
 https://www.hello-algo.com
@@ -184,10 +184,10 @@ https://www.runoob.com/w3cnote/selection-sort.html
     
     <item>
       <title>数学知识</title>
-      <link>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</link>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</guid>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</guid>
       <description>等比数列公式 进制转换 十进制转二进制 十进制数转换为二进制数时，由于整数和小数的转换方法不同，所以先将十进制数的整数部分和小数部分分别转换后，再加以合并。
 十进制整数转换为二进制整数采用&amp;quot;除2取余，逆序排列&amp;quot;法。具体做法是：用2整除十进制整数，可以得到一个商和余数；再用2去除商，又会得到一个商和余数，如此进行，直到商为0时为止，然后把先得到的余数作为二进制数的低位有效位，后得到的余数作为二进制数的高位有效位，依次排列起来。
 二进制转十进制 要从右到左用二进制的每个数去乘以2的相应次方，或者把二进制数首先写成加权系数展开式，然后按十进制加法规则求和。这种做法称为&amp;quot;按权相加&amp;quot;法。
@@ -197,10 +197,10 @@ https://www.runoob.com/w3cnote/selection-sort.html
     
     <item>
       <title>网站收藏</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
       <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://rebang.today 计网 http://home.ustc.edu.cn/~chaf/course/network.html https://www.runoob.com/w3cnote/summary-of-network.html 软件工具 画图工具 https://handraw.top Chatgpt https://chat.openai.com 科学上网 追云加速 https://www.zhuiyun.shop 一元机场 https://yfh4rrze3snwnnwj.xn--4gq62f52gdss.vip/ 机场推荐 http://www.maomeng.cf kaggle https://www.kaggle.com SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ autoHotKey https://wyagd001.github.io/v2/docs/ 建站参考 hugo https://hugo.aiaide.com/post
 另一个hugo文档 https://gohugobrasil.netlify.app
 Lyricify https://github.com/WXRIW/Lyricify-App
@@ -213,10 +213,10 @@ digraph https://zhuanlan.zhihu.com/p/21993254 fullcalendar https://fullcalendar.
     
     <item>
       <title>维基百科</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</guid>
       <description>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：
 维基百科 API 基本信息 Endpoint（终端点）： https://en.wikipedia.org/w/api.php （英语维基百科的API终端点，你可以替换 en 为其他语言标识符）
 请求方式： 主要使用HTTP GET请求，但也支持POST请求。
@@ -235,10 +235,10 @@ limit（限制）： 用于限制查询结果的数量。
     
     <item>
       <title>五笔输入法</title>
-      <link>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</link>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</guid>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</guid>
       <description> 笔画
 笔画是指汉字书写时不间断的一次连续写成的一个线条 字根
 笔画交叉复合而成的固定结构,是构成汉字的最基本单位 不符规律的键位 横 G[五] F[二] D[古] S[木丁西] A[工] 竖 </description>
@@ -246,10 +246,10 @@ limit（限制）： 用于限制查询结果的数量。
     
     <item>
       <title>兴起</title>
-      <link>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</link>
+      <link>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</guid>
+      <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</guid>
       <description> 首页美化计划 目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
 步骤如下
 初步利用网页组件美化 搞定数据的存储和传输 图表可视化 万物皆有定数 方式: 系统api/相关软件/自行记录
@@ -274,10 +274,10 @@ SD 卡 存储
     
     <item>
       <title>修身</title>
-      <link>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</link>
+      <link>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</guid>
+      <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</guid>
       <description> 定时 定时体检,选重要的关键的体检项目, 原则 极简, 如无必要勿增实体 实用, 凡事要看它有没有用 长远, 不要只关注今天和昨天 果断, 当断不断,必受其乱 耐心, 不要傲慢和偏见 稳步, 区分轻重缓急 隔离，工作，娱乐，休息三者的时间空间不能相同 必做 11 点前睡觉
 不在手机上刷短视频
 多看书
@@ -294,10 +294,10 @@ SD 卡 存储
     
     <item>
       <title>应用层-Q&amp;A</title>
-      <link>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/</link>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/</guid>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/</guid>
       <description>应用层是指电脑上各种应用软件进程通过何种应用层协议来使用网络提供的通信服务
 域名系统DNS是什么 域名系统是指 Internet 中用于把主机名字转换成IP的系统
 为啥 IP 数据包不使用域名而是用 IP 地址呢 因为 IP 地址的长度是固定的32位或者固定的128位，而域名的长度是可变的
@@ -319,10 +319,10 @@ URL 的格式？URL 是否区分大小写? &amp;lt;协议&amp;gt;://&amp;lt;主�
     
     <item>
       <title>运输层-Q&amp;A</title>
-      <link>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/</link>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/</guid>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/</guid>
       <description>运输层是干啥的？为啥会有运输层 运输层是为进程与进程之间通信服务用的，规定了进程与进程之间应该以何种协议进行传输数据。
 如果没有运输层，通信数据的传输将不可靠稳定，从而影响整个网络的通信速度质量。
 运输层包括哪些协议内容？这些协议内容有哪些异同点？ 运输层主要包括TCP【传输控制协议】协议和UDP【用户数据报协议】协议。
@@ -333,10 +333,10 @@ UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再�
     
     <item>
       <title>正则表达式</title>
-      <link>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/posts/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
       <description>正则表达式的所有元字符
 正则表达式的所有元字符包括(markdown表格列出来)：
 元字符 描述 . 匹配任意字符（除了换行符） \d 匹配数字字符 \D 匹配非数字字符 \w 匹配单词字符（字母、数字、下划线） \W 匹配非单词字符 \s 匹配空白字符（空格、制表符、换行符等） \S 匹配非空白字符 ^ 匹配字符串的开头 $ 匹配字符串的结尾 * 匹配前面的元素零次或多次 + 匹配前面的元素一次或多次 ? 表示前面的元素是可选的，匹配零次或一次 {n} 表示前面的元素恰好出现 n 次 {n,} 表示前面的元素至少出现 n 次 {n,m} 表示前面的元素出现 n 到 m 次之间 [] 字符集，匹配括号中任意一个字符 [^] 或 [^&amp;hellip;] 否定字符集，匹配除了括号中指定的任意字符之外的其他字符 </description>

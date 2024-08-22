@@ -10,7 +10,7 @@
 
 
 
-<title>Moments | 流笔</title>
+<title>正则表达式 | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c65f5e221c85dabd901c946f60abddada12d1bf2300ffb6ed5c163cebe13962e.css" integrity="sha256-xl9eIhyF2r2QHJRvYKvdraEtG/IwD/tu1cFjzr4Tli4=" crossorigin="anonymous">
@@ -18,8 +18,6 @@
 <script defer src="/zh-cn.search.min.1fad168b02739291c2b596346f6d29f45a8e2b02b4c0a834873a00b2813507d5.js" integrity="sha256-H60WiwJzkpHCtZY0b20p9FqOKwK0wKg0hzoAsoE1B9U=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-
-<link rel="alternate" type="application/rss+xml" href="https://ltao.top/moments/index.xml" title="流笔" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -297,7 +295,7 @@ https://github.com/alex-shpak/hugo-book
   
   
     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" 
-       class="">正则表达式</a>
+       class="active">正则表达式</a>
   
 
       </li>
@@ -454,7 +452,7 @@ https://github.com/alex-shpak/hugo-book
 
         
 
-
+<nav id="TableOfContents"></nav>
 
 
 
@@ -472,9 +470,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/moments/">
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
 
-      Moments
+      正则表达式
     </a>
 
   </div>
@@ -487,16 +485,17 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715306118"></span>
+      <span class="Lastmod ios_boder" data-unix="1717127579"></span>
 
     </span>
     <span>
 
       <small class="ios_boder">
         
-        文章数:
+
+      文章字数:
       </small>
-      2
+      282
       
 
     </span>
@@ -521,8 +520,87 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-
-<article class="markdown card"></article>
+<article class="markdown card"><p>正则表达式的所有元字符<br>
+正则表达式的所有元字符包括(markdown表格列出来)：</p>
+<table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>匹配任意字符（除了换行符）</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>匹配数字字符</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>匹配非数字字符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配单词字符（字母、数字、下划线）</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配非单词字符</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配空白字符（空格、制表符、换行符等）</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配非空白字符</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配字符串的开头</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配字符串的结尾</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前面的元素零次或多次</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面的元素一次或多次</td>
+</tr>
+<tr>
+<td>?</td>
+<td>表示前面的元素是可选的，匹配零次或一次</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>表示前面的元素恰好出现 n 次</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>表示前面的元素至少出现 n 次</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>表示前面的元素出现 n 到 m 次之间</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>字符集，匹配括号中任意一个字符</td>
+</tr>
+<tr>
+<td>[^] 或 [^&hellip;]</td>
+<td>否定字符集，匹配除了括号中指定的任意字符之外的其他字符</td>
+</tr>
+</tbody>
+</table>
+</article>
  
       
 
@@ -687,6 +765,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+
+<div class="book-comments">
+
+</div>
 
  
 

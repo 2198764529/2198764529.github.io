@@ -10,7 +10,7 @@
 
 
 
-<title>Moments | 流笔</title>
+<title>markDown 语法 | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c65f5e221c85dabd901c946f60abddada12d1bf2300ffb6ed5c163cebe13962e.css" integrity="sha256-xl9eIhyF2r2QHJRvYKvdraEtG/IwD/tu1cFjzr4Tli4=" crossorigin="anonymous">
@@ -18,8 +18,6 @@
 <script defer src="/zh-cn.search.min.1fad168b02739291c2b596346f6d29f45a8e2b02b4c0a834873a00b2813507d5.js" integrity="sha256-H60WiwJzkpHCtZY0b20p9FqOKwK0wKg0hzoAsoE1B9U=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-
-<link rel="alternate" type="application/rss+xml" href="https://ltao.top/moments/index.xml" title="流笔" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -219,7 +217,7 @@ https://github.com/alex-shpak/hugo-book
   
   
     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/" 
-       class="">markDown 语法</a>
+       class="active">markDown 语法</a>
   
 
       </li>
@@ -454,7 +452,7 @@ https://github.com/alex-shpak/hugo-book
 
         
 
-
+<nav id="TableOfContents"></nav>
 
 
 
@@ -472,9 +470,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/moments/">
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/">
 
-      Moments
+      markDown 语法
     </a>
 
   </div>
@@ -487,16 +485,17 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715306118"></span>
+      <span class="Lastmod ios_boder" data-unix="1702459317"></span>
 
     </span>
     <span>
 
       <small class="ios_boder">
         
-        文章数:
+
+      文章字数:
       </small>
-      2
+      766
       
 
     </span>
@@ -521,8 +520,89 @@ https://github.com/alex-shpak/hugo-book
 
       
       
+<article class="markdown card"><ol>
+<li>
+<p>标题：使用&quot;#&ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如：</p>
+<pre tabindex="0"><code># 一级标题
+## 二级标题
+### 三级标题
+...
+###### 六级标题
+</code></pre></li>
+<li>
+<p>段落：段落之间以空行分隔。</p>
+</li>
+<li>
+<p>强调：使用&rdquo;*&ldquo;或&rdquo;_&ldquo;将需要强调的文本包围起来。例如：</p>
+<pre tabindex="0"><code>*斜体*
+_斜体_
 
-<article class="markdown card"></article>
+**粗体**
+__粗体__
+
+***粗斜体***
+___粗斜体___
+</code></pre></li>
+<li>
+<p>列表：有序列表以数字和句点开始，无序列表以&rdquo;*&quot;、&quot;+&ldquo;或&rdquo;-&ldquo;开始。例如：</p>
+<pre tabindex="0"><code>1. 第一项
+2. 第二项
+3. 第三项
+
+- 无序列表项1
+- 无序列表项2
+  - 嵌套的无序列表项
+    - 更深层次的无序列表项
+
+* 无序列表项A
+* 无序列表项B
+  * 嵌套的无序列表项
+    * 更深层次的无序列表项
+
++ 无序列表项X
++ 无序列表项Y
+  + 嵌套的无序列表项
+    + 更深层次的无序列表项  
+</code></pre></li>
+<li>
+<p>链接：使用&rdquo;
+  <a href="%e9%93%be%e6%8e%a5%e5%9c%b0%e5%9d%80">链接文本</a>&ldquo;的格式添加链接。例如：</p>
+<pre tabindex="0"><code>[Google](https://www.google.com)
+</code></pre></li>
+<li>
+<p>图片：使用&rdquo;
+  <img src="%e5%9b%be%e7%89%87%e9%93%be%e6%8e%a5%e5%9c%b0%e5%9d%80" alt="替代文本" />&ldquo;的格式插入图片。例如：</p>
+<pre tabindex="0"><code>![示例图片](https://example.com/image.jpg)
+</code></pre></li>
+<li>
+<p>引用：使用&rdquo;&gt;&ldquo;字符表示引用。例如：</p>
+<pre tabindex="0"><code>&gt; 这是一段引用的文本。
+</code></pre></li>
+<li>
+<p>代码块：使用三个反引号(`)包围代码块，并在开始位置指定代码语言（可选）。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello_world</span>():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>)
+</span></span></code></pre></div></li>
+<li>
+<p>表格：使用&rdquo;|&ldquo;和&rdquo;-&ldquo;分隔表头和表格内容，并使用&rdquo;:&ldquo;来对齐表格内容。例如：</p>
+<pre tabindex="0"><code>| 列1标题 | 列2标题 |
+|---------|---------|
+| 内容1   | 内容2   |
+| 内容3   | 内容4   |
+
+左对齐列1标题 | 右对齐列2标题
+:------------|-------------:
+左对齐内容1  | 右对齐内容2
+左对齐内容3  | 右对齐内容4
+</code></pre></li>
+<li>
+<p>水平线：使用三个或更多连续的&rdquo;*&quot;、&quot;-&ldquo;或&rdquo;_&ldquo;表示水平线。例如：</p>
+<pre tabindex="0"><code>***
+---
+___
+</code></pre></li>
+</ol>
+</article>
  
       
 
@@ -687,6 +767,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+
+<div class="book-comments">
+
+</div>
 
  
 

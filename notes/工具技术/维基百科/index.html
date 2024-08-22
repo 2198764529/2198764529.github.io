@@ -10,7 +10,7 @@
 
 
 
-<title>Moments | 流笔</title>
+<title>维基百科 | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c65f5e221c85dabd901c946f60abddada12d1bf2300ffb6ed5c163cebe13962e.css" integrity="sha256-xl9eIhyF2r2QHJRvYKvdraEtG/IwD/tu1cFjzr4Tli4=" crossorigin="anonymous">
@@ -18,8 +18,6 @@
 <script defer src="/zh-cn.search.min.1fad168b02739291c2b596346f6d29f45a8e2b02b4c0a834873a00b2813507d5.js" integrity="sha256-H60WiwJzkpHCtZY0b20p9FqOKwK0wKg0hzoAsoE1B9U=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-
-<link rel="alternate" type="application/rss+xml" href="https://ltao.top/moments/index.xml" title="流笔" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -284,7 +282,7 @@ https://github.com/alex-shpak/hugo-book
   
   
     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/" 
-       class="">维基百科</a>
+       class="active">维基百科</a>
   
 
       </li>
@@ -454,7 +452,21 @@ https://github.com/alex-shpak/hugo-book
 
         
 
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#维基百科-api-基本信息">维基百科 API 基本信息</a></li>
+            <li><a href="#常用维基百科-api-请求参数">常用维基百科 API 请求参数</a></li>
+            <li><a href="#示例获取页面内容">示例：获取页面内容</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -472,9 +484,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/moments/">
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/">
 
-      Moments
+      维基百科
     </a>
 
   </div>
@@ -487,16 +499,17 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715306118"></span>
+      <span class="Lastmod ios_boder" data-unix="1701165327"></span>
 
     </span>
     <span>
 
       <small class="ios_boder">
         
-        文章数:
+
+      文章字数:
       </small>
-      2
+      648
       
 
     </span>
@@ -521,8 +534,61 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-
-<article class="markdown card"></article>
+<article class="markdown card"><p>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：</p>
+<h3 id="维基百科-api-基本信息">
+  
+  <a href="#%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e5%9f%ba%e6%9c%ac%e4%bf%a1%e6%81%af">维基百科 API 基本信息</a>
+</h3>
+<ul>
+<li>
+<p><strong>Endpoint（终端点）：</strong> <code>https://en.wikipedia.org/w/api.php</code> （英语维基百科的API终端点，你可以替换 <code>en</code> 为其他语言标识符）</p>
+</li>
+<li>
+<p><strong>请求方式：</strong> 主要使用HTTP GET请求，但也支持POST请求。</p>
+</li>
+<li>
+<p><strong>返回格式：</strong> 默认返回JSON格式，也可以选择其他格式，如XML。</p>
+</li>
+</ul>
+<h3 id="常用维基百科-api-请求参数">
+  
+  <a href="#%e5%b8%b8%e7%94%a8%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0">常用维基百科 API 请求参数</a>
+</h3>
+<ol>
+<li>
+<p><strong>action（动作）：</strong> 定义API的行为，常见值包括 <code>query</code>（查询）、<code>parse</code>（解析）、<code>opensearch</code>（开放搜索）等。</p>
+</li>
+<li>
+<p><strong>format（格式）：</strong> 指定返回结果的格式，常见值包括 <code>json</code> 和 <code>xml</code>。</p>
+</li>
+<li>
+<p><strong>titles（标题）：</strong> 指定要查询的页面标题，可以是单个标题或多个标题。</p>
+</li>
+<li>
+<p><strong>pageid（页面ID）：</strong> 指定要查询的页面的ID，与标题二选一使用。</p>
+</li>
+<li>
+<p><strong>prop（属性）：</strong> 查询页面的属性，如 <code>revisions</code>（修订版本）、<code>categories</code>（分类）等。</p>
+</li>
+<li>
+<p><strong>rvprop（修订版本属性）：</strong> 用于指定 <code>revisions</code> 属性的具体内容，如 <code>content</code>（内容）、<code>timestamp</code>（时间戳）等。</p>
+</li>
+<li>
+<p><strong>redirects（重定向）：</strong> 控制是否将重定向页面包含在结果中。</p>
+</li>
+<li>
+<p><strong>limit（限制）：</strong> 用于限制查询结果的数量。</p>
+</li>
+</ol>
+<h3 id="示例获取页面内容">
+  
+  <a href="#%e7%a4%ba%e4%be%8b%e8%8e%b7%e5%8f%96%e9%a1%b5%e9%9d%a2%e5%86%85%e5%ae%b9">示例：获取页面内容</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>https://en.wikipedia.org/w/api.php?action=query&amp;format=json&amp;titles=Python_(programming_language)&amp;prop=revisions&amp;rvprop=content
+</span></span></code></pre></div><p>这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。</p>
+<p>请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在
+  <a href="https://www.mediawiki.org/wiki/API:Main_page">维基百科开发者页面</a>找到。</p>
+</article>
  
       
 
@@ -687,6 +753,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+
+<div class="book-comments">
+
+</div>
 
  
 

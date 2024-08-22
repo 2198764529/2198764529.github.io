@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on 流笔</title>
+    <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 流笔</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git操作</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
+      <description> 覆盖本地 git fetch origin git reset --hard origin/&amp;lt;branch_name&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Hugo 参考</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</guid>
+      <description>变量 .Site #️⃣ .AllPages: 所有页面的数组。 #️⃣ .BaseURL: 站点的基本 URL。 #️⃣ .BuildDrafts: 一个布尔值（默认为 false），指示是否构建草稿。 #️⃣ .Config: 站点的配置。 #️⃣ .Copyright: 网站的版权信息。 #️⃣ .Data: 网站的自定义数据。 #️⃣ .DisqusShortname: Disqus 短代码的 shortname。 #️⃣ .GetPage: 获取指定路径的页面。 #️⃣ .GoogleAnalytics: Google Analytics 的跟踪代码。 #️⃣ .Home: 网站的首页信息。 #️⃣ .IsDevelopment: 当前是否处于开发模式。 #️⃣ .IsMultiLingual: 网站是否支持多语言。 #️⃣ .IsServer: 当前是否处于服务器模式。 #️⃣ .Language: 当前网站的语言。 #️⃣ .LanguagePrefix: 语言前缀。 #️⃣ .Languages: 网站支持的语言列表。 #️⃣ .LastChange: 最近一次修改的日期。 #️⃣ .Lastmod: 最后修改的日期。 #️⃣ .MainSections: 主要部分列表。 #️⃣ .Menus: 网站的菜单列表。 #️⃣ .</description>
+    </item>
+    
+    <item>
+      <title>markDown 语法</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</guid>
+      <description>标题：使用&amp;quot;#&amp;ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如：
+# 一级标题 ## 二级标题 ### 三级标题 ... ###### 六级标题 段落：段落之间以空行分隔。
+强调：使用&amp;rdquo;*&amp;ldquo;或&amp;rdquo;_&amp;ldquo;将需要强调的文本包围起来。例如：
+*斜体* _斜体_ **粗体** __粗体__ ***粗斜体*** ___粗斜体___ 列表：有序列表以数字和句点开始，无序列表以&amp;rdquo;*&amp;quot;、&amp;quot;+&amp;ldquo;或&amp;rdquo;-&amp;ldquo;开始。例如：
+1. 第一项 2. 第二项 3. 第三项 - 无序列表项1 - 无序列表项2 - 嵌套的无序列表项 - 更深层次的无序列表项 * 无序列表项A * 无序列表项B * 嵌套的无序列表项 * 更深层次的无序列表项 + 无序列表项X + 无序列表项Y + 嵌套的无序列表项 + 更深层次的无序列表项 链接：使用&amp;rdquo; 链接文本&amp;ldquo;的格式添加链接。例如：
+[Google](https://www.google.com) 图片：使用&amp;rdquo; &amp;ldquo;的格式插入图片。例如：
+![示例图片](https://example.com/image.jpg) 引用：使用&amp;rdquo;&amp;gt;&amp;ldquo;字符表示引用。例如：
+&amp;gt; 这是一段引用的文本。 代码块：使用三个反引号(`)包围代码块，并在开始位置指定代码语言（可选）。例如：
+def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rdquo;|&amp;ldquo;和&amp;rdquo;-&amp;ldquo;分隔表头和表格内容，并使用&amp;rdquo;:&amp;ldquo;来对齐表格内容。例如：
+| 列1标题 | 列2标题 | |---------|---------| | 内容1 | 内容2 | | 内容3 | 内容4 | 左对齐列1标题 | 右对齐列2标题 :------------|-------------: 左对齐内容1 | 右对齐内容2 左对齐内容3 | 右对齐内容4 水平线：使用三个或更多连续的&amp;rdquo;*&amp;quot;、&amp;quot;-&amp;ldquo;或&amp;rdquo;_&amp;ldquo;表示水平线。例如：</description>
+    </item>
+    
+    <item>
+      <title>python 方法参考</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
+      <description>以下内容由 ChatGPT 生成, 仅供学习参考
+目录 文件处理（os、io） 网络编程（socket、urllib） 日期和时间处理（datetime、time） 数学运算（math、random） 字符串处理（re、string） 数据结构（list、tuple、dict、set） 对象编程（class、object） 错误处理（try、except） 文件处理（os、io） import os import io #️⃣ os 模块 # 获取和更改当前工作目录 current_directory = os.getcwd() # 返回当前工作目录 os.chdir(&amp;#39;/path/to/directory&amp;#39;) # 改变当前工作目录 # 列出目录内容 contents = os.listdir(&amp;#39;.&amp;#39;) # 列出当前目录中的所有文件和目录 # 创建和删除目录 os.mkdir(&amp;#39;new_directory&amp;#39;) # 创建新目录 os.makedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归创建目录 os.rmdir(&amp;#39;new_directory&amp;#39;) # 删除目录（仅当目录为空时） os.removedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归删除目录 # 删除文件 os.remove(&amp;#39;file.txt&amp;#39;) # 删除文件 os.unlink(&amp;#39;file.txt&amp;#39;) # 删除文件，与 os.remove 功能相同 # 重命名文件或目录 os.rename(&amp;#39;old_name.txt&amp;#39;, &amp;#39;new_name.txt&amp;#39;) # 重命名文件或目录 os.renames(&amp;#39;old_directory&amp;#39;, &amp;#39;new_directory&amp;#39;) # 递归重命名文件或目录 # 文件和目录属性 exists = os.</description>
+    </item>
+    
+    <item>
+      <title>技术记录</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
+      <description>进制转换 hugo 添加mermaid作图 在 footer.html(页面尾部) 添加以下代码,即可启用mermaid作图
+{{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考
+https://cloud.tencent.com/developer/article/1944123
+https://note.qidong.name/2020/07/mermaid/
+CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
+😋
+像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
+磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
+毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。</description>
+    </item>
+    
+    <item>
+      <title>设计语言</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</guid>
+      <description>颜色 颜色要醒目, 令人舒适
+不同颜色, 代表不同意义
+重的亮深, 轻的暗浅
+大小 字多字小, 字段字大
+重的大, 轻的小
+留白 标志 下划线: 超链接</description>
+    </item>
+    
+    <item>
+      <title>网站收藏</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <description> 学习网站 全历史 https://www.allhistory.com 今日热榜 https://rebang.today 计网 http://home.ustc.edu.cn/~chaf/course/network.html https://www.runoob.com/w3cnote/summary-of-network.html 软件工具 画图工具 https://handraw.top Chatgpt https://chat.openai.com 科学上网 追云加速 https://www.zhuiyun.shop 一元机场 https://yfh4rrze3snwnnwj.xn--4gq62f52gdss.vip/ 机场推荐 http://www.maomeng.cf kaggle https://www.kaggle.com SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ autoHotKey https://wyagd001.github.io/v2/docs/ 建站参考 hugo https://hugo.aiaide.com/post
+另一个hugo文档 https://gohugobrasil.netlify.app
+Lyricify https://github.com/WXRIW/Lyricify-App
+颜色墙 http://zhongguose.com/#shangengzi
+博客部署
+nameSilo https://www.namesilo.com 阿里云 https://cn.aliyun.com Vercel https://vercel.com jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 元素生成
+digraph https://zhuanlan.zhihu.com/p/21993254 fullcalendar https://fullcalendar.io/docs Lunar https://6tail.cn/calendar/api.html graphviz https://graphviz.org plantuml https://plantuml.com/zh/ 参考博客
+干志雄 https://ganzhixiong.com 雷雷屋头 https://ll.sc.cn </description>
+    </item>
+    
+    <item>
+      <title>维基百科</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</guid>
+      <description>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：
+维基百科 API 基本信息 Endpoint（终端点）： https://en.wikipedia.org/w/api.php （英语维基百科的API终端点，你可以替换 en 为其他语言标识符）
+请求方式： 主要使用HTTP GET请求，但也支持POST请求。
+返回格式： 默认返回JSON格式，也可以选择其他格式，如XML。
+常用维基百科 API 请求参数 action（动作）： 定义API的行为，常见值包括 query（查询）、parse（解析）、opensearch（开放搜索）等。
+format（格式）： 指定返回结果的格式，常见值包括 json 和 xml。
+titles（标题）： 指定要查询的页面标题，可以是单个标题或多个标题。
+pageid（页面ID）： 指定要查询的页面的ID，与标题二选一使用。
+prop（属性）： 查询页面的属性，如 revisions（修订版本）、categories（分类）等。
+rvprop（修订版本属性）： 用于指定 revisions 属性的具体内容，如 content（内容）、timestamp（时间戳）等。
+redirects（重定向）： 控制是否将重定向页面包含在结果中。
+limit（限制）： 用于限制查询结果的数量。
+示例：获取页面内容 https://en.wikipedia.org/w/api.php?action=query&amp;amp;format=json&amp;amp;titles=Python_(programming_language)&amp;amp;prop=revisions&amp;amp;rvprop=content 这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。
+请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在 维基百科开发者页面找到。</description>
+    </item>
+    
+    <item>
+      <title>正则表达式</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>正则表达式的所有元字符
+正则表达式的所有元字符包括(markdown表格列出来)：
+元字符 描述 . 匹配任意字符（除了换行符） \d 匹配数字字符 \D 匹配非数字字符 \w 匹配单词字符（字母、数字、下划线） \W 匹配非单词字符 \s 匹配空白字符（空格、制表符、换行符等） \S 匹配非空白字符 ^ 匹配字符串的开头 $ 匹配字符串的结尾 * 匹配前面的元素零次或多次 + 匹配前面的元素一次或多次 ? 表示前面的元素是可选的，匹配零次或一次 {n} 表示前面的元素恰好出现 n 次 {n,} 表示前面的元素至少出现 n 次 {n,m} 表示前面的元素出现 n 到 m 次之间 [] 字符集，匹配括号中任意一个字符 [^] 或 [^&amp;hellip;] 否定字符集，匹配除了括号中指定的任意字符之外的其他字符 </description>
+    </item>
+    
+  </channel>
+</rss>

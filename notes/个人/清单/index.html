@@ -10,7 +10,7 @@
 
 
 
-<title>Moments | 流笔</title>
+<title>清单 | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c65f5e221c85dabd901c946f60abddada12d1bf2300ffb6ed5c163cebe13962e.css" integrity="sha256-xl9eIhyF2r2QHJRvYKvdraEtG/IwD/tu1cFjzr4Tli4=" crossorigin="anonymous">
@@ -18,8 +18,6 @@
 <script defer src="/zh-cn.search.min.1fad168b02739291c2b596346f6d29f45a8e2b02b4c0a834873a00b2813507d5.js" integrity="sha256-H60WiwJzkpHCtZY0b20p9FqOKwK0wKg0hzoAsoE1B9U=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-
-<link rel="alternate" type="application/rss+xml" href="https://ltao.top/moments/index.xml" title="流笔" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -130,7 +128,7 @@ https://github.com/alex-shpak/hugo-book
   
   
     <a href="/notes/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/" 
-       class="">清单</a>
+       class="active">清单</a>
   
 
       </li>
@@ -454,7 +452,21 @@ https://github.com/alex-shpak/hugo-book
 
         
 
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#软件">软件</a></li>
+            <li><a href="#硬件">硬件</a></li>
+            <li><a href="#附录">附录</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -472,9 +484,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/moments/">
+    <a href="/notes/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/">
 
-      Moments
+      清单
     </a>
 
   </div>
@@ -487,16 +499,17 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715306118"></span>
+      <span class="Lastmod ios_boder" data-unix="1715335711"></span>
 
     </span>
     <span>
 
       <small class="ios_boder">
         
-        文章数:
+
+      文章字数:
       </small>
-      2
+      570
       
 
     </span>
@@ -521,8 +534,55 @@ https://github.com/alex-shpak/hugo-book
 
       
       
+<article class="markdown card"><h3 id="软件">
+  
+  <a href="#%e8%bd%af%e4%bb%b6">软件</a>
+</h3>
+<p>【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法<br>
+【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、
+  <a href="https://zhuanlan.zhihu.com/p/659515299">winget</a></p>
+<h3 id="硬件">
+  
+  <a href="#%e7%a1%ac%e4%bb%b6">硬件</a>
+</h3>
+<p>宏基传奇Edge：</p>
+<ul>
+<li>机身规格： 356.7<em>242.3</em>12.95mm， 1.17kg</li>
+<li>屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证</li>
+<li>性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时</li>
+<li>外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口</li>
+<li>其他：标配65W Type-C 适配器，</li>
+</ul>
+<h3 id="附录">
+  
+  <a href="#%e9%99%84%e5%bd%95">附录</a>
+</h3>
+<p>【autoHotkey-changeKeys.ahk】：</p>
+<pre tabindex="0"><code>; Esc 映射成 AltTab
+*Esc::send &#34;{Blind}!{Tab}&#34;
 
-<article class="markdown card"></article>
+; 左Alt -&gt;Ctrl
+*LAlt::Ctrl
+
+;大写键-&gt;回车键
+*CapsLock::Enter
+
+;Tab键 -&gt;删除键
+*Tab::Backspace
+
+; `键 -&gt; Tab键
+*`::Tab
+
+;win+鼠标滚轮上(下滚)滚增加(减少)音量
+;win+点击鼠标滚轮暂停或者播放
+A_HotkeyInterval := 0
+#WheelUp::Volume_Up
+#WheelDown::Volume_Down
+#MButton::Media_Play_Pause
+
+;禁用按win键开始菜单弹出,快捷键不受影响
+~LWin::Send &#34;{Blind}{vkE8}&#34;
+</code></pre></article>
  
       
 
@@ -687,6 +747,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+
+<div class="book-comments">
+
+</div>
 
  
 

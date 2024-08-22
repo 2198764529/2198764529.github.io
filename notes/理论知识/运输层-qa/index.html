@@ -10,7 +10,7 @@
 
 
 
-<title>Moments | 流笔</title>
+<title>运输层-Q&amp;A | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c65f5e221c85dabd901c946f60abddada12d1bf2300ffb6ed5c163cebe13962e.css" integrity="sha256-xl9eIhyF2r2QHJRvYKvdraEtG/IwD/tu1cFjzr4Tli4=" crossorigin="anonymous">
@@ -18,8 +18,6 @@
 <script defer src="/zh-cn.search.min.1fad168b02739291c2b596346f6d29f45a8e2b02b4c0a834873a00b2813507d5.js" integrity="sha256-H60WiwJzkpHCtZY0b20p9FqOKwK0wKg0hzoAsoE1B9U=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-
-<link rel="alternate" type="application/rss+xml" href="https://ltao.top/moments/index.xml" title="流笔" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -412,7 +410,7 @@ https://github.com/alex-shpak/hugo-book
   
   
     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/" 
-       class="">运输层-Q&amp;A</a>
+       class="active">运输层-Q&amp;A</a>
   
 
       </li>
@@ -454,7 +452,21 @@ https://github.com/alex-shpak/hugo-book
 
         
 
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#运输层是干啥的为啥会有运输层">运输层是干啥的？为啥会有运输层</a></li>
+            <li><a href="#运输层包括哪些协议内容这些协议内容有哪些异同点">运输层包括哪些协议内容？这些协议内容有哪些异同点？</a></li>
+            <li><a href="#tcp-协议的三次握手四次挥手过程是怎么样的">TCP 协议的三次握手四次挥手过程是怎么样的？</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -472,9 +484,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/moments/">
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/">
 
-      Moments
+      运输层-Q&amp;A
     </a>
 
   </div>
@@ -487,16 +499,17 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715306118"></span>
+      <span class="Lastmod ios_boder" data-unix="1698217907"></span>
 
     </span>
     <span>
 
       <small class="ios_boder">
         
-        文章数:
+
+      文章字数:
       </small>
-      2
+      442
       
 
     </span>
@@ -521,8 +534,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-
-<article class="markdown card"></article>
+<article class="markdown card"><h3 id="运输层是干啥的为啥会有运输层">
+  
+  <a href="#%e8%bf%90%e8%be%93%e5%b1%82%e6%98%af%e5%b9%b2%e5%95%a5%e7%9a%84%e4%b8%ba%e5%95%a5%e4%bc%9a%e6%9c%89%e8%bf%90%e8%be%93%e5%b1%82">运输层是干啥的？为啥会有运输层</a>
+</h3>
+<p>运输层是为进程与进程之间通信服务用的，规定了进程与进程之间应该以何种协议进行传输数据。</p>
+<p>如果没有运输层，通信数据的传输将不可靠稳定，从而影响整个网络的通信速度质量。</p>
+<h3 id="运输层包括哪些协议内容这些协议内容有哪些异同点">
+  
+  <a href="#%e8%bf%90%e8%be%93%e5%b1%82%e5%8c%85%e6%8b%ac%e5%93%aa%e4%ba%9b%e5%8d%8f%e8%ae%ae%e5%86%85%e5%ae%b9%e8%bf%99%e4%ba%9b%e5%8d%8f%e8%ae%ae%e5%86%85%e5%ae%b9%e6%9c%89%e5%93%aa%e4%ba%9b%e5%bc%82%e5%90%8c%e7%82%b9">运输层包括哪些协议内容？这些协议内容有哪些异同点？</a>
+</h3>
+<p>运输层主要包括TCP【传输控制协议】协议和UDP【用户数据报协议】协议。</p>
+<p>不同点：</p>
+<ul>
+<li>UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再发送数据</li>
+<li>UDP支持一对一、一对多、多对一、多对多的相互通信，TCP支持一对一的点对点通信</li>
+<li>UDP不保证数据传输能顺利抵达目的，TCP通过一些内部协议来保证数据传输的一定抵达目的</li>
+</ul>
+<h3 id="tcp-协议的三次握手四次挥手过程是怎么样的">
+  
+  <a href="#tcp-%e5%8d%8f%e8%ae%ae%e7%9a%84%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b%e8%bf%87%e7%a8%8b%e6%98%af%e6%80%8e%e4%b9%88%e6%a0%b7%e7%9a%84">TCP 协议的三次握手四次挥手过程是怎么样的？</a>
+</h3>
+<p>三次握手是指客户端和服务端之间建立连接的过程，而四次挥手则是两者释放连接的过程。</p>
+<p>第一次握手：客户向服务端主动发送信号【SYN】，具体内容为我已经准备好同步了，如果你要开始与同步，发送一个确认码ack给我（Acknowledge number，值我发送的随机码+1），代表你真的收到我发的东西了。</p>
+</article>
  
       
 
@@ -687,6 +722,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+
+<div class="book-comments">
+
+</div>
 
  
 

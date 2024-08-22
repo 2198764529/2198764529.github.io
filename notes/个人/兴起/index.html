@@ -10,7 +10,7 @@
 
 
 
-<title>Moments | 流笔</title>
+<title>兴起 | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c65f5e221c85dabd901c946f60abddada12d1bf2300ffb6ed5c163cebe13962e.css" integrity="sha256-xl9eIhyF2r2QHJRvYKvdraEtG/IwD/tu1cFjzr4Tli4=" crossorigin="anonymous">
@@ -18,8 +18,6 @@
 <script defer src="/zh-cn.search.min.1fad168b02739291c2b596346f6d29f45a8e2b02b4c0a834873a00b2813507d5.js" integrity="sha256-H60WiwJzkpHCtZY0b20p9FqOKwK0wKg0hzoAsoE1B9U=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-
-<link rel="alternate" type="application/rss+xml" href="https://ltao.top/moments/index.xml" title="流笔" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -143,7 +141,7 @@ https://github.com/alex-shpak/hugo-book
   
   
     <a href="/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/" 
-       class="">兴起</a>
+       class="active">兴起</a>
   
 
       </li>
@@ -454,7 +452,25 @@ https://github.com/alex-shpak/hugo-book
 
         
 
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#首页美化计划">首页美化计划</a></li>
+    <li><a href="#万物皆有定数">万物皆有定数</a></li>
+    <li><a href="#一言">一言</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#介绍">介绍</a></li>
+            <li><a href="#待定计划">待定计划</a></li>
+            <li><a href="#参考内容">参考内容</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#有书可读方案">有书可读方案</a></li>
+    <li><a href="#个人存储方案">个人存储方案</a></li>
+  </ul>
+</nav>
 
 
 
@@ -472,9 +488,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/moments/">
+    <a href="/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/">
 
-      Moments
+      兴起
     </a>
 
   </div>
@@ -487,16 +503,17 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715306118"></span>
+      <span class="Lastmod ios_boder" data-unix="1705484968"></span>
 
     </span>
     <span>
 
       <small class="ios_boder">
         
-        文章数:
+
+      文章字数:
       </small>
-      2
+      633
       
 
     </span>
@@ -521,8 +538,153 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-
-<article class="markdown card"></article>
+<article class="markdown card"><h1 id="首页美化计划">
+  
+  <a href="#%e9%a6%96%e9%a1%b5%e7%be%8e%e5%8c%96%e8%ae%a1%e5%88%92">首页美化计划</a>
+</h1>
+<p>目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化<br>
+步骤如下</p>
+<ol>
+<li>初步利用网页组件美化</li>
+<li>搞定数据的存储和传输</li>
+<li>图表可视化</li>
+</ol>
+<h1 id="万物皆有定数">
+  
+  <a href="#%e4%b8%87%e7%89%a9%e7%9a%86%e6%9c%89%e5%ae%9a%e6%95%b0">万物皆有定数</a>
+</h1>
+<p>方式:  系统api/相关软件/自行记录<br>
+数据格式: JSON<br>
+内容: 与我有关的所有数据,单位为天</p>
+<ul>
+<li>步数</li>
+<li>睡眠时长, 睡眠起始点</li>
+<li>键盘输入字符数量 \ 鼠标点击次数</li>
+<li>饮水量 \ 吃饭内容</li>
+<li>洗澡 \ 洗头</li>
+<li>购物记录</li>
+<li>重要的定数
+<ul>
+<li>计算力</li>
+<li>记忆力</li>
+<li>意志力</li>
+</ul>
+</li>
+</ul>
+<h1 id="一言">
+  
+  <a href="#%e4%b8%80%e8%a8%80">一言</a>
+</h1>
+<h3 id="介绍">
+  
+  <a href="#%e4%bb%8b%e7%bb%8d">介绍</a>
+</h3>
+<p>在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.JSON文件和.CSV文件等.</p>
+<h3 id="待定计划">
+  
+  <a href="#%e5%be%85%e5%ae%9a%e8%ae%a1%e5%88%92">待定计划</a>
+</h3>
+<ul>
+<li>短信应用开发</li>
+<li>移动端和PC端应用开发</li>
+</ul>
+<h3 id="参考内容">
+  
+  <a href="#%e5%8f%82%e8%80%83%e5%86%85%e5%ae%b9">参考内容</a>
+</h3>
+<ul>
+<li>
+  <a href="http://blog.lwons.com/archieve/3_entity_search_databases.html">http://blog.lwons.com/archieve/3_entity_search_databases.html</a></li>
+<li>
+  <a href="https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/">https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/</a></li>
+<li>
+  <a href="https://www.wikidata.org/w/api.php?action=wbsearchentities&amp;search=Fudan&amp;language=en&amp;limit=20&amp;format=json">https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Fudan&language=en&limit=20&format=json</a></li>
+<li>Wikipedia json数据 
+  <a href="https://dumps.wikimedia.org/wikidatawiki/entities/">https://dumps.wikimedia.org/wikidatawiki/entities/</a></li>
+</ul>
+<h1 id="有书可读方案">
+  
+  <a href="#%e6%9c%89%e4%b9%a6%e5%8f%af%e8%af%bb%e6%96%b9%e6%a1%88">有书可读方案</a>
+</h1>
+<ul>
+<li>电子书</li>
+<li>下载到本地</li>
+<li>优秀的阅读体验</li>
+</ul>
+<h1 id="个人存储方案">
+  
+  <a href="#%e4%b8%aa%e4%ba%ba%e5%ad%98%e5%82%a8%e6%96%b9%e6%a1%88">个人存储方案</a>
+</h1>
+<ol>
+<li>
+<p>NAS<br>
+好处在于可扩展存储，数据安全，价格也不算特别高<br>
+坏处在于速度和可用性需要网络支持，需要内网穿透或者公网IP，且需要24小时开启，费电</p>
+</li>
+<li>
+<p>Type-C U盘<br>
+好处在于速度有保障、不需要依赖网络<br>
+坏处在于用时候没法充电，容易丢失，带来发热量，价格略贵</p>
+</li>
+<li>
+<p>SD 卡 存储<br>
+好处在于速度有保障、不需要依赖网络<br>
+坏处在于容易丢失，带来发热量，价格贵</p>
+</li>
+<li>
+<p>网络云盘（阿里云盘等）<br>
+好处在于可扩展存储，数据安全，价格也不算特别高<br>
+坏处在于速度和可用性需要运营商支持，一般来说，速度都比较慢</p>
+</li>
+</ol>
+<p>最后总结一下,四个存储方案,供大家参考</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>价格</th>
+<th>读写速度</th>
+<th>可扩展性</th>
+<th>稳定性</th>
+<th>其他问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAS</td>
+<td>硬盘便宜,NAS本身贵,网费和电费月支</td>
+<td>网速</td>
+<td>多块硬盘</td>
+<td>极其稳定</td>
+<td></td>
+</tr>
+<tr>
+<td>Type-C U盘</td>
+<td>价格</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SD 卡存储</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>网络云盘(阿里云盘等)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
  
       
 
@@ -687,6 +849,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+
+<div class="book-comments">
+
+</div>
 
  
 

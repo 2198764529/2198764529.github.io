@@ -10,7 +10,7 @@
 
 
 
-<title>Moments | 流笔</title>
+<title>数学知识 | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c65f5e221c85dabd901c946f60abddada12d1bf2300ffb6ed5c163cebe13962e.css" integrity="sha256-xl9eIhyF2r2QHJRvYKvdraEtG/IwD/tu1cFjzr4Tli4=" crossorigin="anonymous">
@@ -18,8 +18,6 @@
 <script defer src="/zh-cn.search.min.1fad168b02739291c2b596346f6d29f45a8e2b02b4c0a834873a00b2813507d5.js" integrity="sha256-H60WiwJzkpHCtZY0b20p9FqOKwK0wKg0hzoAsoE1B9U=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-
-<link rel="alternate" type="application/rss+xml" href="https://ltao.top/moments/index.xml" title="流笔" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -373,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
   
   
     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" 
-       class="">数学知识</a>
+       class="active">数学知识</a>
   
 
       </li>
@@ -454,7 +452,29 @@ https://github.com/alex-shpak/hugo-book
 
         
 
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#等比数列公式">等比数列公式</a></li>
+            <li><a href="#进制转换">进制转换</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#十进制转二进制">十进制转二进制</a></li>
+                    <li><a href="#二进制转十进制">二进制转十进制</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -472,9 +492,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/moments/">
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
 
-      Moments
+      数学知识
     </a>
 
   </div>
@@ -487,16 +507,17 @@ https://github.com/alex-shpak/hugo-book
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715306118"></span>
+      <span class="Lastmod ios_boder" data-unix="1705978565"></span>
 
     </span>
     <span>
 
       <small class="ios_boder">
         
-        文章数:
+
+      文章字数:
       </small>
-      2
+      410
       
 
     </span>
@@ -521,8 +542,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-
-<article class="markdown card"></article>
+<article class="markdown card"><h3 id="等比数列公式">
+  
+  <a href="#%e7%ad%89%e6%af%94%e6%95%b0%e5%88%97%e5%85%ac%e5%bc%8f">等比数列公式</a>
+</h3>
+<p>
+  <img src="https://p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde/f85508813b5a4fad9a0d313d67f3fd0d~tplv-xv4ileqgde-image.image" alt="" /></p>
+<h3 id="进制转换">
+  
+  <a href="#%e8%bf%9b%e5%88%b6%e8%bd%ac%e6%8d%a2">进制转换</a>
+</h3>
+<h5 id="十进制转二进制">
+  
+  <a href="#%e5%8d%81%e8%bf%9b%e5%88%b6%e8%bd%ac%e4%ba%8c%e8%bf%9b%e5%88%b6">十进制转二进制</a>
+</h5>
+<p>十进制数转换为二进制数时，由于整数和小数的转换方法不同，所以先将十进制数的整数部分和小数部分分别转换后，再加以合并。</p>
+<p>十进制整数转换为二进制整数采用&quot;除2取余，逆序排列&quot;法。具体做法是：用2整除十进制整数，可以得到一个商和余数；再用2去除商，又会得到一个商和余数，如此进行，直到商为0时为止，然后把先得到的余数作为二进制数的低位有效位，后得到的余数作为二进制数的高位有效位，依次排列起来。</p>
+<h5 id="二进制转十进制">
+  
+  <a href="#%e4%ba%8c%e8%bf%9b%e5%88%b6%e8%bd%ac%e5%8d%81%e8%bf%9b%e5%88%b6">二进制转十进制</a>
+</h5>
+<p>要从右到左用二进制的每个数去乘以2的相应次方，或者把二进制数首先写成加权系数展开式，然后按十进制加法规则求和。这种做法称为&quot;按权相加&quot;法。</p>
+<p>二进制数1000110转成十进制数可以看作这样：</p>
+<p>数字中共有三个1 即第一位一个，第二位一个，第六位一个，然后对应十进制数即2的1次方+2的2次方+2的6次方， 即1000110=64+0+0+0+4+2+0=70</p>
+</article>
  
       
 
@@ -687,6 +730,10 @@ https://github.com/alex-shpak/hugo-book
       </footer>
 
       
+
+<div class="book-comments">
+
+</div>
 
  
 
