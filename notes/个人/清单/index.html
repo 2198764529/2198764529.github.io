@@ -8,7 +8,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.26a050f324d823a7c5c676e08ceebf0948bdaf39295cb860903bb1623cf8776c.css" integrity="sha256-JqBQ8yTYI6fFxnbgjO6/CUi9rzkpXLhgkDuxYjz4d2w=" crossorigin="anonymous">
 <script defer src="/flexsearch.min.js"></script>
-<script defer src="/zh-cn.search.min.69d7c726f99b894fd05d3462538e3267d92a2d4881830f0ea3e910d847cac4ac.js" integrity="sha256-adfHJvmbiU/QXTRiU44yZ9kqLUiBgw8Oo&#43;kQ2EfKxKw=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.5152cbad1be5dcfbc3626462cfef42ef23c265ae9e411edcfe9a1b9c53548a57.js" integrity="sha256-UVLLrRvl3PvDYmRiz&#43;9C7yPCZa6eQR7c/pobnFNUilc=" crossorigin="anonymous"></script>
 
 <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 
@@ -682,7 +682,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1724420022"></span>
+      <span class="Lastmod ios_boder" data-unix="1715335711"></span>
 
     </span>
     <span>
@@ -692,7 +692,7 @@
 
       文章字数:
       </small>
-      656
+      570
       
 
     </span>
@@ -745,46 +745,26 @@
 *Esc::send &#34;{Blind}!{Tab}&#34;
 
 ; 左Alt -&gt;Ctrl
-*LAlt::LCtrl
-
-^1::Home
-^2::End
-
-; 左Ctrl-&gt;Enter
-*LCtrl::Enter
-
-; Capslock键-&gt;BackSpace键
-*Capslock::BackSpace
+*LAlt::Ctrl
 
 ;大写键-&gt;回车键
-*MButton::Enter
+*CapsLock::Enter
+
+;Tab键 -&gt;删除键
+*Tab::Backspace
 
 ; `键 -&gt; Tab键
 *`::Tab
 
 ;win+鼠标滚轮上(下滚)滚增加(减少)音量
+;win+点击鼠标滚轮暂停或者播放
 A_HotkeyInterval := 0
 #WheelUp::Volume_Up
 #WheelDown::Volume_Down
-
-;win+点击鼠标滚-&gt;ESC
-#MButton::ESC
+#MButton::Media_Play_Pause
 
 ;禁用按win键开始菜单弹出,快捷键不受影响
 ~LWin::Send &#34;{Blind}{vkE8}&#34;
-
-
-; 功能键改成符号键
-; `F1键 -&gt; ,键
-*F1::,
-; `2键 -&gt; .键
-*F2::.
-; `3键 -&gt; /键
-*F3::/
-; `4键 -&gt; ;键
-*F4::;
-; `5键 -&gt; &#39;键
-*F5::&#39;
 </code></pre></article>
  
       
