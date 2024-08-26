@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>维基百科 | 流笔</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>运输层-Q&amp;A | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c0171196cda5bb9c404c4218e95e14e2e6e0b6423c683f2644ecbf23d57b32ce.css" integrity="sha256-wBcRls2lu5xATEIY6V4U4ubgtkI8aD8mROy/I9V7Ms4=" crossorigin="anonymous">
@@ -264,7 +264,7 @@
   
   
     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/" 
-       class="active">维基百科</a>
+       class="">维基百科</a>
   
 
       </li>
@@ -371,7 +371,7 @@
   
   
     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%BF%90%E8%BE%93%E5%B1%82-qa/" 
-       class="">运输层-Q&amp;A</a>
+       class="active">运输层-Q&amp;A</a>
   
 
       </li>
@@ -668,9 +668,9 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#维基百科-api-基本信息">维基百科 API 基本信息</a></li>
-            <li><a href="#常用维基百科-api-请求参数">常用维基百科 API 请求参数</a></li>
-            <li><a href="#示例获取页面内容">示例：获取页面内容</a></li>
+            <li><a href="#运输层是干啥的为啥会有运输层">运输层是干啥的？为啥会有运输层</a></li>
+            <li><a href="#运输层包括哪些协议内容这些协议内容有哪些异同点">运输层包括哪些协议内容？这些协议内容有哪些异同点？</a></li>
+            <li><a href="#tcp-协议的三次握手四次挥手过程是怎么样的">TCP 协议的三次握手四次挥手过程是怎么样的？</a></li>
           </ul>
         </li>
       </ul>
@@ -718,9 +718,9 @@
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/">
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%BF%90%E8%BE%93%E5%B1%82-qa/">
 
-      维基百科
+      运输层-Q&amp;A
     </a>
 
   </div>
@@ -733,7 +733,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1701165327"></span>
+      <span class="Lastmod ios_boder" data-unix="1698217907"></span>
 
     </span>
     <span>
@@ -743,7 +743,7 @@
 
       文章字数:
       </small>
-      648
+      442
       
 
     </span>
@@ -768,60 +768,29 @@
 
       
       
-<article class="markdown card"><p>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：</p>
-<h3 id="维基百科-api-基本信息">
+<article class="markdown card"><h3 id="运输层是干啥的为啥会有运输层">
   
-  <a href="#%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e5%9f%ba%e6%9c%ac%e4%bf%a1%e6%81%af">维基百科 API 基本信息</a>
+  <a href="#%e8%bf%90%e8%be%93%e5%b1%82%e6%98%af%e5%b9%b2%e5%95%a5%e7%9a%84%e4%b8%ba%e5%95%a5%e4%bc%9a%e6%9c%89%e8%bf%90%e8%be%93%e5%b1%82">运输层是干啥的？为啥会有运输层</a>
 </h3>
+<p>运输层是为进程与进程之间通信服务用的，规定了进程与进程之间应该以何种协议进行传输数据。</p>
+<p>如果没有运输层，通信数据的传输将不可靠稳定，从而影响整个网络的通信速度质量。</p>
+<h3 id="运输层包括哪些协议内容这些协议内容有哪些异同点">
+  
+  <a href="#%e8%bf%90%e8%be%93%e5%b1%82%e5%8c%85%e6%8b%ac%e5%93%aa%e4%ba%9b%e5%8d%8f%e8%ae%ae%e5%86%85%e5%ae%b9%e8%bf%99%e4%ba%9b%e5%8d%8f%e8%ae%ae%e5%86%85%e5%ae%b9%e6%9c%89%e5%93%aa%e4%ba%9b%e5%bc%82%e5%90%8c%e7%82%b9">运输层包括哪些协议内容？这些协议内容有哪些异同点？</a>
+</h3>
+<p>运输层主要包括TCP【传输控制协议】协议和UDP【用户数据报协议】协议。</p>
+<p>不同点：</p>
 <ul>
-<li>
-<p><strong>Endpoint（终端点）：</strong> <code>https://en.wikipedia.org/w/api.php</code> （英语维基百科的API终端点，你可以替换 <code>en</code> 为其他语言标识符）</p>
-</li>
-<li>
-<p><strong>请求方式：</strong> 主要使用HTTP GET请求，但也支持POST请求。</p>
-</li>
-<li>
-<p><strong>返回格式：</strong> 默认返回JSON格式，也可以选择其他格式，如XML。</p>
-</li>
+<li>UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再发送数据</li>
+<li>UDP支持一对一、一对多、多对一、多对多的相互通信，TCP支持一对一的点对点通信</li>
+<li>UDP不保证数据传输能顺利抵达目的，TCP通过一些内部协议来保证数据传输的一定抵达目的</li>
 </ul>
-<h3 id="常用维基百科-api-请求参数">
+<h3 id="tcp-协议的三次握手四次挥手过程是怎么样的">
   
-  <a href="#%e5%b8%b8%e7%94%a8%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0">常用维基百科 API 请求参数</a>
+  <a href="#tcp-%e5%8d%8f%e8%ae%ae%e7%9a%84%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b%e8%bf%87%e7%a8%8b%e6%98%af%e6%80%8e%e4%b9%88%e6%a0%b7%e7%9a%84">TCP 协议的三次握手四次挥手过程是怎么样的？</a>
 </h3>
-<ol>
-<li>
-<p><strong>action（动作）：</strong> 定义API的行为，常见值包括 <code>query</code>（查询）、<code>parse</code>（解析）、<code>opensearch</code>（开放搜索）等。</p>
-</li>
-<li>
-<p><strong>format（格式）：</strong> 指定返回结果的格式，常见值包括 <code>json</code> 和 <code>xml</code>。</p>
-</li>
-<li>
-<p><strong>titles（标题）：</strong> 指定要查询的页面标题，可以是单个标题或多个标题。</p>
-</li>
-<li>
-<p><strong>pageid（页面ID）：</strong> 指定要查询的页面的ID，与标题二选一使用。</p>
-</li>
-<li>
-<p><strong>prop（属性）：</strong> 查询页面的属性，如 <code>revisions</code>（修订版本）、<code>categories</code>（分类）等。</p>
-</li>
-<li>
-<p><strong>rvprop（修订版本属性）：</strong> 用于指定 <code>revisions</code> 属性的具体内容，如 <code>content</code>（内容）、<code>timestamp</code>（时间戳）等。</p>
-</li>
-<li>
-<p><strong>redirects（重定向）：</strong> 控制是否将重定向页面包含在结果中。</p>
-</li>
-<li>
-<p><strong>limit（限制）：</strong> 用于限制查询结果的数量。</p>
-</li>
-</ol>
-<h3 id="示例获取页面内容">
-  
-  <a href="#%e7%a4%ba%e4%be%8b%e8%8e%b7%e5%8f%96%e9%a1%b5%e9%9d%a2%e5%86%85%e5%ae%b9">示例：获取页面内容</a>
-</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>https://en.wikipedia.org/w/api.php?action=query&amp;format=json&amp;titles=Python_(programming_language)&amp;prop=revisions&amp;rvprop=content
-</span></span></code></pre></div><p>这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。</p>
-<p>请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在
-  <a href="https://www.mediawiki.org/wiki/API:Main_page">维基百科开发者页面</a>找到。</p>
+<p>三次握手是指客户端和服务端之间建立连接的过程，而四次挥手则是两者释放连接的过程。</p>
+<p>第一次握手：客户向服务端主动发送信号【SYN】，具体内容为我已经准备好同步了，如果你要开始与同步，发送一个确认码ack给我（Acknowledge number，值我发送的随机码+1），代表你真的收到我发的东西了。</p>
 </article>
  
       

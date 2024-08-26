@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>维基百科 | 流笔</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>数据结构和算法 | 流笔</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/book.min.c0171196cda5bb9c404c4218e95e14e2e6e0b6423c683f2644ecbf23d57b32ce.css" integrity="sha256-wBcRls2lu5xATEIY6V4U4ubgtkI8aD8mROy/I9V7Ms4=" crossorigin="anonymous">
@@ -264,7 +264,7 @@
   
   
     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/" 
-       class="active">维基百科</a>
+       class="">维基百科</a>
   
 
       </li>
@@ -345,7 +345,7 @@
   
   
     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" 
-       class="">数据结构和算法</a>
+       class="active">数据结构和算法</a>
   
 
       </li>
@@ -664,15 +664,13 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#参考">参考</a></li>
+    <li><a href="#排序算法">排序算法</a></li>
+    <li><a href="#树">树</a>
       <ul>
-        <li>
-          <ul>
-            <li><a href="#维基百科-api-基本信息">维基百科 API 基本信息</a></li>
-            <li><a href="#常用维基百科-api-请求参数">常用维基百科 API 请求参数</a></li>
-            <li><a href="#示例获取页面内容">示例：获取页面内容</a></li>
-          </ul>
-        </li>
+        <li><a href="#完美二叉树满二叉树">完美二叉树(满二叉树)</a></li>
+        <li><a href="#完满二叉树">完满二叉树</a></li>
+        <li><a href="#平衡二叉树">平衡二叉树</a></li>
       </ul>
     </li>
   </ul>
@@ -718,9 +716,9 @@
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/">
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">
 
-      维基百科
+      数据结构和算法
     </a>
 
   </div>
@@ -733,7 +731,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1701165327"></span>
+      <span class="Lastmod ios_boder" data-unix="1715332362"></span>
 
     </span>
     <span>
@@ -743,7 +741,7 @@
 
       文章字数:
       </small>
-      648
+      315
       
 
     </span>
@@ -768,60 +766,92 @@
 
       
       
-<article class="markdown card"><p>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：</p>
-<h3 id="维基百科-api-基本信息">
+<article class="markdown card"><h1 id="参考">
   
-  <a href="#%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e5%9f%ba%e6%9c%ac%e4%bf%a1%e6%81%af">维基百科 API 基本信息</a>
-</h3>
+  <a href="#%e5%8f%82%e8%80%83">参考</a>
+</h1>
+<p>
+  <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms">https://www.cs.usfca.edu/~galles/visualization/Algorithms</a><br>
+
+  <a href="https://algo.itcharge.cn">https://algo.itcharge.cn</a><br>
+
+  <a href="https://www.hello-algo.com">https://www.hello-algo.com</a><br>
+
+  <a href="https://pdai.tech/md/algorithm/alg-basic-overview.html">https://pdai.tech/md/algorithm/alg-basic-overview.html</a><br>
+
+  <a href="https://www.runoob.com/w3cnote/ten-sorting-algorithm.html">https://www.runoob.com/w3cnote/ten-sorting-algorithm.html</a><br>
+
+  <a href="https://www.runoob.com/w3cnote/selection-sort.html">https://www.runoob.com/w3cnote/selection-sort.html</a></p>
+<h1 id="排序算法">
+  
+  <a href="#%e6%8e%92%e5%ba%8f%e7%ae%97%e6%b3%95">排序算法</a>
+</h1>
 <ul>
 <li>
-<p><strong>Endpoint（终端点）：</strong> <code>https://en.wikipedia.org/w/api.php</code> （英语维基百科的API终端点，你可以替换 <code>en</code> 为其他语言标识符）</p>
+<p>冒泡排序<br>
+两两比较, 符合规则就换, 接着滑动窗口往后移动<br>
+
+  <img src="/images/personal/study/bubbleSort.png" alt="" /></p>
 </li>
 <li>
-<p><strong>请求方式：</strong> 主要使用HTTP GET请求，但也支持POST请求。</p>
+<p>选择排序<br>
+每次选最大的(无序区)放到最后(有序区)<br>
+
+  <img src="/images/personal/study/selectionSort.png" alt="" /></p>
 </li>
 <li>
-<p><strong>返回格式：</strong> 默认返回JSON格式，也可以选择其他格式，如XML。</p>
+<p>插入排序<br>
+每次选的元素插入到有序区,类似打牌时的排序<br>
+
+  <img src="/images/personal/study/insertSort.png" alt="" /><br>
+在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表<br>
+
+  <img src="/images/personal/study/insertSort2.png" alt="" /></p>
+</li>
+<li>
+<p>快速排序</p>
+</li>
+<li>
+<p>归并排序</p>
+</li>
+<li>
+<p>堆排序</p>
+</li>
+<li>
+<p>桶排序</p>
+</li>
+<li>
+<p>计数排序</p>
+</li>
+<li>
+<p>基数排序</p>
 </li>
 </ul>
-<h3 id="常用维基百科-api-请求参数">
+<h1 id="树">
   
-  <a href="#%e5%b8%b8%e7%94%a8%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91-api-%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0">常用维基百科 API 请求参数</a>
-</h3>
-<ol>
-<li>
-<p><strong>action（动作）：</strong> 定义API的行为，常见值包括 <code>query</code>（查询）、<code>parse</code>（解析）、<code>opensearch</code>（开放搜索）等。</p>
-</li>
-<li>
-<p><strong>format（格式）：</strong> 指定返回结果的格式，常见值包括 <code>json</code> 和 <code>xml</code>。</p>
-</li>
-<li>
-<p><strong>titles（标题）：</strong> 指定要查询的页面标题，可以是单个标题或多个标题。</p>
-</li>
-<li>
-<p><strong>pageid（页面ID）：</strong> 指定要查询的页面的ID，与标题二选一使用。</p>
-</li>
-<li>
-<p><strong>prop（属性）：</strong> 查询页面的属性，如 <code>revisions</code>（修订版本）、<code>categories</code>（分类）等。</p>
-</li>
-<li>
-<p><strong>rvprop（修订版本属性）：</strong> 用于指定 <code>revisions</code> 属性的具体内容，如 <code>content</code>（内容）、<code>timestamp</code>（时间戳）等。</p>
-</li>
-<li>
-<p><strong>redirects（重定向）：</strong> 控制是否将重定向页面包含在结果中。</p>
-</li>
-<li>
-<p><strong>limit（限制）：</strong> 用于限制查询结果的数量。</p>
-</li>
-</ol>
-<h3 id="示例获取页面内容">
+  <a href="#%e6%a0%91">树</a>
+</h1>
+<h2 id="完美二叉树满二叉树">
   
-  <a href="#%e7%a4%ba%e4%be%8b%e8%8e%b7%e5%8f%96%e9%a1%b5%e9%9d%a2%e5%86%85%e5%ae%b9">示例：获取页面内容</a>
-</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>https://en.wikipedia.org/w/api.php?action=query&amp;format=json&amp;titles=Python_(programming_language)&amp;prop=revisions&amp;rvprop=content
-</span></span></code></pre></div><p>这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。</p>
-<p>请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在
-  <a href="https://www.mediawiki.org/wiki/API:Main_page">维基百科开发者页面</a>找到。</p>
+  <a href="#%e5%ae%8c%e7%be%8e%e4%ba%8c%e5%8f%89%e6%a0%91%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91">完美二叉树(满二叉树)</a>
+</h2>
+<p>所有节点都是满的<br>
+
+  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/perfect_binary_tree.png" alt="" /></p>
+<h2 id="完满二叉树">
+  
+  <a href="#%e5%ae%8c%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91">完满二叉树</a>
+</h2>
+<p>只有叶子节点未满，且叶子节点尽量靠左填充。<br>
+
+  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/complete_binary_tree.png" alt="" /></p>
+<h2 id="平衡二叉树">
+  
+  <a href="#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91">平衡二叉树</a>
+</h2>
+<p>任何两个子树高度差小于2<br>
+
+  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/balanced_binary_tree.png" alt="" /></p>
 </article>
  
       
