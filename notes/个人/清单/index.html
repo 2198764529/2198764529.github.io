@@ -742,7 +742,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1724638789"></span>
+      <span class="Lastmod ios_boder" data-unix="1724832668"></span>
 
     </span>
     <span>
@@ -752,7 +752,7 @@
 
       文章字数:
       </small>
-      678
+      756
       
 
     </span>
@@ -810,7 +810,8 @@
   <a href="#%e9%99%84%e5%bd%95">附录</a>
 </h3>
 <p>【autoHotkey-changeKeys.ahk】：</p>
-<pre tabindex="0"><code> Esc 映射成 AltTab
+<pre tabindex="0"><code>; 适用于 v2.0
+; Esc 映射成 AltTab
 *Esc::send &#34;{Blind}!{Tab}&#34;
 
 ; 左Alt -&gt;Ctrl
@@ -825,11 +826,11 @@
 ; Capslock键-&gt;BackSpace键
 *Capslock::BackSpace
 
+; shift+Capslock键-&gt;Delete键
++*Capslock::BackSpace
+
 ;大写键-&gt;回车键
 *MButton::Enter
-
-; `键 -&gt; Tab键
-*`::Tab
 
 ;win+鼠标滚轮上(下滚)滚增加(减少)音量
 A_HotkeyInterval := 0
@@ -854,6 +855,22 @@ A_HotkeyInterval := 0
 *F4::;
 ; `F5键 -&gt; &#39;键
 *F5::&#39;
+
+; ctrl+F1 映射成NumLock
+^F1::NumLock
+
+; 当 NumLock 开启时，映射 z, x, c, a, s, d, q, w, e 到 1-9
+#HotIf GetKeyState(&#34;NumLock&#34;, &#34;T&#34;)
+z::1
+x::2
+c::3
+a::4
+s::5
+d::6
+q::7
+w::8
+e::9
+#HotIf ; 关闭 HotIf 区块
 </code></pre></article>
  
       
@@ -902,7 +919,7 @@ A_HotkeyInterval := 0
 
 
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.1e96a91689f7f0b9275a540b1ce40fca7676be8b777d36d8003a57275b755d26.js" integrity="sha256-HpapFon38LknWlQLHOQPynZ2vot3fTbYADpXJ1t1XSY=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.c7759658ad90e67f3a15092bd5bcb8d44de73cc5e7992d1ca7b9e867f39c0a42.js" integrity="sha256-x3WWWK2Q5n86FQkr1by41E3nPMXnmS0cp7noZ/OcCkI=" crossorigin="anonymous"></script>
 
       </footer>
 

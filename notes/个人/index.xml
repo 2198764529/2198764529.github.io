@@ -46,7 +46,7 @@
 398(H) x 531.4(W) x 204(D)
 https://aoc.com/uk/products/monitors/i2369v/specification
 附录 【autoHotkey-changeKeys.ahk】：
-Esc 映射成 AltTab *Esc::send &amp;#34;{Blind}!{Tab}&amp;#34; ; 左Alt -&amp;gt;Ctrl *LAlt::LCtrl ^1::Home ^2::End ; 左Ctrl-&amp;gt;Enter *LCtrl::Enter ; Capslock键-&amp;gt;BackSpace键 *Capslock::BackSpace ;大写键-&amp;gt;回车键 *MButton::Enter ; `键 -&amp;gt; Tab键 *`::Tab ;win+鼠标滚轮上(下滚)滚增加(减少)音量 A_HotkeyInterval := 0 #WheelUp::Volume_Up #WheelDown::Volume_Down ;win+点击鼠标滚-&amp;gt;ESC #MButton::ESC ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; ; 功能键改成符号键 ; `F1键 -&amp;gt; ,键 *F1::, ; `2键 -&amp;gt; .</description>
+; 适用于 v2.0 ; Esc 映射成 AltTab *Esc::send &amp;#34;{Blind}!{Tab}&amp;#34; ; 左Alt -&amp;gt;Ctrl *LAlt::LCtrl ^1::Home ^2::End ; 左Ctrl-&amp;gt;Enter *LCtrl::Enter ; Capslock键-&amp;gt;BackSpace键 *Capslock::BackSpace ; shift+Capslock键-&amp;gt;Delete键 +*Capslock::BackSpace ;大写键-&amp;gt;回车键 *MButton::Enter ;win+鼠标滚轮上(下滚)滚增加(减少)音量 A_HotkeyInterval := 0 #WheelUp::Volume_Up #WheelDown::Volume_Down ;win+点击鼠标滚-&amp;gt;ESC #MButton::ESC ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; ; 功能键改成符号键 ; `F1键 -&amp;gt; ,键 *F1::, ; `2键 -&amp;gt; .</description>
     </item>
     
     <item>
