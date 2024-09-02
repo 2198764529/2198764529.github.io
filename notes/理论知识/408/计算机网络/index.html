@@ -657,20 +657,22 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#概览图">概览图</a>
+    <li>
       <ul>
-        <li>
+        <li><a href="#概览">概览</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#网络层">网络层</a></li>
-              </ul>
-            </li>
+            <li><a href="#应用层">应用层</a></li>
+            <li><a href="#表示层">表示层</a></li>
+            <li><a href="#会话层">会话层</a></li>
+            <li><a href="#运输层">运输层</a></li>
+            <li><a href="#网络层">网络层</a></li>
+            <li><a href="#数据链路层">数据链路层</a></li>
+            <li><a href="#物理层">物理层</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#应用层">应用层</a>
+    <li><a href="#应用层-1">应用层</a>
       <ul>
         <li>
           <ul>
@@ -689,7 +691,7 @@
         </li>
       </ul>
     </li>
-    <li><a href="#运输层">运输层</a>
+    <li><a href="#运输层-1">运输层</a>
       <ul>
         <li>
           <ul>
@@ -778,7 +780,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715764128"></span>
+      <span class="Lastmod ios_boder" data-unix="1725273221"></span>
 
     </span>
     <span>
@@ -788,7 +790,7 @@
 
       文章字数:
       </small>
-      3271
+      4480
       
 
     </span>
@@ -814,17 +816,157 @@
 
       
       
-<article class="markdown card"><h1 id="概览图">
+<article class="markdown card"><h2 id="概览">
   
-  <a href="#%e6%a6%82%e8%a7%88%e5%9b%be">概览图</a>
-</h1>
-<p>
-  <img src="/images/personal/study/d862cee765be33d0327662b8f8169dd.png" alt="" /></p>
-<h4 id="网络层">
+  <a href="#%e6%a6%82%e8%a7%88">概览</a>
+</h2>
+<p>计网的层次体系可以用两个体系来解释， 分别是理论上七层的 OSI 体系 和 实际采用的 四层 TCP/IP 体系，后者是对前者的继承和简化， 现实中基本上都是 TCP/IP 四层，但是要理解计网的内容则还要结合两者进行学习。</p>
+<p>下面是有关 TCP/IP 体系和 OSI 体系的 数据单元、主要设备、相关协议的一览表。</p>
+<table>
+<thead>
+<tr>
+<th>TCP/IP 体系</th>
+<th>OSI 体系</th>
+<th>数据单元</th>
+<th>主要设备</th>
+<th>相关协议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^应用层</td>
+<td>应用层</td>
+<td>^数据(Data)</td>
+<td>服务器</td>
+<td>SMTP、HTTP、HTTP、Telent、SSH、DNS、FTP</td>
+</tr>
+<tr>
+<td></td>
+<td>表示层</td>
+<td></td>
+<td>^无专门设备</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>会话层</td>
+<td>消息(Messages)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>运输层</td>
+<td>运输层</td>
+<td>数据报(Datagrams)</td>
+<td></td>
+<td>TCP、UDP</td>
+</tr>
+<tr>
+<td>网络层</td>
+<td>网络层</td>
+<td>数据包(Packets)</td>
+<td>路由器、三层交换机</td>
+<td>ARP、RARP、ICMP、IP、IMGP</td>
+</tr>
+<tr>
+<td>^数据链路层</td>
+<td>数据链路层</td>
+<td>帧(Frames)</td>
+<td>交换机、网桥、网卡</td>
+<td>PPP、CRC</td>
+</tr>
+<tr>
+<td></td>
+<td>物理层</td>
+<td>比特流</td>
+<td>网卡、集线器、网络电缆、中继器</td>
+<td>IEEE802.1A IEEE802.2到IEEE802.11</td>
+</tr>
+</tbody>
+</table>
+<h3 id="应用层">
+  
+  <a href="#%e5%ba%94%e7%94%a8%e5%b1%82">应用层</a>
+</h3>
+<p>应用层负责为应用软件提供网络服务的接口</p>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">应用层
+	FTP——文件传输协议【21】
+	SSH——加密远程登录协议【22】
+	Telent——远程登录协议【23】
+	SMTP——简单邮件传输协议【25】
+	DNS——域名系统【UDP、TCP】【53】
+	HTTP——超文本传输协议【80】
+	POP3——邮件接收协议【98】
+	IMAP——邮件同步协议【143】
+	DHCP——动态IP协议【UDP】【67客户端请求、68服务器响应】
+	HTTPS——SSL/TLS加密的HTTP协议【443】
+</code></pre><h3 id="表示层">
+  
+  <a href="#%e8%a1%a8%e7%a4%ba%e5%b1%82">表示层</a>
+</h3>
+<p>表示层负责为应用层提供数据转换操作，包括数据解密、数据压缩、数据格式转换。</p>
+<h3 id="会话层">
+  
+  <a href="#%e4%bc%9a%e8%af%9d%e5%b1%82">会话层</a>
+</h3>
+<p>会话层负责管理会话进程，包括建立、管理、终止会话进程。</p>
+<h3 id="运输层">
+  
+  <a href="#%e8%bf%90%e8%be%93%e5%b1%82">运输层</a>
+</h3>
+<p>运输层负责提供端到端传输、差错控制和流量控制，其中，端到端的传输包括 TCP 协议、UDP协议。<br>
+下表为 TCP 协议、UDP 协议之间的不同之处。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>TCP 协议</th>
+<th>UDP 协议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首部长度</td>
+<td>20 Byte</td>
+<td>8 Byte</td>
+</tr>
+<tr>
+<td>可靠、有序、建立连接、流量控制、拥塞控制</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>传输对象</td>
+<td>字节流</td>
+<td>数据包</td>
+</tr>
+<tr>
+<td>通信限制</td>
+<td>1对1</td>
+<td>都支持</td>
+</tr>
+</tbody>
+</table>
+<h3 id="网络层">
   
   <a href="#%e7%bd%91%e7%bb%9c%e5%b1%82">网络层</a>
-</h4>
-<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">
+</h3>
+<p>网络层负责实现数据的透明传输、路径选择、逻辑寻址。</p>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">网络层
+	IP 协议部分
+		IP 地址
+		子网划分
+	IP 传播部分
+		ARP——地址解析协议
+		RARP——逆地址解析协议
+		ICMP——网络控制报文协议
+	路由算法部分
+		IGP（内部网关协议，系统内部）
+			RIP——跳数优先协议
+			OSPF——长度优先协议
+		EGP（外部网关协议，系统之间）
+			BGP——路由交换协议
+</code></pre><pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">
 _ 设计思路
 	简单灵活的,无连接的,尽最大努力交付的数据报服务
 IP\nInternet Protocol\n网际协议
@@ -846,9 +988,40 @@ IP\nInternet Protocol\n网际协议
 		功能:用IP地址找到局域网内的对应硬件地址
 		关键词:ARP cache, 广播, 局域网
 		过程:广播问局域网内主机对应IP的MAC地址,\n匹配主机单播回应
-</code></pre><h1 id="应用层">
+</code></pre><h3 id="数据链路层">
   
-  <a href="#%e5%ba%94%e7%94%a8%e5%b1%82">应用层</a>
+  <a href="#%e6%95%b0%e6%8d%ae%e9%93%be%e8%b7%af%e5%b1%82">数据链路层</a>
+</h3>
+<p>数据链路层负责解决封装成帧、透明传输、差错检测。</p>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">数据链路层
+	点对点信道——PPP协议
+	广播信道
+		局域网协议
+			LLC，逻辑链路控制
+			MAC，媒体接入子层
+		接入方式
+			CSMA/CD， 载波监听多点接入/碰撞检测
+</code></pre><h3 id="物理层">
+  
+  <a href="#%e7%89%a9%e7%90%86%e5%b1%82">物理层</a>
+</h3>
+<pre tabindex="0"><code class="language-mindmap" data-lang="mindmap">物理层
+	特性——机械、电气、功能、过程
+	调制
+		基带调制（编码）
+			不归零、归零
+			曼彻斯特、差分曼彻斯特
+		载波调制
+			调幅、调相、调位
+	信道
+		类型：单工、半双工、全双工
+		极限容量因素：信道频率范围、信噪比
+		传输媒体：双绞线、同轴电缆、光纤
+		复用技术：FDM、TDM、STDM（统计时分）、CDM、WDM
+		宽带接入技术：ADSL（拨号上网）、FTTH（光纤到户）
+</code></pre><h1 id="应用层-1">
+  
+  <a href="#%e5%ba%94%e7%94%a8%e5%b1%82-1">应用层</a>
 </h1>
 <p>应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。</p>
 <h5 id="概念">
@@ -878,9 +1051,9 @@ IP\nInternet Protocol\n网际协议
 <li>一个域名长度不超过 63 个字符</li>
 <li>所有域名加起来长度 255 个字符</li>
 </ul>
-<h1 id="运输层">
+<h1 id="运输层-1">
   
-  <a href="#%e8%bf%90%e8%be%93%e5%b1%82">运输层</a>
+  <a href="#%e8%bf%90%e8%be%93%e5%b1%82-1">运输层</a>
 </h1>
 <h3 id="tcp-协议">
   
@@ -1038,11 +1211,11 @@ IP 地址：192.168.1.199 ‐＞11000000.10101000.00000001.11000111<br>
 <script src="https://ltao.top/plugs/highlight.min.min.4e0b9f48d67c0e81df581eec1cc976947102417e849ac449b7ff77ac1f507c81.js"></script>
 
 
-<script src="https://ltao.top/plugs/highlight.min.min.4e0b9f48d67c0e81df581eec1cc976947102417e849ac449b7ff77ac1f507c81.js"></script>
+<script src="https://ltao.top/js/tableMeger.min.5b711f137227611a60cda72bd18ef5eae40b104cd897f2dc31aa5cfd7d3a2560.js"></script>
 
 
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.e71ffa3ae61e457e0d3a241883be09958ee28c5c2bdee7bfab2fee9880d4f831.js" integrity="sha256-5x/6OuYeRX4NOiQYg74JlY7ijFwr3ue/qy/umIDU&#43;DE=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.7fc2f5eac06495db0666c6f7387a33176f11dae48833546e0b08a80b9cd3e056.js" integrity="sha256-f8L16sBkldsGZsb3OHozF28R2uSIM1RuCwioC5zT4FY=" crossorigin="anonymous"></script>
 
       </footer>
 

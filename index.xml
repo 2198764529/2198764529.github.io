@@ -167,9 +167,10 @@ https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
-      <description>概览图 网络层 _ 设计思路 简单灵活的,无连接的,尽最大努力交付的数据报服务 IP\nInternet Protocol\n网际协议 [#FFBBCC] 配套协议 ARP\nAddress Resolution Protocol\n地址解析协议(IP-&amp;gt;MAC) ICMP\nInternet Control Message Protocol\n控制报文协议 IGMP\nInternet Group Management Protocol\n网际租管理协议 [#FFBBCC] IP 地址编址 历史发展阶段, 分类的IP地址&amp;gt;&amp;gt;子网的划分&amp;gt;&amp;gt;构成超网 构成 {&amp;lt;网络号&amp;gt;,&amp;lt;主机号&amp;gt;} 分类 A 类,{ &amp;lt;网络号(开头为0),8位&amp;gt;,&amp;lt;主机号,24位&amp;gt;} B 类,{ &amp;lt;网络号(开头为10),16位&amp;gt;,&amp;lt;主机号,16位&amp;gt;} C 类,{ &amp;lt;网络号(开头为110),24位&amp;gt;,&amp;lt;主机号,8位&amp;gt;} D 类,开头为1110,多播地址 E 类,保留为今后使用 ARP\nAddress Resolution Protocol\n地址解析协议 功能:用IP地址找到局域网内的对应硬件地址 关键词:ARP cache, 广播, 局域网 过程:广播问局域网内主机对应IP的MAC地址,\n匹配主机单播回应 应用层 应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。
-概念 应用层主要包括以下内容
-域名系统 DNS WWW 和 HTTP 协议 电子邮件的相关协议，SMTP 协议和 POP3 协议、IMAP 协议 域名系统 DNS DNS 的作用是将域名转为IP地址，具体的过程是应用进程调用 resolver（解析程序），发送包含待解析的域名的 DNS 请求报文，通过 UDP 进行再包装发送到本地域名服务器，本地域名服务器搜索以后，把对应的 IP 地址放在回答报文返回。</description>
+      <description>概览 计网的层次体系可以用两个体系来解释， 分别是理论上七层的 OSI 体系 和 实际采用的 四层 TCP/IP 体系，后者是对前者的继承和简化， 现实中基本上都是 TCP/IP 四层，但是要理解计网的内容则还要结合两者进行学习。
+下面是有关 TCP/IP 体系和 OSI 体系的 数据单元、主要设备、相关协议的一览表。
+TCP/IP 体系 OSI 体系 数据单元 主要设备 相关协议 ^应用层 应用层 ^数据(Data) 服务器 SMTP、HTTP、HTTP、Telent、SSH、DNS、FTP 表示层 ^无专门设备 会话层 消息(Messages) 运输层 运输层 数据报(Datagrams) TCP、UDP 网络层 网络层 数据包(Packets) 路由器、三层交换机 ARP、RARP、ICMP、IP、IMGP ^数据链路层 数据链路层 帧(Frames) 交换机、网桥、网卡 PPP、CRC 物理层 比特流 网卡、集线器、网络电缆、中继器 IEEE802.1A IEEE802.2到IEEE802.11 应用层 应用层负责为应用软件提供网络服务的接口
+应用层 FTP——文件传输协议【21】 SSH——加密远程登录协议【22】 Telent——远程登录协议【23】 SMTP——简单邮件传输协议【25】 DNS——域名系统【UDP、TCP】【53】 HTTP——超文本传输协议【80】 POP3——邮件接收协议【98】 IMAP——邮件同步协议【143】 DHCP——动态IP协议【UDP】【67客户端请求、68服务器响应】 HTTPS——SSL/TLS加密的HTTP协议【443】 表示层 表示层负责为应用层提供数据转换操作，包括数据解密、数据压缩、数据格式转换。</description>
     </item>
     
     <item>
