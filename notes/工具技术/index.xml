@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>git操作</title>
       <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -43,6 +52,15 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
     </item>
     
     <item>
+      <title>plantuml</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/plantuml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/plantuml/</guid>
+      <description> mindmap + 中 ++ 右 ***:bubbleSort &amp;lt;code&amp;gt; def bubbleSort(arr): for i in range(1, len(arr)): for j in range(0, len(arr)-i): if arr[j] &amp;gt; arr[j+1]: arr[j], arr[j + 1] = arr[j + 1], arr[j] return arr &amp;lt;/code&amp;gt; ; -- 左 </description>
+    </item>
+    
+    <item>
       <title>python 方法参考</title>
       <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -67,6 +85,22 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
 像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
 磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
 毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。</description>
+    </item>
+    
+    <item>
+      <title>色彩学</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/</guid>
+      <description> 总览 什么叫原色 原色（primary color）是不能透过其他颜色的混合调配而得出的“基本色”；将不同比例的原色混合，可生成色域内其他任何颜色。
+原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：
+光学三原色（RGB）：红（Red）、绿（Green）、蓝（Blue）。这些原色用于光的混合，比如显示器、投影仪等。 颜料三原色（CMY）：青（Cyan）、品红（Magenta）、黄（Yellow）。这是用于印刷和绘画中的颜料混合 后面的一种不需要关注, 只需要看光学三原色
+红(Red) 绿（green） 蓝（blue）
+什么叫间色 间色是通过两种原色混合而成的，组合之后新增了下面三种颜色
+橙色(红黄) 紫色（红蓝） 绿色（黄蓝)
+什么叫复色 间色是通过三种颜色混合而成的，除了原色间色以外的所有颜色都是复色.
+参考: 原色 - 维基百科，自由的百科全书 (wikipedia.org) 前端配色有哪些原则和技巧？ - 蓦然JL - 博客园 (cnblogs.com) 前端颜色详细报告（色值规律，16进制颜色规律）_前端色值-CSDN博客 【什么叫原色、间色和复色?】技术论文-南北潮商城 (nbchao.com) 驚豔！101款讓人愛不釋手的 免費商用設計配色組合 (shutterstock.com) Cold Color Palettes - Color Hunt </description>
     </item>
     
     <item>

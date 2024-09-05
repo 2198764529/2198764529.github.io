@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>git操作 | 流笔</title>
+<title>色彩学 | 流笔</title>
 
 
 <link rel="manifest" src="/data/manifest.json">
@@ -171,7 +171,7 @@
   
   
     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/" 
-       class="active">git操作</a>
+       class="">git操作</a>
   
 
       </li>
@@ -249,7 +249,7 @@
   
   
     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/" 
-       class="">色彩学</a>
+       class="active">色彩学</a>
   
 
       </li>
@@ -677,11 +677,11 @@
       <ul>
         <li>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#覆盖本地">覆盖本地</a></li>
-              </ul>
-            </li>
+            <li><a href="#总览">总览</a></li>
+            <li><a href="#什么叫原色">什么叫原色</a></li>
+            <li><a href="#什么叫间色">什么叫间色</a></li>
+            <li><a href="#什么叫复色">什么叫复色</a></li>
+            <li><a href="#参考">参考:</a></li>
           </ul>
         </li>
       </ul>
@@ -729,9 +729,9 @@
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/">
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/">
 
-      git操作
+      色彩学
     </a>
 
   </div>
@@ -744,7 +744,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1724232802"></span>
+      <span class="Lastmod ios_boder" data-unix="1725528972"></span>
 
     </span>
     <span>
@@ -754,7 +754,7 @@
 
       文章字数:
       </small>
-      11
+      492
       
 
     </span>
@@ -780,13 +780,73 @@
 
       
       
-<article class="markdown card"><h4 id="覆盖本地">
+<article class="markdown card"><h3 id="总览">
   
-  <a href="#%e8%a6%86%e7%9b%96%e6%9c%ac%e5%9c%b0">覆盖本地</a>
-</h4>
-<pre tabindex="0"><code class="language-git" data-lang="git">git fetch origin 
-git reset --hard origin/&lt;branch_name&gt;
-</code></pre></article>
+  <a href="#%e6%80%bb%e8%a7%88">总览</a>
+</h3>
+<p>
+  <img src="https://img.nbchao.com/upload/editor/image/20160608/1465347322900083231.jpg" alt="" /></p>
+<h3 id="什么叫原色">
+  
+  <a href="#%e4%bb%80%e4%b9%88%e5%8f%ab%e5%8e%9f%e8%89%b2">什么叫原色</a>
+</h3>
+<p>原色（primary color）是不能透过其他颜色的混合调配而得出的“基本色”；将不同比例的原色混合，可生成色域内其他任何颜色。<br>
+原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：</p>
+<ul>
+<li><strong>光学三原色</strong>（RGB）：红（Red）、绿（Green）、蓝（Blue）。这些原色用于光的混合，比如显示器、投影仪等。</li>
+<li><strong>颜料三原色</strong>（CMY）：青（Cyan）、品红（Magenta）、黄（Yellow）。这是用于印刷和绘画中的颜料混合</li>
+</ul>
+<p>后面的一种不需要关注, 只需要看光学三原色</p>
+<ul>
+<li>红(Red)</li>
+<li>绿（green）</li>
+<li>蓝（blue）<br>
+
+<svg class="colorWheel" width="300" height="300" data-colors="[&#34;#FF0000&#34;, &#34;#00FF00&#34;, &#34;#0000FF&#34;]" viewBox="0 0 400 400">
+    
+</svg></li>
+</ul>
+<h3 id="什么叫间色">
+  
+  <a href="#%e4%bb%80%e4%b9%88%e5%8f%ab%e9%97%b4%e8%89%b2">什么叫间色</a>
+</h3>
+<p>间色是通过两种原色混合而成的，组合之后新增了下面三种颜色</p>
+<ul>
+<li>橙色(红黄)</li>
+<li>紫色（红蓝）</li>
+<li>绿色（黄蓝)<br>
+
+<svg class="colorWheel" width="300" height="300" data-colors="[&#34;#FF0000&#34;, &#34;#00FF00&#34;, &#34;#0000FF&#34;, &#34;#FFFF00&#34;, &#34;#FF00FF&#34;, &#34;#00FFFF&#34;]" viewBox="0 0 400 400">
+    
+</svg></li>
+</ul>
+<h3 id="什么叫复色">
+  
+  <a href="#%e4%bb%80%e4%b9%88%e5%8f%ab%e5%a4%8d%e8%89%b2">什么叫复色</a>
+</h3>
+<p>间色是通过三种颜色混合而成的，除了原色间色以外的所有颜色都是复色.</p>
+
+
+<div class="colorList" data-filePath="/data/site/colors.json"></div>
+<h3 id="参考">
+  
+  <a href="#%e5%8f%82%e8%80%83">参考:</a>
+</h3>
+<ul>
+<li>
+  <a href="https://zh.wikipedia.org/wiki/%E5%8E%9F%E8%89%B2">原色 - 维基百科，自由的百科全书 (wikipedia.org)</a></li>
+<li>
+  <a href="https://www.cnblogs.com/moranjl/articles/16567046.html">前端配色有哪些原则和技巧？ - 蓦然JL - 博客园 (cnblogs.com)</a></li>
+<li>
+  <a href="https://blog.csdn.net/weixin_39921970/article/details/124579300">前端颜色详细报告（色值规律，16进制颜色规律）_前端色值-CSDN博客</a></li>
+<li>
+  <a href="https://www.nbchao.com/k/753/">【什么叫原色、间色和复色?】技术论文-南北潮商城 (nbchao.com)</a></li>
+<li>
+  <a href="https://www.shutterstock.com/zh-Hant/blog/101-free-color-combinations-design-inspiration">驚豔！101款讓人愛不釋手的 免費商用設計配色組合 (shutterstock.com)</a></li>
+<li>
+  <a href="https://colorhunt.co/palettes/cold">Cold Color Palettes - Color Hunt</a></li>
+</ul>
+</article>
  
       
 
@@ -832,6 +892,8 @@ git reset --hard origin/&lt;branch_name&gt;
 
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
+
+<script src="https://ltao.top/js/colorShow.min.58dc8c694dc6e0cbad62829af89a4a4084f514caa8de46e62dfecea1bd15411b.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
 <script defer src="/zh-cn.search.min.ce02241b97b8edbd4da4cd55951d7781348917f499275975bf3904cb2acce1bd.js" integrity="sha256-zgIkG5e47b1NpM1VlR13gTSJF/SZJ1l1vzkEyyrM4b0=" crossorigin="anonymous"></script>
 
