@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>我的图库 | 流笔</title>
+<title>python-Flask&amp;Django | 流笔</title>
 
 
 <link rel="manifest" src="/data/manifest.json">
@@ -293,7 +293,7 @@
   
   
     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python-flaskdjango/" 
-       class="">python-Flask&amp;Django</a>
+       class="active">python-Flask&amp;Django</a>
   
 
       </li>
@@ -497,10 +497,13 @@
   <ul>
     <li>
       <ul>
-        <li>
+        <li><a href="#django">Django</a>
           <ul>
-            <li><a href="#gg-bond">GG Bond</a></li>
-            <li><a href="#蜡笔小新">蜡笔小新</a></li>
+            <li><a href="#django-基于什么架构">Django 基于什么架构?</a></li>
+            <li><a href="#django-操作流程">Django 操作流程</a></li>
+            <li><a href="#django-中间件的方法">Django 中间件的方法</a></li>
+            <li><a href="#wsgi-是什么">WSGI 是什么?</a></li>
+            <li><a href="#什么是-fbv-和-cbv">什么是 FBV 和 CBV</a></li>
           </ul>
         </li>
       </ul>
@@ -548,9 +551,9 @@
 <div class="left">
   <div class="note-header">
   <div class="note-title">
-    <a href="/notes/%E6%9D%82%E6%80%9D/%E6%88%91%E7%9A%84%E5%9B%BE%E5%BA%93/">
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python-flaskdjango/">
 
-      我的图库
+      python-Flask&amp;Django
     </a>
 
   </div>
@@ -563,7 +566,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1715763800"></span>
+      <span class="Lastmod ios_boder" data-unix="1726133729"></span>
 
     </span>
     <span>
@@ -573,7 +576,7 @@
 
       文章字数:
       </small>
-      34
+      337
       
 
     </span>
@@ -599,43 +602,57 @@
 
       
       
-<article class="markdown card"><h3 id="gg-bond">
+<article class="markdown card"><h2 id="django">
   
-  <a href="#gg-bond">GG Bond</a>
-</h3>
-<pre tabindex="0"><code class="language-gallery" data-lang="gallery">https://pic3.zhimg.com/80/v2-01e239fd23d617079b80967dedb9c80a_720w.webp
-/images/Pasted%20image%2020240401104526.png
-https://pic1.zhimg.com/80/v2-9d834eaffaceef8293b200bb30cf2220_720w.webp
-https://pic2.zhimg.com/v2-f82902567e57fe2b589547a4ee1543c9_b.webp
-https://pic2.zhimg.com/80/v2-c9d6a070d9245f00c502404043b46a11_720w.webp
-https://pic3.zhimg.com/80/v2-6f159b30efff0990f2a3285488720c5a_720w.webp
-https://pic2.zhimg.com/80/v2-5b59e0d97165316eeac3adf6806d558d_720w.webp
-https://pic3.zhimg.com/80/v2-4cc9c9947c632e3bc8820ed9485763a6_720w.webp
-https://pic2.zhimg.com/80/v2-1bc233e9f5ada71e902a66f69332422d_720w.webp
-https://pic1.zhimg.com/v2-fe829dfd94d8685de2d7ef6c31865720_b.webp
-https://pic2.zhimg.com/80/v2-63fc8f635ac519c40a8391752772c80d_720w.webp
-https://pic4.zhimg.com/80/v2-a7a56cddb44bc76e74dec2c6b4647dcf_720w.webp
-https://pic2.zhimg.com/v2-7afb67a8aa2442af3b932b0b803070d5_b.webp
-https://wx2.sinaimg.cn/mw690/b64da6adly1hle98iabtdj20zu0y0gu2.jpg
-https://wx1.sinaimg.cn/mw690/b64da6adly1hle98l23hbj20zu0wmn5s.jpg
-https://wx4.sinaimg.cn/mw690/b64da6adly1hle98lw9rhj20zu0wqai7.jpg
-https://wx1.sinaimg.cn/mw690/b64da6adly1hle98gktyyj20zu0ws467.jpg
-https://wx3.sinaimg.cn/mw690/b64da6adly1hle98h1kjvj20zu0z947o.jpg
-https://wx1.sinaimg.cn/mw690/b64da6adly1hle98hi8l3j20zu0wltgr.jpg
-</code></pre><h3 id="蜡笔小新">
+  <a href="#django">Django</a>
+</h2>
+<h3 id="django-基于什么架构">
   
-  <a href="#%e8%9c%a1%e7%ac%94%e5%b0%8f%e6%96%b0">蜡笔小新</a>
+  <a href="#django-%e5%9f%ba%e4%ba%8e%e4%bb%80%e4%b9%88%e6%9e%b6%e6%9e%84">Django 基于什么架构?</a>
 </h3>
-<pre tabindex="0"><code class="language-gallery" data-lang="gallery">https://wx4.sinaimg.cn/mw690/0074P3wTgy1h8psi5nzjjj31kw1kwjvy.jpg
-https://wx2.sinaimg.cn/mw690/0074P3wTgy1h8psi5d1l5j31kw1kwjvb.jpg
-https://wx4.sinaimg.cn/mw690/0074P3wTgy1h8psi5321cj31kw1kwwin.jpg
-https://wx2.sinaimg.cn/mw690/0074P3wTgy1h8psi4tmi7j31kw1kwn19.jpg
-https://wx2.sinaimg.cn/mw690/0074P3wTgy1h8psi4ghuuj31kw1kwtd8.jpg
-https://wx3.sinaimg.cn/mw690/0074P3wTgy1h8psi2p570j31kw1kwwk0.jpg
-https://wx1.sinaimg.cn/mw690/0074P3wTgy1h8psi3bkjpj31kw1kw7a6.jpg
-https://wx4.sinaimg.cn/mw690/0074P3wTgy1h8psi44b22j31kw1kwdkl.jpg
-https://wx4.sinaimg.cn/mw690/0074P3wTgy1h8psi2zhcfj31kw1kwtcg.jpg
-</code></pre></article>
+<p>MVC(Model View Controler, 模型视图控制器)<br>
+MTV(Model Template Controler, 模型模版控制器)</p>
+<h3 id="django-操作流程">
+  
+  <a href="#django-%e6%93%8d%e4%bd%9c%e6%b5%81%e7%a8%8b">Django 操作流程</a>
+</h3>
+<p>
+  <img src="https://www.runoob.com/wp-content/uploads/2020/05/1589777036-2760-fs1oSv4dOWAwC5yW.png" alt="" /></p>
+<h3 id="django-中间件的方法">
+  
+  <a href="#django-%e4%b8%ad%e9%97%b4%e4%bb%b6%e7%9a%84%e6%96%b9%e6%b3%95">Django 中间件的方法</a>
+</h3>
+<ul>
+<li>.process_request : 请求进来时,权限认证</li>
+<li>.process_view : 路由匹配之后,能够得到视图函数</li>
+<li>.process_exception : 异常时执行</li>
+<li>.process_template_responseprocess : 模板渲染时执行</li>
+<li>.process_response : 请求有响应时执行</li>
+</ul>
+<h3 id="wsgi-是什么">
+  
+  <a href="#wsgi-%e6%98%af%e4%bb%80%e4%b9%88">WSGI 是什么?</a>
+</h3>
+<p>WSGI是Python在处理HTTP请求时，规定的一种处理方法.</p>
+<h3 id="什么是-fbv-和-cbv">
+  
+  <a href="#%e4%bb%80%e4%b9%88%e6%98%af-fbv-%e5%92%8c-cbv">什么是 FBV 和 CBV</a>
+</h3>
+<p><strong>FBV（function base views）</strong> 基于函数的视图，就是在视图里使用函数处理请求。<br>
+<strong>CBV（class base views）</strong> 基于类的视图，就是在视图里使用类处理请求。<br>
+参考链接:</p>
+<ul>
+<li>
+  <a href="https://www.cnblogs.com/xiaomandujia/p/17931146.html">2023最新高级难度Django面试题,包含答案。刷题必备！记录一下。 - 小满独家 - 博客园 (cnblogs.com)</a></li>
+<li>
+  <a href="https://www.cnblogs.com/xiaomandujia/p/17934616.html">2023最新中级难度Flask框架面试题,包含答案。刷题必备！记录一下。 - 小满独家 - 博客园 (cnblogs.com)</a></li>
+<li>
+  <a href="https://apifox.com/blog/a-cup-of-tea-time-to-understand-restful-api/">一杯茶的时间，搞懂 RESTful API (apifox.com)</a></li>
+<li>
+  <a href="https://www.runoob.com/django/django-intro.html">Django 简介 | 菜鸟教程 (runoob.com)</a></li>
+<li></li>
+</ul>
+</article>
  
       
 
