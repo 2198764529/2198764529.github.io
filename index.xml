@@ -505,14 +505,9 @@ limit（限制）： 用于限制查询结果的数量。
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</guid>
       <description>Wi-Fi 点对点传（二次开发） 实现任意设备之间的点对点对传, 任意设备包括 Android、IPhone、PC、MAC、Linux。
-参考文档
-入门 · Kotlin 官方文档 中文版 (kotlincn.net) android SDK安装以及环境变量配置（windows）_在windows上,需要将android sdk的路径添加到系统的环境变量中,这样你就可以在命令-CSDN博客 Kotlin/Native 开发入门 - 使用 IntelliJ IDEA - Kotlin 语言参考文档 中文版 (liying-cn.net) 该项目参考已经实现的项目
-spieglt/FlyingCarpet：跨平台 AirDrop。通过 ad hoc WiFi 在 Android、iOS、Linux、macOS 和 Windows 之间传输文件。无需网络基础设施，只需两台带有 WiFi 芯片的近距离设备。 (github.com) 首页美化计划 目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
-步骤如下
-初步利用网页组件美化 搞定数据的存储和传输 图表可视化 万物皆有定数 方式: 系统api/相关软件/自行记录
-数据格式: JSON
-内容: 与我有关的所有数据,单位为天
-步数 睡眠时长, 睡眠起始点 键盘输入字符数量 \ 鼠标点击次数 饮水量 \ 吃饭内容 洗澡 \ 洗头 购物记录 重要的定数 计算力 记忆力 意志力 一言 介绍 在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.</description>
+需要重点关注的问题 如何通过扫二维码连接热点？
+接收端将WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码，接着发送方通过扫码 QR 二维码 获取WiFi信息从而成功连接上接收端WiFi，相关 Kotlin 代码如下。
+实现WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码 package dev.spiegl.flyingcarpet import android.app.Application import android.graphics.Bitmap import android.graphics.Color import androidx.documentfile.provider.DocumentFile import com.google.zxing.BarcodeFormat import com.google.zxing.qrcode.QRCodeWriter import java.io.File import java.nio.ByteBuffer import java.security.MessageDigest fun getQrCodeBitmap(ssid: String, password: String): Bitmap { val size = 1024 // pixels val qrCodeContent = &amp;#34;$ssid;$password&amp;#34; val bits = QRCodeWriter().encode(qrCodeContent, BarcodeFormat.QR_CODE, size, size) return Bitmap.createBitmap(size, size, Bitmap.Config.RGB_565).also { for (x in 0 until size) { for (y in 0 until size) { it.</description>
     </item>
     
     <item>
