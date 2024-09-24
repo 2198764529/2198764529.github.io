@@ -577,7 +577,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1726649978"></span>
+      <span class="Lastmod ios_boder" data-unix="1726739355"></span>
 
     </span>
     <span>
@@ -587,7 +587,7 @@
 
       文章字数:
       </small>
-      1639
+      1632
       
 
     </span>
@@ -664,48 +664,32 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>实现读取QR码来获取SSID和密码</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#75715e">//后面都是如何实现读取QR码来获取SSID和密码
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ensure no quotes around the ssid, not sure why this is necessary
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>viewModel.ssid = viewModel.ssid.replace(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// set key
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> hasher = MessageDigest.getInstance(<span style="color:#e6db74">&#34;SHA-256&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>hasher.update(viewModel.password.encodeToByteArray())
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>viewModel.key = hasher.digest()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// android generates ssid and password for us
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (viewModel.peer <span style="color:#f92672">==</span> Peer.iOS <span style="color:#f92672">||</span> viewModel.peer <span style="color:#f92672">==</span> Peer.Android) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	 <span style="color:#75715e">// display qr code
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	 <span style="color:#66d9ef">val</span> qrCode = findViewById&lt;ImageView&gt;(id.qrCodeView)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	 viewModel.qrBitmap = getQrCodeBitmap(viewModel.ssid, viewModel.password)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	 qrCode.setImageBitmap(viewModel.qrBitmap)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> { <span style="color:#75715e">// peer is macOS, because if windows or linux we wouldn&#39;t be hosting
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	 <span style="color:#66d9ef">val</span> alertFragment = Alert(viewModel.ssid, viewModel.password)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	 alertFragment.show(supportFragmentManager, <span style="color:#e6db74">&#34;alert&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>viewModel.outputText(<span style="color:#e6db74">&#34;SSID: </span><span style="color:#e6db74">${viewModel.ssid}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>viewModel.outputText(<span style="color:#e6db74">&#34;Password: </span><span style="color:#e6db74">${viewModel.password}</span><span style="color:#e6db74">&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>barcodeLauncher = registerForActivityResult(ScanContract()) { result <span style="color:#f92672">-&gt;</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (result.contents <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {  
+</span></span><span style="display:flex;"><span>        viewModel.outputText(<span style="color:#e6db74">&#34;Scan cancelled, exiting transfer.&#34;</span>)  
+</span></span><span style="display:flex;"><span>        cleanUpTransfer()  
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> ssidAndPassword = result.contents.split(<span style="color:#e6db74">&#39;;&#39;</span>)  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (ssidAndPassword.count() &gt; <span style="color:#ae81ff">1</span>) {  
+</span></span><span style="display:flex;"><span>            viewModel.ssid = ssidAndPassword[<span style="color:#ae81ff">0</span>]  
+</span></span><span style="display:flex;"><span>            viewModel.password = ssidAndPassword[<span style="color:#ae81ff">1</span>]  
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// make sha256 hash of password  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">val</span> hasher = MessageDigest.getInstance(<span style="color:#e6db74">&#34;SHA-256&#34;</span>)  
+</span></span><span style="display:flex;"><span>            hasher.update(viewModel.password.encodeToByteArray())  
+</span></span><span style="display:flex;"><span>            viewModel.key = hasher.digest()  
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {  
+</span></span><span style="display:flex;"><span>            viewModel.password = ssidAndPassword[<span style="color:#ae81ff">0</span>]  
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// make sha256 hash of password  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">val</span> hasher = MessageDigest.getInstance(<span style="color:#e6db74">&#34;SHA-256&#34;</span>)  
+</span></span><span style="display:flex;"><span>            hasher.update(viewModel.password.encodeToByteArray())  
+</span></span><span style="display:flex;"><span>            viewModel.key = hasher.digest()  
+</span></span><span style="display:flex;"><span>            viewModel.ssid =  
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;flyingCarpet_%02x%02x&#34;</span>.format(viewModel.key[<span style="color:#ae81ff">0</span>], viewModel.key[<span style="color:#ae81ff">1</span>])  
+</span></span><span style="display:flex;"><span>        }  
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// join hotspot  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        joinHotspot()  
+</span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><ol start="2">
 <li>连接热点以后如何建立 TCP 连接<br>
 先是获取这个 设备IP, 后面再通过 socket 进行文件传输，相关 Kotlin 代码如下。<br>
@@ -871,7 +855,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> }
 </span></span></code></pre></div><ol start="4">
-<li></li>
+<li>如何判定哪些设备在编程时开热点和连接网络有不可行性?</li>
 </ol>
 <p>参考文档</p>
 <ul>
@@ -1080,7 +1064,7 @@
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.ce3fdc8cc6901b684883b32e1f90e4557c0f1afdf72ead9e3d94fe04b9768583.js" integrity="sha256-zj/cjMaQG2hIg7MuH5DkVXwPGv33Lq2ePZT&#43;BLl2hYM=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.b9b9411727bf9656d41596ab1a18c809dcc504350bf00264c07d2f6bcb47b6f7.js" integrity="sha256-ublBFye/llbUFZarGhjICdzFBDUL8AJkwH0va8tHtvc=" crossorigin="anonymous"></script>
 
       </footer>
 
