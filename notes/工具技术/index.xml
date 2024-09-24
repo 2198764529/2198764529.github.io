@@ -80,8 +80,7 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
 {{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考
 https://cloud.tencent.com/developer/article/1944123
 https://note.qidong.name/2020/07/mermaid/
-CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
-😋
+CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位： 😋
 像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
 磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
 毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。</description>
@@ -93,17 +92,12 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/</guid>
-      <description>总览 什么叫原色 原色（primary color）是不能透过其他颜色的混合调配而得出的“基本色”；将不同比例的原色混合，可生成色域内其他任何颜色。
-原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：
+      <description>总览 什么叫原色 原色（primary color）是不能透过其他颜色的混合调配而得出的“基本色”；将不同比例的原色混合，可生成色域内其他任何颜色。 原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：
 光学三原色（RGB）：红（Red）、绿（Green）、蓝（Blue）。这些原色用于光的混合，比如显示器、投影仪等。 颜料三原色（CMY）：青（Cyan）、品红（Magenta）、黄（Yellow）。这是用于印刷和绘画中的颜料混合, 一般用于艺术画画, 这种不在本文讨论范围内. 怎么表示颜色 一般有两种方式来表示颜色，
-十六进制， 如#FFFFFF、#000000 RGB数值，如rgb(0,0,0)、rgb(255,255,255) 两种进制如何转换？ RGB实际上是十进制,所以要将十六进制转为十进制即可, 每两位数是一个十六进制, 十六进制中A~F=11~16
-举例：将 #B60023 转成 RGB 格式
-过程如下，R值=B6=B(11) * 16 + 6 = 182, G=00=0, B=23=2 * 16+ 3 =35
-所以 #B60023 值等于 rgb(182,0,35)
+十六进制， 如#FFFFFF、#000000 RGB数值，如rgb(0,0,0)、rgb(255,255,255) 两种进制如何转换？ RGB实际上是十进制,所以要将十六进制转为十进制即可, 每两位数是一个十六进制, 十六进制中A~F=11~16 举例：将 #B60023 转成 RGB 格式 过程如下，R值=B6=B(11) * 16 + 6 = 182, G=00=0, B=23=2 * 16+ 3 =35 所以 #B60023 值等于 rgb(182,0,35)
 后面的一种不需要关注, 只需要看光学三原色
 红色-Red：rgb(255,0,0) 绿色-Green：rgb(0,255,0) 蓝色-Blue：rgb(0,0,255) 什么叫间色 间色是通过两种原色混合而成的，组合之后新增了下面三种颜色
-黄色-Yellow：rgb(255,0,255) 紫色-Purple：rgb(255,0,255) 青色-Cyan：rgb(0,255,255) 什么叫复色 间色是通过三种颜色混合而成的，除了原色、间色、黑白色以外的所有颜色都是复色.
-下面是一些常见的复色
+黄色-Yellow：rgb(255,0,255) 紫色-Purple：rgb(255,0,255) 青色-Cyan：rgb(0,255,255) 什么叫复色 间色是通过三种颜色混合而成的，除了原色、间色、黑白色以外的所有颜色都是复色. 下面是一些常见的复色
 红色为主色调的： 粉色-Pink：rgb(255, 192, 203) 金色-Gold：rgb(255, 215, 0) 橙色-Orange：rgb(255, 165, 0) 蓝色为主色调的： 靛青-Indigo：rgb(75, 0, 130) 绿色为主色调的： 两色调的： 橄榄-Olive：rgb(128, 128, 0) 三色调的： 灰色-Gray：rgb(128,128,128) 银色-Gray：rgb(192,192,192) 黑白色 黑色和白色是两种特殊的颜色，黑色是什么颜色都没有就是白色，白色是RGB满的复色</description>
     </item>
     
@@ -114,10 +108,8 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</guid>
       <description>颜色 颜色要醒目, 令人舒适
-不同颜色, 代表不同意义
-重的亮深, 轻的暗浅
-大小 字多字小, 字段字大
-重的大, 轻的小
+不同颜色, 代表不同意义 重的亮深, 轻的暗浅
+大小 字多字小, 字段字大 重的大, 轻的小
 留白 标志 下划线: 超链接</description>
     </item>
     
@@ -164,8 +156,7 @@ limit（限制）： 用于限制查询结果的数量。
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
-      <description>正则表达式的所有元字符
-正则表达式的所有元字符包括(markdown表格列出来)：
+      <description>正则表达式的所有元字符 正则表达式的所有元字符包括(markdown表格列出来)：
 元字符 描述 . 匹配任意字符（除了换行符） \d 匹配数字字符 \D 匹配非数字字符 \w 匹配单词字符（字母、数字、下划线） \W 匹配非单词字符 \s 匹配空白字符（空格、制表符、换行符等） \S 匹配非空白字符 ^ 匹配字符串的开头 $ 匹配字符串的结尾 * 匹配前面的元素零次或多次 + 匹配前面的元素一次或多次 ? 表示前面的元素是可选的，匹配零次或一次 {n} 表示前面的元素恰好出现 n 次 {n,} 表示前面的元素至少出现 n 次 {n,m} 表示前面的元素出现 n 到 m 次之间 [] 字符集，匹配括号中任意一个字符 [^] 或 [^&amp;hellip;] 否定字符集，匹配除了括号中指定的任意字符之外的其他字符 </description>
     </item>
     

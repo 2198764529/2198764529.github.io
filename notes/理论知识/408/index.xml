@@ -24,28 +24,14 @@ TCP/IP 体系 OSI 体系 数据单元 主要设备 相关协议 ^应用层 应�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
-      <description>参考 https://www.cs.usfca.edu/~galles/visualization/Algorithms
-https://algo.itcharge.cn
-https://www.hello-algo.com
-https://pdai.tech/md/algorithm/alg-basic-overview.html
-https://www.runoob.com/w3cnote/ten-sorting-algorithm.html
-https://www.runoob.com/w3cnote/selection-sort.html
-排序算法 冒泡排序
-两两比较, 符合规则就换, 接着滑动窗口往后移动
-选择排序
-每次选最大的(无序区)放到最后(有序区)
-插入排序
-每次选的元素插入到有序区,类似打牌时的排序
-在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表
-快速排序
+      <description> 参考 https://www.cs.usfca.edu/~galles/visualization/Algorithms https://algo.itcharge.cn https://www.hello-algo.com https://pdai.tech/md/algorithm/alg-basic-overview.html https://www.runoob.com/w3cnote/ten-sorting-algorithm.html https://www.runoob.com/w3cnote/selection-sort.html
+排序算法 冒泡排序 两两比较, 符合规则就换, 接着滑动窗口往后移动 选择排序 每次选最大的(无序区)放到最后(有序区) 插入排序 每次选的元素插入到有序区,类似打牌时的排序 在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表 快速排序
 归并排序
 堆排序
 桶排序
 计数排序
 基数排序
-树 完美二叉树(满二叉树) 所有节点都是满的
-完满二叉树 只有叶子节点未满，且叶子节点尽量靠左填充。
-平衡二叉树 任何两个子树高度差小于2</description>
+树 完美二叉树(满二叉树) 所有节点都是满的 完满二叉树 只有叶子节点未满，且叶子节点尽量靠左填充。 平衡二叉树 任何两个子树高度差小于2 </description>
     </item>
     
     <item>

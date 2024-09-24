@@ -57,7 +57,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/moments/lfeng/</guid>
-      <description> 耐心是生活的关键 2024-04-10 @@@ 成功完成微信朋友圈的模仿 \images\personal\other\Pasted image 20240401181601.png 2024-04-01 @@@ 好记性不如烂笔头 https://avatars.githubusercontent.com/u/46187375 2024-04-01 </description>
+      <description> \images\personal\other\Pasted image 20240401181601.png https://avatars.githubusercontent.com/u/46187375 </description>
     </item>
     
     <item>
@@ -112,12 +112,9 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python-flaskdjango/</guid>
-      <description> Django Django 基于什么架构? MVC(Model View Controler, 模型视图控制器)
-MTV(Model Template Controler, 模型模版控制器)
+      <description> Django Django 基于什么架构? MVC(Model View Controler, 模型视图控制器) MTV(Model Template Controler, 模型模版控制器)
 Django 操作流程 Django 中间件的方法 .process_request : 请求进来时,权限认证 .process_view : 路由匹配之后,能够得到视图函数 .process_exception : 异常时执行 .process_template_responseprocess : 模板渲染时执行 .process_response : 请求有响应时执行 WSGI 是什么? WSGI是Python在处理HTTP请求时，规定的一种处理方法.
-什么是 FBV 和 CBV FBV（function base views） 基于函数的视图，就是在视图里使用函数处理请求。
-CBV（class base views） 基于类的视图，就是在视图里使用类处理请求。
-参考链接:
+什么是 FBV 和 CBV FBV（function base views） 基于函数的视图，就是在视图里使用函数处理请求。 CBV（class base views） 基于类的视图，就是在视图里使用类处理请求。 参考链接:
 2023最新高级难度Django面试题,包含答案。刷题必备！记录一下。 - 小满独家 - 博客园 (cnblogs.com) 2023最新中级难度Flask框架面试题,包含答案。刷题必备！记录一下。 - 小满独家 - 博客园 (cnblogs.com) 一杯茶的时间，搞懂 RESTful API (apifox.com) Django 简介 | 菜鸟教程 (runoob.com) </description>
     </item>
     
@@ -133,15 +130,7 @@ CBV（class base views） 基于类的视图，就是在视图里使用类处�
 行为 🎃🎄🎆🎇🧨✨🎈🎉🎊🎋🎍🎎🎏🎐🎑🧧🎀🎁🎗️🎟️🎫🎖️🏆🏅🥇🥈🥉⚽⚾🥎🏀🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅⛳⛸️🎣🤿🎽🎿🛷🥌🎯🪀🪁🔫🎱🔮🪄🎮🕹️🎰🎲🧩🧸🪅🪩🪆♠️♥️♦️♣️♟️🃏🀄🎴🎭🖼️🎨🧵🪡🧶🪢🧑‍⚕️👨‍⚕️👩‍⚕️🧑‍🎓👨‍🎓👩‍🎓🧑‍🏫👨‍🏫👩‍🏫🧑‍⚖️👨‍⚖️👩‍⚖️🧑‍🌾👨‍🌾👩‍🌾🧑‍🍳👨‍🍳👩‍🍳🧑‍🔧👨‍🔧👩‍🔧🧑‍🏭👨‍🏭👩‍🏭🧑‍💼👨‍💼👩‍💼🧑‍🔬👨‍🔬👩‍🔬🧑‍💻👨‍💻👩‍💻🧑‍🎤👨‍🎤👩‍🎤🧑‍🎨👨‍🎨👩‍🎨🧑‍✈️👨‍✈️👩‍✈️🧑‍🚀👨‍🚀👩‍🚀🧑‍🚒👨‍🚒👩‍🚒👮👮‍♂️👮‍♀️🕵️🕵️‍♂️🕵️‍♀️💂💂‍♂️💂‍♀️🥷👷👷‍♂️👷‍♀️👼🎅🤶🧑‍🎄🦸🦸‍♂️🦸‍♀️🦹🦹‍♂️🦹‍♀️🧙🧙‍♂️🧙‍♀️🧚🧚‍♂️🧚‍♀️🧛🧛‍♂️🧛‍♀️🧜🧜‍♂️🧜‍♀️🧝🧝‍♂️🧝‍♀️🧞🧞‍♂️🧞‍♀️🧟🧟‍♂️🧟‍♀️🧌💆💆‍♂️💆‍♀️🧑‍🦯👨‍🦯👩‍🦯🧑‍🦼👨‍🦼👩‍🦼🧑‍🦽👨‍🦽👩‍🦽🏃🏃‍♂️🏃‍♀️🚶🚶‍♂️🚶‍♀️💇💇‍♂️💇‍♀️🕴️👯👯‍♂️👯‍♀️🧖🧖‍♂️🧖‍♀️🧗🧗‍♂️🧗‍♀️🤺🏇⛷️🏂🏌️🏌️‍♂️🏌️‍♀️🏄🏄‍♂️🏄‍♀️🚣🚣‍♂️🚣‍♀️🏊🏊‍♂️🏊‍♀️⛹️⛹️‍♂️⛹️‍♀️🏋️🏋️‍♂️🏋️‍♀️🚴🚴‍♂️🚴‍♀️🚵🚵‍♂️🚵‍♀️🤸🤸‍♂️🤸‍♀️🤼🤼‍♂️🤼‍♀️🤽🤽‍♂️🤽‍♀️🤾🤾‍♂️🤾‍♀️🤹🤹‍♂️🤹‍♀️🧘🧘‍♂️🧘‍♀️👪👨‍👩‍👦👨‍👩‍👧👨‍👩‍👧‍👦👨‍👩‍👦‍👦👨‍👩‍👧‍👧👨‍👨‍👦👨‍👨‍👧👨‍👨‍👧‍👦👨‍👨‍👦‍👦👨‍👨‍👧‍👧👩‍👩‍👦👩‍👩‍👧👩‍👩‍👧‍👦👩‍👩‍👦‍👦👩‍👩‍👧‍👧👨‍👦👨‍👦‍👦👨‍👧👨‍👧‍👦👨‍👧‍👧👩‍👦👩‍👦‍👦👩‍👧👩‍👧‍👦👩‍👧‍👧
 出行与地点 🌍🌎🌏🌐🗺️🗾🧭🏔️⛰️🌋🗻🏕️🏖️🏜️🏝️🏞️🏟️🏛️🏗️🧱🪨🪵🛖🏘️🏚️🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗼🗽⛪🕌🛕🕍⛩️🕋⛲⛺🌁🌃🏙️🌄🌅🌆🌇🌉♨️🎠🛝🎡🎢💈🎪🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚐🚑🚒🚓🚔🚕🚖🚗🚘🚙🛻🚚🚛🚜🏎️🏍️🛵🦽🦼🛺🚲🛴🛹🛼🚏🛣️🛤️🛢️⛽🛞🚨🚥🚦🛑🚧⚓🛟⛵🛶🚤🛳️⛴️🛥️🚢✈️🛩️🛫🛬🪂💺🚁🚟🚠🚡🛰️🚀🛸🛎️🧳⌛⏳⌚⏰⏱️⏲️🕰️🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌡️☀️🌝🌞🪐⭐🌟🌠🌌☁️⛅⛈️🌤️🌥️🌦️🌧️🌨️🌩️🌪️🌫️🌬️🌀🌈🌂☂️☔⛱️⚡❄️☃️⛄☄️🔥💧🌊
 物体 👓🕶️🥽🥼🦺👔👕👖🧣🧤🧥🧦👗👘🥻🩱🩲🩳👙👚👛👜👝🛍️🎒🩴👞👟🥾🥿👠👡🩰👢🪮👑👒🎩🎓🧢🪖⛑️📿💄💍💎🔇🔈🔉🔊📢📣📯🔔🔕🎼🎵🎶🎙️🎚️🎛️🎤🎧📻🎷🪗🎸🎹🎺🎻🪕🥁🪘📱📲☎️📞📟📠🔋🪫🔌💻🖥️🖨️⌨️🖱️🖲️💽💾💿📀🧮🎥🎞️📽️🎬📺📷📸📹📼🔍🔎🕯️💡🔦🏮🪔📔📕📖📗📘📙📚📓📒📃📜📄📰🗞️📑🔖🏷️💰🪙💴💵💶💷💸💳🧾💹✉️📧📨📩📤📥📦📫📪📬📭📮🗳️✏️✒️🖋️🖊️🖌️🖍️📝💼📁📂🗂️📅📆🗒️🗓️📇📈📉📊📋📌📍📎🖇️📏📐✂️🗃️🗄️🗑️🔒🔓🔏🔐🔑🗝️🔨🪓⛏️⚒️🛠️🗡️⚔️💣🪃🏹🛡️🪚🔧🪛🔩⚙️🗜️⚖️🦯🔗⛓️🪝🧰🧲🪜⚗️🧪🧫🧬🔬🔭📡💉🩸💊🩹🩼🩺🩻🚪🛗🪞🪟🛏️🛋️🪑🚽🪠🚿🛁🪤🪒🧴🧷🧹🧺🧻🪣🧼🫧🪥🧽🧯🛒🚬⚰️🪦⚱️🧿🪬🗿🪧🪪
-符号 🏧🚮🚰♿🚹🚺🚻🚼🚾🛂🛃🛄🛅🗣️👤👥🫂👣
-⚠️🚸⛔🚫🚳🚭🚯🚱🚷📵🔞☢️☣️
-⬆️↗️➡️↘️⬇️↙️⬅️↖️↕️↔️↩️↪️⤴️⤵️🔃🔄🔙🔚🔛🔜🔝
-🛐⚛️🕉️✡️☸️☯️✝️☦️☪️☮️🕎🔯♈♉♊♋♌♍♎♏♐♑♒♓⛎
-🔀🔁🔂▶️⏩⏭️⏯️◀️⏪⏮️🔼⏫🔽⏬⏸️⏹️⏺️⏏️🎦
-🔅🔆📶🛜📳📴♀️♂️⚧️✖️➕➖➗🟰♾️‼️⁉️❓❔❕❗〰️💱💲⚕️♻️⚜️🔱📛🔰⭕✅☑️✔️❌❎➰➿〽️✳️✴️❇️©️®️™️
-#️⃣*️⃣0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟🔠🔡🔢🔣🔤🅰️🆎🅱️🆑🆒🆓ℹ️🆔Ⓜ️🆕🆖🅾️🆗🅿️🆘🆙🆚🈁🈂️🈷️🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗️㊙️🈺🈵
-🔴🟠🟡🟢🔵🟣🟤⚫⚪🟥🟧🟨🟩🟦🟪🟫⬛⬜◼️◻️◾◽▪️▫️
-🔶🔷🔸🔹🔺🔻💠🔘🔳🔲💬👁️‍🗨️🗨️🗯️💭
+符号 🏧🚮🚰♿🚹🚺🚻🚼🚾🛂🛃🛄🛅🗣️👤👥🫂👣 ⚠️🚸⛔🚫🚳🚭🚯🚱🚷📵🔞☢️☣️ ⬆️↗️➡️↘️⬇️↙️⬅️↖️↕️↔️↩️↪️⤴️⤵️🔃🔄🔙🔚🔛🔜🔝 🛐⚛️🕉️✡️☸️☯️✝️☦️☪️☮️🕎🔯♈♉♊♋♌♍♎♏♐♑♒♓⛎ 🔀🔁🔂▶️⏩⏭️⏯️◀️⏪⏮️🔼⏫🔽⏬⏸️⏹️⏺️⏏️🎦 🔅🔆📶🛜📳📴♀️♂️⚧️✖️➕➖➗🟰♾️‼️⁉️❓❔❕❗〰️💱💲⚕️♻️⚜️🔱📛🔰⭕✅☑️✔️❌❎➰➿〽️✳️✴️❇️©️®️™️ #️⃣*️⃣0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟🔠🔡🔢🔣🔤🅰️🆎🅱️🆑🆒🆓ℹ️🆔Ⓜ️🆕🆖🅾️🆗🅿️🆘🆙🆚🈁🈂️🈷️🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗️㊙️🈺🈵 🔴🟠🟡🟢🔵🟣🟤⚫⚪🟥🟧🟨🟩🟦🟪🟫⬛⬜◼️◻️◾◽▪️▫️ 🔶🔷🔸🔹🔺🔻💠🔘🔳🔲💬👁️‍🗨️🗨️🗯️💭
 旗帜 🏁🚩🎌🏴🏳️🏳️‍🌈🏳️‍⚧️🏴‍☠️🇦🇨🇦🇩🇦🇪🇦🇫🇦🇬🇦🇮🇦🇱🇦🇲🇦🇴🇦🇶🇦🇷🇦🇸🇦🇹🇦🇺🇦🇼🇦🇽🇦🇿🇧🇦🇧🇧🇧🇩🇧🇪🇧🇫🇧🇬🇧🇭🇧🇮🇧🇯🇧🇱🇧🇲🇧🇳🇧🇴🇧🇶🇧🇷🇧🇸🇧🇹🇧🇻🇧🇼🇧🇾🇧🇿🇨🇦🇨🇨🇨🇩🇨🇫🇨🇬🇨🇭🇨🇮🇨🇰🇨🇱🇨🇲🇨🇳🇨🇴🇨🇵🇨🇷🇨🇺🇨🇻🇨🇼🇨🇽🇨🇾🇨🇿🇩🇪🇩🇬🇩🇯🇩🇰🇩🇲🇩🇴🇩🇿🇪🇦🇪🇨🇪🇪🇪🇬🇪🇭🇪🇷🇪🇸🇪🇹🇪🇺🇫🇮🇫🇯🇫🇰🇫🇲🇫🇴🇫🇷🇬🇦🇬🇧🇬🇩🇬🇪🇬🇫🇬🇬🇬🇭🇬🇮🇬🇱🇬🇲🇬🇳🇬🇵🇬🇶🇬🇷🇬🇸🇬🇹🇬🇺🇬🇼🇬🇾🇭🇰🇭🇲🇭🇳🇭🇷🇭🇹🇭🇺🇮🇨🇮🇩🇮🇪🇮🇱🇮🇲🇮🇳🇮🇴🇮🇶🇮🇷🇮🇸🇮🇹🇯🇪🇯🇲🇯🇴🇯🇵🇰🇪🇰🇬🇰🇭🇰🇮🇰🇲🇰🇳🇰🇵🇰🇷🇰🇼🇰🇾🇰🇿🇱🇦🇱🇧🇱🇨🇱🇮🇱🇰🇱🇷🇱🇸🇱🇹🇱🇺🇱🇻🇱🇾🇲🇦🇲🇨🇲🇩🇲🇪🇲🇫🇲🇬🇲🇭🇲🇰🇲🇱🇲🇲🇲🇳🇲🇴🇲🇵🇲🇶🇲🇷🇲🇸🇲🇹🇲🇺🇲🇻🇲🇼🇲🇽🇲🇾🇲🇿🇳🇦🇳🇨🇳🇪🇳🇫🇳🇬🇳🇮🇳🇱🇳🇴🇳🇵🇳🇷🇳🇺🇳🇿🇴🇲🇵🇦🇵🇪🇵🇫🇵🇬🇵🇭🇵🇰🇵🇱🇵🇲🇵🇳🇵🇷🇵🇸🇵🇹🇵🇼🇵🇾🇶🇦🇷🇪🇷🇴🇷🇸🇷🇺🇷🇼🇸🇦🇸🇧🇸🇨🇸🇩🇸🇪🇸🇬🇸🇭🇸🇮🇸🇯🇸🇰🇸🇱🇸🇲🇸🇳🇸🇴🇸🇷🇸🇸🇸🇹🇸🇻🇸🇽🇸🇾🇸🇿🇹🇦🇹🇨🇹🇩🇹🇫🇹🇬🇹🇭🇹🇯🇹🇰🇹🇱🇹🇲🇹🇳🇹🇴🇹🇷🇹🇹🇹🇻🇹🇼🇹🇿🇺🇦🇺🇬🇺🇲🇺🇳🇺🇸🇺🇾🇺🇿🇻🇦🇻🇨🇻🇪🇻🇬🇻🇮🇻🇳🇻🇺🇼🇫🇼🇸🇽🇰🇾🇪🇾🇹🇿🇦🇿🇲🇿🇼🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿</description>
     </item>
     
@@ -162,9 +151,7 @@ https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn
       
       <guid>https://ltao.top/notes/%E6%9D%82%E6%80%9D/%E7%AC%AC%E4%BA%8C%E5%8F%B0%E7%AC%94%E8%AE%B0%E6%9C%AC%E9%80%89%E8%B4%AD/</guid>
       <description>笔记本电脑 硬性条件
-16GB 运存 接口丰富: typc接口充电 必须线下看过 触控屏幕 1.5kg 以下 16寸以上
-待选项 机械革命 CODE 01 ￥4.7k 华为 华为笔记本 MateBook B3-520 ￥5.2k 华硕 灵耀 15 ￥7k 惠普 星Book 15 ￥4.6k 宏基非凡go 14寸 1.3kg ￥4k 宏基非凡go 14寸 1.4kg ￥3.9k 宏基传奇 16寸 1.2kg 16g ￥4.8k
-暂定 宏基 ￥3.9k 非凡go pro 14寸 1.4kg ￥4.5k 传奇 16寸 1.2kg 16g 最终选择:宏基 传奇 16寸 1.2kg 16g ￥4.5k 理由 是最轻的16寸笔记本 1.2kg， 这已经比很多14寸笔记还要轻薄了，而我最看重笔记本的轻薄 4k的高画质，4k比2k还是要高出一个档次，码字写代码都挺合适的 两个 M.2 硬盘位, 可随时扩容 没有数字小键盘, 打字更方便 指纹解锁, 还是很方便的 缺点 电池50w时, 断电只能坚持 7小时 屏幕是oled, 据说还是没有LCD屏幕好用 运存是板载的16G, 没法扩容16G 电脑 价格 机械革命 CODE 01 ￥4.</description>
+16GB 运存 接口丰富: typc接口充电 必须线下看过 触控屏幕 1.5kg 以下 16寸以上 待选项 机械革命 CODE 01 ￥4.7k 华为 华为笔记本 MateBook B3-520 ￥5.2k 华硕 灵耀 15 ￥7k 惠普 星Book 15 ￥4.6k 宏基非凡go 14寸 1.3kg ￥4k 宏基非凡go 14寸 1.4kg ￥3.9k 宏基传奇 16寸 1.2kg 16g ￥4.8k 暂定 宏基 ￥3.9k 非凡go pro 14寸 1.4kg ￥4.5k 传奇 16寸 1.2kg 16g 最终选择:宏基 传奇 16寸 1.2kg 16g ￥4.5k 理由 是最轻的16寸笔记本 1.2kg， 这已经比很多14寸笔记还要轻薄了，而我最看重笔记本的轻薄 4k的高画质，4k比2k还是要高出一个档次，码字写代码都挺合适的 两个 M.2 硬盘位, 可随时扩容 没有数字小键盘, 打字更方便 指纹解锁, 还是很方便的 缺点 电池50w时, 断电只能坚持 7小时 屏幕是oled, 据说还是没有LCD屏幕好用 运存是板载的16G, 没法扩容16G 电脑 价格 机械革命 CODE 01 ￥4.</description>
     </item>
     
     <item>
@@ -183,15 +170,9 @@ https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
-      <description>个人介绍 23 岁, 1年工作经验,软工专业, 一名软件开发者。
-热爱互联网行业, 擅长做后端开发, 略懂一点对话AI。
-爱做项目, 编程 5 年间, 有 15+ 独立项目开发经验 。
-喜欢记录总结, www.ltao.top 博客目前已运行近 1 年
-个人经历 大学期间, 我自学了多种编程语言和技术栈, 包括Python 后端、前端、大数据等，大三曾取得金砖大赛国二奖,
-大四毕业取得湖南省程序设计二等奖和省优秀毕业生,并以基于用户行为的新能源充电桩项目入选校企合作名单。
-毕业后, 实习顺利入职湖南超能机器人做 AI 对话, 作为项目核心开发者,将该 AI 对话项目由零迭代到上线。
-目前就职深圳亿达信息， 担任 Python 工程师, 负责公司后端接口开发与测试。
-工作经历 2021年11月-2023年3月 湖南超能机器人 AI助理 智能问诊项目 负责人 清洗训练数据近 2w 条, 处理NLU 和 NLG 部分工作, 并对接后端开始内部测试 从零推动 AI 对话项目版本迭代到上线开售 2023年4月-至今 深圳亿达信息 Python开发 支付分账项目 参与者 迭代项目版本 测试 技术栈 熟悉Python的Django,Flask等后端框架，掌握基本的数据结构和常见算法 熟悉Linux系统应用部署以及管理，能独立部署项目到服务器 联系我 邮箱: liao4256@qq.com</description>
+      <description>个人介绍 23 岁, 1年工作经验,软工专业, 一名软件开发者。 热爱互联网行业, 擅长做后端开发, 略懂一点对话AI。 爱做项目, 编程 5 年间, 有 15+ 独立项目开发经验 。 喜欢记录总结, www.ltao.top 博客目前已运行近 1 年
+个人经历 大学期间, 我自学了多种编程语言和技术栈, 包括Python 后端、前端、大数据等，大三曾取得金砖大赛国二奖, 大四毕业取得湖南省程序设计二等奖和省优秀毕业生,并以基于用户行为的新能源充电桩项目入选校企合作名单。 毕业后, 实习顺利入职湖南超能机器人做 AI 对话, 作为项目核心开发者,将该 AI 对话项目由零迭代到上线。 目前就职深圳亿达信息， 担任 Python 工程师, 负责公司后端接口开发与测试。
+工作经历 2021年11月-2023年3月 湖南超能机器人 AI助理 智能问诊项目 负责人 清洗训练数据近 2w 条, 处理NLU 和 NLG 部分工作, 并对接后端开始内部测试 从零推动 AI 对话项目版本迭代到上线开售 2023年4月-至今 深圳亿达信息 Python开发 支付分账项目 参与者 迭代项目版本 测试 技术栈 熟悉Python的Django,Flask等后端框架，掌握基本的数据结构和常见算法 熟悉Linux系统应用部署以及管理，能独立部署项目到服务器 联系我 邮箱: liao4256@qq.com 所在地: 深圳</description>
     </item>
     
     <item>
@@ -225,8 +206,7 @@ TCP/IP 体系 OSI 体系 数据单元 主要设备 相关协议 ^应用层 应�
 {{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考
 https://cloud.tencent.com/developer/article/1944123
 https://note.qidong.name/2020/07/mermaid/
-CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位：
-😋
+CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位： 😋
 像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。
 磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。
 毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。</description>
@@ -238,11 +218,9 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
-      <description>软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法
-【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、 winget
+      <description>软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法 【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、 winget
 硬件 宏基传奇Edge：
-机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器 aoc 2369 23.1显示器 显示器（高、宽）
-398(H) x 531.4(W) x 204(D)
+机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器 aoc 2369 23.1显示器 显示器（高、宽） 398(H) x 531.4(W) x 204(D)
 https://aoc.com/uk/products/monitors/i2369v/specification
 附录 【autoHotkey-changeKeys.ahk】：
 ; 适用于 v2.0 ; Esc 映射成 AltTab *Esc::send &amp;#34;{Blind}!{Tab}&amp;#34; ; 左Alt -&amp;gt;Ctrl *LAlt::LCtrl ^1::Home ^2::End ; 左Ctrl-&amp;gt;Enter ~LCtrl::Enter ; Capslock键-&amp;gt;BackSpace键 *Capslock::BackSpace ;大写键-&amp;gt;回车键 *MButton::Enter ;win+鼠标滚轮上(下滚)滚增加(减少)音量 A_HotkeyInterval := 0 #WheelUp::Volume_Up #WheelDown::Volume_Down ;win+点击鼠标滚-&amp;gt;ESC #MButton::ESC ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; ; 功能键改成符号键 ; `F1键 -&amp;gt; ,键 *F1::, ; `2键 -&amp;gt; .</description>
@@ -254,17 +232,12 @@ https://aoc.com/uk/products/monitors/i2369v/specification
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/</guid>
-      <description>总览 什么叫原色 原色（primary color）是不能透过其他颜色的混合调配而得出的“基本色”；将不同比例的原色混合，可生成色域内其他任何颜色。
-原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：
+      <description>总览 什么叫原色 原色（primary color）是不能透过其他颜色的混合调配而得出的“基本色”；将不同比例的原色混合，可生成色域内其他任何颜色。 原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：
 光学三原色（RGB）：红（Red）、绿（Green）、蓝（Blue）。这些原色用于光的混合，比如显示器、投影仪等。 颜料三原色（CMY）：青（Cyan）、品红（Magenta）、黄（Yellow）。这是用于印刷和绘画中的颜料混合, 一般用于艺术画画, 这种不在本文讨论范围内. 怎么表示颜色 一般有两种方式来表示颜色，
-十六进制， 如#FFFFFF、#000000 RGB数值，如rgb(0,0,0)、rgb(255,255,255) 两种进制如何转换？ RGB实际上是十进制,所以要将十六进制转为十进制即可, 每两位数是一个十六进制, 十六进制中A~F=11~16
-举例：将 #B60023 转成 RGB 格式
-过程如下，R值=B6=B(11) * 16 + 6 = 182, G=00=0, B=23=2 * 16+ 3 =35
-所以 #B60023 值等于 rgb(182,0,35)
+十六进制， 如#FFFFFF、#000000 RGB数值，如rgb(0,0,0)、rgb(255,255,255) 两种进制如何转换？ RGB实际上是十进制,所以要将十六进制转为十进制即可, 每两位数是一个十六进制, 十六进制中A~F=11~16 举例：将 #B60023 转成 RGB 格式 过程如下，R值=B6=B(11) * 16 + 6 = 182, G=00=0, B=23=2 * 16+ 3 =35 所以 #B60023 值等于 rgb(182,0,35)
 后面的一种不需要关注, 只需要看光学三原色
 红色-Red：rgb(255,0,0) 绿色-Green：rgb(0,255,0) 蓝色-Blue：rgb(0,0,255) 什么叫间色 间色是通过两种原色混合而成的，组合之后新增了下面三种颜色
-黄色-Yellow：rgb(255,0,255) 紫色-Purple：rgb(255,0,255) 青色-Cyan：rgb(0,255,255) 什么叫复色 间色是通过三种颜色混合而成的，除了原色、间色、黑白色以外的所有颜色都是复色.
-下面是一些常见的复色
+黄色-Yellow：rgb(255,0,255) 紫色-Purple：rgb(255,0,255) 青色-Cyan：rgb(0,255,255) 什么叫复色 间色是通过三种颜色混合而成的，除了原色、间色、黑白色以外的所有颜色都是复色. 下面是一些常见的复色
 红色为主色调的： 粉色-Pink：rgb(255, 192, 203) 金色-Gold：rgb(255, 215, 0) 橙色-Orange：rgb(255, 165, 0) 蓝色为主色调的： 靛青-Indigo：rgb(75, 0, 130) 绿色为主色调的： 两色调的： 橄榄-Olive：rgb(128, 128, 0) 三色调的： 灰色-Gray：rgb(128,128,128) 银色-Gray：rgb(192,192,192) 黑白色 黑色和白色是两种特殊的颜色，黑色是什么颜色都没有就是白色，白色是RGB满的复色</description>
     </item>
     
@@ -275,10 +248,8 @@ https://aoc.com/uk/products/monitors/i2369v/specification
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</guid>
       <description>颜色 颜色要醒目, 令人舒适
-不同颜色, 代表不同意义
-重的亮深, 轻的暗浅
-大小 字多字小, 字段字大
-重的大, 轻的小
+不同颜色, 代表不同意义 重的亮深, 轻的暗浅
+大小 字多字小, 字段字大 重的大, 轻的小
 留白 标志 下划线: 超链接</description>
     </item>
     
@@ -288,8 +259,7 @@ https://aoc.com/uk/products/monitors/i2369v/specification
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E6%9D%82%E6%80%9D/%E5%8D%9A%E5%AE%A2%E6%96%87%E6%91%98/</guid>
-      <description>am 的歌单获取 请求地址:
-https://amp-api.music.apple.com/v1/me/library/songs?art[url]=f&amp;format[resources]=map&amp;include[library-songs]=catalog&amp;l=zh-Hans-CN&amp;limit=100&amp;meta=sorts&amp;offset=100&amp;platform=web
+      <description>am 的歌单获取 请求地址: https://amp-api.music.apple.com/v1/me/library/songs?art[url]=f&amp;format[resources]=map&amp;include[library-songs]=catalog&amp;l=zh-Hans-CN&amp;limit=100&amp;meta=sorts&amp;offset=100&amp;platform=web
 请求参数:
 参数 作用 类型 authorization 授权访问码 ^动态生成 media-user-token 音频访问码 origin 源站点访问 静态 authorization: Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IldlYlBsYXlLaWQifQ.eyJpc3MiOiJBTVBXZWJQbGF5IiwiaWF0IjoxNzI1MzgwMTgxLCJleHAiOjE3MzI2Mzc3ODEsInJvb3RfaHR0cHNfb3JpZ2luIjpbImFwcGxlLmNvbSJdfQ.22ft8oc4G-lO6wRC9nDofwWtiOa0rFjW_a7j1U9qKmd35aOzrkVlJCubB4r4FsufIKIFBMvjBg-4StfFQl9Ylw media-user-token: AhpiH1Ew2j0RfiZ6dWgOL/qdYq83QtGkAeHN0dlpKxFhK7C1bV5qIZvxkiokwGmoLdwtDNDueZ+ecbzjLVB06HRhSftkVgDwPcowMsurWNWkVg9D/Yqe0EtXrJDk+s9NUSu+czFdTuB6XzTEvEQk8EFVF/NHGeOzBwX39HiUl6hy6pV9l7S+9u2+7hfaA1zs2ypKiXQKC3BmpcogLVCfCxDgQVjyVHQf+PXMNJu/Uhl8e8Qo1w== origin https://music.apple.com 让子弹飞 顾子明《让子弹飞》深度影评系列（干货文） (weibo.com)
 “让子弹飞”的搜索结果 - RESSRC
@@ -303,28 +273,14 @@ https://amp-api.music.apple.com/v1/me/library/songs?art[url]=f&amp;format[resour
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
-      <description>参考 https://www.cs.usfca.edu/~galles/visualization/Algorithms
-https://algo.itcharge.cn
-https://www.hello-algo.com
-https://pdai.tech/md/algorithm/alg-basic-overview.html
-https://www.runoob.com/w3cnote/ten-sorting-algorithm.html
-https://www.runoob.com/w3cnote/selection-sort.html
-排序算法 冒泡排序
-两两比较, 符合规则就换, 接着滑动窗口往后移动
-选择排序
-每次选最大的(无序区)放到最后(有序区)
-插入排序
-每次选的元素插入到有序区,类似打牌时的排序
-在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表
-快速排序
+      <description> 参考 https://www.cs.usfca.edu/~galles/visualization/Algorithms https://algo.itcharge.cn https://www.hello-algo.com https://pdai.tech/md/algorithm/alg-basic-overview.html https://www.runoob.com/w3cnote/ten-sorting-algorithm.html https://www.runoob.com/w3cnote/selection-sort.html
+排序算法 冒泡排序 两两比较, 符合规则就换, 接着滑动窗口往后移动 选择排序 每次选最大的(无序区)放到最后(有序区) 插入排序 每次选的元素插入到有序区,类似打牌时的排序 在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表 快速排序
 归并排序
 堆排序
 桶排序
 计数排序
 基数排序
-树 完美二叉树(满二叉树) 所有节点都是满的
-完满二叉树 只有叶子节点未满，且叶子节点尽量靠左填充。
-平衡二叉树 任何两个子树高度差小于2</description>
+树 完美二叉树(满二叉树) 所有节点都是满的 完满二叉树 只有叶子节点未满，且叶子节点尽量靠左填充。 平衡二叉树 任何两个子树高度差小于2 </description>
     </item>
     
     <item>
@@ -401,9 +357,7 @@ limit（限制）： 用于限制查询结果的数量。
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E6%9D%82%E6%80%9D/%E4%B8%BA%E4%BB%80%E4%B9%88/</guid>
-      <description>功利和兴趣，应做到平衡
-戒掉不如替代，让人不想走某条路，只需将路弄烂
-分清主要矛盾和次要矛盾
+      <description>功利和兴趣，应做到平衡 戒掉不如替代，让人不想走某条路，只需将路弄烂 分清主要矛盾和次要矛盾
 人为什么会懒 害怕失败 缺乏勇气 精神疲惫，注意力被分散， 身体疲惫 人为什么闲不下来 潜意识没有安全感 空着或者睡觉觉得浪费时间，运动或者学习工作觉得太累，只好刷短视频看小说 </description>
     </item>
     
@@ -413,68 +367,9 @@ limit（限制）： 用于限制查询结果的数量。
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E6%9D%82%E6%80%9D/%E6%96%87%E6%91%98/</guid>
-      <description>滕王阁序 唐 王勃 豫章故郡，洪都新府。星分翼轸，地接衡庐。
-襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟。
-人杰地灵，徐孺下陈蕃之榻。雄州雾列，俊采星驰。
-台隍枕夷夏之交，宾主尽东南之美。
-都督阎公之雅望，棨戟遥临；宇文新州之懿范，襜帷暂驻。
-十旬休假，胜友如云；千里逢迎，高朋满座。腾蛟起凤，孟学士之词宗.
-紫电青霜，王将军之武库。家君作宰，路出名区；童子何知，躬逢胜饯。
-时维九月，序属三秋。潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿。
-临帝子之长洲，得天人之旧馆。层峦耸翠，上出重霄；飞阁流丹，下临无地。
-鹤汀凫渚，穷岛屿之萦回；桂殿兰宫，即冈峦之体势。
-披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。
-闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。
-云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。
-渔舟唱晚，响穷彭蠡之滨，雁阵惊寒，声断衡阳之浦。
-遥襟甫畅，逸兴遄飞。爽籁发而清风生，纤歌凝而白云遏。
-睢园绿竹，气凌彭泽之樽；邺水朱华，光照临川之笔。
-四美具，二难并。穷睇眄于中天，极娱游于暇日。天高地迥，觉宇宙之无穷；
-兴尽悲来，识盈虚之有数。望长安于日下，目吴会于云间。
-地势极而南溟深，天柱高而北辰远。关山难越，谁悲失路之人；
-萍水相逢，尽是他乡之客。怀帝阍而不见，奉宣室以何年？
-嗟乎！时运不齐，命途多舛。冯唐易老，李广难封。
-屈贾谊于长沙，非无圣主；窜梁鸿于海曲，岂乏明时？
-所赖君子见机，达人知命。老当益壮，宁移白首之心？穷且益坚，不坠青云之志。
-酌贪泉而觉爽，处涸辙以犹欢。北海虽赊，扶摇可接；东隅已逝，桑榆非晚。
-孟尝高洁，空余报国之情；阮籍猖狂，岂效穷途之哭！
-勃，三尺微命，一介书生。无路请缨，等终军之弱冠；
-有怀投笔，慕宗悫之长风。舍簪笏于百龄，奉晨昏于万里。非谢家之宝树，接孟氏之芳邻。
-他日趋庭，叨陪鲤对；今兹捧袂，喜托龙门。杨意不逢，抚凌云而自惜；钟期既遇，奏流水以何惭？
-呜呼！胜地不常，盛筵难再；兰亭已矣，梓泽丘墟。临别赠言，幸承恩于伟饯；
-登高作赋，是所望于群公。敢竭鄙怀，恭疏短引；一言均赋，四韵俱成。请洒潘江，各倾陆海云尔；
-滕王高阁临江渚，佩玉鸣鸾罢歌舞。
-画栋朝飞南浦云，珠帘暮卷西山雨。
-闲云潭影日悠悠，物换星移几度秋。
-阁中帝子今何在？槛外长江空自流。
-过秦论 汉 贾谊 秦孝公据崤函之固，拥雍州之地，君臣固守以窥周室，有席卷天下，包举宇内，囊括四海之意，并吞八荒之心。
-当是时也，商君佐之，内立法度，务耕织，修守战之具，外连衡而斗诸侯。于是秦人拱手而取西河之外。
-孝公既没，惠文、武、昭襄蒙故业，因遗策，南取汉中，西举巴、蜀，东割膏腴之地，北收要害之郡。
-诸侯恐惧，会盟而谋弱秦，不爱珍器重宝肥饶之地，以致天下之士，合从缔交，相与为一。
-当此之时，齐有孟尝，赵有平原，楚有春申，魏有信陵。
-此四君者，皆明智而忠信，宽厚而爱人，尊贤而重士，约从离衡，兼韩、魏、燕、楚、齐、赵、宋、卫、中山之众。
-于是六国之士，有宁越、徐尚、苏秦、杜赫之属为之谋，齐明、周最、陈轸、召滑、楼缓、翟景、苏厉、乐毅之徒通其意，吴起、孙膑、带佗、倪良、王廖、田忌、廉颇、赵奢之伦制其兵。
-尝以十倍之地，百万之众，叩关而攻秦。
-秦人开关延敌，九国之师，逡巡而不敢进。秦无亡矢遗镞之费，而天下诸侯已困矣。于是从散约败，争割地而赂秦。
-秦有余力而制其弊，追亡逐北，伏尸百万，流血漂橹；因利乘便，宰割天下，分裂山河。强国请服，弱国入朝。
-延及孝文王、庄襄王，享国之日浅，国家无事。
-及至始皇，奋六世之余烈，振长策而御宇内，吞二周而亡诸侯，履至尊而制六合，执敲扑而鞭笞天下，威振四海。
-南取百越之地，以为桂林、象郡；百越之君，俯首系颈，委命下吏。乃使蒙恬北筑长城而守藩篱，却匈奴七百余里；
-胡人不敢南下而牧马，士不敢弯弓而报怨。于是废先王之道，焚百家之言，以愚黔首；隳名城，杀豪杰；
-收天下之兵，聚之咸阳，销锋镝，铸以为金人十二，以弱天下之民。
-然后践华为城，因河为池，据亿丈之城，临不测之渊，以为固。
-良将劲弩守要害之处，信臣精卒陈利兵而谁何。
-天下已定，始皇之心，自以为关中之固，金城千里，子孙帝王万世之业也。
-秦王既没，余威震于殊俗。然陈涉瓮牖绳枢之子，氓隶之人，而迁徙之徒也；
-才能不及中人，非有仲尼，墨翟之贤，陶朱、猗顿之富；
-蹑足行伍之间，而倔起阡陌之中，率疲弊之卒，将数百之众，转而攻秦；
-斩木为兵，揭竿为旗，天下云集响应，赢粮而景从。
-山东豪俊遂并起而亡秦族矣。且夫天下非小弱也，雍州之地，崤函之固，自若也。
-陈涉之位，非尊于齐、楚、燕、赵、韩、魏、宋、卫、中山之君也；
-锄懮棘矜，非铦于钩戟长铩也；谪戍之众，非抗于九国之师也；深谋远虑，行军用兵之道，非及向时之士也。
-然而成败异变，功业相反，何也？试使山东之国与陈涉度长絜大，比权量力，则不可同年而语矣。
-然秦以区区之地，致万乘之势，序八州而朝同列，百有余年矣；然后以六合之家，崤函为宫；
-一夫作难而七庙隳，身死人手，为天下笑者，何也？仁义不施而攻守之势异也。</description>
+      <description>滕王阁序 唐 王勃 豫章故郡，洪都新府。星分翼轸，地接衡庐。 襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟。 人杰地灵，徐孺下陈蕃之榻。雄州雾列，俊采星驰。 台隍枕夷夏之交，宾主尽东南之美。 都督阎公之雅望，棨戟遥临；宇文新州之懿范，襜帷暂驻。 十旬休假，胜友如云；千里逢迎，高朋满座。腾蛟起凤，孟学士之词宗. 紫电青霜，王将军之武库。家君作宰，路出名区；童子何知，躬逢胜饯。 时维九月，序属三秋。潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿。 临帝子之长洲，得天人之旧馆。层峦耸翠，上出重霄；飞阁流丹，下临无地。 鹤汀凫渚，穷岛屿之萦回；桂殿兰宫，即冈峦之体势。
+披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。 闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。 云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。 渔舟唱晚，响穷彭蠡之滨，雁阵惊寒，声断衡阳之浦。 遥襟甫畅，逸兴遄飞。爽籁发而清风生，纤歌凝而白云遏。 睢园绿竹，气凌彭泽之樽；邺水朱华，光照临川之笔。 四美具，二难并。穷睇眄于中天，极娱游于暇日。天高地迥，觉宇宙之无穷； 兴尽悲来，识盈虚之有数。望长安于日下，目吴会于云间。 地势极而南溟深，天柱高而北辰远。关山难越，谁悲失路之人； 萍水相逢，尽是他乡之客。怀帝阍而不见，奉宣室以何年？ 嗟乎！时运不齐，命途多舛。冯唐易老，李广难封。 屈贾谊于长沙，非无圣主；窜梁鸿于海曲，岂乏明时？ 所赖君子见机，达人知命。老当益壮，宁移白首之心？穷且益坚，不坠青云之志。 酌贪泉而觉爽，处涸辙以犹欢。北海虽赊，扶摇可接；东隅已逝，桑榆非晚。 孟尝高洁，空余报国之情；阮籍猖狂，岂效穷途之哭！ 勃，三尺微命，一介书生。无路请缨，等终军之弱冠； 有怀投笔，慕宗悫之长风。舍簪笏于百龄，奉晨昏于万里。非谢家之宝树，接孟氏之芳邻。 他日趋庭，叨陪鲤对；今兹捧袂，喜托龙门。杨意不逢，抚凌云而自惜；钟期既遇，奏流水以何惭？ 呜呼！胜地不常，盛筵难再；兰亭已矣，梓泽丘墟。临别赠言，幸承恩于伟饯； 登高作赋，是所望于群公。敢竭鄙怀，恭疏短引；一言均赋，四韵俱成。请洒潘江，各倾陆海云尔； 滕王高阁临江渚，佩玉鸣鸾罢歌舞。 画栋朝飞南浦云，珠帘暮卷西山雨。 闲云潭影日悠悠，物换星移几度秋。 阁中帝子今何在？槛外长江空自流。
+过秦论 汉 贾谊 秦孝公据崤函之固，拥雍州之地，君臣固守以窥周室，有席卷天下，包举宇内，囊括四海之意，并吞八荒之心。 当是时也，商君佐之，内立法度，务耕织，修守战之具，外连衡而斗诸侯。于是秦人拱手而取西河之外。 孝公既没，惠文、武、昭襄蒙故业，因遗策，南取汉中，西举巴、蜀，东割膏腴之地，北收要害之郡。 诸侯恐惧，会盟而谋弱秦，不爱珍器重宝肥饶之地，以致天下之士，合从缔交，相与为一。 当此之时，齐有孟尝，赵有平原，楚有春申，魏有信陵。 此四君者，皆明智而忠信，宽厚而爱人，尊贤而重士，约从离衡，兼韩、魏、燕、楚、齐、赵、宋、卫、中山之众。 于是六国之士，有宁越、徐尚、苏秦、杜赫之属为之谋，齐明、周最、陈轸、召滑、楼缓、翟景、苏厉、乐毅之徒通其意，吴起、孙膑、带佗、倪良、王廖、田忌、廉颇、赵奢之伦制其兵。 尝以十倍之地，百万之众，叩关而攻秦。 秦人开关延敌，九国之师，逡巡而不敢进。秦无亡矢遗镞之费，而天下诸侯已困矣。于是从散约败，争割地而赂秦。 秦有余力而制其弊，追亡逐北，伏尸百万，流血漂橹；因利乘便，宰割天下，分裂山河。强国请服，弱国入朝。 延及孝文王、庄襄王，享国之日浅，国家无事。 及至始皇，奋六世之余烈，振长策而御宇内，吞二周而亡诸侯，履至尊而制六合，执敲扑而鞭笞天下，威振四海。 南取百越之地，以为桂林、象郡；百越之君，俯首系颈，委命下吏。乃使蒙恬北筑长城而守藩篱，却匈奴七百余里； 胡人不敢南下而牧马，士不敢弯弓而报怨。于是废先王之道，焚百家之言，以愚黔首；隳名城，杀豪杰； 收天下之兵，聚之咸阳，销锋镝，铸以为金人十二，以弱天下之民。 然后践华为城，因河为池，据亿丈之城，临不测之渊，以为固。 良将劲弩守要害之处，信臣精卒陈利兵而谁何。 天下已定，始皇之心，自以为关中之固，金城千里，子孙帝王万世之业也。 秦王既没，余威震于殊俗。然陈涉瓮牖绳枢之子，氓隶之人，而迁徙之徒也； 才能不及中人，非有仲尼，墨翟之贤，陶朱、猗顿之富； 蹑足行伍之间，而倔起阡陌之中，率疲弊之卒，将数百之众，转而攻秦； 斩木为兵，揭竿为旗，天下云集响应，赢粮而景从。 山东豪俊遂并起而亡秦族矣。且夫天下非小弱也，雍州之地，崤函之固，自若也。 陈涉之位，非尊于齐、楚、燕、赵、韩、魏、宋、卫、中山之君也； 锄懮棘矜，非铦于钩戟长铩也；谪戍之众，非抗于九国之师也；深谋远虑，行军用兵之道，非及向时之士也。 然而成败异变，功业相反，何也？试使山东之国与陈涉度长絜大，比权量力，则不可同年而语矣。 然秦以区区之地，致万乘之势，序八州而朝同列，百有余年矣；然后以六合之家，崤函为宫； 一夫作难而七庙隳，身死人手，为天下笑者，何也？仁义不施而攻守之势异也。</description>
     </item>
     
     <item>
@@ -492,9 +387,7 @@ limit（限制）： 用于限制查询结果的数量。
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</guid>
-      <description> 笔画
-笔画是指汉字书写时不间断的一次连续写成的一个线条 字根
-笔画交叉复合而成的固定结构,是构成汉字的最基本单位 不符规律的键位 横 G[五] F[二] D[古] S[木丁西] A[工] 竖 </description>
+      <description> 笔画 笔画是指汉字书写时不间断的一次连续写成的一个线条 字根 笔画交叉复合而成的固定结构,是构成汉字的最基本单位 不符规律的键位 横 G[五] F[二] D[古] S[木丁西] A[工] 竖 </description>
     </item>
     
     <item>
@@ -518,9 +411,7 @@ limit（限制）： 用于限制查询结果的数量。
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/</guid>
       <description>Wi-Fi 点对点传（二次开发） 实现任意设备之间的点对点对传, 任意设备包括 Android、IPhone、PC、MAC、Linux。
-需要重点关注的问题 如何通过扫二维码连接热点？
-接收端将WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码，接着发送方通过扫码 QR 二维码 获取WiFi信息从而成功连接上接收端WiFi，相关 Kotlin 代码如下。
-实现WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码 package dev.spiegl.flyingcarpet import android.app.Application import android.graphics.Bitmap import android.graphics.Color import androidx.documentfile.provider.DocumentFile import com.google.zxing.BarcodeFormat import com.google.zxing.qrcode.QRCodeWriter import java.io.File import java.nio.ByteBuffer import java.security.MessageDigest fun getQrCodeBitmap(ssid: String, password: String): Bitmap { val size = 1024 // pixels val qrCodeContent = &amp;#34;$ssid;$password&amp;#34; val bits = QRCodeWriter().encode(qrCodeContent, BarcodeFormat.QR_CODE, size, size) return Bitmap.createBitmap(size, size, Bitmap.Config.RGB_565).also { for (x in 0 until size) { for (y in 0 until size) { it.</description>
+需要重点关注的问题 如何通过扫二维码连接热点？ 接收端将WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码，接着发送方通过扫码 QR 二维码 获取WiFi信息从而成功连接上接收端WiFi，相关 Kotlin 代码如下。 实现WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码 package dev.spiegl.flyingcarpet import android.app.Application import android.graphics.Bitmap import android.graphics.Color import androidx.documentfile.provider.DocumentFile import com.google.zxing.BarcodeFormat import com.google.zxing.qrcode.QRCodeWriter import java.io.File import java.nio.ByteBuffer import java.security.MessageDigest fun getQrCodeBitmap(ssid: String, password: String): Bitmap { val size = 1024 // pixels val qrCodeContent = &amp;#34;$ssid;$password&amp;#34; val bits = QRCodeWriter().encode(qrCodeContent, BarcodeFormat.QR_CODE, size, size) return Bitmap.createBitmap(size, size, Bitmap.Config.RGB_565).also { for (x in 0 until size) { for (y in 0 until size) { it.</description>
     </item>
     
     <item>
@@ -588,8 +479,7 @@ UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
-      <description>正则表达式的所有元字符
-正则表达式的所有元字符包括(markdown表格列出来)：
+      <description>正则表达式的所有元字符 正则表达式的所有元字符包括(markdown表格列出来)：
 元字符 描述 . 匹配任意字符（除了换行符） \d 匹配数字字符 \D 匹配非数字字符 \w 匹配单词字符（字母、数字、下划线） \W 匹配非单词字符 \s 匹配空白字符（空格、制表符、换行符等） \S 匹配非空白字符 ^ 匹配字符串的开头 $ 匹配字符串的结尾 * 匹配前面的元素零次或多次 + 匹配前面的元素一次或多次 ? 表示前面的元素是可选的，匹配零次或一次 {n} 表示前面的元素恰好出现 n 次 {n,} 表示前面的元素至少出现 n 次 {n,m} 表示前面的元素出现 n 到 m 次之间 [] 字符集，匹配括号中任意一个字符 [^] 或 [^&amp;hellip;] 否定字符集，匹配除了括号中指定的任意字符之外的其他字符 </description>
     </item>
     
@@ -599,7 +489,7 @@ UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/moments/%E4%B8%AD%E5%9B%BD/</guid>
-      <description> 改革开放由中国共产党第二代中央领导集体核心邓小平提出和创立，是在1978年12月18日中共十一届三中全会后，开始实施的一系列以经济为主的改革措施，可总结为“对内改革，对外开放” https://photocdn.sohu.com/20081008/Img259904537.jpg 1979-04-01 @@@ “中华人民共和国! 中央人民政府! 今天成立了！” https://www.gov.cn/test/images/images/00188b27c9090bf5a75813.jpg 1949-10-01 </description>
+      <description> https://photocdn.sohu.com/20081008/Img259904537.jpg https://www.gov.cn/test/images/images/00188b27c9090bf5a75813.jpg </description>
     </item>
     
   </channel>

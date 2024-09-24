@@ -495,30 +495,17 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#概念类">概念类</a>
       <ul>
-        <li><a href="#概念类">概念类</a>
-          <ul>
-            <li><a href="#什么是-闭包装饰器">什么是 闭包/装饰器?</a>
-              <ul>
-                <li><a href="#理解闭包的应用场景">理解闭包的应用场景</a></li>
-                <li><a href="#理解装饰器的应用场景">理解装饰器的应用场景</a></li>
-              </ul>
-            </li>
-            <li><a href="#什么是-可迭代对象生成器迭代器">什么是 可迭代对象/生成器/迭代器?</a>
-              <ul>
-                <li><a href="#理解-yield">理解 yield</a></li>
-              </ul>
-            </li>
-            <li><a href="#什么是单例模式">什么是单例模式?</a></li>
-            <li><a href="#什么是浅拷贝和深拷贝">什么是浅拷贝和深拷贝?</a></li>
-            <li><a href="#什么是猴子补丁">什么是猴子补丁?</a></li>
-            <li><a href="#什么是方法重载和方法重写">什么是方法重载和方法重写?</a></li>
-          </ul>
-        </li>
-        <li><a href="#参考">参考:</a></li>
+        <li><a href="#什么是-闭包装饰器">什么是 闭包/装饰器?</a></li>
+        <li><a href="#什么是-可迭代对象生成器迭代器">什么是 可迭代对象/生成器/迭代器?</a></li>
+        <li><a href="#什么是单例模式">什么是单例模式?</a></li>
+        <li><a href="#什么是浅拷贝和深拷贝">什么是浅拷贝和深拷贝?</a></li>
+        <li><a href="#什么是猴子补丁">什么是猴子补丁?</a></li>
+        <li><a href="#什么是方法重载和方法重写">什么是方法重载和方法重写?</a></li>
       </ul>
     </li>
+    <li><a href="#参考">参考:</a></li>
   </ul>
 </nav>
 
@@ -989,7 +976,7 @@
   
   <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f">什么是单例模式?</a>
 </h3>
-<p>单例模式: 一个类只能创建一个对象的模式<br>
+<p>单例模式: 一个类只能创建一个对象的模式
 实现方法:</p>
 <ul>
 <li>装饰器</li>
@@ -1057,10 +1044,10 @@
 <p>深拷贝带来的两个问题:</p>
 <ul>
 <li>若对象引用了自身, 可能会导致无休止的递归拷贝</li>
-<li>原本的共享数据进行拷贝, 造成内存的多占用<br>
-解决方法:<br>
-思路:  根据<code>deepcopy</code>函数的本质其实就是对象的一次序列化和一次返回序列化,<br>
-第一个问题用 memo 字典来跟踪已经复制的值, 避免无限递归<br>
+<li>原本的共享数据进行拷贝, 造成内存的多占用
+解决方法:
+思路:  根据<code>deepcopy</code>函数的本质其实就是对象的一次序列化和一次返回序列化,
+第一个问题用 memo 字典来跟踪已经复制的值, 避免无限递归
 第二个则是使用 <code>pickle</code> 模块的<code>dumps</code>和<code>loads</code>来做到自定义深拷贝</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pickle
@@ -1070,7 +1057,7 @@
   
   <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e7%8c%b4%e5%ad%90%e8%a1%a5%e4%b8%81">什么是猴子补丁?</a>
 </h3>
-<p>猴子补丁是动态派生类型的编程语言(如Python, ruby)<br>
+<p>猴子补丁是动态派生类型的编程语言(如Python, ruby)
 猴子补丁允许在运行时修改现有代码，而无需直接修改源代码，非常灵活</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 原始的Python内置方法</span>
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># 输出: &#34;HELLO&#34;</span>
@@ -1088,8 +1075,8 @@
   
   <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e6%96%b9%e6%b3%95%e9%87%8d%e8%bd%bd%e5%92%8c%e6%96%b9%e6%b3%95%e9%87%8d%e5%86%99">什么是方法重载和方法重写?</a>
 </h3>
-<p>方法重写: 方法名和方法参数保持一致<br>
-方法重载: 方法名保持, 方法参数修改<br>
+<p>方法重写: 方法名和方法参数保持一致
+方法重载: 方法名保持, 方法参数修改
 注: Python 没有方法重载, 因为Python 可以通过可变默认参数来解决</p>
 <h2 id="参考">
   
@@ -1148,7 +1135,7 @@
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.bd1e2a8469e586d55f4e83f2b8b8be78b3fa4d9697c3acbf14ee460f8cd77bbc.js" integrity="sha256-vR4qhGnlhtVfToPyuLi&#43;eLP6TZaXw6y/FO5GD4zXe7w=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.23f53d08a0183d8e3b15d7bfdcf66453d158cd16143a9ebc8171749a42d8813f.js" integrity="sha256-I/U9CKAYPY47Fde/3PZkU9FYzRYUOp68gXF0mkLYgT8=" crossorigin="anonymous"></script>
 
       </footer>
 

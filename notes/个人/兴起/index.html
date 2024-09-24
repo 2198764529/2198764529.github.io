@@ -497,26 +497,12 @@
   <ul>
     <li>
       <ul>
-        <li>
-          <ul>
-            <li><a href="#wi-fi-点对点传二次开发">Wi-Fi 点对点传（二次开发）</a>
-              <ul>
-                <li><a href="#需要重点关注的问题">需要重点关注的问题</a></li>
-              </ul>
-            </li>
-            <li><a href="#首页美化计划">首页美化计划</a></li>
-            <li><a href="#万物皆有定数">万物皆有定数</a></li>
-            <li><a href="#一言">一言</a>
-              <ul>
-                <li><a href="#介绍">介绍</a></li>
-                <li><a href="#待定计划">待定计划</a></li>
-                <li><a href="#参考内容">参考内容</a></li>
-              </ul>
-            </li>
-            <li><a href="#有书可读方案">有书可读方案</a></li>
-            <li><a href="#个人存储方案">个人存储方案</a></li>
-          </ul>
-        </li>
+        <li><a href="#wi-fi-点对点传二次开发">Wi-Fi 点对点传（二次开发）</a></li>
+        <li><a href="#首页美化计划">首页美化计划</a></li>
+        <li><a href="#万物皆有定数">万物皆有定数</a></li>
+        <li><a href="#一言">一言</a></li>
+        <li><a href="#有书可读方案">有书可读方案</a></li>
+        <li><a href="#个人存储方案">个人存储方案</a></li>
       </ul>
     </li>
   </ul>
@@ -623,8 +609,8 @@
   <a href="#%e9%9c%80%e8%a6%81%e9%87%8d%e7%82%b9%e5%85%b3%e6%b3%a8%e7%9a%84%e9%97%ae%e9%a2%98">需要重点关注的问题</a>
 </h4>
 <ol>
-<li>如何通过扫二维码连接热点？<br>
-接收端将WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码，接着发送方通过扫码 QR 二维码 获取WiFi信息从而成功连接上接收端WiFi，相关 Kotlin 代码如下。<br>
+<li>如何通过扫二维码连接热点？
+接收端将WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码，接着发送方通过扫码 QR 二维码 获取WiFi信息从而成功连接上接收端WiFi，相关 Kotlin 代码如下。
 实现WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">package</span> dev.spiegl.flyingcarpet
@@ -691,8 +677,8 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        joinHotspot()  
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><ol start="2">
-<li>连接热点以后如何建立 TCP 连接<br>
-先是获取这个 设备IP, 后面再通过 socket 进行文件传输，相关 Kotlin 代码如下。<br>
+<li>连接热点以后如何建立 TCP 连接
+先是获取这个 设备IP, 后面再通过 socket 进行文件传输，相关 Kotlin 代码如下。
 获取这个 设备IP</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#75715e">// this is our findGateway(), so after we get the gateway/dhcp server ip we&#39;re ready to confirm mode and launch transfer
@@ -875,7 +861,7 @@
   
   <a href="#%e9%a6%96%e9%a1%b5%e7%be%8e%e5%8c%96%e8%ae%a1%e5%88%92">首页美化计划</a>
 </h3>
-<p>目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化<br>
+<p>目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
 步骤如下</p>
 <ol>
 <li>初步利用网页组件美化</li>
@@ -886,7 +872,7 @@
   
   <a href="#%e4%b8%87%e7%89%a9%e7%9a%86%e6%9c%89%e5%ae%9a%e6%95%b0">万物皆有定数</a>
 </h3>
-<p>方式:  系统api/相关软件/自行记录<br>
+<p>方式:  系统api/相关软件/自行记录
 数据格式: JSON<br>
 内容: 与我有关的所有数据,单位为天</p>
 <ul>
@@ -950,23 +936,23 @@
 </h3>
 <ol>
 <li>
-<p>NAS<br>
-好处在于可扩展存储，数据安全，价格也不算特别高<br>
+<p>NAS
+好处在于可扩展存储，数据安全，价格也不算特别高
 坏处在于速度和可用性需要网络支持，需要内网穿透或者公网IP，且需要24小时开启，费电</p>
 </li>
 <li>
-<p>Type-C U盘<br>
-好处在于速度有保障、不需要依赖网络<br>
+<p>Type-C U盘
+好处在于速度有保障、不需要依赖网络
 坏处在于用时候没法充电，容易丢失，带来发热量，价格略贵</p>
 </li>
 <li>
-<p>SD 卡 存储<br>
-好处在于速度有保障、不需要依赖网络<br>
+<p>SD 卡 存储
+好处在于速度有保障、不需要依赖网络
 坏处在于容易丢失，带来发热量，价格贵</p>
 </li>
 <li>
-<p>网络云盘（阿里云盘等）<br>
-好处在于可扩展存储，数据安全，价格也不算特别高<br>
+<p>网络云盘（阿里云盘等）
+好处在于可扩展存储，数据安全，价格也不算特别高
 坏处在于速度和可用性需要运营商支持，一般来说，速度都比较慢</p>
 </li>
 </ol>
@@ -1064,7 +1050,7 @@
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.bd1e2a8469e586d55f4e83f2b8b8be78b3fa4d9697c3acbf14ee460f8cd77bbc.js" integrity="sha256-vR4qhGnlhtVfToPyuLi&#43;eLP6TZaXw6y/FO5GD4zXe7w=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.23f53d08a0183d8e3b15d7bfdcf66453d158cd16143a9ebc8171749a42d8813f.js" integrity="sha256-I/U9CKAYPY47Fde/3PZkU9FYzRYUOp68gXF0mkLYgT8=" crossorigin="anonymous"></script>
 
       </footer>
 
