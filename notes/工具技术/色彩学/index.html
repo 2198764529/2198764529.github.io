@@ -500,9 +500,30 @@
         <li>
           <ul>
             <li><a href="#总览">总览</a></li>
-            <li><a href="#什么叫原色">什么叫原色</a></li>
+            <li><a href="#什么叫原色">什么叫原色</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#怎么表示颜色">怎么表示颜色</a>
+                      <ul>
+                        <li><a href="#两种进制如何转换">两种进制如何转换？</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li><a href="#什么叫间色">什么叫间色</a></li>
-            <li><a href="#什么叫复色">什么叫复色</a></li>
+            <li><a href="#什么叫复色">什么叫复色</a>
+              <ul>
+                <li><a href="#红色为主色调的">红色为主色调的：</a></li>
+                <li><a href="#蓝色为主色调的">蓝色为主色调的：</a></li>
+                <li><a href="#绿色为主色调的">绿色为主色调的：</a></li>
+                <li><a href="#两色调的">两色调的：</a></li>
+                <li><a href="#三色调的">三色调的：</a></li>
+              </ul>
+            </li>
+            <li><a href="#黑白色">黑白色</a></li>
             <li><a href="#参考">参考:</a></li>
           </ul>
         </li>
@@ -566,7 +587,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1725528972"></span>
+      <span class="Lastmod ios_boder" data-unix="1727174749"></span>
 
     </span>
     <span>
@@ -576,7 +597,7 @@
 
       文章字数:
       </small>
-      492
+      1052
       
 
     </span>
@@ -616,17 +637,30 @@
 原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：</p>
 <ul>
 <li><strong>光学三原色</strong>（RGB）：红（Red）、绿（Green）、蓝（Blue）。这些原色用于光的混合，比如显示器、投影仪等。</li>
-<li><strong>颜料三原色</strong>（CMY）：青（Cyan）、品红（Magenta）、黄（Yellow）。这是用于印刷和绘画中的颜料混合</li>
+<li><strong>颜料三原色</strong>（CMY）：青（Cyan）、品红（Magenta）、黄（Yellow）。这是用于印刷和绘画中的颜料混合, 一般用于艺术画画, 这种不在本文讨论范围内.</li>
 </ul>
+<h5 id="怎么表示颜色">
+  
+  <a href="#%e6%80%8e%e4%b9%88%e8%a1%a8%e7%a4%ba%e9%a2%9c%e8%89%b2">怎么表示颜色</a>
+</h5>
+<p>一般有两种方式来表示颜色，</p>
+<ul>
+<li>十六进制， 如#FFFFFF、#000000</li>
+<li>RGB数值，如rgb(0,0,0)、rgb(255,255,255)</li>
+</ul>
+<h6 id="两种进制如何转换">
+  
+  <a href="#%e4%b8%a4%e7%a7%8d%e8%bf%9b%e5%88%b6%e5%a6%82%e4%bd%95%e8%bd%ac%e6%8d%a2">两种进制如何转换？</a>
+</h6>
+<p>RGB实际上是十进制,所以要将十六进制转为十进制即可, 每两位数是一个十六进制, 十六进制中A~F=11~16<br>
+举例：将 #B60023 转成 RGB 格式<br>
+过程如下，R值=B6=B(11) * 16 + 6 = 182, G=00=0, B=23=2 * 16+ 3 =35<br>
+所以 #B60023 值等于 rgb(182,0,35)</p>
 <p>后面的一种不需要关注, 只需要看光学三原色</p>
 <ul>
-<li>红(Red)</li>
-<li>绿（green）</li>
-<li>蓝（blue）<br>
-
-<svg class="colorWheel" width="300" height="300" data-colors="[&#34;#FF0000&#34;, &#34;#00FF00&#34;, &#34;#0000FF&#34;]" viewBox="0 0 400 400">
-    
-</svg></li>
+<li>红色-Red：rgb(255,0,0)</li>
+<li>绿色-Green：rgb(0,255,0)</li>
+<li>蓝色-Blue：rgb(0,0,255)</li>
 </ul>
 <h3 id="什么叫间色">
   
@@ -634,22 +668,60 @@
 </h3>
 <p>间色是通过两种原色混合而成的，组合之后新增了下面三种颜色</p>
 <ul>
-<li>橙色(红黄)</li>
-<li>紫色（红蓝）</li>
-<li>绿色（黄蓝)<br>
-
-<svg class="colorWheel" width="300" height="300" data-colors="[&#34;#FF0000&#34;, &#34;#00FF00&#34;, &#34;#0000FF&#34;, &#34;#FFFF00&#34;, &#34;#FF00FF&#34;, &#34;#00FFFF&#34;]" viewBox="0 0 400 400">
-    
-</svg></li>
+<li>黄色-Yellow：rgb(255,0,255)</li>
+<li>紫色-Purple：rgb(255,0,255)</li>
+<li>青色-Cyan：rgb(0,255,255)</li>
 </ul>
 <h3 id="什么叫复色">
   
   <a href="#%e4%bb%80%e4%b9%88%e5%8f%ab%e5%a4%8d%e8%89%b2">什么叫复色</a>
 </h3>
-<p>间色是通过三种颜色混合而成的，除了原色间色以外的所有颜色都是复色.</p>
-
-
-<div class="colorList" data-filePath="/data/site/colors.json"></div>
+<p>间色是通过三种颜色混合而成的，除了原色、间色、黑白色以外的所有颜色都是复色.<br>
+下面是一些常见的复色</p>
+<h4 id="红色为主色调的">
+  
+  <a href="#%e7%ba%a2%e8%89%b2%e4%b8%ba%e4%b8%bb%e8%89%b2%e8%b0%83%e7%9a%84">红色为主色调的：</a>
+</h4>
+<ul>
+<li>粉色-Pink：rgb(255, 192, 203)</li>
+<li>金色-Gold：rgb(255, 215, 0)</li>
+<li>橙色-Orange：rgb(255, 165, 0)</li>
+</ul>
+<h4 id="蓝色为主色调的">
+  
+  <a href="#%e8%93%9d%e8%89%b2%e4%b8%ba%e4%b8%bb%e8%89%b2%e8%b0%83%e7%9a%84">蓝色为主色调的：</a>
+</h4>
+<ul>
+<li>靛青-Indigo：rgb(75, 0, 130)</li>
+</ul>
+<h4 id="绿色为主色调的">
+  
+  <a href="#%e7%bb%bf%e8%89%b2%e4%b8%ba%e4%b8%bb%e8%89%b2%e8%b0%83%e7%9a%84">绿色为主色调的：</a>
+</h4>
+<h4 id="两色调的">
+  
+  <a href="#%e4%b8%a4%e8%89%b2%e8%b0%83%e7%9a%84">两色调的：</a>
+</h4>
+<ul>
+<li>橄榄-Olive：rgb(128, 128, 0)</li>
+</ul>
+<h4 id="三色调的">
+  
+  <a href="#%e4%b8%89%e8%89%b2%e8%b0%83%e7%9a%84">三色调的：</a>
+</h4>
+<ul>
+<li>灰色-Gray：rgb(128,128,128)</li>
+<li>银色-Gray：rgb(192,192,192)</li>
+</ul>
+<h3 id="黑白色">
+  
+  <a href="#%e9%bb%91%e7%99%bd%e8%89%b2">黑白色</a>
+</h3>
+<p>黑色和白色是两种特殊的颜色，黑色是什么颜色都没有就是白色，白色是RGB满的复色</p>
+<ul>
+<li>黑色：rgb(0,0,0)</li>
+<li>白色：rgb(255,255,255)</li>
+</ul>
 <h3 id="参考">
   
   <a href="#%e5%8f%82%e8%80%83">参考:</a>
@@ -667,6 +739,8 @@
   <a href="https://www.shutterstock.com/zh-Hant/blog/101-free-color-combinations-design-inspiration">驚豔！101款讓人愛不釋手的 免費商用設計配色組合 (shutterstock.com)</a></li>
 <li>
   <a href="https://colorhunt.co/palettes/cold">Cold Color Palettes - Color Hunt</a></li>
+<li>
+  <a href="https://htmlcolorcodes.com/zh/yanse-ming/">https://htmlcolorcodes.com/zh/yanse-ming/</a></li>
 </ul>
 </article>
  
@@ -717,7 +791,7 @@
 
 <script src="https://ltao.top/js/colorShow.min.58dc8c694dc6e0cbad62829af89a4a4084f514caa8de46e62dfecea1bd15411b.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.e5cb3f454f9ccceeb46bc5ca1c38957105b2b0037cc6eee56436996fadc6c5b0.js" integrity="sha256-5cs/RU&#43;czO60a8XKHDiVcQWysAN8xu7lZDaZb63GxbA=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.bd1e2a8469e586d55f4e83f2b8b8be78b3fa4d9697c3acbf14ee460f8cd77bbc.js" integrity="sha256-vR4qhGnlhtVfToPyuLi&#43;eLP6TZaXw6y/FO5GD4zXe7w=" crossorigin="anonymous"></script>
 
       </footer>
 
