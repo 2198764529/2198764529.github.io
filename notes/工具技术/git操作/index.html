@@ -499,8 +499,51 @@
       <ul>
         <li>
           <ul>
-            <li>
+            <li><a href="#git-常用命令">git 常用命令</a>
               <ul>
+                <li><a href="#查看信息">查看信息</a>
+                  <ul>
+                    <li><a href="#git-show-查看-commit-详细信息">git show: 查看 commit 详细信息</a></li>
+                    <li><a href="#git-help-显示-git-相关的帮助信息">git help: 显示 Git 相关的帮助信息</a></li>
+                    <li><a href="#git-status-显示工作目录和暂存区的相关信息">git status: 显示工作目录和暂存区的相关信息</a></li>
+                    <li><a href="#git-diff-显示工作区和暂存区的差异">git diff: 显示工作区和暂存区的差异</a></li>
+                    <li><a href="#git-log-列出所有提交日志信息">git log: 列出所有提交日志信息</a></li>
+                    <li><a href="#git-shortlog汇总所有贡献者的提交记录">git shortlog：汇总所有贡献者的提交记录</a></li>
+                    <li><a href="#git-describe-给出一个可读的名称来表示最近的提交">git describe： 给出一个可读的名称来表示最近的提交</a></li>
+                  </ul>
+                </li>
+                <li><a href="#推送和更新信息">推送和更新信息</a>
+                  <ul>
+                    <li><a href="#git-add-将文件添加到暂存区">git add: 将文件添加到暂存区</a></li>
+                    <li><a href="#git-commit-将文件提交到暂存区">git commit: 将文件提交到暂存区</a></li>
+                    <li><a href="#git-fetch-获取最新的文件-但不会合并">git fetch: 获取最新的文件, 但不会合并</a></li>
+                    <li><a href="#git-pull-fetch和merge的组合命令-即获取最新版本接着合并">git pull: fetch和merge的组合命令, 即获取最新版本接着合并</a></li>
+                    <li><a href="#git-push-将-commit-信息提交">git push: 将 commit 信息提交</a></li>
+                    <li><a href="#git-tag-给-commit-打上-标签">git tag: 给 commit 打上 标签</a></li>
+                  </ul>
+                </li>
+                <li><a href="#分支管理">分支管理</a>
+                  <ul>
+                    <li><a href="#git-branch-列出新建或删除分支">git branch: 列出,新建或删除分支</a></li>
+                    <li><a href="#git-checkout-切换分支或恢复工作区文件">git checkout: 切换分支或恢复工作区文件</a></li>
+                    <li><a href="#git-merge-合并分支">git merge: 合并分支</a></li>
+                    <li><a href="#git-mergetool-解决合并冲突">git mergetool: 解决合并冲突</a></li>
+                    <li><a href="#git-rebase将一个-commit-重新合并到当前分支">git rebase：将一个 commit 重新合并到当前分支</a></li>
+                    <li><a href="#git-reset-将当前-head-复位到指定状态">git reset: 将当前 HEAD 复位到指定状态</a></li>
+                    <li><a href="#git-remote-管理远程仓库的列表和配置">git remote: 管理远程仓库的列表和配置</a></li>
+                  </ul>
+                </li>
+                <li><a href="#文件管理">文件管理</a>
+                  <ul>
+                    <li><a href="#git-clone-将一个-git-仓库克隆到指定路径">git clone: 将一个 Git 仓库克隆到指定路径</a></li>
+                    <li><a href="#git-init-创建一个空的-git-仓库或者重新初始化一个仓库">git init: 创建一个空的 Git 仓库或者重新初始化一个仓库</a></li>
+                    <li><a href="#git-config-配置-git-外观和操作">git config: 配置 Git 外观和操作</a></li>
+                    <li><a href="#git-mv-移动工作区和暂存区的文件">git mv: 移动工作区和暂存区的文件</a></li>
+                    <li><a href="#git-rm-删除工作区和暂存区中文件">git rm: 删除工作区和暂存区中文件</a></li>
+                    <li><a href="#git-stash-临时保存所有更改文件">git stash: 临时保存所有更改文件</a></li>
+                    <li><a href="#git-submodule-将另一个-git-仓库作为子模块">git submodule: 将另一个 Git 仓库作为子模块</a></li>
+                  </ul>
+                </li>
                 <li><a href="#覆盖本地">覆盖本地</a></li>
               </ul>
             </li>
@@ -566,7 +609,7 @@
       <small class="ios_boder">
         最近更新:
       </small>
-      <span class="Lastmod ios_boder" data-unix="1724232802"></span>
+      <span class="Lastmod ios_boder" data-unix="1727168409"></span>
 
     </span>
     <span>
@@ -576,7 +619,7 @@
 
       文章字数:
       </small>
-      11
+      420
       
 
     </span>
@@ -602,7 +645,135 @@
 
       
       
-<article class="markdown card"><h4 id="覆盖本地">
+<article class="markdown card"><h3 id="git-常用命令">
+  
+  <a href="#git-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4">git 常用命令</a>
+</h3>
+<h4 id="查看信息">
+  
+  <a href="#%e6%9f%a5%e7%9c%8b%e4%bf%a1%e6%81%af">查看信息</a>
+</h4>
+<h5 id="git-show-查看-commit-详细信息">
+  
+  <a href="#git-show-%e6%9f%a5%e7%9c%8b-commit-%e8%af%a6%e7%bb%86%e4%bf%a1%e6%81%af">git show: 查看 commit 详细信息</a>
+</h5>
+<h5 id="git-help-显示-git-相关的帮助信息">
+  
+  <a href="#git-help-%e6%98%be%e7%a4%ba-git-%e7%9b%b8%e5%85%b3%e7%9a%84%e5%b8%ae%e5%8a%a9%e4%bf%a1%e6%81%af">git help: 显示 Git 相关的帮助信息</a>
+</h5>
+<h5 id="git-status-显示工作目录和暂存区的相关信息">
+  
+  <a href="#git-status-%e6%98%be%e7%a4%ba%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95%e5%92%8c%e6%9a%82%e5%ad%98%e5%8c%ba%e7%9a%84%e7%9b%b8%e5%85%b3%e4%bf%a1%e6%81%af">git status: 显示工作目录和暂存区的相关信息</a>
+</h5>
+<h5 id="git-diff-显示工作区和暂存区的差异">
+  
+  <a href="#git-diff-%e6%98%be%e7%a4%ba%e5%b7%a5%e4%bd%9c%e5%8c%ba%e5%92%8c%e6%9a%82%e5%ad%98%e5%8c%ba%e7%9a%84%e5%b7%ae%e5%bc%82">git diff: 显示工作区和暂存区的差异</a>
+</h5>
+<h5 id="git-log-列出所有提交日志信息">
+  
+  <a href="#git-log-%e5%88%97%e5%87%ba%e6%89%80%e6%9c%89%e6%8f%90%e4%ba%a4%e6%97%a5%e5%bf%97%e4%bf%a1%e6%81%af">git log: 列出所有提交日志信息</a>
+</h5>
+<h5 id="git-shortlog汇总所有贡献者的提交记录">
+  
+  <a href="#git-shortlog%e6%b1%87%e6%80%bb%e6%89%80%e6%9c%89%e8%b4%a1%e7%8c%ae%e8%80%85%e7%9a%84%e6%8f%90%e4%ba%a4%e8%ae%b0%e5%bd%95">git shortlog：汇总所有贡献者的提交记录</a>
+</h5>
+<h5 id="git-describe-给出一个可读的名称来表示最近的提交">
+  
+  <a href="#git-describe-%e7%bb%99%e5%87%ba%e4%b8%80%e4%b8%aa%e5%8f%af%e8%af%bb%e7%9a%84%e5%90%8d%e7%a7%b0%e6%9d%a5%e8%a1%a8%e7%a4%ba%e6%9c%80%e8%bf%91%e7%9a%84%e6%8f%90%e4%ba%a4">git describe： 给出一个可读的名称来表示最近的提交</a>
+</h5>
+<h4 id="推送和更新信息">
+  
+  <a href="#%e6%8e%a8%e9%80%81%e5%92%8c%e6%9b%b4%e6%96%b0%e4%bf%a1%e6%81%af">推送和更新信息</a>
+</h4>
+<h5 id="git-add-将文件添加到暂存区">
+  
+  <a href="#git-add-%e5%b0%86%e6%96%87%e4%bb%b6%e6%b7%bb%e5%8a%a0%e5%88%b0%e6%9a%82%e5%ad%98%e5%8c%ba">git add: 将文件添加到暂存区</a>
+</h5>
+<h5 id="git-commit-将文件提交到暂存区">
+  
+  <a href="#git-commit-%e5%b0%86%e6%96%87%e4%bb%b6%e6%8f%90%e4%ba%a4%e5%88%b0%e6%9a%82%e5%ad%98%e5%8c%ba">git commit: 将文件提交到暂存区</a>
+</h5>
+<h5 id="git-fetch-获取最新的文件-但不会合并">
+  
+  <a href="#git-fetch-%e8%8e%b7%e5%8f%96%e6%9c%80%e6%96%b0%e7%9a%84%e6%96%87%e4%bb%b6-%e4%bd%86%e4%b8%8d%e4%bc%9a%e5%90%88%e5%b9%b6">git fetch: 获取最新的文件, 但不会合并</a>
+</h5>
+<h5 id="git-pull-fetch和merge的组合命令-即获取最新版本接着合并">
+  
+  <a href="#git-pull-fetch%e5%92%8cmerge%e7%9a%84%e7%bb%84%e5%90%88%e5%91%bd%e4%bb%a4-%e5%8d%b3%e8%8e%b7%e5%8f%96%e6%9c%80%e6%96%b0%e7%89%88%e6%9c%ac%e6%8e%a5%e7%9d%80%e5%90%88%e5%b9%b6">git pull: fetch和merge的组合命令, 即获取最新版本接着合并</a>
+</h5>
+<h5 id="git-push-将-commit-信息提交">
+  
+  <a href="#git-push-%e5%b0%86-commit-%e4%bf%a1%e6%81%af%e6%8f%90%e4%ba%a4">git push: 将 commit 信息提交</a>
+</h5>
+<h5 id="git-tag-给-commit-打上-标签">
+  
+  <a href="#git-tag-%e7%bb%99-commit-%e6%89%93%e4%b8%8a-%e6%a0%87%e7%ad%be">git tag: 给 commit 打上 标签</a>
+</h5>
+<h4 id="分支管理">
+  
+  <a href="#%e5%88%86%e6%94%af%e7%ae%a1%e7%90%86">分支管理</a>
+</h4>
+<h5 id="git-branch-列出新建或删除分支">
+  
+  <a href="#git-branch-%e5%88%97%e5%87%ba%e6%96%b0%e5%bb%ba%e6%88%96%e5%88%a0%e9%99%a4%e5%88%86%e6%94%af">git branch: 列出,新建或删除分支</a>
+</h5>
+<h5 id="git-checkout-切换分支或恢复工作区文件">
+  
+  <a href="#git-checkout-%e5%88%87%e6%8d%a2%e5%88%86%e6%94%af%e6%88%96%e6%81%a2%e5%a4%8d%e5%b7%a5%e4%bd%9c%e5%8c%ba%e6%96%87%e4%bb%b6">git checkout: 切换分支或恢复工作区文件</a>
+</h5>
+<h5 id="git-merge-合并分支">
+  
+  <a href="#git-merge-%e5%90%88%e5%b9%b6%e5%88%86%e6%94%af">git merge: 合并分支</a>
+</h5>
+<h5 id="git-mergetool-解决合并冲突">
+  
+  <a href="#git-mergetool-%e8%a7%a3%e5%86%b3%e5%90%88%e5%b9%b6%e5%86%b2%e7%aa%81">git mergetool: 解决合并冲突</a>
+</h5>
+<h5 id="git-rebase将一个-commit-重新合并到当前分支">
+  
+  <a href="#git-rebase%e5%b0%86%e4%b8%80%e4%b8%aa-commit-%e9%87%8d%e6%96%b0%e5%90%88%e5%b9%b6%e5%88%b0%e5%bd%93%e5%89%8d%e5%88%86%e6%94%af">git rebase：将一个 commit 重新合并到当前分支</a>
+</h5>
+<h5 id="git-reset-将当前-head-复位到指定状态">
+  
+  <a href="#git-reset-%e5%b0%86%e5%bd%93%e5%89%8d-head-%e5%a4%8d%e4%bd%8d%e5%88%b0%e6%8c%87%e5%ae%9a%e7%8a%b6%e6%80%81">git reset: 将当前 HEAD 复位到指定状态</a>
+</h5>
+<h5 id="git-remote-管理远程仓库的列表和配置">
+  
+  <a href="#git-remote-%e7%ae%a1%e7%90%86%e8%bf%9c%e7%a8%8b%e4%bb%93%e5%ba%93%e7%9a%84%e5%88%97%e8%a1%a8%e5%92%8c%e9%85%8d%e7%bd%ae">git remote: 管理远程仓库的列表和配置</a>
+</h5>
+<h4 id="文件管理">
+  
+  <a href="#%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86">文件管理</a>
+</h4>
+<h5 id="git-clone-将一个-git-仓库克隆到指定路径">
+  
+  <a href="#git-clone-%e5%b0%86%e4%b8%80%e4%b8%aa-git-%e4%bb%93%e5%ba%93%e5%85%8b%e9%9a%86%e5%88%b0%e6%8c%87%e5%ae%9a%e8%b7%af%e5%be%84">git clone: 将一个 Git 仓库克隆到指定路径</a>
+</h5>
+<h5 id="git-init-创建一个空的-git-仓库或者重新初始化一个仓库">
+  
+  <a href="#git-init-%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aa%e7%a9%ba%e7%9a%84-git-%e4%bb%93%e5%ba%93%e6%88%96%e8%80%85%e9%87%8d%e6%96%b0%e5%88%9d%e5%a7%8b%e5%8c%96%e4%b8%80%e4%b8%aa%e4%bb%93%e5%ba%93">git init: 创建一个空的 Git 仓库或者重新初始化一个仓库</a>
+</h5>
+<h5 id="git-config-配置-git-外观和操作">
+  
+  <a href="#git-config-%e9%85%8d%e7%bd%ae-git-%e5%a4%96%e8%a7%82%e5%92%8c%e6%93%8d%e4%bd%9c">git config: 配置 Git 外观和操作</a>
+</h5>
+<h5 id="git-mv-移动工作区和暂存区的文件">
+  
+  <a href="#git-mv-%e7%a7%bb%e5%8a%a8%e5%b7%a5%e4%bd%9c%e5%8c%ba%e5%92%8c%e6%9a%82%e5%ad%98%e5%8c%ba%e7%9a%84%e6%96%87%e4%bb%b6">git mv: 移动工作区和暂存区的文件</a>
+</h5>
+<h5 id="git-rm-删除工作区和暂存区中文件">
+  
+  <a href="#git-rm-%e5%88%a0%e9%99%a4%e5%b7%a5%e4%bd%9c%e5%8c%ba%e5%92%8c%e6%9a%82%e5%ad%98%e5%8c%ba%e4%b8%ad%e6%96%87%e4%bb%b6">git rm: 删除工作区和暂存区中文件</a>
+</h5>
+<h5 id="git-stash-临时保存所有更改文件">
+  
+  <a href="#git-stash-%e4%b8%b4%e6%97%b6%e4%bf%9d%e5%ad%98%e6%89%80%e6%9c%89%e6%9b%b4%e6%94%b9%e6%96%87%e4%bb%b6">git stash: 临时保存所有更改文件</a>
+</h5>
+<h5 id="git-submodule-将另一个-git-仓库作为子模块">
+  
+  <a href="#git-submodule-%e5%b0%86%e5%8f%a6%e4%b8%80%e4%b8%aa-git-%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%ba%e5%ad%90%e6%a8%a1%e5%9d%97">git submodule: 将另一个 Git 仓库作为子模块</a>
+</h5>
+<h4 id="覆盖本地">
   
   <a href="#%e8%a6%86%e7%9b%96%e6%9c%ac%e5%9c%b0">覆盖本地</a>
 </h4>
@@ -655,7 +826,7 @@ git reset --hard origin/&lt;branch_name&gt;
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.b9b9411727bf9656d41596ab1a18c809dcc504350bf00264c07d2f6bcb47b6f7.js" integrity="sha256-ublBFye/llbUFZarGhjICdzFBDUL8AJkwH0va8tHtvc=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.e5cb3f454f9ccceeb46bc5ca1c38957105b2b0037cc6eee56436996fadc6c5b0.js" integrity="sha256-5cs/RU&#43;czO60a8XKHDiVcQWysAN8xu7lZDaZb63GxbA=" crossorigin="anonymous"></script>
 
       </footer>
 
