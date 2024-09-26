@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir=" ltr">
+<html lang="zh-cn"
+  dir="ltr">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +13,7 @@
 <link rel="icon" src="https://ltao.top/img/favicon/favicon.ico">
 
 
-<link rel="stylesheet" href="/scss/book.min.fd6bbfc435cc9e208ad30d4c50a8274101f2a1cbac0a5cbf90fd871ead2a87dc.css" integrity="sha256-/Wu/xDXMniCK0w1MUKgnQQHyocusCly/kP2HHq0qh9w=" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/book.min.5b4dc1d6d0daa5c11ffcb2f301b12c96725fbee8d59aff59494dde751727d3d9.css" integrity="sha256-W03B1tDapcEf/LLzAbEslnJfvujVmv9ZSU3edRcn09k=" crossorigin="anonymous">
 
 
 <script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
@@ -20,14 +21,477 @@
   
 </head>
 
-<body dir=" ltr">
+<body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
-    <aside class="book-menu ">
-      <div class="book-menu-content card">
+    
+<div class="book-page">
+  <header class="book-header card">
+
+<div class="left">
+  
+    <div class="note-header">
+  <div class="note-title">
+    <a href="/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/">
+      兴起
+    </a>
+  </div>
+  <div class="note-meta">
+    <span>
+      <small>最近更新:</small>
+      <span class="Lastmod" data-unix="1727170381"></span>
+    </span>
+    <span>
         
-<nav>
+            <small>笔记字数:</small>
+            1632
+        
+    </span>
+  </div>
+</div>
+  
+</div>
+<div class="right">
+  <label for="menu-control">
+  <img src="https://ltao.top/img/svg/menu.svg" class="book-icon" alt="Menu" />
+</label>
+</div>
+</header>
+
+
+
+
+  
+  
+<article class="markdown card">
+  
+
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#wi-fi-点对点传二次开发">Wi-Fi 点对点传（二次开发）</a></li>
+        <li><a href="#首页美化计划">首页美化计划</a></li>
+        <li><a href="#万物皆有定数">万物皆有定数</a></li>
+        <li><a href="#一言">一言</a></li>
+        <li><a href="#有书可读方案">有书可读方案</a></li>
+        <li><a href="#个人存储方案">个人存储方案</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+<h3 id="wi-fi-点对点传二次开发">
+  
+  Wi-Fi 点对点传（二次开发）
+</h3>
+<p>实现任意设备之间的点对点对传, 任意设备包括 Android、IPhone、PC、MAC、Linux。</p>
+<h4 id="需要重点关注的问题">
+  
+  需要重点关注的问题
+</h4>
+<ol>
+<li>如何通过扫二维码连接热点？
+接收端将WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码，接着发送方通过扫码 QR 二维码 获取WiFi信息从而成功连接上接收端WiFi，相关 Kotlin 代码如下。
+实现WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">package</span> dev.spiegl.flyingcarpet
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> android.app.Application
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> android.graphics.Bitmap
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> android.graphics.Color
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> androidx.documentfile.provider.DocumentFile
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> com.google.zxing.BarcodeFormat
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> com.google.zxing.qrcode.QRCodeWriter
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.io.File
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.nio.ByteBuffer
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.security.MessageDigest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getQrCodeBitmap</span>(ssid: String, password: String): Bitmap {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> size = <span style="color:#ae81ff">1024</span> <span style="color:#75715e">// pixels
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> qrCodeContent = <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$ssid</span><span style="color:#e6db74">;</span><span style="color:#e6db74">$password</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> bits = QRCodeWriter().encode(qrCodeContent, BarcodeFormat.QR_CODE, size, size)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Bitmap.createBitmap(size, size, Bitmap.Config.RGB_565).also {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (x <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until size) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> (y <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until size) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">it</span>.setPixel(x, y, <span style="color:#66d9ef">if</span> (bits[x, y]) Color.BLACK <span style="color:#66d9ef">else</span> Color.WHITE)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>实现读取QR码来获取SSID和密码</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>barcodeLauncher = registerForActivityResult(ScanContract()) { result <span style="color:#f92672">-&gt;</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (result.contents <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {  
+</span></span><span style="display:flex;"><span>        viewModel.outputText(<span style="color:#e6db74">&#34;Scan cancelled, exiting transfer.&#34;</span>)  
+</span></span><span style="display:flex;"><span>        cleanUpTransfer()  
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> ssidAndPassword = result.contents.split(<span style="color:#e6db74">&#39;;&#39;</span>)  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (ssidAndPassword.count() &gt; <span style="color:#ae81ff">1</span>) {  
+</span></span><span style="display:flex;"><span>            viewModel.ssid = ssidAndPassword[<span style="color:#ae81ff">0</span>]  
+</span></span><span style="display:flex;"><span>            viewModel.password = ssidAndPassword[<span style="color:#ae81ff">1</span>]  
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// make sha256 hash of password  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">val</span> hasher = MessageDigest.getInstance(<span style="color:#e6db74">&#34;SHA-256&#34;</span>)  
+</span></span><span style="display:flex;"><span>            hasher.update(viewModel.password.encodeToByteArray())  
+</span></span><span style="display:flex;"><span>            viewModel.key = hasher.digest()  
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {  
+</span></span><span style="display:flex;"><span>            viewModel.password = ssidAndPassword[<span style="color:#ae81ff">0</span>]  
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// make sha256 hash of password  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">val</span> hasher = MessageDigest.getInstance(<span style="color:#e6db74">&#34;SHA-256&#34;</span>)  
+</span></span><span style="display:flex;"><span>            hasher.update(viewModel.password.encodeToByteArray())  
+</span></span><span style="display:flex;"><span>            viewModel.key = hasher.digest()  
+</span></span><span style="display:flex;"><span>            viewModel.ssid =  
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;flyingCarpet_%02x%02x&#34;</span>.format(viewModel.key[<span style="color:#ae81ff">0</span>], viewModel.key[<span style="color:#ae81ff">1</span>])  
+</span></span><span style="display:flex;"><span>        }  
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// join hotspot  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        joinHotspot()  
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><ol start="2">
+<li>连接热点以后如何建立 TCP 连接
+先是获取这个 设备IP, 后面再通过 socket 进行文件传输，相关 Kotlin 代码如下。
+获取这个 设备IP</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#75715e">// this is our findGateway(), so after we get the gateway/dhcp server ip we&#39;re ready to confirm mode and launch transfer
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onLinkPropertiesChanged</span>(network: Network, linkProperties: LinkProperties) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">super</span>.onLinkPropertiesChanged(network, linkProperties)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// check if transfer was cancelled before this callback ran
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (!transferIsRunning) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		 <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// this was set to null in joinHotspot right before requesting the network that triggers this function.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// check that it&#39;s null so we only start the transfer once per joinHotspot invocation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (peerIP <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		 <span style="color:#66d9ef">if</span> (Build.VERSION.SDK_INT <span style="color:#f92672">&gt;=</span> Build.VERSION_CODES.R) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			  linkProperties.dhcpServerAddress<span style="color:#f92672">?.</span>let { peerIP = <span style="color:#66d9ef">it</span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		 } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			  <span style="color:#66d9ef">for</span> (route <span style="color:#66d9ef">in</span> linkProperties.routes) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>					<span style="color:#66d9ef">if</span> (route.isDefaultRoute) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>						 peerIP = route.gateway <span style="color:#66d9ef">as</span> Inet4Address?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>					}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		 }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		 transferCoroutine = GlobalScope.launch {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			  <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>					startTransfer()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			  } <span style="color:#66d9ef">catch</span> (e: Exception) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>					outputText(<span style="color:#e6db74">&#34;Transfer error: </span><span style="color:#e6db74">${e.message}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			  _transferFinished.postValue(<span style="color:#66d9ef">true</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		 }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>获取热点的设备IP</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span> <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">suspend</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">startTCP</span>() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  withContext(Dispatchers.IO) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> (isHosting()) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 server = ServerSocket(PORT)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 client = server.accept()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 client = Socket(peerIP, <span style="color:#ae81ff">3290</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			client.sendBufferSize = chunkSize * <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			client.receiveBufferSize = chunkSize * <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			inputStream = client.getInputStream()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			outputStream = client.getOutputStream()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><ol start="3">
+<li>建立 TCP 连接之后如何传输文件</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span> <span style="color:#66d9ef">suspend</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">startTransfer</span>() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  outputText(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Starting Transfer&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  startTCP()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  confirmVersion()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  confirmMode()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  <span style="color:#75715e">// send/receive
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	  <span style="color:#66d9ef">if</span> (mode <span style="color:#f92672">==</span> Mode.Sending) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// tell receiving end how many files we&#39;re sending
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">val</span> numFilesBytes = longToBigEndianBytes(fileStreams.size.toLong())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			withContext(Dispatchers.IO) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 outputStream.write(numFilesBytes) <span style="color:#75715e">// write to receiving end
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// send files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until fileStreams.size) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;=========================&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;Sending file </span><span style="color:#e6db74">${i + 1}</span><span style="color:#e6db74"> of </span><span style="color:#e6db74">${fileStreams.size}</span><span style="color:#e6db74">. Filename: </span><span style="color:#e6db74">${files[i].name}</span><span style="color:#e6db74">.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 <span style="color:#66d9ef">val</span> path = <span style="color:#66d9ef">if</span> (i &lt; filePaths.size) { filePaths[i] } <span style="color:#66d9ef">else</span> { <span style="color:#e6db74">&#34;&#34;</span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 sendFile(files[i], fileStreams[i], path)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (mode <span style="color:#f92672">==</span> Mode.Receiving) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// find out how many files we&#39;re receiving
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">val</span> numFilesBytes = readNBytes(<span style="color:#ae81ff">8</span>, inputStream)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">val</span> numFiles = ByteBuffer.wrap(numFilesBytes).long
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// receive files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until numFiles) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;=========================&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;Receiving file </span><span style="color:#e6db74">${i + 1}</span><span style="color:#e6db74"> of </span><span style="color:#e6db74">$numFiles</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				 receiveFile(i <span style="color:#f92672">==</span> numFiles - <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  outputText(<span style="color:#e6db74">&#34;=========================&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	  outputText(<span style="color:#e6db74">&#34;Transfer complete</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><ol start="4">
+<li>如何判定哪些设备在编程时开热点和连接网络有不可行性?</li>
+</ol>
+<p>参考文档</p>
+<ul>
+<li><a href="https://book.kotlincn.net/text/getting-started.html">入门 · Kotlin 官方文档 中文版 (kotlincn.net)</a></li>
+<li><a href="https://blog.csdn.net/zeternityyt/article/details/79655150">android SDK安装以及环境变量配置（windows）_在windows上,需要将android sdk的路径添加到系统的环境变量中,这样你就可以在命令-CSDN博客</a></li>
+<li><a href="https://kotlin.liying-cn.net/docs/reference_zh/native/native-get-started.html">Kotlin/Native 开发入门 - 使用 IntelliJ IDEA - Kotlin 语言参考文档 中文版 (liying-cn.net)</a></li>
+</ul>
+<p>该项目参考已经实现的项目</p>
+<ul>
+<li><a href="https://github.com/spieglt/flyingcarpet">spieglt/FlyingCarpet：跨平台 AirDrop。通过 ad hoc WiFi 在 Android、iOS、Linux、macOS 和 Windows 之间传输文件。无需网络基础设施，只需两台带有 WiFi 芯片的近距离设备。 (github.com)</a></li>
+</ul>
+<h3 id="首页美化计划">
+  
+  首页美化计划
+</h3>
+<p>目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
+步骤如下</p>
+<ol>
+<li>初步利用网页组件美化</li>
+<li>搞定数据的存储和传输</li>
+<li>图表可视化</li>
+</ol>
+<h3 id="万物皆有定数">
+  
+  万物皆有定数
+</h3>
+<p>方式:  系统api/相关软件/自行记录
+数据格式: JSON<br>
+内容: 与我有关的所有数据,单位为天</p>
+<ul>
+<li>步数</li>
+<li>睡眠时长, 睡眠起始点</li>
+<li>键盘输入字符数量 \ 鼠标点击次数</li>
+<li>饮水量 \ 吃饭内容</li>
+<li>洗澡 \ 洗头</li>
+<li>购物记录</li>
+<li>重要的定数
+<ul>
+<li>计算力</li>
+<li>记忆力</li>
+<li>意志力</li>
+</ul>
+</li>
+</ul>
+<h3 id="一言">
+  
+  一言
+</h3>
+<h4 id="介绍">
+  
+  介绍
+</h4>
+<p>在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.JSON文件和.CSV文件等.</p>
+<h4 id="待定计划">
+  
+  待定计划
+</h4>
+<ul>
+<li>短信应用开发</li>
+<li>移动端和PC端应用开发</li>
+</ul>
+<h4 id="参考内容">
+  
+  参考内容
+</h4>
+<ul>
+<li><a href="http://blog.lwons.com/archieve/3_entity_search_databases.html">http://blog.lwons.com/archieve/3_entity_search_databases.html</a></li>
+<li><a href="https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/">https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/</a></li>
+<li><a href="https://www.wikidata.org/w/api.php?action=wbsearchentities&amp;search=Fudan&amp;language=en&amp;limit=20&amp;format=json">https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Fudan&language=en&limit=20&format=json</a></li>
+<li>Wikipedia json数据 <a href="https://dumps.wikimedia.org/wikidatawiki/entities/">https://dumps.wikimedia.org/wikidatawiki/entities/</a></li>
+</ul>
+<h3 id="有书可读方案">
+  
+  有书可读方案
+</h3>
+<ul>
+<li>电子书</li>
+<li>下载到本地</li>
+<li>优秀的阅读体验</li>
+</ul>
+<h3 id="个人存储方案">
+  
+  个人存储方案
+</h3>
+<ol>
+<li>
+<p>NAS
+好处在于可扩展存储，数据安全，价格也不算特别高
+坏处在于速度和可用性需要网络支持，需要内网穿透或者公网IP，且需要24小时开启，费电</p>
+</li>
+<li>
+<p>Type-C U盘
+好处在于速度有保障、不需要依赖网络
+坏处在于用时候没法充电，容易丢失，带来发热量，价格略贵</p>
+</li>
+<li>
+<p>SD 卡 存储
+好处在于速度有保障、不需要依赖网络
+坏处在于容易丢失，带来发热量，价格贵</p>
+</li>
+<li>
+<p>网络云盘（阿里云盘等）
+好处在于可扩展存储，数据安全，价格也不算特别高
+坏处在于速度和可用性需要运营商支持，一般来说，速度都比较慢</p>
+</li>
+</ol>
+<p>最后总结一下,四个存储方案,供大家参考</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>价格</th>
+<th>读写速度</th>
+<th>可扩展性</th>
+<th>稳定性</th>
+<th>其他问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAS</td>
+<td>硬盘便宜,NAS本身贵,网费和电费月支</td>
+<td>网速</td>
+<td>多块硬盘</td>
+<td>极其稳定</td>
+<td></td>
+</tr>
+<tr>
+<td>Type-C U盘</td>
+<td>价格</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SD 卡存储</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>网络云盘(阿里云盘等)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+ 
+  
+
+  <label for="menu-control" class="hidden book-menu-overlay"></label>
+</div>
+
+
+
+    
+<aside class="book-menu">
+  <div class="book-menu-content card">
+    <nav>
 <h2 class="book-logo">
     <a class="myFont" href="/">
 
@@ -489,9 +953,7 @@
   <script>(function(){var t,e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop),console.log("1")}),t=document.getElementsByClassName("book-menu-overlay"),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
- 
-
-        
+    
 
 <nav id="TableOfContents">
   <ul>
@@ -510,18 +972,14 @@
 
 
 
-
-
-        
-<div class="card">
+    <div class="footer">
   <p>
     <span>
       <small> Power by</small>
       <a href="https://gohugo.io">Hugo</a> 0.100.2
-
     </span>
-    
-
+  </p>
+  <p>
     <span>
       <small> 运行时间: </small>
       
@@ -529,487 +987,13 @@
       579天
 
     </span>
-
   </p>
-
-
 </div>
- 
-
-      </div>
-
-    </aside>
-
-    <div class="book-page">
-      
-        
-<header class="book-header card">
-
-<div class="left">
-  <div class="note-header">
-  <div class="note-title">
-    <a href="/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B4%E8%B5%B7/">
-
-      兴起
-    </a>
-
   </div>
-
-  <div class="note-meta">
-
-
-    <span>
-
-      <small class="ios_boder">
-        最近更新:
-      </small>
-      <span class="Lastmod ios_boder" data-unix="1727170381"></span>
-
-    </span>
-    <span>
-
-      <small class="ios_boder">
-        
-
-      文章字数:
-      </small>
-      1632
-      
-
-    </span>
-
-
-  </div>
-</div>
-
-</div>
-<div class="right">
-  <label for="menu-control">
-  <img src='' class="book-icon" alt="Menu" />
-
-</label>
-</div>
-
-</header>
-
-
-
-
- 
-
-      
-      
-<article class="markdown card"><h3 id="wi-fi-点对点传二次开发">
+</aside>
+<footer class="book-footer">
   
-  <a href="#wi-fi-%e7%82%b9%e5%af%b9%e7%82%b9%e4%bc%a0%e4%ba%8c%e6%ac%a1%e5%bc%80%e5%8f%91">Wi-Fi 点对点传（二次开发）</a>
-</h3>
-<p>实现任意设备之间的点对点对传, 任意设备包括 Android、IPhone、PC、MAC、Linux。</p>
-<h4 id="需要重点关注的问题">
-  
-  <a href="#%e9%9c%80%e8%a6%81%e9%87%8d%e7%82%b9%e5%85%b3%e6%b3%a8%e7%9a%84%e9%97%ae%e9%a2%98">需要重点关注的问题</a>
-</h4>
-<ol>
-<li>如何通过扫二维码连接热点？
-接收端将WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码，接着发送方通过扫码 QR 二维码 获取WiFi信息从而成功连接上接收端WiFi，相关 Kotlin 代码如下。
-实现WiFi信息(WiFi类型、安全等级、SSID、、密码)生成 QR 二维码</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">package</span> dev.spiegl.flyingcarpet
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> android.app.Application
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> android.graphics.Bitmap
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> android.graphics.Color
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> androidx.documentfile.provider.DocumentFile
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> com.google.zxing.BarcodeFormat
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> com.google.zxing.qrcode.QRCodeWriter
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.io.File
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.nio.ByteBuffer
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> java.security.MessageDigest
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getQrCodeBitmap</span>(ssid: String, password: String): Bitmap {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> size = <span style="color:#ae81ff">1024</span> <span style="color:#75715e">// pixels
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> qrCodeContent = <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$ssid</span><span style="color:#e6db74">;</span><span style="color:#e6db74">$password</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> bits = QRCodeWriter().encode(qrCodeContent, BarcodeFormat.QR_CODE, size, size)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Bitmap.createBitmap(size, size, Bitmap.Config.RGB_565).also {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (x <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until size) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> (y <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until size) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">it</span>.setPixel(x, y, <span style="color:#66d9ef">if</span> (bits[x, y]) Color.BLACK <span style="color:#66d9ef">else</span> Color.WHITE)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>实现读取QR码来获取SSID和密码</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>barcodeLauncher = registerForActivityResult(ScanContract()) { result <span style="color:#f92672">-&gt;</span>  
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (result.contents <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {  
-</span></span><span style="display:flex;"><span>        viewModel.outputText(<span style="color:#e6db74">&#34;Scan cancelled, exiting transfer.&#34;</span>)  
-</span></span><span style="display:flex;"><span>        cleanUpTransfer()  
-</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {  
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> ssidAndPassword = result.contents.split(<span style="color:#e6db74">&#39;;&#39;</span>)  
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (ssidAndPassword.count() &gt; <span style="color:#ae81ff">1</span>) {  
-</span></span><span style="display:flex;"><span>            viewModel.ssid = ssidAndPassword[<span style="color:#ae81ff">0</span>]  
-</span></span><span style="display:flex;"><span>            viewModel.password = ssidAndPassword[<span style="color:#ae81ff">1</span>]  
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// make sha256 hash of password  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">val</span> hasher = MessageDigest.getInstance(<span style="color:#e6db74">&#34;SHA-256&#34;</span>)  
-</span></span><span style="display:flex;"><span>            hasher.update(viewModel.password.encodeToByteArray())  
-</span></span><span style="display:flex;"><span>            viewModel.key = hasher.digest()  
-</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {  
-</span></span><span style="display:flex;"><span>            viewModel.password = ssidAndPassword[<span style="color:#ae81ff">0</span>]  
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// make sha256 hash of password  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">val</span> hasher = MessageDigest.getInstance(<span style="color:#e6db74">&#34;SHA-256&#34;</span>)  
-</span></span><span style="display:flex;"><span>            hasher.update(viewModel.password.encodeToByteArray())  
-</span></span><span style="display:flex;"><span>            viewModel.key = hasher.digest()  
-</span></span><span style="display:flex;"><span>            viewModel.ssid =  
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;flyingCarpet_%02x%02x&#34;</span>.format(viewModel.key[<span style="color:#ae81ff">0</span>], viewModel.key[<span style="color:#ae81ff">1</span>])  
-</span></span><span style="display:flex;"><span>        }  
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// join hotspot  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        joinHotspot()  
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><ol start="2">
-<li>连接热点以后如何建立 TCP 连接
-先是获取这个 设备IP, 后面再通过 socket 进行文件传输，相关 Kotlin 代码如下。
-获取这个 设备IP</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#75715e">// this is our findGateway(), so after we get the gateway/dhcp server ip we&#39;re ready to confirm mode and launch transfer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onLinkPropertiesChanged</span>(network: Network, linkProperties: LinkProperties) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">super</span>.onLinkPropertiesChanged(network, linkProperties)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// check if transfer was cancelled before this callback ran
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (!transferIsRunning) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		 <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// this was set to null in joinHotspot right before requesting the network that triggers this function.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// check that it&#39;s null so we only start the transfer once per joinHotspot invocation
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (peerIP <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		 <span style="color:#66d9ef">if</span> (Build.VERSION.SDK_INT <span style="color:#f92672">&gt;=</span> Build.VERSION_CODES.R) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			  linkProperties.dhcpServerAddress<span style="color:#f92672">?.</span>let { peerIP = <span style="color:#66d9ef">it</span> }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		 } <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			  <span style="color:#66d9ef">for</span> (route <span style="color:#66d9ef">in</span> linkProperties.routes) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>					<span style="color:#66d9ef">if</span> (route.isDefaultRoute) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>						 peerIP = route.gateway <span style="color:#66d9ef">as</span> Inet4Address?
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>					}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		 }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		 transferCoroutine = GlobalScope.launch {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			  <span style="color:#66d9ef">try</span> {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>					startTransfer()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			  } <span style="color:#66d9ef">catch</span> (e: Exception) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>					outputText(<span style="color:#e6db74">&#34;Transfer error: </span><span style="color:#e6db74">${e.message}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			  _transferFinished.postValue(<span style="color:#66d9ef">true</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		 }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>获取热点的设备IP</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span> <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">suspend</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">startTCP</span>() {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  withContext(Dispatchers.IO) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> (isHosting()) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 server = ServerSocket(PORT)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 client = server.accept()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			} <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 client = Socket(peerIP, <span style="color:#ae81ff">3290</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			client.sendBufferSize = chunkSize * <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			client.receiveBufferSize = chunkSize * <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			inputStream = client.getInputStream()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			outputStream = client.getOutputStream()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> }
-</span></span></code></pre></div><ol start="3">
-<li>建立 TCP 连接之后如何传输文件</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span> <span style="color:#66d9ef">suspend</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">startTransfer</span>() {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  outputText(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Starting Transfer&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  startTCP()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  confirmVersion()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  confirmMode()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  <span style="color:#75715e">// send/receive
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	  <span style="color:#66d9ef">if</span> (mode <span style="color:#f92672">==</span> Mode.Sending) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// tell receiving end how many files we&#39;re sending
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">val</span> numFilesBytes = longToBigEndianBytes(fileStreams.size.toLong())
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			withContext(Dispatchers.IO) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 outputStream.write(numFilesBytes) <span style="color:#75715e">// write to receiving end
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>			}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// send files
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until fileStreams.size) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;=========================&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;Sending file </span><span style="color:#e6db74">${i + 1}</span><span style="color:#e6db74"> of </span><span style="color:#e6db74">${fileStreams.size}</span><span style="color:#e6db74">. Filename: </span><span style="color:#e6db74">${files[i].name}</span><span style="color:#e6db74">.&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 <span style="color:#66d9ef">val</span> path = <span style="color:#66d9ef">if</span> (i &lt; filePaths.size) { filePaths[i] } <span style="color:#66d9ef">else</span> { <span style="color:#e6db74">&#34;&#34;</span> }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 sendFile(files[i], fileStreams[i], path)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (mode <span style="color:#f92672">==</span> Mode.Receiving) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// find out how many files we&#39;re receiving
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">val</span> numFilesBytes = readNBytes(<span style="color:#ae81ff">8</span>, inputStream)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">val</span> numFiles = ByteBuffer.wrap(numFilesBytes).long
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// receive files
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span> until numFiles) {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;=========================&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 outputText(<span style="color:#e6db74">&#34;Receiving file </span><span style="color:#e6db74">${i + 1}</span><span style="color:#e6db74"> of </span><span style="color:#e6db74">$numFiles</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				 receiveFile(i <span style="color:#f92672">==</span> numFiles - <span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>			}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  outputText(<span style="color:#e6db74">&#34;=========================&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	  outputText(<span style="color:#e6db74">&#34;Transfer complete</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> }
-</span></span></code></pre></div><ol start="4">
-<li>如何判定哪些设备在编程时开热点和连接网络有不可行性?</li>
-</ol>
-<p>参考文档</p>
-<ul>
-<li>
-  <a href="https://book.kotlincn.net/text/getting-started.html">入门 · Kotlin 官方文档 中文版 (kotlincn.net)</a></li>
-<li>
-  <a href="https://blog.csdn.net/zeternityyt/article/details/79655150">android SDK安装以及环境变量配置（windows）_在windows上,需要将android sdk的路径添加到系统的环境变量中,这样你就可以在命令-CSDN博客</a></li>
-<li>
-  <a href="https://kotlin.liying-cn.net/docs/reference_zh/native/native-get-started.html">Kotlin/Native 开发入门 - 使用 IntelliJ IDEA - Kotlin 语言参考文档 中文版 (liying-cn.net)</a></li>
-</ul>
-<p>该项目参考已经实现的项目</p>
-<ul>
-<li>
-  <a href="https://github.com/spieglt/flyingcarpet">spieglt/FlyingCarpet：跨平台 AirDrop。通过 ad hoc WiFi 在 Android、iOS、Linux、macOS 和 Windows 之间传输文件。无需网络基础设施，只需两台带有 WiFi 芯片的近距离设备。 (github.com)</a></li>
-</ul>
-<h3 id="首页美化计划">
-  
-  <a href="#%e9%a6%96%e9%a1%b5%e7%be%8e%e5%8c%96%e8%ae%a1%e5%88%92">首页美化计划</a>
-</h3>
-<p>目的是增强博客的丰富度和内容,使得博客不再那么枯燥无味,并进一步将个人数据透明化和可视化
-步骤如下</p>
-<ol>
-<li>初步利用网页组件美化</li>
-<li>搞定数据的存储和传输</li>
-<li>图表可视化</li>
-</ol>
-<h3 id="万物皆有定数">
-  
-  <a href="#%e4%b8%87%e7%89%a9%e7%9a%86%e6%9c%89%e5%ae%9a%e6%95%b0">万物皆有定数</a>
-</h3>
-<p>方式:  系统api/相关软件/自行记录
-数据格式: JSON<br>
-内容: 与我有关的所有数据,单位为天</p>
-<ul>
-<li>步数</li>
-<li>睡眠时长, 睡眠起始点</li>
-<li>键盘输入字符数量 \ 鼠标点击次数</li>
-<li>饮水量 \ 吃饭内容</li>
-<li>洗澡 \ 洗头</li>
-<li>购物记录</li>
-<li>重要的定数
-<ul>
-<li>计算力</li>
-<li>记忆力</li>
-<li>意志力</li>
-</ul>
-</li>
-</ul>
-<h3 id="一言">
-  
-  <a href="#%e4%b8%80%e8%a8%80">一言</a>
-</h3>
-<h4 id="介绍">
-  
-  <a href="#%e4%bb%8b%e7%bb%8d">介绍</a>
-</h4>
-<p>在息屏或者锁屏状态下显示一段话,可以运行在移动端或者PC端,每隔一定的时间按照某种顺序来切换另一段话,数据接口可以为本地或网络上的.JSON文件和.CSV文件等.</p>
-<h4 id="待定计划">
-  
-  <a href="#%e5%be%85%e5%ae%9a%e8%ae%a1%e5%88%92">待定计划</a>
-</h4>
-<ul>
-<li>短信应用开发</li>
-<li>移动端和PC端应用开发</li>
-</ul>
-<h4 id="参考内容">
-  
-  <a href="#%e5%8f%82%e8%80%83%e5%86%85%e5%ae%b9">参考内容</a>
-</h4>
-<ul>
-<li>
-  <a href="http://blog.lwons.com/archieve/3_entity_search_databases.html">http://blog.lwons.com/archieve/3_entity_search_databases.html</a></li>
-<li>
-  <a href="https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/">https://languageresources.github.io/2018/03/07/%E8%8B%97%E8%8F%81%E8%8F%81_Wikidata%E7%9F%A5%E8%AF%86%E5%BA%93/</a></li>
-<li>
-  <a href="https://www.wikidata.org/w/api.php?action=wbsearchentities&amp;search=Fudan&amp;language=en&amp;limit=20&amp;format=json">https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Fudan&language=en&limit=20&format=json</a></li>
-<li>Wikipedia json数据 
-  <a href="https://dumps.wikimedia.org/wikidatawiki/entities/">https://dumps.wikimedia.org/wikidatawiki/entities/</a></li>
-</ul>
-<h3 id="有书可读方案">
-  
-  <a href="#%e6%9c%89%e4%b9%a6%e5%8f%af%e8%af%bb%e6%96%b9%e6%a1%88">有书可读方案</a>
-</h3>
-<ul>
-<li>电子书</li>
-<li>下载到本地</li>
-<li>优秀的阅读体验</li>
-</ul>
-<h3 id="个人存储方案">
-  
-  <a href="#%e4%b8%aa%e4%ba%ba%e5%ad%98%e5%82%a8%e6%96%b9%e6%a1%88">个人存储方案</a>
-</h3>
-<ol>
-<li>
-<p>NAS
-好处在于可扩展存储，数据安全，价格也不算特别高
-坏处在于速度和可用性需要网络支持，需要内网穿透或者公网IP，且需要24小时开启，费电</p>
-</li>
-<li>
-<p>Type-C U盘
-好处在于速度有保障、不需要依赖网络
-坏处在于用时候没法充电，容易丢失，带来发热量，价格略贵</p>
-</li>
-<li>
-<p>SD 卡 存储
-好处在于速度有保障、不需要依赖网络
-坏处在于容易丢失，带来发热量，价格贵</p>
-</li>
-<li>
-<p>网络云盘（阿里云盘等）
-好处在于可扩展存储，数据安全，价格也不算特别高
-坏处在于速度和可用性需要运营商支持，一般来说，速度都比较慢</p>
-</li>
-</ol>
-<p>最后总结一下,四个存储方案,供大家参考</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>价格</th>
-<th>读写速度</th>
-<th>可扩展性</th>
-<th>稳定性</th>
-<th>其他问题</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NAS</td>
-<td>硬盘便宜,NAS本身贵,网费和电费月支</td>
-<td>网速</td>
-<td>多块硬盘</td>
-<td>极其稳定</td>
-<td></td>
-</tr>
-<tr>
-<td>Type-C U盘</td>
-<td>价格</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>SD 卡存储</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>网络云盘(阿里云盘等)</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</article>
- 
-      
-
-      <footer class="book-footer">
-        
-        <div id="viewer-container"></div>
+  <div id="viewer-container"></div>
 
 <script>
   
@@ -1050,31 +1034,15 @@
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.23f53d08a0183d8e3b15d7bfdcf66453d158cd16143a9ebc8171749a42d8813f.js" integrity="sha256-I/U9CKAYPY47Fde/3PZkU9FYzRYUOp68gXF0mkLYgT8=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.266b59b654a15c087a197e83482886fd49f454dfee4b5837dc1ba1cb1b2db425.js" integrity="sha256-JmtZtlShXAh6GX6DSCiG/Un0VN/uS1g33BuhyxsttCU=" crossorigin="anonymous"></script>
 
-      </footer>
+<script src="https://ltao.top/js/scroll-hidde-menu.min.16d292a5e18c8732f538d0847b710be561831319d07dc1569ee386b3e5ee3d0a.js"></script>
 
-      
-
-<div class="book-comments">
-
-</div>
-
+</footer>
  
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
   </main>
-
-  
 </body>
-
 </html>
-
-
-
-
 
 
 

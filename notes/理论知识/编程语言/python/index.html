@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir=" ltr">
+<html lang="zh-cn"
+  dir="ltr">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +13,7 @@
 <link rel="icon" src="https://ltao.top/img/favicon/favicon.ico">
 
 
-<link rel="stylesheet" href="/scss/book.min.fd6bbfc435cc9e208ad30d4c50a8274101f2a1cbac0a5cbf90fd871ead2a87dc.css" integrity="sha256-/Wu/xDXMniCK0w1MUKgnQQHyocusCly/kP2HHq0qh9w=" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/book.min.5b4dc1d6d0daa5c11ffcb2f301b12c96725fbee8d59aff59494dde751727d3d9.css" integrity="sha256-W03B1tDapcEf/LLzAbEslnJfvujVmv9ZSU3edRcn09k=" crossorigin="anonymous">
 
 
 <script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
@@ -20,14 +21,566 @@
   
 </head>
 
-<body dir=" ltr">
+<body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
-    <aside class="book-menu ">
-      <div class="book-menu-content card">
+    
+<div class="book-page">
+  <header class="book-header card">
+
+<div class="left">
+  
+    <div class="note-header">
+  <div class="note-title">
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/">
+      Python
+    </a>
+  </div>
+  <div class="note-meta">
+    <span>
+      <small>最近更新:</small>
+      <span class="Lastmod" data-unix="1725014635"></span>
+    </span>
+    <span>
         
-<nav>
+            <small>笔记字数:</small>
+            2283
+        
+    </span>
+  </div>
+</div>
+  
+</div>
+<div class="right">
+  <label for="menu-control">
+  <img src="https://ltao.top/img/svg/menu.svg" class="book-icon" alt="Menu" />
+</label>
+</div>
+</header>
+
+
+
+
+  
+  
+<article class="markdown card">
+  
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#概念类">概念类</a>
+      <ul>
+        <li><a href="#什么是-闭包装饰器">什么是 闭包/装饰器?</a></li>
+        <li><a href="#什么是-可迭代对象生成器迭代器">什么是 可迭代对象/生成器/迭代器?</a></li>
+        <li><a href="#什么是单例模式">什么是单例模式?</a></li>
+        <li><a href="#什么是浅拷贝和深拷贝">什么是浅拷贝和深拷贝?</a></li>
+        <li><a href="#什么是猴子补丁">什么是猴子补丁?</a></li>
+        <li><a href="#什么是方法重载和方法重写">什么是方法重载和方法重写?</a></li>
+      </ul>
+    </li>
+    <li><a href="#参考">参考:</a></li>
+  </ul>
+</nav>
+
+
+<h2 id="概念类">
+  
+  概念类
+</h2>
+<h3 id="什么是-闭包装饰器">
+  
+  什么是 闭包/装饰器?
+</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>闭包</th>
+<th>装饰器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>本质</td>
+<td>嵌套返回函数的函数</td>
+<td>用于扩展修改类或方法的闭包</td>
+</tr>
+<tr>
+<td>特征</td>
+<td>嵌套的函数,内部函数使用外部函数的参数,返回内部函数</td>
+<td>闭包特征 + 参数传入为被装饰函数</td>
+</tr>
+<tr>
+<td>目的</td>
+<td>使得内部函数可以访问外部函数的变量</td>
+<td>不修改函数本身，修改或扩展函数功能</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>可能会造成额外的内存占用</td>
+<td>闭包的缺点</td>
+</tr>
+<tr>
+<td>应用场景</td>
+<td>数据封装;工厂函数;函调函数;延迟计算;装饰器;缓存结果</td>
+<td>记录日志;统计时间;访问控制;参数验证;重试机制</td>
+</tr>
+</tbody>
+</table>
+<h4 id="理解闭包的应用场景">
+  
+  理解闭包的应用场景
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 闭包示例代码合集</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 数据封装</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">counter</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># count 变量被封装在闭包内，外部无法直接访问</span>
+</span></span><span style="display:flex;"><span>    count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">increment</span>():
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 使用 nonlocal 关键字，闭包可以修改外部函数的变量</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">nonlocal</span> count
+</span></span><span style="display:flex;"><span>        count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> count
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> increment
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建一个闭包实例，并多次调用它</span>
+</span></span><span style="display:flex;"><span>counter_func <span style="color:#f92672">=</span> counter()
+</span></span><span style="display:flex;"><span>print(counter_func())  <span style="color:#75715e"># 输出: 1</span>
+</span></span><span style="display:flex;"><span>print(counter_func())  <span style="color:#75715e"># 输出: 2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 工厂函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_multiplier</span>(factor):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># multiplier 函数捕获了外部的 factor 变量</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">multiplier</span>(x):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> factor
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> multiplier
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建不同的乘数函数</span>
+</span></span><span style="display:flex;"><span>double <span style="color:#f92672">=</span> make_multiplier(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>triple <span style="color:#f92672">=</span> make_multiplier(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(double(<span style="color:#ae81ff">5</span>))  <span style="color:#75715e"># 输出: 10</span>
+</span></span><span style="display:flex;"><span>print(triple(<span style="color:#ae81ff">5</span>))  <span style="color:#75715e"># 输出: 15</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 回调函数和事件处理</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_callback</span>(message):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># callback 函数捕获了外部的 message 变量</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">callback</span>():
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Callback message: </span><span style="color:#e6db74">{</span>message<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> callback
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建不同的回调函数</span>
+</span></span><span style="display:flex;"><span>callback1 <span style="color:#f92672">=</span> make_callback(<span style="color:#e6db74">&#34;Hello&#34;</span>)
+</span></span><span style="display:flex;"><span>callback2 <span style="color:#f92672">=</span> make_callback(<span style="color:#e6db74">&#34;World&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 执行回调函数</span>
+</span></span><span style="display:flex;"><span>callback1()  <span style="color:#75715e"># 输出: &#34;Callback message: Hello&#34;</span>
+</span></span><span style="display:flex;"><span>callback2()  <span style="color:#75715e"># 输出: &#34;Callback message: World&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. 延迟计算</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">delayed_execution</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># calculate 函数捕获了外部的 x 变量</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculate</span>():
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> x
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> calculate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建一个延迟计算的闭包</span>
+</span></span><span style="display:flex;"><span>square_func <span style="color:#f92672">=</span> delayed_execution(<span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>print(square_func())  <span style="color:#75715e"># 输出: 16</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5. 装饰器</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">my_decorator</span>(func):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数作为装饰器的闭包，修改了被装饰函数的行为</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Something is happening before the function is called.&#34;</span>)
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Something is happening after the function is called.&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用 @ 符号将装饰器应用于函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@my_decorator</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">say_hello</span>():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hello!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数</span>
+</span></span><span style="display:flex;"><span>say_hello()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 6. 缓存结果</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">memoize</span>(func):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># cache 变量存储计算结果，避免重复计算</span>
+</span></span><span style="display:flex;"><span>    cache <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(n):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> n <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> cache:
+</span></span><span style="display:flex;"><span>            cache[n] <span style="color:#f92672">=</span> func(n)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> cache[n]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用 memoize 装饰器缓存斐波那契数列的结果</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@memoize</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fibonacci</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> n
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 计算并输出斐波那契数列的第10项</span>
+</span></span><span style="display:flex;"><span>print(fibonacci(<span style="color:#ae81ff">10</span>))  <span style="color:#75715e"># 输出: 55</span>
+</span></span></code></pre></div><h4 id="理解装饰器的应用场景">
+  
+  理解装饰器的应用场景
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 装饰器示例代码合集</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 记录函数的调用日志</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">log_decorator</span>(func):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在执行目标函数前后记录日志</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Function </span><span style="color:#e6db74">{</span>func<span style="color:#f92672">.</span>__name__<span style="color:#e6db74">}</span><span style="color:#e6db74"> is called with arguments </span><span style="color:#e6db74">{</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74"> and </span><span style="color:#e6db74">{</span>kwargs<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Function </span><span style="color:#e6db74">{</span>func<span style="color:#f92672">.</span>__name__<span style="color:#e6db74">}</span><span style="color:#e6db74"> returned </span><span style="color:#e6db74">{</span>result<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@log_decorator</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(a, b):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并记录日志</span>
+</span></span><span style="display:flex;"><span>print(add(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>))
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Function add is called with arguments (3, 4) and {}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Function add returned 7</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 7</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 执行时间统计</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">timer_decorator</span>(func):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数统计目标函数的执行时间</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>        end_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Function </span><span style="color:#e6db74">{</span>func<span style="color:#f92672">.</span>__name__<span style="color:#e6db74">}</span><span style="color:#e6db74"> took </span><span style="color:#e6db74">{</span>end_time <span style="color:#f92672">-</span> start_time<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> seconds to execute&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@timer_decorator</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">slow_function</span>(seconds):
+</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(seconds)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Slept for </span><span style="color:#e6db74">{</span>seconds<span style="color:#e6db74">}</span><span style="color:#e6db74"> seconds&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并统计执行时间</span>
+</span></span><span style="display:flex;"><span>print(slow_function(<span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Function slow_function took 2.0023 seconds to execute</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Slept for 2 seconds</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 访问控制</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">require_authentication</span>(func):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在调用目标函数前进行访问控制</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(user, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> user<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;authenticated&#39;</span>, <span style="color:#66d9ef">False</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">PermissionError</span>(<span style="color:#e6db74">&#34;User is not authenticated&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> func(user, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@require_authentication</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_sensitive_data</span>(user):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Sensitive data&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 模拟已认证和未认证的用户调用</span>
+</span></span><span style="display:flex;"><span>user_authenticated <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;authenticated&#39;</span>: <span style="color:#66d9ef">True</span>}
+</span></span><span style="display:flex;"><span>user_unauthenticated <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;authenticated&#39;</span>: <span style="color:#66d9ef">False</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(get_sensitive_data(user_authenticated))  <span style="color:#75715e"># 输出: &#34;Sensitive data&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># print(get_sensitive_data(user_unauthenticated))  # 抛出 PermissionError</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. 缓存结果（记忆化）</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">memoize</span>(func):
+</span></span><span style="display:flex;"><span>    cache <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> args <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> cache:
+</span></span><span style="display:flex;"><span>            cache[args] <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> cache[args]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@memoize</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fibonacci</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> n
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并缓存结果</span>
+</span></span><span style="display:flex;"><span>print(fibonacci(<span style="color:#ae81ff">10</span>))  <span style="color:#75715e"># 输出: 55</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5. 输入验证</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">validate_input</span>(expected_type):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在调用目标函数前验证输入类型</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator</span>(func):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> all(isinstance(arg, expected_type) <span style="color:#66d9ef">for</span> arg <span style="color:#f92672">in</span> args):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;All arguments must be of type </span><span style="color:#e6db74">{</span>expected_type<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> decorator
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@validate_input</span>(int)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sum_integers</span>(<span style="color:#f92672">*</span>args):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sum(args)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并验证输入</span>
+</span></span><span style="display:flex;"><span>print(sum_integers(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))  <span style="color:#75715e"># 输出: 6</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># print(sum_integers(1, &#34;2&#34;, 3))  # 抛出 ValueError</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 6. 重试机制</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">retry</span>(retries<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在失败后重试目标函数</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator</span>(func):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>            last_exception <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(retries):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>                    last_exception <span style="color:#f92672">=</span> e
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> last_exception
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> decorator
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@retry</span>(retries<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">unstable_operation</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 模拟可能失败的操作</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> random<span style="color:#f92672">.</span>choice([<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">False</span>]):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;Operation failed&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Operation succeeded&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并在失败后重试</span>
+</span></span><span style="display:flex;"><span>print(unstable_operation())
+</span></span></code></pre></div><p>参考:</p>
+<ul>
+<li><a href="https://zhengxingtao.com/archives/python-bi-bao-zhuang-shi-qi">Python 闭包 装饰器-PySuper (zhengxingtao.com)</a></li>
+</ul>
+<h3 id="什么是-可迭代对象生成器迭代器">
+  
+  什么是 可迭代对象/生成器/迭代器?
+</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>可迭代对象</th>
+<th>迭代器</th>
+<th>生成器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>本质</td>
+<td>容器对象</td>
+<td>可迭代对象的地址引用</td>
+<td>迭代器, 但是通过计算迭代下一个对象来节省内存</td>
+</tr>
+<tr>
+<td>特征</td>
+<td><strong>iter</strong> 方法</td>
+<td>可迭代对象特征+ <strong>next</strong></td>
+<td>迭代器特征+yield</td>
+</tr>
+<tr>
+<td>目的</td>
+<td>提供可迭代的对象</td>
+<td>实现不依赖索引的迭代方法</td>
+<td>计算生成来节省内存的迭代器</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>/</td>
+<td>只能往前取值;不知道多长;用完失效</td>
+<td>时间换空间, 多消耗了CPU</td>
+</tr>
+<tr>
+<td>应用场景</td>
+<td>/</td>
+<td>需要迭代的时候</td>
+<td>数据大,内存占用大;列表推导式无法描述的规律数组;协程</td>
+</tr>
+<tr>
+<td>判断方法</td>
+<td>是否有 <strong>iter</strong> 方法</td>
+<td>isinstance(iterator,Iterator)</td>
+<td>inspect.isgenerator(iterator)</td>
+</tr>
+<tr>
+<td>创建方法</td>
+<td>容器类型的类</td>
+<td>iter 方法</td>
+<td>yield;(iterator)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="理解-yield">
+  
+  理解 yield
+</h4>
+<p>yield i 执行 return i 之后,  再次运行会从 yield i 之后开始执行语句</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> Iterator,Iterable
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fun</span>():
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">yield</span> a    
+</span></span><span style="display:flex;"><span>    b <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">yield</span> b
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>gen_fun <span style="color:#f92672">=</span> fun() <span style="color:#75715e"># 创建生成器</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(next(gen_fun)) <span style="color:#75715e">#输出 `a` 的值</span>
+</span></span><span style="display:flex;"><span>print(next(gen_fun)) <span style="color:#75715e">#输出 `b` 的值</span>
+</span></span><span style="display:flex;"><span>print(next(gen_fun)) <span style="color:#75715e"># 抛出 StopIteration 错误, 后面没有执行的语句了</span>
+</span></span></code></pre></div><p>参考:</p>
+<ul>
+<li><a href="https://www.cnblogs.com/goldsunshine/p/15590671.html">一篇文章讲清楚迭代器和生成器 - 金色旭光 - 博客园 (cnblogs.com)</a></li>
+</ul>
+<h3 id="什么是单例模式">
+  
+  什么是单例模式?
+</h3>
+<p>单例模式: 一个类只能创建一个对象的模式
+实现方法:</p>
+<ul>
+<li>装饰器</li>
+<li>指定单例元类, 通过 metaclass传入元类来实现</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> functools <span style="color:#f92672">import</span> wraps
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 装饰器</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">singleton</span>(cls):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;单例类装饰器&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    instances <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@wraps</span>(cls)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> cls <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> instances:
+</span></span><span style="display:flex;"><span>            instances[cls] <span style="color:#f92672">=</span> cls(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> instances[cls]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@singleton</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">President</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 指定元类</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SingletonMeta</span>(type):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;自定义单例元类&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(cls, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        cls<span style="color:#f92672">.</span>__instance <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __call__(cls, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> cls<span style="color:#f92672">.</span>__instance <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            cls<span style="color:#f92672">.</span>__instance <span style="color:#f92672">=</span> super()<span style="color:#f92672">.</span>__call__(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> cls<span style="color:#f92672">.</span>__instance
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">President</span>(metaclass<span style="color:#f92672">=</span>SingletonMeta):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span>
+</span></span></code></pre></div><h3 id="什么是浅拷贝和深拷贝">
+  
+  什么是浅拷贝和深拷贝?
+</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>浅拷贝</th>
+<th>深拷贝</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>复制对象</td>
+<td>对象本身,不会递归复制</td>
+<td>对象和其他所有关联对象, 递归复制</td>
+</tr>
+<tr>
+<td>实现方法</td>
+<td>copy</td>
+<td>deepcopy</td>
+</tr>
+</tbody>
+</table>
+<p>深拷贝带来的两个问题:</p>
+<ul>
+<li>若对象引用了自身, 可能会导致无休止的递归拷贝</li>
+<li>原本的共享数据进行拷贝, 造成内存的多占用
+解决方法:
+思路:  根据<code>deepcopy</code>函数的本质其实就是对象的一次序列化和一次返回序列化,
+第一个问题用 memo 字典来跟踪已经复制的值, 避免无限递归
+第二个则是使用 <code>pickle</code> 模块的<code>dumps</code>和<code>loads</code>来做到自定义深拷贝</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pickle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>my_deep_copy <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> obj: pickle<span style="color:#f92672">.</span>loads(pickle<span style="color:#f92672">.</span>dumps(obj))
+</span></span></code></pre></div><h3 id="什么是猴子补丁">
+  
+  什么是猴子补丁?
+</h3>
+<p>猴子补丁是动态派生类型的编程语言(如Python, ruby)
+猴子补丁允许在运行时修改现有代码，而无需直接修改源代码，非常灵活</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 原始的Python内置方法</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># 输出: &#34;HELLO&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 猴子补丁：修改 str.upper 方法，使其总是返回 &#34;MONKEY PATCHED&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">new_upper</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;MONKEY PATCHED&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 这里对 str.upper 应用猴子补丁</span>
+</span></span><span style="display:flex;"><span>str<span style="color:#f92672">.</span>upper <span style="color:#f92672">=</span> new_upper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 测试修改后的方法</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># 输出: &#34;MONKEY PATCHED&#34;</span>
+</span></span></code></pre></div><h3 id="什么是方法重载和方法重写">
+  
+  什么是方法重载和方法重写?
+</h3>
+<p>方法重写: 方法名和方法参数保持一致
+方法重载: 方法名保持, 方法参数修改
+注: Python 没有方法重载, 因为Python 可以通过可变默认参数来解决</p>
+<h2 id="参考">
+  
+  参考:
+</h2>
+<ul>
+<li><a href="https://github.com/jackfrued/Python-Interview-Bible/blob/master/Python%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8-%E5%9F%BA%E7%A1%80%E7%AF%87-2020.md">Python-Interview-Bible/Python面试宝典-基础篇-2020.md at master · jackfrued/Python-Interview-Bible (github.com)</a></li>
+<li><a href="https://www.mianshiya.com/">面试鸭 - 程序员求职面试刷题神器，高频编程题目免费刷 (mianshiya.com)</a></li>
+</ul>
+</article>
+ 
+  
+
+  <label for="menu-control" class="hidden book-menu-overlay"></label>
+</div>
+
+
+
+    
+<aside class="book-menu">
+  <div class="book-menu-content card">
+    <nav>
 <h2 class="book-logo">
     <a class="myFont" href="/">
 
@@ -489,9 +1042,7 @@
   <script>(function(){var t,e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop),console.log("1")}),t=document.getElementsByClassName("book-menu-overlay"),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
- 
-
-        
+    
 
 <nav id="TableOfContents">
   <ul>
@@ -511,18 +1062,14 @@
 
 
 
-
-
-        
-<div class="card">
+    <div class="footer">
   <p>
     <span>
       <small> Power by</small>
       <a href="https://gohugo.io">Hugo</a> 0.100.2
-
     </span>
-    
-
+  </p>
+  <p>
     <span>
       <small> 运行时间: </small>
       
@@ -530,571 +1077,13 @@
       579天
 
     </span>
-
   </p>
-
-
 </div>
- 
-
-      </div>
-
-    </aside>
-
-    <div class="book-page">
-      
-        
-<header class="book-header card">
-
-<div class="left">
-  <div class="note-header">
-  <div class="note-title">
-    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/">
-
-      Python
-    </a>
-
   </div>
-
-  <div class="note-meta">
-
-
-    <span>
-
-      <small class="ios_boder">
-        最近更新:
-      </small>
-      <span class="Lastmod ios_boder" data-unix="1725014635"></span>
-
-    </span>
-    <span>
-
-      <small class="ios_boder">
-        
-
-      文章字数:
-      </small>
-      2283
-      
-
-    </span>
-
-
-  </div>
-</div>
-
-</div>
-<div class="right">
-  <label for="menu-control">
-  <img src='' class="book-icon" alt="Menu" />
-
-</label>
-</div>
-
-</header>
-
-
-
-
- 
-
-      
-      
-<article class="markdown card"><h2 id="概念类">
+</aside>
+<footer class="book-footer">
   
-  <a href="#%e6%a6%82%e5%bf%b5%e7%b1%bb">概念类</a>
-</h2>
-<h3 id="什么是-闭包装饰器">
-  
-  <a href="#%e4%bb%80%e4%b9%88%e6%98%af-%e9%97%ad%e5%8c%85%e8%a3%85%e9%a5%b0%e5%99%a8">什么是 闭包/装饰器?</a>
-</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>闭包</th>
-<th>装饰器</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>本质</td>
-<td>嵌套返回函数的函数</td>
-<td>用于扩展修改类或方法的闭包</td>
-</tr>
-<tr>
-<td>特征</td>
-<td>嵌套的函数,内部函数使用外部函数的参数,返回内部函数</td>
-<td>闭包特征 + 参数传入为被装饰函数</td>
-</tr>
-<tr>
-<td>目的</td>
-<td>使得内部函数可以访问外部函数的变量</td>
-<td>不修改函数本身，修改或扩展函数功能</td>
-</tr>
-<tr>
-<td>缺点</td>
-<td>可能会造成额外的内存占用</td>
-<td>闭包的缺点</td>
-</tr>
-<tr>
-<td>应用场景</td>
-<td>数据封装;工厂函数;函调函数;延迟计算;装饰器;缓存结果</td>
-<td>记录日志;统计时间;访问控制;参数验证;重试机制</td>
-</tr>
-</tbody>
-</table>
-<h4 id="理解闭包的应用场景">
-  
-  <a href="#%e7%90%86%e8%a7%a3%e9%97%ad%e5%8c%85%e7%9a%84%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af">理解闭包的应用场景</a>
-</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 闭包示例代码合集</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 数据封装</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">counter</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># count 变量被封装在闭包内，外部无法直接访问</span>
-</span></span><span style="display:flex;"><span>    count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">increment</span>():
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 使用 nonlocal 关键字，闭包可以修改外部函数的变量</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">nonlocal</span> count
-</span></span><span style="display:flex;"><span>        count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> count
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> increment
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建一个闭包实例，并多次调用它</span>
-</span></span><span style="display:flex;"><span>counter_func <span style="color:#f92672">=</span> counter()
-</span></span><span style="display:flex;"><span>print(counter_func())  <span style="color:#75715e"># 输出: 1</span>
-</span></span><span style="display:flex;"><span>print(counter_func())  <span style="color:#75715e"># 输出: 2</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 工厂函数</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_multiplier</span>(factor):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># multiplier 函数捕获了外部的 factor 变量</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">multiplier</span>(x):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> factor
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> multiplier
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建不同的乘数函数</span>
-</span></span><span style="display:flex;"><span>double <span style="color:#f92672">=</span> make_multiplier(<span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>triple <span style="color:#f92672">=</span> make_multiplier(<span style="color:#ae81ff">3</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(double(<span style="color:#ae81ff">5</span>))  <span style="color:#75715e"># 输出: 10</span>
-</span></span><span style="display:flex;"><span>print(triple(<span style="color:#ae81ff">5</span>))  <span style="color:#75715e"># 输出: 15</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 回调函数和事件处理</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_callback</span>(message):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># callback 函数捕获了外部的 message 变量</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">callback</span>():
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Callback message: </span><span style="color:#e6db74">{</span>message<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> callback
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建不同的回调函数</span>
-</span></span><span style="display:flex;"><span>callback1 <span style="color:#f92672">=</span> make_callback(<span style="color:#e6db74">&#34;Hello&#34;</span>)
-</span></span><span style="display:flex;"><span>callback2 <span style="color:#f92672">=</span> make_callback(<span style="color:#e6db74">&#34;World&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 执行回调函数</span>
-</span></span><span style="display:flex;"><span>callback1()  <span style="color:#75715e"># 输出: &#34;Callback message: Hello&#34;</span>
-</span></span><span style="display:flex;"><span>callback2()  <span style="color:#75715e"># 输出: &#34;Callback message: World&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. 延迟计算</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">delayed_execution</span>(x):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># calculate 函数捕获了外部的 x 变量</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculate</span>():
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> x
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> calculate
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建一个延迟计算的闭包</span>
-</span></span><span style="display:flex;"><span>square_func <span style="color:#f92672">=</span> delayed_execution(<span style="color:#ae81ff">4</span>)
-</span></span><span style="display:flex;"><span>print(square_func())  <span style="color:#75715e"># 输出: 16</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5. 装饰器</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">my_decorator</span>(func):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数作为装饰器的闭包，修改了被装饰函数的行为</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Something is happening before the function is called.&#34;</span>)
-</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Something is happening after the function is called.&#34;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用 @ 符号将装饰器应用于函数</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@my_decorator</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">say_hello</span>():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hello!&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数</span>
-</span></span><span style="display:flex;"><span>say_hello()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 6. 缓存结果</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">memoize</span>(func):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># cache 变量存储计算结果，避免重复计算</span>
-</span></span><span style="display:flex;"><span>    cache <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(n):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> n <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> cache:
-</span></span><span style="display:flex;"><span>            cache[n] <span style="color:#f92672">=</span> func(n)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> cache[n]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用 memoize 装饰器缓存斐波那契数列的结果</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@memoize</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fibonacci</span>(n):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> n
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 计算并输出斐波那契数列的第10项</span>
-</span></span><span style="display:flex;"><span>print(fibonacci(<span style="color:#ae81ff">10</span>))  <span style="color:#75715e"># 输出: 55</span>
-</span></span></code></pre></div><h4 id="理解装饰器的应用场景">
-  
-  <a href="#%e7%90%86%e8%a7%a3%e8%a3%85%e9%a5%b0%e5%99%a8%e7%9a%84%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af">理解装饰器的应用场景</a>
-</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 装饰器示例代码合集</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 记录函数的调用日志</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">log_decorator</span>(func):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在执行目标函数前后记录日志</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Function </span><span style="color:#e6db74">{</span>func<span style="color:#f92672">.</span>__name__<span style="color:#e6db74">}</span><span style="color:#e6db74"> is called with arguments </span><span style="color:#e6db74">{</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74"> and </span><span style="color:#e6db74">{</span>kwargs<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Function </span><span style="color:#e6db74">{</span>func<span style="color:#f92672">.</span>__name__<span style="color:#e6db74">}</span><span style="color:#e6db74"> returned </span><span style="color:#e6db74">{</span>result<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@log_decorator</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(a, b):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并记录日志</span>
-</span></span><span style="display:flex;"><span>print(add(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>))
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Function add is called with arguments (3, 4) and {}</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Function add returned 7</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 7</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 执行时间统计</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">timer_decorator</span>(func):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数统计目标函数的执行时间</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        start_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
-</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>        end_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Function </span><span style="color:#e6db74">{</span>func<span style="color:#f92672">.</span>__name__<span style="color:#e6db74">}</span><span style="color:#e6db74"> took </span><span style="color:#e6db74">{</span>end_time <span style="color:#f92672">-</span> start_time<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> seconds to execute&#34;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@timer_decorator</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">slow_function</span>(seconds):
-</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(seconds)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Slept for </span><span style="color:#e6db74">{</span>seconds<span style="color:#e6db74">}</span><span style="color:#e6db74"> seconds&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并统计执行时间</span>
-</span></span><span style="display:flex;"><span>print(slow_function(<span style="color:#ae81ff">2</span>))
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Function slow_function took 2.0023 seconds to execute</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Slept for 2 seconds</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 访问控制</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">require_authentication</span>(func):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在调用目标函数前进行访问控制</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(user, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> user<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;authenticated&#39;</span>, <span style="color:#66d9ef">False</span>):
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">PermissionError</span>(<span style="color:#e6db74">&#34;User is not authenticated&#34;</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> func(user, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@require_authentication</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_sensitive_data</span>(user):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Sensitive data&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 模拟已认证和未认证的用户调用</span>
-</span></span><span style="display:flex;"><span>user_authenticated <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;authenticated&#39;</span>: <span style="color:#66d9ef">True</span>}
-</span></span><span style="display:flex;"><span>user_unauthenticated <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;authenticated&#39;</span>: <span style="color:#66d9ef">False</span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(get_sensitive_data(user_authenticated))  <span style="color:#75715e"># 输出: &#34;Sensitive data&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># print(get_sensitive_data(user_unauthenticated))  # 抛出 PermissionError</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. 缓存结果（记忆化）</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">memoize</span>(func):
-</span></span><span style="display:flex;"><span>    cache <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> args <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> cache:
-</span></span><span style="display:flex;"><span>            cache[args] <span style="color:#f92672">=</span> func(<span style="color:#f92672">*</span>args)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> cache[args]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@memoize</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fibonacci</span>(n):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> n
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> fibonacci(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并缓存结果</span>
-</span></span><span style="display:flex;"><span>print(fibonacci(<span style="color:#ae81ff">10</span>))  <span style="color:#75715e"># 输出: 55</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5. 输入验证</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">validate_input</span>(expected_type):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在调用目标函数前验证输入类型</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator</span>(func):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> all(isinstance(arg, expected_type) <span style="color:#66d9ef">for</span> arg <span style="color:#f92672">in</span> args):
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;All arguments must be of type </span><span style="color:#e6db74">{</span>expected_type<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> decorator
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@validate_input</span>(int)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sum_integers</span>(<span style="color:#f92672">*</span>args):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sum(args)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并验证输入</span>
-</span></span><span style="display:flex;"><span>print(sum_integers(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))  <span style="color:#75715e"># 输出: 6</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># print(sum_integers(1, &#34;2&#34;, 3))  # 抛出 ValueError</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 6. 重试机制</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">retry</span>(retries<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># wrapper 函数在失败后重试目标函数</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator</span>(func):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>            last_exception <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(retries):
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> func(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
-</span></span><span style="display:flex;"><span>                    last_exception <span style="color:#f92672">=</span> e
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> last_exception
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> decorator
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@retry</span>(retries<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">unstable_operation</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 模拟可能失败的操作</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> random
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> random<span style="color:#f92672">.</span>choice([<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">False</span>]):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;Operation failed&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Operation succeeded&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用被装饰的函数并在失败后重试</span>
-</span></span><span style="display:flex;"><span>print(unstable_operation())
-</span></span></code></pre></div><p>参考:</p>
-<ul>
-<li>
-  <a href="https://zhengxingtao.com/archives/python-bi-bao-zhuang-shi-qi">Python 闭包 装饰器-PySuper (zhengxingtao.com)</a></li>
-</ul>
-<h3 id="什么是-可迭代对象生成器迭代器">
-  
-  <a href="#%e4%bb%80%e4%b9%88%e6%98%af-%e5%8f%af%e8%bf%ad%e4%bb%a3%e5%af%b9%e8%b1%a1%e7%94%9f%e6%88%90%e5%99%a8%e8%bf%ad%e4%bb%a3%e5%99%a8">什么是 可迭代对象/生成器/迭代器?</a>
-</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>可迭代对象</th>
-<th>迭代器</th>
-<th>生成器</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>本质</td>
-<td>容器对象</td>
-<td>可迭代对象的地址引用</td>
-<td>迭代器, 但是通过计算迭代下一个对象来节省内存</td>
-</tr>
-<tr>
-<td>特征</td>
-<td><strong>iter</strong> 方法</td>
-<td>可迭代对象特征+ <strong>next</strong></td>
-<td>迭代器特征+yield</td>
-</tr>
-<tr>
-<td>目的</td>
-<td>提供可迭代的对象</td>
-<td>实现不依赖索引的迭代方法</td>
-<td>计算生成来节省内存的迭代器</td>
-</tr>
-<tr>
-<td>缺点</td>
-<td>/</td>
-<td>只能往前取值;不知道多长;用完失效</td>
-<td>时间换空间, 多消耗了CPU</td>
-</tr>
-<tr>
-<td>应用场景</td>
-<td>/</td>
-<td>需要迭代的时候</td>
-<td>数据大,内存占用大;列表推导式无法描述的规律数组;协程</td>
-</tr>
-<tr>
-<td>判断方法</td>
-<td>是否有 <strong>iter</strong> 方法</td>
-<td>isinstance(iterator,Iterator)</td>
-<td>inspect.isgenerator(iterator)</td>
-</tr>
-<tr>
-<td>创建方法</td>
-<td>容器类型的类</td>
-<td>iter 方法</td>
-<td>yield;(iterator)</td>
-</tr>
-</tbody>
-</table>
-<h4 id="理解-yield">
-  
-  <a href="#%e7%90%86%e8%a7%a3-yield">理解 yield</a>
-</h4>
-<p>yield i 执行 return i 之后,  再次运行会从 yield i 之后开始执行语句</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> Iterator,Iterable
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fun</span>():
-</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">yield</span> a    
-</span></span><span style="display:flex;"><span>    b <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">yield</span> b
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>gen_fun <span style="color:#f92672">=</span> fun() <span style="color:#75715e"># 创建生成器</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(next(gen_fun)) <span style="color:#75715e">#输出 `a` 的值</span>
-</span></span><span style="display:flex;"><span>print(next(gen_fun)) <span style="color:#75715e">#输出 `b` 的值</span>
-</span></span><span style="display:flex;"><span>print(next(gen_fun)) <span style="color:#75715e"># 抛出 StopIteration 错误, 后面没有执行的语句了</span>
-</span></span></code></pre></div><p>参考:</p>
-<ul>
-<li>
-  <a href="https://www.cnblogs.com/goldsunshine/p/15590671.html">一篇文章讲清楚迭代器和生成器 - 金色旭光 - 博客园 (cnblogs.com)</a></li>
-</ul>
-<h3 id="什么是单例模式">
-  
-  <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f">什么是单例模式?</a>
-</h3>
-<p>单例模式: 一个类只能创建一个对象的模式
-实现方法:</p>
-<ul>
-<li>装饰器</li>
-<li>指定单例元类, 通过 metaclass传入元类来实现</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> functools <span style="color:#f92672">import</span> wraps
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 装饰器</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">singleton</span>(cls):
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;单例类装饰器&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    instances <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@wraps</span>(cls)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> cls <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> instances:
-</span></span><span style="display:flex;"><span>            instances[cls] <span style="color:#f92672">=</span> cls(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> instances[cls]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> wrapper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@singleton</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">President</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 指定元类</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SingletonMeta</span>(type):
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;自定义单例元类&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(cls, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        cls<span style="color:#f92672">.</span>__instance <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __call__(cls, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> cls<span style="color:#f92672">.</span>__instance <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
-</span></span><span style="display:flex;"><span>            cls<span style="color:#f92672">.</span>__instance <span style="color:#f92672">=</span> super()<span style="color:#f92672">.</span>__call__(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> cls<span style="color:#f92672">.</span>__instance
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">President</span>(metaclass<span style="color:#f92672">=</span>SingletonMeta):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span>
-</span></span></code></pre></div><h3 id="什么是浅拷贝和深拷贝">
-  
-  <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e6%b5%85%e6%8b%b7%e8%b4%9d%e5%92%8c%e6%b7%b1%e6%8b%b7%e8%b4%9d">什么是浅拷贝和深拷贝?</a>
-</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>浅拷贝</th>
-<th>深拷贝</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>复制对象</td>
-<td>对象本身,不会递归复制</td>
-<td>对象和其他所有关联对象, 递归复制</td>
-</tr>
-<tr>
-<td>实现方法</td>
-<td>copy</td>
-<td>deepcopy</td>
-</tr>
-</tbody>
-</table>
-<p>深拷贝带来的两个问题:</p>
-<ul>
-<li>若对象引用了自身, 可能会导致无休止的递归拷贝</li>
-<li>原本的共享数据进行拷贝, 造成内存的多占用
-解决方法:
-思路:  根据<code>deepcopy</code>函数的本质其实就是对象的一次序列化和一次返回序列化,
-第一个问题用 memo 字典来跟踪已经复制的值, 避免无限递归
-第二个则是使用 <code>pickle</code> 模块的<code>dumps</code>和<code>loads</code>来做到自定义深拷贝</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pickle
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>my_deep_copy <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> obj: pickle<span style="color:#f92672">.</span>loads(pickle<span style="color:#f92672">.</span>dumps(obj))
-</span></span></code></pre></div><h3 id="什么是猴子补丁">
-  
-  <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e7%8c%b4%e5%ad%90%e8%a1%a5%e4%b8%81">什么是猴子补丁?</a>
-</h3>
-<p>猴子补丁是动态派生类型的编程语言(如Python, ruby)
-猴子补丁允许在运行时修改现有代码，而无需直接修改源代码，非常灵活</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 原始的Python内置方法</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># 输出: &#34;HELLO&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 猴子补丁：修改 str.upper 方法，使其总是返回 &#34;MONKEY PATCHED&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">new_upper</span>(self):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;MONKEY PATCHED&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 这里对 str.upper 应用猴子补丁</span>
-</span></span><span style="display:flex;"><span>str<span style="color:#f92672">.</span>upper <span style="color:#f92672">=</span> new_upper
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 测试修改后的方法</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># 输出: &#34;MONKEY PATCHED&#34;</span>
-</span></span></code></pre></div><h3 id="什么是方法重载和方法重写">
-  
-  <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e6%96%b9%e6%b3%95%e9%87%8d%e8%bd%bd%e5%92%8c%e6%96%b9%e6%b3%95%e9%87%8d%e5%86%99">什么是方法重载和方法重写?</a>
-</h3>
-<p>方法重写: 方法名和方法参数保持一致
-方法重载: 方法名保持, 方法参数修改
-注: Python 没有方法重载, 因为Python 可以通过可变默认参数来解决</p>
-<h2 id="参考">
-  
-  <a href="#%e5%8f%82%e8%80%83">参考:</a>
-</h2>
-<ul>
-<li>
-  <a href="https://github.com/jackfrued/Python-Interview-Bible/blob/master/Python%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8-%E5%9F%BA%E7%A1%80%E7%AF%87-2020.md">Python-Interview-Bible/Python面试宝典-基础篇-2020.md at master · jackfrued/Python-Interview-Bible (github.com)</a></li>
-<li>
-  <a href="https://www.mianshiya.com/">面试鸭 - 程序员求职面试刷题神器，高频编程题目免费刷 (mianshiya.com)</a></li>
-</ul>
-</article>
- 
-      
-
-      <footer class="book-footer">
-        
-        <div id="viewer-container"></div>
+  <div id="viewer-container"></div>
 
 <script>
   
@@ -1135,31 +1124,15 @@
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.23f53d08a0183d8e3b15d7bfdcf66453d158cd16143a9ebc8171749a42d8813f.js" integrity="sha256-I/U9CKAYPY47Fde/3PZkU9FYzRYUOp68gXF0mkLYgT8=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.266b59b654a15c087a197e83482886fd49f454dfee4b5837dc1ba1cb1b2db425.js" integrity="sha256-JmtZtlShXAh6GX6DSCiG/Un0VN/uS1g33BuhyxsttCU=" crossorigin="anonymous"></script>
 
-      </footer>
+<script src="https://ltao.top/js/scroll-hidde-menu.min.16d292a5e18c8732f538d0847b710be561831319d07dc1569ee386b3e5ee3d0a.js"></script>
 
-      
-
-<div class="book-comments">
-
-</div>
-
+</footer>
  
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
   </main>
-
-  
 </body>
-
 </html>
-
-
-
-
 
 
 

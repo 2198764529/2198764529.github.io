@@ -70,8 +70,8 @@
 # 一级标题 ## 二级标题 ### 三级标题 ... ###### 六级标题 段落：段落之间以空行分隔。
 强调：使用&amp;rdquo;*&amp;ldquo;或&amp;rdquo;_&amp;ldquo;将需要强调的文本包围起来。例如：
 *斜体* _斜体_ **粗体** __粗体__ ***粗斜体*** ___粗斜体___ 列表：有序列表以数字和句点开始，无序列表以&amp;rdquo;*&amp;quot;、&amp;quot;+&amp;ldquo;或&amp;rdquo;-&amp;ldquo;开始。例如：
-1. 第一项 2. 第二项 3. 第三项 - 无序列表项1 - 无序列表项2 - 嵌套的无序列表项 - 更深层次的无序列表项 * 无序列表项A * 无序列表项B * 嵌套的无序列表项 * 更深层次的无序列表项 + 无序列表项X + 无序列表项Y + 嵌套的无序列表项 + 更深层次的无序列表项 链接：使用&amp;rdquo; 链接文本&amp;ldquo;的格式添加链接。例如：
-[Google](https://www.google.com) 图片：使用&amp;rdquo; &amp;ldquo;的格式插入图片。例如：
+1. 第一项 2. 第二项 3. 第三项 - 无序列表项1 - 无序列表项2 - 嵌套的无序列表项 - 更深层次的无序列表项 * 无序列表项A * 无序列表项B * 嵌套的无序列表项 * 更深层次的无序列表项 + 无序列表项X + 无序列表项Y + 嵌套的无序列表项 + 更深层次的无序列表项 链接：使用&amp;rdquo;链接文本&amp;ldquo;的格式添加链接。例如：
+[Google](https://www.google.com) 图片：使用&amp;rdquo;&amp;ldquo;的格式插入图片。例如：
 ![示例图片](https://example.com/image.jpg) 引用：使用&amp;rdquo;&amp;gt;&amp;ldquo;字符表示引用。例如：
 &amp;gt; 这是一段引用的文本。 代码块：使用三个反引号(`)包围代码块，并在开始位置指定代码语言（可选）。例如：
 def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rdquo;|&amp;ldquo;和&amp;rdquo;-&amp;ldquo;分隔表头和表格内容，并使用&amp;rdquo;:&amp;ldquo;来对齐表格内容。例如：
@@ -218,7 +218,7 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
-      <description>软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法 【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、 winget
+      <description>软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法 【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、winget
 硬件 宏基传奇Edge：
 机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器 aoc 2369 23.1显示器 显示器（高、宽） 398(H) x 531.4(W) x 204(D)
 https://aoc.com/uk/products/monitors/i2369v/specification
@@ -348,7 +348,7 @@ rvprop（修订版本属性）： 用于指定 revisions 属性的具体内容�
 redirects（重定向）： 控制是否将重定向页面包含在结果中。
 limit（限制）： 用于限制查询结果的数量。
 示例：获取页面内容 https://en.wikipedia.org/w/api.php?action=query&amp;amp;format=json&amp;amp;titles=Python_(programming_language)&amp;amp;prop=revisions&amp;amp;rvprop=content 这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。
-请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在 维基百科开发者页面找到。</description>
+请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在维基百科开发者页面找到。</description>
     </item>
     
     <item>
@@ -420,7 +420,7 @@ limit（限制）： 用于限制查询结果的数量。
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</guid>
-      <description> 9-24~10.7 计划 目的 解决睡眠作息混乱 保持身体卫生和健康 工作面试和找点事情做 项目 第一项：11 点前睡觉 第二项：天天洗澡，天天锻炼 第三项：笔记：Linux、计网、Python、django、Git 完成情况 第一项 第二项 第三项 备注 9.24 ✕ ✓ ✓ 稍微晚了点，12点才睡，万事开头难，搞了点 Git 目录 理论 定时 定时体检,选重要的关键的体检项目, 原则 极简, 如无必要勿增实体 实用, 凡事要看它有没有用 长远, 不要只关注今天和昨天 果断, 当断不断,必受其乱 耐心, 不要傲慢和偏见 稳步, 区分轻重缓急 隔离，工作，娱乐，休息三者的时间空间不能相同 必做 11 点前睡觉
+      <description> 9-24~10.7 计划 目的 解决睡眠作息混乱 保持身体卫生和健康 工作面试和找点事情做 项目 第一项：11 点前睡觉 第二项：天天洗澡，天天锻炼 第三项：笔记：Linux、计网、Python、django、Git 完成情况 第一项 第二项 第三项 备注 9.24 ✕ ✓ ✓ 稍微晚了点，12点才睡，万事开头难，搞了点 Git 目录 9.25 ✕ ✕ ✕ 凌晨1点才睡，有点懈怠了 理论 定时 定时体检,选重要的关键的体检项目, 原则 极简, 如无必要勿增实体 实用, 凡事要看它有没有用 长远, 不要只关注今天和昨天 果断, 当断不断,必受其乱 耐心, 不要傲慢和偏见 稳步, 区分轻重缓急 隔离，工作，娱乐，休息三者的时间空间不能相同 必做 11 点前睡觉
 不在手机上刷短视频
 多看书
 408科目复习

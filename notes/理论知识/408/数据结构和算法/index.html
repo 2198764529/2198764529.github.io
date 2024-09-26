@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir=" ltr">
+<html lang="zh-cn"
+  dir="ltr">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +13,7 @@
 <link rel="icon" src="https://ltao.top/img/favicon/favicon.ico">
 
 
-<link rel="stylesheet" href="/scss/book.min.fd6bbfc435cc9e208ad30d4c50a8274101f2a1cbac0a5cbf90fd871ead2a87dc.css" integrity="sha256-/Wu/xDXMniCK0w1MUKgnQQHyocusCly/kP2HHq0qh9w=" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/book.min.5b4dc1d6d0daa5c11ffcb2f301b12c96725fbee8d59aff59494dde751727d3d9.css" integrity="sha256-W03B1tDapcEf/LLzAbEslnJfvujVmv9ZSU3edRcn09k=" crossorigin="anonymous">
 
 
 <script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
@@ -20,14 +21,147 @@
   
 </head>
 
-<body dir=" ltr">
+<body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
-    <aside class="book-menu ">
-      <div class="book-menu-content card">
+    
+<div class="book-page">
+  <header class="book-header card">
+
+<div class="left">
+  
+    <div class="note-header">
+  <div class="note-title">
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">
+      数据结构和算法
+    </a>
+  </div>
+  <div class="note-meta">
+    <span>
+      <small>最近更新:</small>
+      <span class="Lastmod" data-unix="1715332362"></span>
+    </span>
+    <span>
         
-<nav>
+            <small>笔记字数:</small>
+            315
+        
+    </span>
+  </div>
+</div>
+  
+</div>
+<div class="right">
+  <label for="menu-control">
+  <img src="https://ltao.top/img/svg/menu.svg" class="book-icon" alt="Menu" />
+</label>
+</div>
+</header>
+
+
+
+
+  
+  
+<article class="markdown card">
+  
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#完美二叉树满二叉树">完美二叉树(满二叉树)</a></li>
+    <li><a href="#完满二叉树">完满二叉树</a></li>
+    <li><a href="#平衡二叉树">平衡二叉树</a></li>
+  </ul>
+</nav>
+
+
+<h1 id="参考">
+  
+  参考
+</h1>
+<p><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms">https://www.cs.usfca.edu/~galles/visualization/Algorithms</a>
+<a href="https://algo.itcharge.cn">https://algo.itcharge.cn</a>
+<a href="https://www.hello-algo.com">https://www.hello-algo.com</a>
+<a href="https://pdai.tech/md/algorithm/alg-basic-overview.html">https://pdai.tech/md/algorithm/alg-basic-overview.html</a>
+<a href="https://www.runoob.com/w3cnote/ten-sorting-algorithm.html">https://www.runoob.com/w3cnote/ten-sorting-algorithm.html</a>
+<a href="https://www.runoob.com/w3cnote/selection-sort.html">https://www.runoob.com/w3cnote/selection-sort.html</a></p>
+<h1 id="排序算法">
+  
+  排序算法
+</h1>
+<ul>
+<li>
+<p>冒泡排序
+两两比较, 符合规则就换, 接着滑动窗口往后移动
+<img src="/images/personal/study/bubbleSort.png" alt="" /></p>
+</li>
+<li>
+<p>选择排序
+每次选最大的(无序区)放到最后(有序区)
+<img src="/images/personal/study/selectionSort.png" alt="" /></p>
+</li>
+<li>
+<p>插入排序
+每次选的元素插入到有序区,类似打牌时的排序
+<img src="/images/personal/study/insertSort.png" alt="" />
+在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表
+<img src="/images/personal/study/insertSort2.png" alt="" /></p>
+</li>
+<li>
+<p>快速排序</p>
+</li>
+<li>
+<p>归并排序</p>
+</li>
+<li>
+<p>堆排序</p>
+</li>
+<li>
+<p>桶排序</p>
+</li>
+<li>
+<p>计数排序</p>
+</li>
+<li>
+<p>基数排序</p>
+</li>
+</ul>
+<h1 id="树">
+  
+  树
+</h1>
+<h2 id="完美二叉树满二叉树">
+  
+  完美二叉树(满二叉树)
+</h2>
+<p>所有节点都是满的
+<img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/perfect_binary_tree.png" alt="" /></p>
+<h2 id="完满二叉树">
+  
+  完满二叉树
+</h2>
+<p>只有叶子节点未满，且叶子节点尽量靠左填充。
+<img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/complete_binary_tree.png" alt="" /></p>
+<h2 id="平衡二叉树">
+  
+  平衡二叉树
+</h2>
+<p>任何两个子树高度差小于2
+<img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/balanced_binary_tree.png" alt="" /></p>
+</article>
+ 
+  
+
+  <label for="menu-control" class="hidden book-menu-overlay"></label>
+</div>
+
+
+
+    
+<aside class="book-menu">
+  <div class="book-menu-content card">
+    <nav>
 <h2 class="book-logo">
     <a class="myFont" href="/">
 
@@ -489,9 +623,7 @@
   <script>(function(){var t,e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop),console.log("1")}),t=document.getElementsByClassName("book-menu-overlay"),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
- 
-
-        
+    
 
 <nav id="TableOfContents">
   <ul>
@@ -503,18 +635,14 @@
 
 
 
-
-
-        
-<div class="card">
+    <div class="footer">
   <p>
     <span>
       <small> Power by</small>
       <a href="https://gohugo.io">Hugo</a> 0.100.2
-
     </span>
-    
-
+  </p>
+  <p>
     <span>
       <small> 运行时间: </small>
       
@@ -522,169 +650,13 @@
       579天
 
     </span>
-
   </p>
-
-
 </div>
- 
-
-      </div>
-
-    </aside>
-
-    <div class="book-page">
-      
-        
-<header class="book-header card">
-
-<div class="left">
-  <div class="note-header">
-  <div class="note-title">
-    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">
-
-      数据结构和算法
-    </a>
-
   </div>
-
-  <div class="note-meta">
-
-
-    <span>
-
-      <small class="ios_boder">
-        最近更新:
-      </small>
-      <span class="Lastmod ios_boder" data-unix="1715332362"></span>
-
-    </span>
-    <span>
-
-      <small class="ios_boder">
-        
-
-      文章字数:
-      </small>
-      315
-      
-
-    </span>
-
-
-  </div>
-</div>
-
-</div>
-<div class="right">
-  <label for="menu-control">
-  <img src='' class="book-icon" alt="Menu" />
-
-</label>
-</div>
-
-</header>
-
-
-
-
- 
-
-      
-      
-<article class="markdown card"><h1 id="参考">
+</aside>
+<footer class="book-footer">
   
-  <a href="#%e5%8f%82%e8%80%83">参考</a>
-</h1>
-<p>
-  <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms">https://www.cs.usfca.edu/~galles/visualization/Algorithms</a>
-
-  <a href="https://algo.itcharge.cn">https://algo.itcharge.cn</a>
-
-  <a href="https://www.hello-algo.com">https://www.hello-algo.com</a>
-
-  <a href="https://pdai.tech/md/algorithm/alg-basic-overview.html">https://pdai.tech/md/algorithm/alg-basic-overview.html</a>
-
-  <a href="https://www.runoob.com/w3cnote/ten-sorting-algorithm.html">https://www.runoob.com/w3cnote/ten-sorting-algorithm.html</a>
-
-  <a href="https://www.runoob.com/w3cnote/selection-sort.html">https://www.runoob.com/w3cnote/selection-sort.html</a></p>
-<h1 id="排序算法">
-  
-  <a href="#%e6%8e%92%e5%ba%8f%e7%ae%97%e6%b3%95">排序算法</a>
-</h1>
-<ul>
-<li>
-<p>冒泡排序
-两两比较, 符合规则就换, 接着滑动窗口往后移动
-
-  <img src="/images/personal/study/bubbleSort.png" alt="" /></p>
-</li>
-<li>
-<p>选择排序
-每次选最大的(无序区)放到最后(有序区)
-
-  <img src="/images/personal/study/selectionSort.png" alt="" /></p>
-</li>
-<li>
-<p>插入排序
-每次选的元素插入到有序区,类似打牌时的排序
-
-  <img src="/images/personal/study/insertSort.png" alt="" />
-在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表
-
-  <img src="/images/personal/study/insertSort2.png" alt="" /></p>
-</li>
-<li>
-<p>快速排序</p>
-</li>
-<li>
-<p>归并排序</p>
-</li>
-<li>
-<p>堆排序</p>
-</li>
-<li>
-<p>桶排序</p>
-</li>
-<li>
-<p>计数排序</p>
-</li>
-<li>
-<p>基数排序</p>
-</li>
-</ul>
-<h1 id="树">
-  
-  <a href="#%e6%a0%91">树</a>
-</h1>
-<h2 id="完美二叉树满二叉树">
-  
-  <a href="#%e5%ae%8c%e7%be%8e%e4%ba%8c%e5%8f%89%e6%a0%91%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91">完美二叉树(满二叉树)</a>
-</h2>
-<p>所有节点都是满的
-
-  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/perfect_binary_tree.png" alt="" /></p>
-<h2 id="完满二叉树">
-  
-  <a href="#%e5%ae%8c%e6%bb%a1%e4%ba%8c%e5%8f%89%e6%a0%91">完满二叉树</a>
-</h2>
-<p>只有叶子节点未满，且叶子节点尽量靠左填充。
-
-  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/complete_binary_tree.png" alt="" /></p>
-<h2 id="平衡二叉树">
-  
-  <a href="#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91">平衡二叉树</a>
-</h2>
-<p>任何两个子树高度差小于2
-
-  <img src="https://www.hello-algo.com/chapter_tree/binary_tree.assets/balanced_binary_tree.png" alt="" /></p>
-</article>
- 
-      
-
-      <footer class="book-footer">
-        
-        <div id="viewer-container"></div>
+  <div id="viewer-container"></div>
 
 <script>
   
@@ -725,31 +697,15 @@
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.23f53d08a0183d8e3b15d7bfdcf66453d158cd16143a9ebc8171749a42d8813f.js" integrity="sha256-I/U9CKAYPY47Fde/3PZkU9FYzRYUOp68gXF0mkLYgT8=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.266b59b654a15c087a197e83482886fd49f454dfee4b5837dc1ba1cb1b2db425.js" integrity="sha256-JmtZtlShXAh6GX6DSCiG/Un0VN/uS1g33BuhyxsttCU=" crossorigin="anonymous"></script>
 
-      </footer>
+<script src="https://ltao.top/js/scroll-hidde-menu.min.16d292a5e18c8732f538d0847b710be561831319d07dc1569ee386b3e5ee3d0a.js"></script>
 
-      
-
-<div class="book-comments">
-
-</div>
-
+</footer>
  
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
   </main>
-
-  
 </body>
-
 </html>
-
-
-
-
 
 
 
