@@ -222,8 +222,8 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
 硬件 宏基传奇Edge：
 机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器 aoc 2369 23.1显示器 显示器（高、宽） 398(H) x 531.4(W) x 204(D)
 https://aoc.com/uk/products/monitors/i2369v/specification
-附录 【autoHotkey-changeKeys.ahk】：
-; 适用于 v2.0 ; Esc 映射成 AltTab *Esc::send &amp;#34;{Blind}!{Tab}&amp;#34; ; 左Alt -&amp;gt;Ctrl *LAlt::LCtrl ^1::Home ^2::End ; 左Ctrl-&amp;gt;Enter ~LCtrl::Enter ; Capslock键-&amp;gt;BackSpace键 *Capslock::BackSpace ;大写键-&amp;gt;回车键 *MButton::Enter ;win+鼠标滚轮上(下滚)滚增加(减少)音量 A_HotkeyInterval := 0 #WheelUp::Volume_Up #WheelDown::Volume_Down ;win+点击鼠标滚-&amp;gt;ESC #MButton::ESC ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; ; 功能键改成符号键 ; `F1键 -&amp;gt; ,键 *F1::, ; `2键 -&amp;gt; .</description>
+附录 autoHotkey 【changeKeys.ahk】：
+; 适用于 v2.0 ; 左Alt -&amp;gt;Ctrl *LAlt::LCtrl ; Capslock键-&amp;gt;BackSpace键 *Capslock::BackSpace ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; ; 当 ScrollLock 开启时，映射 z, x, c, a, s, d, q, w, e 到 1-9 #HotIf GetKeyState(&amp;#34;ScrollLock&amp;#34;, &amp;#34;T&amp;#34;) z::1 x::2 c::3 a::4 s::5 d::6 q::7 w::8 e::9 #HotIf ; 关闭 HotIf 区块 side_limit := 50 winSize := 50 halfHeight := A_ScreenHeight / 2 ; 计算屏幕高度的一半 ; 鼠标滚轮点击 MButton:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ send &amp;#34;{Media_Play_Pause}&amp;#34; } else if (ypos &amp;lt; winSize and xpos&amp;lt;winSize){ send &amp;#34;{ScrollLock}&amp;#34; ;滚轮点击左上角,按下ScrollLock } else{ send &amp;#34;{Enter}&amp;#34; } } ; 鼠标滚轮向上 WheelUp:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ Send &amp;#34;{Volume_Up 3}&amp;#34; ; 音量增加 } else if (ypos &amp;lt; side_limit and xpos&amp;gt;winSize){ send &amp;#34;{Blind}!</description>
     </item>
     
     <item>
@@ -420,7 +420,7 @@ limit（限制）： 用于限制查询结果的数量。
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E4%BF%AE%E8%BA%AB/</guid>
-      <description> 9-24~10.7 计划 目的 解决睡眠作息混乱 保持身体卫生和健康 工作面试和找点事情做 项目 第一项：11 点前睡觉 第二项：天天洗澡，天天锻炼 第三项：笔记：Linux、计网、Python、django、Git 完成情况 第一项 第二项 第三项 备注 9.24 ✕ ✓ ✓ 稍微晚了点，12点才睡，万事开头难，搞了点 Git 目录 9.25 ✕ ✕ ✕ 凌晨1点才睡，有点懈怠了 9.26 ✕ ✕ ✕ 没完成计划的一天 理论 定时 定时体检,选重要的关键的体检项目, 原则 极简, 如无必要勿增实体 实用, 凡事要看它有没有用 长远, 不要只关注今天和昨天 果断, 当断不断,必受其乱 耐心, 不要傲慢和偏见 稳步, 区分轻重缓急 隔离，工作，娱乐，休息三者的时间空间不能相同 必做 11 点前睡觉
+      <description>9-24~10.7 计划 目的 解决睡眠作息混乱 保持身体卫生和健康 工作面试和找点事情做 项目 第一项：11 点前睡觉 第二项：天天洗澡，天天锻炼 第三项：笔记：Linux、计网、Python、django、Git 完成情况 第一项 第二项 第三项 备注 9.24 ✕ ✓ ✓ 稍微晚了点，12点才睡，万事开头难，搞了点 Git 目录 9.25 ✕ ✕ ✕ 凌晨1点才睡，有点懈怠了 9.26 ✕ ✕ ✕ 没完成计划的一天 10.7 ✕ ✕ ✕ 理论 定时 定时体检,选重要的关键的体检项目, 原则 极简, 如无必要勿增实体 实用, 凡事要看它有没有用 长远, 不要只关注今天和昨天 果断, 当断不断,必受其乱 耐心, 不要傲慢和偏见 稳步, 区分轻重缓急 隔离，工作，娱乐，休息三者的时间空间不能相同 必做 11 点前睡觉
 不在手机上刷短视频
 多看书
 408科目复习
@@ -429,9 +429,7 @@ limit（限制）： 用于限制查询结果的数量。
 骑车回去
 20 个俯卧撑
 100 个单腿,左50,右50
-穿好衣服,整理仪容仪表
-打球
-交流 求同存异, 不说服, 列事实 </description>
+穿好衣服,整理仪容仪表</description>
     </item>
     
     <item>

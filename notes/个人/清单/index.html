@@ -45,7 +45,7 @@
     <span>
         
             <small>笔记字数:</small>
-            732
+            751
         
     </span>
   </div>
@@ -110,55 +110,24 @@
   
   附录
 </h3>
-<p>【autoHotkey-changeKeys.ahk】：</p>
+<h4 id="autohotkey">
+  
+  autoHotkey
+</h4>
+<p>【changeKeys.ahk】：</p>
 <pre tabindex="0"><code>; 适用于 v2.0
-; Esc 映射成 AltTab
-*Esc::send &#34;{Blind}!{Tab}&#34;
 
 ; 左Alt -&gt;Ctrl
 *LAlt::LCtrl
-
-^1::Home
-^2::End
-
-; 左Ctrl-&gt;Enter
-~LCtrl::Enter
-
 ; Capslock键-&gt;BackSpace键
 *Capslock::BackSpace
-
-;大写键-&gt;回车键
-*MButton::Enter
-
-;win+鼠标滚轮上(下滚)滚增加(减少)音量
-A_HotkeyInterval := 0
-#WheelUp::Volume_Up
-#WheelDown::Volume_Down
-
-;win+点击鼠标滚-&gt;ESC
-#MButton::ESC
 
 ;禁用按win键开始菜单弹出,快捷键不受影响
 ~LWin::Send &#34;{Blind}{vkE8}&#34;
 
 
-; 功能键改成符号键
-; `F1键 -&gt; ,键
-*F1::,
-; `2键 -&gt; .键
-*F2::.
-; `3键 -&gt; /键
-*F3::/
-; `4键 -&gt; ;键
-*F4::;
-; `F5键 -&gt; &#39;键
-*F5::&#39;
-
-; ctrl+F1 映射成NumLock
-F1::NumLock
-
-; 当 NumLock 开启时，映射 z, x, c, a, s, d, q, w, e 到 1-9
-#HotIf GetKeyState(&#34;NumLock&#34;, &#34;T&#34;)
+; 当 ScrollLock 开启时，映射 z, x, c, a, s, d, q, w, e 到 1-9
+#HotIf GetKeyState(&#34;ScrollLock&#34;, &#34;T&#34;)
 z::1
 x::2
 c::3
@@ -169,6 +138,54 @@ q::7
 w::8
 e::9
 #HotIf ; 关闭 HotIf 区块
+
+
+side_limit := 50
+winSize := 50
+halfHeight := A_ScreenHeight / 2  ; 计算屏幕高度的一半
+; 鼠标滚轮点击
+MButton::
+{
+    MouseGetPos &amp;xpos, &amp;ypos, &amp;id, &amp;control
+    if (xpos &lt; side_limit and ypos&gt;winSize){
+        send &#34;{Media_Play_Pause}&#34;
+    }
+    else if (ypos &lt; winSize and xpos&lt;winSize){
+        send &#34;{ScrollLock}&#34; ;滚轮点击左上角,按下ScrollLock
+    }
+    else{
+        send &#34;{Enter}&#34;
+    }
+}
+
+; 鼠标滚轮向上
+WheelUp::
+{
+    MouseGetPos &amp;xpos, &amp;ypos, &amp;id, &amp;control
+    if (xpos &lt; side_limit and ypos&gt;winSize){
+        Send &#34;{Volume_Up 3}&#34;  ; 音量增加
+    }
+    else if (ypos &lt; side_limit and xpos&gt;winSize){
+        send &#34;{Blind}!{Tab}&#34; ; 切换上一个任务
+    }
+    else{
+        send &#34;{WheelUp}&#34;
+    }
+}
+; 鼠标滚轮向下
+WheelDown::
+{
+    MouseGetPos &amp;xpos, &amp;ypos, &amp;id, &amp;control
+    if (xpos &lt; side_limit and ypos&gt;winSize){
+        Send &#34;{Volume_Down 3}&#34;  ; 音量减少
+    }
+    else if (ypos &lt; side_limit and xpos&gt;winSize){
+        send &#34;{Blind}!+{Tab}&#34; ; 切换下一个任务
+    }
+    else{
+        send &#34;{WheelDown}&#34;
+    }
+}
 </code></pre></article>
  
   
@@ -722,7 +739,7 @@ e::9
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.d7b412c3e6b0eac08fe9e76078478ed57dbdf5198db6bf61a574c5690c6d8b22.js" integrity="sha256-17QSw&#43;aw6sCP6edgeEeO1X299RmNtr9hpXTFaQxtiyI=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.16b97767e211ef7dcc165c0a370818b7ca7d0a349bc3b6c24268a16e96ff4c17.js" integrity="sha256-Frl3Z&#43;IR733MFlwKNwgYt8p9CjSbw7bCQmihbpb/TBc=" crossorigin="anonymous"></script>
 
 <script src="https://ltao.top/js/scroll-hidde-menu.min.16d292a5e18c8732f538d0847b710be561831319d07dc1569ee386b3e5ee3d0a.js"></script>
 
