@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
-      <description> git 常用命令 查看信息 git show: 查看 commit 详细信息 git help: 显示 Git 相关的帮助信息 git status: 显示工作目录和暂存区的相关信息 git diff: 显示工作区和暂存区的差异 git log: 列出所有提交日志信息 git shortlog：汇总所有贡献者的提交记录 git describe： 给出一个可读的名称来表示最近的提交 推送和更新信息 git add: 将文件添加到暂存区 git commit: 将文件提交到暂存区 git fetch: 获取最新的文件, 但不会合并 git pull: fetch和merge的组合命令, 即获取最新版本接着合并 git push: 将 commit 信息提交 git tag: 给 commit 打上 标签 分支管理 git branch: 列出,新建或删除分支 git checkout: 切换分支或恢复工作区文件 git merge: 合并分支 git mergetool: 解决合并冲突 git rebase：将一个 commit 重新合并到当前分支 git reset: 将当前 HEAD 复位到指定状态 git remote: 管理远程仓库的列表和配置 文件管理 git clone: 将一个 Git 仓库克隆到指定路径 git init: 创建一个空的 Git 仓库或者重新初始化一个仓库 git config: 配置 Git 外观和操作 git mv: 移动工作区和暂存区的文件 git rm: 删除工作区和暂存区中文件 git stash: 临时保存所有更改文件 git submodule: 将另一个 Git 仓库作为子模块 覆盖本地 git fetch origin git reset --hard origin/&amp;lt;branch_name&amp;gt; </description>
+      <description> 示意图 cloud Remote cloud Repository cloud Index cloud Workspace Remote -&amp;gt; Repository : fetch/clone Remote &amp;lt;- Repository : push Repository &amp;lt;- Index : commit Index &amp;lt;-- Workspace : add Repository -&amp;gt; Workspace : checkout Remote --&amp;gt; Workspace : pull Workspace：工作区 Index / Stage：暂存区 Repository：本地仓库区 Remote：远程仓库区 git 常用命令 查看信息 git show: 查看 commit 详细信息 git show &amp;lt;commit_id&amp;gt; &amp;ndash;name-only: 只显示名称 &amp;ndash;name-status: 仅显示名称和状态。 &amp;ndash;oneline：只显示一行, 包括提交的哈希值和提交信息的第一行 &amp;ndash;stat：显示统计信息(修改行数、新增行数和删除行数) &amp;ndash;relative-date：显示相对日期(默认绝对日期) &amp;ndash;format=format：format 可以是 oneline、short、full、fuller、email、raw 或 format:format &amp;ndash;pretty=format：同上&amp;ndash;format=format &amp;ndash;patch 或 -p：显示每个提交的差异 &amp;ndash;color 或 &amp;ndash;no-color：是否使用颜色 &amp;ndash;date=format：format 可以是 relative（相对日期）、iso（ISO 8601 格式）、rfc（RFC 2822 格式）或自定义的日期格式字符串 git help: 显示 Git 相关的帮助信息 git help &amp;lt;command&amp;gt; -a: 显示所有 Git 命令列表(&amp;ndash;all) -g: 显示手册页面(&amp;ndash;guide) -c: 显示所有配置变量的名称和简短描述(&amp;ndash;config) git status: 显示工作目录和暂存区的相关信息 git diff: 显示工作区和暂存区的差异 git log: 列出所有提交日志信息 git shortlog：汇总所有贡献者的提交记录 git describe： 给出一个可读的名称来表示最近的提交 推送和更新信息 git add: 将文件添加到暂存区 git commit: 将文件提交到暂存区 git fetch: 获取最新的文件, 但不会合并 git pull: fetch和merge的组合命令, 即获取最新版本接着合并 git push: 将 commit 信息提交 git tag: 给 commit 打上 标签 分支管理 git branch: 列出,新建或删除分支 git checkout: 切换分支或恢复工作区文件 git merge: 合并分支 git mergetool: 解决合并冲突 git rebase：将一个 commit 重新合并到当前分支 git reset: 将当前 HEAD 复位到指定状态 git remote: 管理远程仓库的列表和配置 文件管理 git clone: 将一个 Git 仓库克隆到指定路径 git init: 创建一个空的 Git 仓库或者重新初始化一个仓库 git config: 配置 Git 外观和操作 git mv: 移动工作区和暂存区的文件 git rm: 删除工作区和暂存区中文件 git stash: 临时保存所有更改文件 git submodule: 将另一个 Git 仓库作为子模块 覆盖本地 git fetch origin git reset --hard origin/&amp;lt;branch_name&amp;gt; </description>
     </item>
     
     <item>
@@ -39,16 +39,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</guid>
-      <description>标题：使用&amp;quot;#&amp;ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如：
-# 一级标题 ## 二级标题 ### 三级标题 ... ###### 六级标题 段落：段落之间以空行分隔。
-强调：使用&amp;rdquo;*&amp;ldquo;或&amp;rdquo;_&amp;ldquo;将需要强调的文本包围起来。例如：
-*斜体* _斜体_ **粗体** __粗体__ ***粗斜体*** ___粗斜体___ 列表：有序列表以数字和句点开始，无序列表以&amp;rdquo;*&amp;quot;、&amp;quot;+&amp;ldquo;或&amp;rdquo;-&amp;ldquo;开始。例如：
-1. 第一项 2. 第二项 3. 第三项 - 无序列表项1 - 无序列表项2 - 嵌套的无序列表项 - 更深层次的无序列表项 * 无序列表项A * 无序列表项B * 嵌套的无序列表项 * 更深层次的无序列表项 + 无序列表项X + 无序列表项Y + 嵌套的无序列表项 + 更深层次的无序列表项 链接：使用&amp;rdquo;链接文本&amp;ldquo;的格式添加链接。例如：
-[Google](https://www.google.com) 图片：使用&amp;rdquo;&amp;ldquo;的格式插入图片。例如：
-![示例图片](https://example.com/image.jpg) 引用：使用&amp;rdquo;&amp;gt;&amp;ldquo;字符表示引用。例如：
-&amp;gt; 这是一段引用的文本。 代码块：使用三个反引号(`)包围代码块，并在开始位置指定代码语言（可选）。例如：
-def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rdquo;|&amp;ldquo;和&amp;rdquo;-&amp;ldquo;分隔表头和表格内容，并使用&amp;rdquo;:&amp;ldquo;来对齐表格内容。例如：
-| 列1标题 | 列2标题 | |---------|---------| | 内容1 | 内容2 | | 内容3 | 内容4 | 左对齐列1标题 | 右对齐列2标题 :------------|-------------: 左对齐内容1 | 右对齐内容2 左对齐内容3 | 右对齐内容4 水平线：使用三个或更多连续的&amp;rdquo;*&amp;quot;、&amp;quot;-&amp;ldquo;或&amp;rdquo;_&amp;ldquo;表示水平线。例如：</description>
+      <description>1. 标题：使用&amp;quot;#&amp;ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如： # 一级标题 ## 二级标题 ### 三级标题 ... ###### 六级标题 一级标题 二级标题 三级标题 &amp;hellip;
+六级标题 2. 段落：段落之间以空行分隔。 3. 强调：使用&amp;rdquo;*&amp;ldquo;或&amp;rdquo;_&amp;ldquo;将需要强调的文本包围起来。例如： *斜体* _斜体_ **粗体** __粗体__ ***粗斜体*** ___粗斜体___ 斜体 斜体
+粗体 粗体
+粗斜体 粗斜体
+4. 列表：有序列表以数字和句点开始，无序列表以&amp;rdquo;*&amp;quot;、&amp;quot;+&amp;ldquo;或&amp;rdquo;-&amp;ldquo;开始。例如： 1. 第一项 2. 第二项 3. 第三项 - 无序列表项1 - 无序列表项2 - 嵌套的无序列表项 - 更深层次的无序列表项 * 无序列表项A * 无序列表项B * 嵌套的无序列表项 * 更深层次的无序列表项 + 无序列表项X + 无序列表项Y + 嵌套的无序列表项 + 更深层次的无序列表项 第一项 第二项 第三项 无序列表项1 无序列表项2 嵌套的无序列表项 更深层次的无序列表项 无序列表项A 无序列表项B 嵌套的无序列表项 更深层次的无序列表项 无序列表项X 无序列表项Y 嵌套的无序列表项 更深层次的无序列表项 5.</description>
     </item>
     
     <item>
@@ -57,7 +52,7 @@ def hello_world(): print(&amp;#34;Hello, world!&amp;#34;) 表格：使用&amp;rd
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/plantuml/</guid>
-      <description> mindmap + 中 ++ 右 ***:bubbleSort &amp;lt;code&amp;gt; def bubbleSort(arr): for i in range(1, len(arr)): for j in range(0, len(arr)-i): if arr[j] &amp;gt; arr[j+1]: arr[j], arr[j + 1] = arr[j + 1], arr[j] return arr &amp;lt;/code&amp;gt; ; -- 左 </description>
+      <description> mindmap + 中 ++ 右 ***:bubbleSort &amp;lt;code&amp;gt; def bubbleSort(arr): for i in range(1, len(arr)): for j in range(0, len(arr)-i): if arr[j] &amp;gt; arr[j+1]: arr[j], arr[j + 1] = arr[j + 1], arr[j] return arr &amp;lt;/code&amp;gt; ; -- 左 actor actor agent agent artifact artifact boundary boundary card card cloud cloud component component control control database database entity entity file file folder folder frame frame interface interface node node package package queue queue stack stack rectangle rectangle storage storage usecase usecase </description>
     </item>
     
     <item>
@@ -138,15 +133,7 @@ digraph https://zhuanlan.zhihu.com/p/21993254 fullcalendar https://fullcalendar.
 维基百科 API 基本信息 Endpoint（终端点）： https://en.wikipedia.org/w/api.php （英语维基百科的API终端点，你可以替换 en 为其他语言标识符）
 请求方式： 主要使用HTTP GET请求，但也支持POST请求。
 返回格式： 默认返回JSON格式，也可以选择其他格式，如XML。
-常用维基百科 API 请求参数 action（动作）： 定义API的行为，常见值包括 query（查询）、parse（解析）、opensearch（开放搜索）等。
-format（格式）： 指定返回结果的格式，常见值包括 json 和 xml。
-titles（标题）： 指定要查询的页面标题，可以是单个标题或多个标题。
-pageid（页面ID）： 指定要查询的页面的ID，与标题二选一使用。
-prop（属性）： 查询页面的属性，如 revisions（修订版本）、categories（分类）等。
-rvprop（修订版本属性）： 用于指定 revisions 属性的具体内容，如 content（内容）、timestamp（时间戳）等。
-redirects（重定向）： 控制是否将重定向页面包含在结果中。
-limit（限制）： 用于限制查询结果的数量。
-示例：获取页面内容 https://en.wikipedia.org/w/api.php?action=query&amp;amp;format=json&amp;amp;titles=Python_(programming_language)&amp;amp;prop=revisions&amp;amp;rvprop=content 这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。
+常用维基百科 API 请求参数 action（动作）： 定义API的行为，常见值包括 query（查询）、parse（解析）、opensearch（开放搜索）等。 format（格式）： 指定返回结果的格式，常见值包括 json 和 xml。 titles（标题）： 指定要查询的页面标题，可以是单个标题或多个标题。 pageid（页面ID）： 指定要查询的页面的ID，与标题二选一使用。 prop（属性）： 查询页面的属性，如 revisions（修订版本）、categories（分类）等。 rvprop（修订版本属性）： 用于指定 revisions 属性的具体内容，如 content（内容）、timestamp（时间戳）等。 redirects（重定向）： 控制是否将重定向页面包含在结果中。 limit（限制）： 用于限制查询结果的数量。 示例：获取页面内容 https://en.wikipedia.org/w/api.php?action=query&amp;amp;format=json&amp;amp;titles=Python_(programming_language)&amp;amp;prop=revisions&amp;amp;rvprop=content 这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。
 请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在维基百科开发者页面找到。</description>
     </item>
     

@@ -13,7 +13,7 @@
 <link rel="icon" src="https://ltao.top/img/favicon/favicon.ico">
 
 
-<link rel="stylesheet" href="/scss/book.min.942bf7a3db657c02d56058ca3862491882a4aeb670029a6d06e37f1c5289a618.css" integrity="sha256-lCv3o9tlfALVYFjKOGJJGIKkrrZwApptBuN/HFKJphg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/book.min.9dca5096975a454b6166712910aa9c59f98844852e3bad5a819eda93125a7bc8.css" integrity="sha256-ncpQlpdaRUthZnEpEKqcWfmIRIUuO61agZ7akxJae8g=" crossorigin="anonymous">
 
 
 <script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
@@ -40,12 +40,12 @@
   <div class="note-meta">
     <span>
       <small>最近更新:</small>
-      <span class="Lastmod" data-unix="1727168409"></span>
+      <span class="Lastmod" data-unix="1728380897"></span>
     </span>
     <span>
         
             <small>笔记字数:</small>
-            420
+            943
         
     </span>
   </div>
@@ -71,6 +71,7 @@
   <ul>
     <li>
       <ul>
+        <li><a href="#示意图">示意图</a></li>
         <li><a href="#git-常用命令">git 常用命令</a></li>
       </ul>
     </li>
@@ -78,137 +79,178 @@
 </nav>
 
 
+<h3 id="示意图">
+  
+   示意图
+</h3>
+<pre tabindex="0"><code class="language-uml" data-lang="uml">cloud Remote
+cloud Repository
+cloud Index
+cloud Workspace
+
+Remote -&gt; Repository : fetch/clone
+Remote &lt;- Repository : push
+Repository &lt;- Index : commit
+Index &lt;-- Workspace : add
+Repository -&gt; Workspace : checkout
+Remote --&gt; Workspace : pull
+</code></pre><ul>
+<li>Workspace：工作区</li>
+<li>Index / Stage：暂存区</li>
+<li>Repository：本地仓库区</li>
+<li>Remote：远程仓库区</li>
+</ul>
 <h3 id="git-常用命令">
   
-  git 常用命令
+   git 常用命令
 </h3>
 <h4 id="查看信息">
   
-  查看信息
+   查看信息
 </h4>
 <h5 id="git-show-查看-commit-详细信息">
   
-  git show: 查看 commit 详细信息
+   git show: 查看 commit 详细信息
 </h5>
+<pre tabindex="0"><code class="language-git" data-lang="git">git show &lt;commit_id&gt;
+</code></pre><ul>
+<li>&ndash;name-only: 只显示名称</li>
+<li>&ndash;name-status: 仅显示名称和状态。</li>
+<li>&ndash;oneline：只显示一行, 包括提交的哈希值和提交信息的第一行</li>
+<li>&ndash;stat：显示统计信息(修改行数、新增行数和删除行数)</li>
+<li>&ndash;relative-date：显示相对日期(默认绝对日期)</li>
+<li></li>
+<li>&ndash;format=<code>format</code>：<code>format</code> 可以是 oneline、short、full、fuller、email、raw 或 format:<code>format</code></li>
+<li>&ndash;pretty=format：同上&ndash;format=<code>format</code></li>
+<li>&ndash;patch 或 -p：显示每个提交的差异</li>
+<li>&ndash;color 或 &ndash;no-color：是否使用颜色</li>
+<li>&ndash;date=<code>format</code>：<code>format</code> 可以是 relative（相对日期）、iso（ISO 8601 格式）、rfc（RFC 2822 格式）或自定义的日期格式字符串</li>
+</ul>
 <h5 id="git-help-显示-git-相关的帮助信息">
   
-  git help: 显示 Git 相关的帮助信息
+   git help: 显示 Git 相关的帮助信息
 </h5>
+<pre tabindex="0"><code class="language-git" data-lang="git">git help &lt;command&gt;
+</code></pre><ul>
+<li>-a: 显示所有 Git 命令列表(&ndash;all)</li>
+<li>-g: 显示手册页面(&ndash;guide)</li>
+<li>-c: 显示所有配置变量的名称和简短描述(&ndash;config)</li>
+</ul>
 <h5 id="git-status-显示工作目录和暂存区的相关信息">
   
-  git status: 显示工作目录和暂存区的相关信息
+   git status: 显示工作目录和暂存区的相关信息
 </h5>
 <h5 id="git-diff-显示工作区和暂存区的差异">
   
-  git diff: 显示工作区和暂存区的差异
+   git diff: 显示工作区和暂存区的差异
 </h5>
 <h5 id="git-log-列出所有提交日志信息">
   
-  git log: 列出所有提交日志信息
+   git log: 列出所有提交日志信息
 </h5>
 <h5 id="git-shortlog汇总所有贡献者的提交记录">
   
-  git shortlog：汇总所有贡献者的提交记录
+   git shortlog：汇总所有贡献者的提交记录
 </h5>
 <h5 id="git-describe-给出一个可读的名称来表示最近的提交">
   
-  git describe： 给出一个可读的名称来表示最近的提交
+   git describe： 给出一个可读的名称来表示最近的提交
 </h5>
 <h4 id="推送和更新信息">
   
-  推送和更新信息
+   推送和更新信息
 </h4>
 <h5 id="git-add-将文件添加到暂存区">
   
-  git add: 将文件添加到暂存区
+   git add: 将文件添加到暂存区
 </h5>
 <h5 id="git-commit-将文件提交到暂存区">
   
-  git commit: 将文件提交到暂存区
+   git commit: 将文件提交到暂存区
 </h5>
 <h5 id="git-fetch-获取最新的文件-但不会合并">
   
-  git fetch: 获取最新的文件, 但不会合并
+   git fetch: 获取最新的文件, 但不会合并
 </h5>
 <h5 id="git-pull-fetch和merge的组合命令-即获取最新版本接着合并">
   
-  git pull: fetch和merge的组合命令, 即获取最新版本接着合并
+   git pull: fetch和merge的组合命令, 即获取最新版本接着合并
 </h5>
 <h5 id="git-push-将-commit-信息提交">
   
-  git push: 将 commit 信息提交
+   git push: 将 commit 信息提交
 </h5>
 <h5 id="git-tag-给-commit-打上-标签">
   
-  git tag: 给 commit 打上 标签
+   git tag: 给 commit 打上 标签
 </h5>
 <h4 id="分支管理">
   
-  分支管理
+   分支管理
 </h4>
 <h5 id="git-branch-列出新建或删除分支">
   
-  git branch: 列出,新建或删除分支
+   git branch: 列出,新建或删除分支
 </h5>
 <h5 id="git-checkout-切换分支或恢复工作区文件">
   
-  git checkout: 切换分支或恢复工作区文件
+   git checkout: 切换分支或恢复工作区文件
 </h5>
 <h5 id="git-merge-合并分支">
   
-  git merge: 合并分支
+   git merge: 合并分支
 </h5>
 <h5 id="git-mergetool-解决合并冲突">
   
-  git mergetool: 解决合并冲突
+   git mergetool: 解决合并冲突
 </h5>
 <h5 id="git-rebase将一个-commit-重新合并到当前分支">
   
-  git rebase：将一个 commit 重新合并到当前分支
+   git rebase：将一个 commit 重新合并到当前分支
 </h5>
 <h5 id="git-reset-将当前-head-复位到指定状态">
   
-  git reset: 将当前 HEAD 复位到指定状态
+   git reset: 将当前 HEAD 复位到指定状态
 </h5>
 <h5 id="git-remote-管理远程仓库的列表和配置">
   
-  git remote: 管理远程仓库的列表和配置
+   git remote: 管理远程仓库的列表和配置
 </h5>
 <h4 id="文件管理">
   
-  文件管理
+   文件管理
 </h4>
 <h5 id="git-clone-将一个-git-仓库克隆到指定路径">
   
-  git clone: 将一个 Git 仓库克隆到指定路径
+   git clone: 将一个 Git 仓库克隆到指定路径
 </h5>
 <h5 id="git-init-创建一个空的-git-仓库或者重新初始化一个仓库">
   
-  git init: 创建一个空的 Git 仓库或者重新初始化一个仓库
+   git init: 创建一个空的 Git 仓库或者重新初始化一个仓库
 </h5>
 <h5 id="git-config-配置-git-外观和操作">
   
-  git config: 配置 Git 外观和操作
+   git config: 配置 Git 外观和操作
 </h5>
 <h5 id="git-mv-移动工作区和暂存区的文件">
   
-  git mv: 移动工作区和暂存区的文件
+   git mv: 移动工作区和暂存区的文件
 </h5>
 <h5 id="git-rm-删除工作区和暂存区中文件">
   
-  git rm: 删除工作区和暂存区中文件
+   git rm: 删除工作区和暂存区中文件
 </h5>
 <h5 id="git-stash-临时保存所有更改文件">
   
-  git stash: 临时保存所有更改文件
+   git stash: 临时保存所有更改文件
 </h5>
 <h5 id="git-submodule-将另一个-git-仓库作为子模块">
   
-  git submodule: 将另一个 Git 仓库作为子模块
+   git submodule: 将另一个 Git 仓库作为子模块
 </h5>
 <h4 id="覆盖本地">
   
-  覆盖本地
+   覆盖本地
 </h4>
 <pre tabindex="0"><code class="language-git" data-lang="git">git fetch origin 
 git reset --hard origin/&lt;branch_name&gt;
@@ -621,19 +663,6 @@ git reset --hard origin/&lt;branch_name&gt;
         
   
   
-    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%97%A5%E5%BF%97/" 
-       class="">日志</a>
-  
-
-      </li>
-      
-    
-      
-      
-      <li>
-        
-  
-  
     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" 
        class="">数学知识</a>
   
@@ -692,6 +721,7 @@ git reset --hard origin/&lt;branch_name&gt;
   <ul>
     <li>
       <ul>
+        <li><a href="#示意图">示意图</a></li>
         <li><a href="#git-常用命令">git 常用命令</a></li>
       </ul>
     </li>
@@ -741,7 +771,7 @@ git reset --hard origin/&lt;branch_name&gt;
 
 
 <script src="https://ltao.top/plugs/plantuml-encoder.min.min.bba1e588b2e1b70aae9ddef3f77dcdaf9d1ab2ad86c367576965a1c7f5a61b74.js"></script>
-<script src="https://ltao.top/js/plantuml.min.9b3c7fd70afce237539fa384bb113fdbd8ce7c17c69b568e9a9498b2543c17b9.js"></script>
+<script src="https://ltao.top/js/plantuml.min.5c2d2c13e15212b51b1e005557878abae084f94ab9a0d7aa71b3fb377497eaab.js"></script>
 
 
  
@@ -762,9 +792,9 @@ git reset --hard origin/&lt;branch_name&gt;
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.16b97767e211ef7dcc165c0a370818b7ca7d0a349bc3b6c24268a16e96ff4c17.js" integrity="sha256-Frl3Z&#43;IR733MFlwKNwgYt8p9CjSbw7bCQmihbpb/TBc=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.e79d6654d743539f50aa2f692fcb3eeaf4e55243e5f0a207c3ba97221e514bfa.js" integrity="sha256-551mVNdDU59Qqi9pL8s&#43;6vTlUkPl8KIHw7qXIh5RS/o=" crossorigin="anonymous"></script>
 
-<script src="https://ltao.top/js/scroll-hidde-menu.min.16d292a5e18c8732f538d0847b710be561831319d07dc1569ee386b3e5ee3d0a.js"></script>
+
 
 </footer>
  
