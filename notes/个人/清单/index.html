@@ -13,7 +13,7 @@
 <link rel="icon" src="https://ltao.top/img/favicon/favicon.ico">
 
 
-<link rel="stylesheet" href="/scss/book.min.9dca5096975a454b6166712910aa9c59f98844852e3bad5a819eda93125a7bc8.css" integrity="sha256-ncpQlpdaRUthZnEpEKqcWfmIRIUuO61agZ7akxJae8g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/book.min.be62081f7806839c49e37ffedfc995024238ac62b1e372128dc0c538221ddd86.css" integrity="sha256-vmIIH3gGg5xJ43/&#43;38mVAkI4rGKx43ISjcDFOCId3YY=" crossorigin="anonymous">
 
 
 <script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
@@ -40,12 +40,12 @@
   <div class="note-meta">
     <span>
       <small>最近更新:</small>
-      <span class="Lastmod" data-unix="1728352041"></span>
+      <span class="Lastmod" data-unix="1729168064"></span>
     </span>
     <span>
         
             <small>笔记字数:</small>
-            751
+            933
         
     </span>
   </div>
@@ -69,14 +69,10 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#软件">软件</a></li>
-        <li><a href="#硬件">硬件</a></li>
-        <li><a href="#aoc-2369-231显示器">aoc 2369 23.1显示器</a></li>
-        <li><a href="#附录">附录</a></li>
-      </ul>
-    </li>
+    <li><a href="#软件">软件</a></li>
+    <li><a href="#硬件">硬件</a></li>
+    <li><a href="#aoc-2369-231显示器">aoc 2369 23.1显示器</a></li>
+    <li><a href="#附录">附录</a></li>
   </ul>
 </nav>
 
@@ -121,6 +117,48 @@
 *LAlt::LCtrl
 ; Capslock键-&gt;BackSpace键
 *Capslock::BackSpace
+; 适用于 v2.0
+
+; 左Alt -&gt;Ctrl
+*LAlt::LCtrl
+; Capslock键-&gt;BackSpace键
+*Capslock::BackSpace
+ESC::Enter
+;禁用按win键开始菜单弹出,快捷键不受影响
+~LWin::Send &#34;{Blind}{vkE8}&#34;
+
+
+; 当 ScrollLock 开启时，映射 z, x, c, a, s, d, q, w, e 到 1-9
+#HotIf GetKeyState(&#34;ScrollLock&#34;, &#34;T&#34;)
+z::1
+x::2
+c::3
+a::4
+s::5
+d::6
+q::7
+w::8
+e::9
+#HotIf ; 关闭 HotIf 区块
+
+
+side_limit := 50
+winSize := 50
+halfHeight := A_ScreenHeight / 2  ; 计算屏幕高度的一半
+; 鼠标滚轮点击
+MButton::
+{
+    MouseGetPos &amp;xpos, &amp;ypos, &amp;id, &amp;control
+    if (xpos &lt; side_limit and ypos&gt;winSize){
+        send &#34;{Media_Play_Pause}&#34;
+    }
+    else if (ypos &lt; winSize and xpos&lt;winSize){
+        send &#34;{ScrollLock}&#34; ;滚轮点击左上角,按下ScrollLock
+    }
+    else{
+        send &#34;{Enter}&#34;
+    }
+}
 
 ;禁用按win键开始菜单弹出,快捷键不受影响
 ~LWin::Send &#34;{Blind}{vkE8}&#34;
@@ -450,6 +488,19 @@ WheelDown::
         
   
   
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/" 
+       class="">Django</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" 
        class="">Python</a>
   
@@ -463,8 +514,8 @@ WheelDown::
         
   
   
-    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python-flaskdjango/" 
-       class="">python-Flask&amp;Django</a>
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/redis/" 
+       class="">Redis</a>
   
 
       </li>
@@ -651,14 +702,10 @@ WheelDown::
 
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#软件">软件</a></li>
-        <li><a href="#硬件">硬件</a></li>
-        <li><a href="#aoc-2369-231显示器">aoc 2369 23.1显示器</a></li>
-        <li><a href="#附录">附录</a></li>
-      </ul>
-    </li>
+    <li><a href="#软件">软件</a></li>
+    <li><a href="#硬件">硬件</a></li>
+    <li><a href="#aoc-2369-231显示器">aoc 2369 23.1显示器</a></li>
+    <li><a href="#附录">附录</a></li>
   </ul>
 </nav>
 
@@ -726,7 +773,7 @@ WheelDown::
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
-<script defer src="/zh-cn.search.min.26b54fefbe9b2c7d3db41728af4317c94f14b52d83954d90a70b0b58b62a0875.js" integrity="sha256-JrVP776bLH09tBcor0MXyU8UtS2DlU2QpwsLWLYqCHU=" crossorigin="anonymous"></script>
+<script defer src="/zh-cn.search.min.ab92fa281a8f247023e54d6208bc46fa25dd6a0a8af63f4e82d6ce6fc6ee315c.js" integrity="sha256-q5L6KBqPJHAj5U1iCLxG&#43;iXdagqK9j9OgtbOb8buMVw=" crossorigin="anonymous"></script>
 
 
 

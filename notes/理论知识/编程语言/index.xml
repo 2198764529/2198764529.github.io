@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language><atom:link href="https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Django</title>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/</guid>
+      <description>架构图 card &amp;#34;Brown（浏览器）&amp;#34; as Brown card &amp;#34;Urls（路由）&amp;#34; as Urls card &amp;#34;View（视图）&amp;#34; as View card &amp;#34;Model（模型）&amp;#34; as Model card &amp;#34;Template（模板）&amp;#34; as Template database &amp;#34;database（数据库）&amp;#34; as database Brown --&amp;gt; Urls: 发送请求 Urls --&amp;gt; View: 路由分发 View &amp;lt;--&amp;gt; Model: 操作数据/返回结果 View &amp;lt;--&amp;gt; Template:调用模板 Model &amp;lt;--&amp;gt; database: ORM Template --&amp;gt; Brown: 返回响应 备注:
+ORM: object relation mapping MVT架构层 Model 模型层 from django.db import models class Person(models.Model): first_name = models.CharField(max_length=30) last_name = models.CharField(max_length=30) 模型 模型操作 以下模型操作创建、删除、更改、保存， 读取操作属于 QuerySet 那部分</description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -16,15 +26,12 @@
     </item>
     
     <item>
-      <title>python-Flask&amp;Django</title>
-      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python-flaskdjango/</link>
+      <title>Redis</title>
+      <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/redis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python-flaskdjango/</guid>
-      <description> Django Django 基于什么架构? MVC(Model View Controler, 模型视图控制器) MTV(Model Template Controler, 模型模版控制器)
-Django 操作流程 Django 中间件的方法 .process_request : 请求进来时,权限认证 .process_view : 路由匹配之后,能够得到视图函数 .process_exception : 异常时执行 .process_template_responseprocess : 模板渲染时执行 .process_response : 请求有响应时执行 WSGI 是什么? WSGI是Python在处理HTTP请求时，规定的一种处理方法.
-什么是 FBV 和 CBV FBV（function base views） 基于函数的视图，就是在视图里使用函数处理请求。 CBV（class base views） 基于类的视图，就是在视图里使用类处理请求。 参考链接:
-2023最新高级难度Django面试题,包含答案。刷题必备！记录一下。 - 小满独家 - 博客园 (cnblogs.com) 2023最新中级难度Flask框架面试题,包含答案。刷题必备！记录一下。 - 小满独家 - 博客园 (cnblogs.com) 一杯茶的时间，搞懂 RESTful API (apifox.com) Django 简介 | 菜鸟教程 (runoob.com) </description>
+      <guid>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/redis/</guid>
+      <description>Redis 简介 一个开源的、</description>
     </item>
     
   </channel>
