@@ -42,12 +42,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E6%B8%85%E5%8D%95/</guid>
-      <description>软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法 【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、winget
+      <description> 软件 【安卓手机】appShare、ES 文件浏览器、Via 浏览器、 b站(带漫游模块)、Clash、手机性能排行、Apple music、微信输入法 【win】vscode、obsidian、vivaldi（Dark Reader、AdGuard、Stylus、Tampermonkey）、图吧工具箱、autoHotkey（改键位）、winget
 硬件 宏基传奇Edge：
 机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器 aoc 2369 23.1显示器 显示器（高、宽） 398(H) x 531.4(W) x 204(D)
 https://aoc.com/uk/products/monitors/i2369v/specification
 附录 autoHotkey 【changeKeys.ahk】：
-; 适用于 v2.0 ; 左Alt -&amp;gt;Ctrl *LAlt::LCtrl ; Capslock键-&amp;gt;BackSpace键 *Capslock::BackSpace ; 适用于 v2.0 ; 左Alt -&amp;gt;Ctrl *LAlt::LCtrl ; Capslock键-&amp;gt;BackSpace键 *Capslock::BackSpace ESC::Enter ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; ; 当 ScrollLock 开启时，映射 z, x, c, a, s, d, q, w, e 到 1-9 #HotIf GetKeyState(&amp;#34;ScrollLock&amp;#34;, &amp;#34;T&amp;#34;) z::1 x::2 c::3 a::4 s::5 d::6 q::7 w::8 e::9 #HotIf ; 关闭 HotIf 区块 side_limit := 50 winSize := 50 halfHeight := A_ScreenHeight / 2 ; 计算屏幕高度的一半 ; 鼠标滚轮点击 MButton:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ send &amp;#34;{Media_Play_Pause}&amp;#34; } else if (ypos &amp;lt; winSize and xpos&amp;lt;winSize){ send &amp;#34;{ScrollLock}&amp;#34; ;滚轮点击左上角,按下ScrollLock } else{ send &amp;#34;{Enter}&amp;#34; } } ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; ; 当 ScrollLock 开启时，映射 z, x, c, a, s, d, q, w, e 到 1-9 #HotIf GetKeyState(&amp;#34;ScrollLock&amp;#34;, &amp;#34;T&amp;#34;) z::1 x::2 c::3 a::4 s::5 d::6 q::7 w::8 e::9 #HotIf ; 关闭 HotIf 区块 side_limit := 50 winSize := 50 halfHeight := A_ScreenHeight / 2 ; 计算屏幕高度的一半 ; 鼠标滚轮点击 MButton:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ send &amp;#34;{Media_Play_Pause}&amp;#34; } else if (ypos &amp;lt; winSize and xpos&amp;lt;winSize){ send &amp;#34;{ScrollLock}&amp;#34; ;滚轮点击左上角,按下ScrollLock } else{ send &amp;#34;{Enter}&amp;#34; } } ; 鼠标滚轮向上 WheelUp:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ Send &amp;#34;{Volume_Up 3}&amp;#34; ; 音量增加 } else if (ypos &amp;lt; side_limit and xpos&amp;gt;winSize){ send &amp;#34;{Blind}!</description>
+; 适用于 v2.0 *LAlt::LCtrl *Capslock::BackSpace *Esc::Tab *Tab::Enter ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; side_limit := 50 winSize := 50 halfHeight := A_ScreenHeight / 2 ; 计算屏幕高度的一半 ; 鼠标滚轮点击 MButton:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ send &amp;#34;{Media_Play_Pause}&amp;#34; } else if (ypos &amp;lt; winSize and xpos&amp;lt;winSize){ send &amp;#34;{ScrollLock}&amp;#34; ;滚轮点击左上角,按下ScrollLock } else{ send &amp;#34;{Enter}&amp;#34; } } ;禁用按win键开始菜单弹出,快捷键不受影响 ~LWin::Send &amp;#34;{Blind}{vkE8}&amp;#34; side_limit := 50 winSize := 50 halfHeight := A_ScreenHeight / 2 ; 计算屏幕高度的一半 ; 鼠标滚轮点击 MButton:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ send &amp;#34;{Media_Play_Pause}&amp;#34; } else if (ypos &amp;lt; winSize and xpos&amp;lt;winSize){ send &amp;#34;{ScrollLock}&amp;#34; ;滚轮点击左上角,按下ScrollLock } else{ send &amp;#34;{Enter}&amp;#34; } } ; 鼠标滚轮向上 WheelUp:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ Send &amp;#34;{Volume_Up 3}&amp;#34; ; 音量增加 } else{ send &amp;#34;{WheelUp}&amp;#34; } } ; 鼠标滚轮向下 WheelDown:: { MouseGetPos &amp;amp;xpos, &amp;amp;ypos, &amp;amp;id, &amp;amp;control if (xpos &amp;lt; side_limit and ypos&amp;gt;winSize){ Send &amp;#34;{Volume_Down 3}&amp;#34; ; 音量减少 } else{ send &amp;#34;{WheelDown}&amp;#34; } } </description>
     </item>
     
     <item>
@@ -74,6 +74,15 @@ https://aoc.com/uk/products/monitors/i2369v/specification
 做 50道计算题
 骑车回去
 20 个俯卧撑</description>
+    </item>
+    
+    <item>
+      <title>支出计算</title>
+      <link>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E6%94%AF%E5%87%BA%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E6%94%AF%E5%87%BA%E8%AE%A1%E7%AE%97/</guid>
+      <description>现在一个月支出</description>
     </item>
     
   </channel>
