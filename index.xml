@@ -229,7 +229,7 @@ CSS 字体 在CSS中，font-size属性可以使用多种单位来指定字体大
 机身规格： 356.7242.312.95mm， 1.17kg 屏幕：16英寸，4k，OLED，E4，屏占比92%，支持HDR500，德国莱茵TUV硬件级低蓝光认证和eyesafe显示认证 性能：R7-6800U，16GB LPDDR5 6400MHz双通道内存，512GB PCIe 4.0 SSD，54Wh 续航8小时 外设接口：单色背光，电源指纹二合一，前置FHD摄像头（支持TNR时域降噪和AI降噪），Wifi 6e 和蓝牙5.2，2个全功能Type-C接口中、1个HDMI接口、2个USB3.2接口、1个耳麦接口 其他：标配65W Type-C 适配器 aoc 2369 23.1显示器 显示器（高、宽） 398(H) x 531.4(W) x 204(D)
 https://aoc.com/uk/products/monitors/i2369v/specification
 附录 autoHotkey 【changeKeys.ahk】：
-; 适用于 v2.0 LAlt::LCtrl Capslock::BackSpace +Capslock::Delete ; ctrl+backspace=ctrl+a+backspace ^Capslock:: Send &amp;#34;^{a}+{backspace}&amp;#34; ^left::Home ^right::end *Esc::Tab *Tab::Enter ; 禁用win弹出win菜单 *LWin::Send &amp;#34;{vkE8}&amp;#34; ; F1切换中英文输入法 F1:: Send &amp;#34;^{Space}&amp;#34; F2::NumLock F3::Capslock </description>
+; 适用于 v2.0 LAlt::LCtrl Capslock::BackSpace +Capslock::Delete ; ctrl+backspace=ctrl+a+backspace ^Capslock:: Send &amp;#34;^{a}+{backspace}&amp;#34; ^left::Home ^right::end *Esc::Tab *Tab::Enter ; 禁用win弹出win菜单 ~LWin::Send &amp;#34;{vkE8}&amp;#34; ; F1切换中英文输入法 F1:: Send &amp;#34;^{Space}&amp;#34; F2::Esc F3::Capslock </description>
     </item>
     
     <item>
