@@ -1,1 +1,0 @@
-window.addEventListener('load',function(){setTimeout(function(){const e=document.getElementById('loading');e.style.display='none'},250)})
