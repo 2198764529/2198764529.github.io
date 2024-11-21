@@ -16,7 +16,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
-<link rel="stylesheet" href="/scss/book.min.d049a5b11c86f3de0e81cff6f4aa40c9e20625a8988d3c3d3e5609d0725efef2.css" integrity="sha256-0EmlsRyG894Ogc/29KpAyeIGJaiYjTw9PlYJ0HJe/vI=" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/book.min.64317f6e756519215db97bd55a7d722c87c554ad9fcb7231f5d2ac9277cc247c.css" integrity="sha256-ZDF/bnVlGSFduXvVWn1yLIfFVK2fy3Ix9dKsknfMJHw=" crossorigin="anonymous">
 
 
 <script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
@@ -25,12 +25,16 @@
 </head>
 
 <body dir="ltr">
-
-    
+  
+<div id="loading" class="loading-overlay">
+    <div class="spinner"></div>
+    <h2>一叶浮萍归大海, 人生何处不相逢</h2>
+</div>
   <nav id="gb-header">
+    
     <div id="gb-nav">
         <div id="gb-nav-content">
-            <ul id="gb-nav-content-list">
+            <ul id="gb-nav-content-list" class="center">
                 <li class="nav-logo">
                     <a href="/" role="button">
                         <img src="/img/favicon/favicon.png"
@@ -60,7 +64,7 @@
                         
                         <div class="sub-pages">
                             <ul>
-                                <li><span>个人</span></li>
+                                <li class="small-title"><span>个人</span></li>
                                 
                                 <li>
                                     <a href="/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/" role="button">关于篮球</a>
@@ -109,7 +113,7 @@
                         
                         <div class="sub-pages">
                             <ul>
-                                <li><span>技术</span></li>
+                                <li class="small-title"><span>技术</span></li>
                                 
                                 <li>
                                     <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/" role="button">git操作</a>
@@ -174,7 +178,7 @@
                         
                             <div class="sub-pages">
                                 <ul>
-                                    <li><span>编程语言</span></li>
+                                    <li class="small-title"><span>编程语言</span></li>
                                     
                                     <li>
                                         <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/" role="button">Django</a>
@@ -193,7 +197,7 @@
                         
                             <div class="sub-pages">
                                 <ul>
-                                    <li><span>理论知识</span></li>
+                                    <li class="small-title"><span>理论知识</span></li>
                                     
                                     <li>
                                         <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" role="button">计算机网络</a>
@@ -216,7 +220,7 @@
                         
                             <div class="sub-pages">
                                 <ul>
-                                    <li><span>力扣</span></li>
+                                    <li class="small-title"><span>力扣</span></li>
                                     
                                     <li>
                                         <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%8A%9B%E6%89%A3/%E7%B3%BB%E7%BB%9F%E6%94%BB%E7%95%A5/" role="button">系统攻略</a>
@@ -227,7 +231,7 @@
                         
                             <div class="sub-pages">
                                 <ul>
-                                    <li><span>数据库</span></li>
+                                    <li class="small-title"><span>数据库</span></li>
                                     
                                     <li>
                                         <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" role="button">Redis</a>
@@ -238,7 +242,7 @@
                         
                         <div class="sub-pages">
                             <ul>
-                                <li><span>理论知识</span></li>
+                                <li class="small-title"><span>理论知识</span></li>
                                 
                                 <li>
                                     <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%80%83%E5%85%AC/" role="button">考公</a>
@@ -271,7 +275,7 @@
                         
                         <div class="sub-pages">
                             <ul>
-                                <li><span>项目</span></li>
+                                <li class="small-title"><span>项目</span></li>
                                 
                                 <li>
                                     <a href="/notes/%E9%A1%B9%E7%9B%AE/%E4%BA%A7%E5%93%81%E5%A4%A9%E6%A2%AF/" role="button">产品天梯</a>
@@ -298,12 +302,12 @@
 
 
 
+  </nav>
   <main class="container flex" id="gb-main">
     
-<div class="book-page">
-  <header class="book-header card">
+<div id="note-page" class="center">
+  <header class="book-header">
 
-<div class="left">
   
     <div class="note-header">
   <div class="note-title">
@@ -312,25 +316,16 @@
     </a>
   </div>
   <div class="note-meta">
-    <span>
-      <small>最近更新:</small>
+      <span class="small-title">最近更新:</span>
       <span class="Lastmod" data-unix="1717410696"></span>
-    </span>
-    <span>
         
-            <small>笔记字数:</small>
+        <span class="small-title">笔记字数:</span>
             10877
         
-    </span>
   </div>
 </div>
   
-</div>
-<div class="right">
-  <label for="menu-control">
-  <img src="https://ltao.top/img/svg/menu.svg" class="book-icon" alt="Menu" />
-</label>
-</div>
+
 </header>
 
 
@@ -338,19 +333,7 @@
 
   
   
-<article class="markdown card">
-  
-
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#colorsjson">colors.json</a></li>
-    <li><a href="#mydatajson">myData.json</a></li>
-    <li><a href="#mymuiscsjson">myMuiscs.json</a></li>
-  </ul>
-</nav>
-
-
-<h3 id="colorsjson">
+<article class="markdown card"><h3 id="colorsjson">
   
    colors.json
 </h3>
@@ -56997,12 +56980,12 @@
 </table>
 
 </article>
- 
+
   
 
-  <label for="menu-control" class="hidden book-menu-overlay"></label>
+  <label for="menu-control" class="hidden note-menu-overlay"></label>
 </div>
-<footer class="book-footer">
+<footer class="note-footer">
   
   <div id="viewer-container"></div>
 
@@ -57040,7 +57023,10 @@
 
 
 <script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
-<script src="https://ltao.top/js/nav.min.f586deac2b8166ed5e2b40b9399141d2836cffcaf878c7c54a250beb2c882504.js"></script>
+<script src="https://ltao.top/js/nav.min.b5191c27b58569ab944dd98d7fe56eb347c3f4a7c8429f887143effca5f881f1.js"></script>
+
+
+<script src="https://ltao.top/js/loading.min.f4021489df03f320763505d78b49b7786f06eb48e544e651859ae02194185564.js"></script>
 
 
 <script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
@@ -57050,11 +57036,78 @@
 
 </footer>
 
-    
   </main>
-</body>
-</html>
+  <footer id="gb-footer">
+    <div class="center" id="note-footer">
+      <div class="footer">
+  <p>
+    <span>
+      <small> Power by</small>
+      <a href="https://gohugo.io">Hugo</a> 0.100.2
+    </span>
+  </p>
+  <p>
+    <span>
+      <small> 运行时间: </small>
+      
+      
+      635天
 
+    </span>
+  </p>
+</div>
+      <div id="viewer-container"></div>
+
+<script>
+  
+  window.onload = function () {
+    
+    updateDateTimeByElementClass("LastChange");
+    
+    updateDateTimeByElementClass("AuthorDate");
+    
+    updateDateTimeByElementClass("nowDate");
+    
+    updateDateTimeByElementClass("date");
+    
+    updateDateTimeByElementClass("Lastmod");
+  };
+</script>
+
+
+ 
+<script src="https://ltao.top/plugs/viewer.min.min.f09882c6245201c57f95ab8757a58e743f88e0feebc9f1490c1e278e5ea09d82.js"></script>
+<link src="https://ltao.top/plugs/viewer.min.5a4aef2c7d7afc31356e0ff2523716614f3deca0315d05acc309ef2261dee5cf.css">
+
+<script src="https://ltao.top/js/gallery.min.7fb59a1d56577a7385d6567226eed8f941dfd44ee23ccbbe24f77a3305003fce.js"></script>
+
+
+<script src="https://ltao.top/js/updateDateTimeByElementClass.min.5ac5e364cc043e1f0393415f22e1d687957ab80e767b3fe37c74005bf5340666.js"></script>
+
+
+<script src="https://ltao.top/js/TableOfContents.min.6f6d16bd1f48d060ebe453f97a427f0e7ce2d700d252e0d2729c245140f32c62.js"></script>
+
+
+<script src="https://ltao.top/plugs/highlight.min.min.4e0b9f48d67c0e81df581eec1cc976947102417e849ac449b7ff77ac1f507c81.js"></script>
+
+
+<script src="https://ltao.top/js/tableMeger.min.a1bec8e69fd9b4c6113fe791240958bc76f88b480a7c19c96a673a37cd933be2.js"></script>
+<script src="https://ltao.top/js/nav.min.b5191c27b58569ab944dd98d7fe56eb347c3f4a7c8429f887143effca5f881f1.js"></script>
+
+
+<script src="https://ltao.top/js/loading.min.f4021489df03f320763505d78b49b7786f06eb48e544e651859ae02194185564.js"></script>
+
+
+<script src="https://ltao.top/plugs/papaparse.min.min.b99e286adada27cbe073a61ed8271c516b4a43674baced254b6cec53bbec85bb.js"></script>
+<script defer src="/zh-cn.search.min.cf1edb15963503d0e4ca2381f5cdd1eed30f6b7beb0583afd21d7b86eac07444.js" integrity="sha256-zx7bFZY1A9DkyiOB9c3R7tMPa3vrBYOv0h17hurAdEQ=" crossorigin="anonymous"></script>
+
+
+
+    </div>
+  </footer>
+</body>
+
+</html>
 
 
 
