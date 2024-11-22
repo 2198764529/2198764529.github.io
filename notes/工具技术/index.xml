@@ -47,16 +47,6 @@
     </item>
     
     <item>
-      <title>python 方法参考</title>
-      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
-      <description>以下内容由 ChatGPT 生成, 仅供学习参考
-目录 文件处理（os、io） 网络编程（socket、urllib） 日期和时间处理（datetime、time） 数学运算（math、random） 字符串处理（re、string） 数据结构（list、tuple、dict、set） 对象编程（class、object） 错误处理（try、except） 文件处理（os、io） import os import io #️⃣ os 模块 # 获取和更改当前工作目录 current_directory = os.getcwd() # 返回当前工作目录 os.chdir(&amp;#39;/path/to/directory&amp;#39;) # 改变当前工作目录 # 列出目录内容 contents = os.listdir(&amp;#39;.&amp;#39;) # 列出当前目录中的所有文件和目录 # 创建和删除目录 os.mkdir(&amp;#39;new_directory&amp;#39;) # 创建新目录 os.makedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归创建目录 os.rmdir(&amp;#39;new_directory&amp;#39;) # 删除目录（仅当目录为空时） os.removedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归删除目录 # 删除文件 os.remove(&amp;#39;file.txt&amp;#39;) # 删除文件 os.unlink(&amp;#39;file.txt&amp;#39;) # 删除文件，与 os.remove 功能相同 # 重命名文件或目录 os.rename(&amp;#39;old_name.txt&amp;#39;, &amp;#39;new_name.txt&amp;#39;) # 重命名文件或目录 os.renames(&amp;#39;old_directory&amp;#39;, &amp;#39;new_directory&amp;#39;) # 递归重命名文件或目录 # 文件和目录属性 exists = os.</description>
-    </item>
-    
-    <item>
       <title>技术记录</title>
       <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
