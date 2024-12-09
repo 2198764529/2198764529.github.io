@@ -94,6 +94,16 @@ ORM: object relation mapping # MVT架构层 ## Model 模型层 from django.db im
     
     <item>
       <title>python 方法参考</title>
+      <link>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
+      <description>以下内容由 ChatGPT 生成, 仅供学习参考
+### 目录 文件处理（os、io） 网络编程（socket、urllib） 日期和时间处理（datetime、time） 数学运算（math、random） 字符串处理（re、string） 数据结构（list、tuple、dict、set） 对象编程（class、object） 错误处理（try、except） ### 文件处理（os、io） import os import io #️⃣ os 模块 # 获取和更改当前工作目录 current_directory = os.getcwd() # 返回当前工作目录 os.chdir(&amp;#39;/path/to/directory&amp;#39;) # 改变当前工作目录 # 列出目录内容 contents = os.listdir(&amp;#39;.&amp;#39;) # 列出当前目录中的所有文件和目录 # 创建和删除目录 os.mkdir(&amp;#39;new_directory&amp;#39;) # 创建新目录 os.makedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归创建目录 os.rmdir(&amp;#39;new_directory&amp;#39;) # 删除目录（仅当目录为空时） os.removedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归删除目录 # 删除文件 os.remove(&amp;#39;file.txt&amp;#39;) # 删除文件 os.unlink(&amp;#39;file.txt&amp;#39;) # 删除文件，与 os.remove 功能相同 # 重命名文件或目录 os.rename(&amp;#39;old_name.txt&amp;#39;, &amp;#39;new_name.txt&amp;#39;) # 重命名文件或目录 os.</description>
+    </item>
+    
+    <item>
+      <title>python 方法参考</title>
       <link>https://ltao.top/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -167,6 +177,17 @@ https://img.cdn.tencent-qq.cn/Yize/2022/12/5a4fc700cf7531f5.webp https://img.cdn
       <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E7%AF%AE%E7%90%83/</guid>
       <description>健壮的身体和娴熟的技术
 关于投篮 动作要点: 调整脚步,左脚在前,右脚在后 想象下面有个凳子坐下去,接着像弹簧一样起来 辅助手确定最左出手范围，控制方向 直臂出手,打直手腕 手指拨球,压腕让球保持高度和旋速 保持投篮动作 目标是弧度尽量高，发力尽量轻松 要往上发力投篮，就要往下下面压，下半身和上半身要发力不脱节 投篮手不要抓球，食指和中指张开，压腕时合拢 辅助手确定投篮范围，控制方向 在脚发力完成之前， 投篮夹角＜90度 投篮弧度要是一个抛物线，高度要高于篮板上沿 几个重要的指标：球旋速、球高度 关于上篮 果冻上篮，手心正对着篮板，旋球到篮板的左上角或者右上角 多观察全局位置 攻击前侧脚 关于运球 减少运球时间 只突破不经常终结，多多分球 踮脚尖走路能锻炼小腿肌肉和踝关节稳定性。 一直收肚子能减少身体负担 </description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ltao.top/notes/%E4%B8%AA%E4%BA%BA/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+      <description>### 个人介绍 23 岁, 1年工作经验,软工专业, 一名软件开发者。 热爱互联网行业, 擅长做后端开发, 略懂一点对话AI。 爱做项目, 编程 5 年间, 有 15+ 独立项目开发经验 。 喜欢记录总结, www.ltao.top 博客目前已运行近 1 年
+### 个人经历 大学期间, 我自学了多种编程语言和技术栈, 包括Python 后端、前端、大数据等，大三曾取得金砖大赛国二奖, 大四毕业取得湖南省程序设计二等奖和省优秀毕业生,并以基于用户行为的新能源充电桩项目入选校企合作名单。 毕业后, 实习顺利入职湖南超能机器人做 AI 对话, 作为项目核心开发者,将该 AI 对话项目由零迭代到上线。 目前就职深圳亿达信息， 担任 Python 工程师, 负责公司后端接口开发与测试。
+### 工作经历 ##### 2021年11月-2023年3月 湖南超能机器人 AI助理 ###### 智能问诊项目 负责人 清洗训练数据近 2w 条, 处理NLU 和 NLG 部分工作, 并对接后端开始内部测试 从零推动 AI 对话项目版本迭代到上线开售 ##### 2023年4月-至今 深圳亿达信息 Python开发 ###### 支付分账项目 参与者 迭代项目版本 测试 ### 技术栈 熟悉Python的Django,Flask等后端框架，掌握基本的数据结构和常见算法 熟悉Linux系统应用部署以及管理，能独立部署项目到服务器 ### 联系我 邮箱: liao4256@qq.</description>
     </item>
     
     <item>
